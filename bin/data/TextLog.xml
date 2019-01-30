@@ -1,0 +1,302 @@
+<TextBlobLog>
+  <TextBlob>
+    <ID>0</ID>
+    <Title>001: Science Brief</Title>
+    <Text>The Kelvyn Co. Research Outpost on Islay recently relayed a request for a number of Basic Robots and Automatons which are capable of doing laborious and custodial tasks within the confines of the facility. Of course, the Kelvyn Co. will reimburse the captain who delivers the cargo.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>1</ID>
+    <Title>001: Science Debrief</Title>
+    <Text>The Kelvyn Co. thanks you for your completion of the task in such a timely manner and, frankly, are quite impressed with the manner of professionalism you have shown. Come back later and we may have some work for you.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>2</ID>
+    <Title>002: Science Brief</Title>
+    <Text>Kelvyn Co. has found a massive concentration of Titanium on the planet of Islay and need someone to deliver samples of the rich new find to Metneb Factory on Planet Ciuin in the Faidh system. This could result in a potentially beneficial partnership between the two corporations and the rewards for the willing captain would certainly be satisfactory.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>3</ID>
+    <Title>002: Science Debrief</Title>
+    <Text>The Metneb officials appreciate the transportation of the goods here and are pleased to announce the high quality of the titanium is such that a partnership is in both our best interests! Thank you once again, and should some work become available, we will not hesitate to contact you.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>4</ID>
+    <Title>003: Science Brief</Title>
+    <Text>Metneb Officials have received word that a group of scientists back in the Faidh system have requested that a clutch of Vertruks be sent to them for research at a recently opened laboratory at the spaceport. Metneb has no available personnel, nor desire, to fill the request and is seeking someone to capture and haul the Vertruks back to the Starport. We feel this would be a very good opportunity for you.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>5</ID>
+    <Title>003: Science Debrief</Title>
+    <Text>The scientific community thanks you for your work in capturing and transporting the life forms from Ciuin and bringing them back to the Starport. We feel these creatures may prove key to some of our research.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>6</ID>
+    <Title>004: Science Brief</Title>
+    <Text>Cystal Interstellar Planetary Research Division has an official charge for you. You have been assigned to travel to Culum Cuale in the Tabarn system and perform a scan on the planet and radio back its information.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>7</ID>
+    <Title>004: Science Debrief</Title>
+    <Text>Cystal Interstellar Planetary Research Division has recieved the information requested from you and suggest you remain aware of the possibility of another official charge coming to you in the near future.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>8</ID>
+    <Title>005: Science Brief</Title>
+    <Text>A Cystal Interstellar Mining Facility has put in an order for cargo retrieval. The frozen planet Diar in the Iobath system is home to a species of thickly furred quadrupeds that are to be better documented in a well prepared lab here at the Starport.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>9</ID>
+    <Title>005: Science Debrief</Title>
+    <Text>Cystal Interstellar thank you for your continued cooperation. The Woolen Qians have been delievered and are now being properly documented.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>10</ID>
+    <Title>006: Science Brief</Title>
+    <Text>Metneb has reported that so many of its workers have fallen ill at its premier mining facility on Alastir that all personnel have been evacuated from the planet. Interstel Officials believe that a gaseous emission may be the cause due to miners rupturing the geothermal vents underneath the surface and unknowingly allowing gas to seep into the facilities.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>11</ID>
+    <Title>006: Science Debrief</Title>
+    <Text>Your scanners have reported that there have been no bizzare increases in toxins on the planets surface so that rules out the possibility of anything natural occuring. Clearly this limits the problem to being inside the facility; we'll take it from here.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>12</ID>
+    <Title>007: Science Brief</Title>
+    <Text>The Kelvyn Co. has started to reap the benefits of the deal you helped make possible and they have asked for you by name to take an assignment. Massive Drill upgrades have recently been completed here at the Starport and they would like for you to deliver them to the recently constructed Dereon Mining Facility on the De Dannan 1876 asteroid in the Nemed system.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>13</ID>
+    <Title>007: Science Debrief</Title>
+    <Text>The parts have been delivered and the massive drill is under construction. Kelvyn Co. thanks you kindly and eagerly awaits another chance to work with you again.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>14</ID>
+    <Title>008: Science Brief</Title>
+    <Text>Cystal is sponsoring another "save the species" expedition. Swift Galists are a small quadruped similar to animals of the canine family but their natural habitat has nearly been destroyed by corporate expansion on Myrrdan. A team of scientists have located an island on the planet of Airgdech that would be perfect for them to be relocated to and be guided into becoming a plentiful species again.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>15</ID>
+    <Title>008: Science Debrief</Title>
+    <Text>The Swift Galists have been relocated from Myrrdan and can now thrive under the watchful eyes of the scientists on Airgdech. Well done Captain.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>16</ID>
+    <Title>009: Science Brief</Title>
+    <Text>Scientists are still considerably befuddled concerning the recent discovery of "Lava Snakes" that inhabit the inferno of Oidni in the Iarbonel system. Seeing as how you have proven yourself as of late, you have been asked to go to the fiery planet and scan for life forms and report back your findings. Skeptics proclaim it was a false readout and nothing large enough to effect readings could possibly live on that planet's surface.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>17</ID>
+    <Title>009: Science Debrief</Title>
+    <Text>After finding nothing this little myth can be shelved under the false category in the Cystal Database.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>18</ID>
+    <Title>010: Science Brief</Title>
+    <Text>The Mining Facility on De Dannan 1876 believes they may have found a new natural mineral! They have requested someone of the more scientific community to come and take it off their hands. Seeing as you have such a good standing with Kelvyn Co. they have given you the first option.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>19</ID>
+    <Title>010: Science Debrief</Title>
+    <Text>Now that the Magnivum has been delivered the scientific community is abuzz trying to find out more about it! It is an intriguing mineral thus far and more of it's secrets will soon be unlocked.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>20</ID>
+    <Title>001: Military Brief</Title>
+    <Text>Congratulations on your promotion and acquisition of a Wraith Class Warship; top of the line she is. Let's not rush her to the front just quite yet though. It would be beneficial for you to take her out and see the galaxy first. Your assignment is to travel to Tuatha in the Nemed system, orbit the planet a few cycles, and return here to the Starport.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>21</ID>
+    <Title>001: Military Debrief</Title>
+    <Text>Well now that you've ridden the cobwebs out we can move on to more important things. Handles like a dream don't she? </Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>22</ID>
+    <Title>002: Military Brief</Title>
+    <Text>Now it's time to warm up the guns. We've set up a decoy scrap heap out in space and you have to go find it and kill it. It sure beats those simulation terminals anyway. The target is located at 121,108 and won't take much to destroy. Now get going.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>23</ID>
+    <Title>002: Military Debrief</Title>
+    <Text>Well done, Captain. Obviously its not too difficult to destroy a buch of space junk but at least you've finally warmed up your lasers and got a taste of what your ship is capable of.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>24</ID>
+    <Title>003: Military Brief</Title>
+    <Text>The Coelfain Corporation is looking to construct a research facility on Moy-Fevin in the Beothach system but they have detected a large population of Goransil in the prime construction area. Your mission is to land on Moy-Fevin and find out if the Goransil are openly hostile, and if they are, you must clear the way for future construction.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>25</ID>
+    <Title>003: Military Debrief</Title>
+    <Text>Well looks like the Goransil didn't take too kindly to strangers. It's been noted by both Coelfain and researchers that the Goransil are openly hostile. Thankfully though after clearing out a landing zone for future Coelfain workers we shouldn't have to worry about it much anytime soon.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>26</ID>
+    <Title>004: Military Brief</Title>
+    <Text>The latest bag of trash needs to be takin' out. The feckless criminals of our beloved Myrrdan need to be escorted to the "Harsh Mistress." The prison colony Afrywiog is the home of these wastes of space and that's where you get to take 'em.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>27</ID>
+    <Title>004: Military Debrief</Title>
+    <Text>Afrywiog is a rather nasty place and the majority of the prisoners won't survive long enough to ever see Myrrdan again. Whether because of old age or an abrupt end to their miserable existances in the form of a shiv in the dark is anyones guess. It takes a hefty crime to get sent to the "Harsh Mistress" so do not be found sorrowful.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>28</ID>
+    <Title>005: Military Brief</Title>
+    <Text>Only days ago a rogue terrorist group from Myrrdan hi-jacked a Fighter and fled into space with it. By now they have probably run out of life supporting supplies and are going to be limping around the system. Hours ago we picked up a ship on radar. Further probing revealed that it, indeed, was our fighter. Go and do what must be done.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>29</ID>
+    <Title>005: Military Debrief</Title>
+    <Text>The rogue vessel has been destroyed and its heathen crew have gone down with it. Let this be a message to all future usurpers that Cystal will go to any means to adequately punish it's enemies.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>30</ID>
+    <Title>006: Military Brief</Title>
+    <Text>A cache of state of the art Inter-Planetary Ballistic Missles need to be shipped to the Outpost on Breo. Obviously this is a high-class payload and it is vital that these arrive at their destination. See that it is done and done efficiently.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>31</ID>
+    <Title>006: Military Debrief</Title>
+    <Text>The highly valuable payload has been delivered safely and soundly. These weapons of ultimate destruction will prove vital for intergalactic negotiations and planetary defenses alike.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>32</ID>
+    <Title>007: Military Brief</Title>
+    <Text>The men over at Breo have put in a request for Titanium and the folks over at MetNeb have so generously "volunteered" some from their facilities on Ciuin. Metneb transporters have already brough the Titanium to the Starport and we need take it to Breo.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>33</ID>
+    <Title>007: Military Debrief</Title>
+    <Text>Well the management at Breo should have all the necessary materials for those IPBM's now. I reckon we won't be hearing to much from them in the coming days as they continue to stockpile and develop.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>34</ID>
+    <Title>008: Military Brief</Title>
+    <Text>The Vertruks native to Ciuin have become uncharacteristically violent according to recent reports. MetNeb have filed an official request for inquiries to be issued and the scientific crowd has responded well. Your mission is to go to Ciuin and capture some of the Vertruks and deliver them to the Starport where they can be experimented on.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>35</ID>
+    <Title>008: Military Debrief</Title>
+    <Text>It seems some disease similar to that of Rabies has infected a small population of the Vertruks and has been causing them to behave extraordinarily violently. Thankfully, Cystal feels this is an isolated incident and that the infected can be rounded up without any damaging effects on the greater population of the creature and dealt with accordingly.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>36</ID>
+    <Title>009: Military Brief</Title>
+    <Text>Our long range scanners have detected possible movement in the Cyffoden star system, near Cariadferch. It was probably nothing but we are sending you to scan the planet for any abnormal signs just to be sure. It's been quite some time since we last focused on this star system so an expedition has been coming up despite the probably false activity.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>37</ID>
+    <Title>009: Military Debrief</Title>
+    <Text>As expected; nothing out of the ordinary to report from the orbital scan. Very peculiar indeed, but there are more important things that will come to our attention soon enough so best not to let it trouble the mind.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>38</ID>
+    <Title>010: Military Brief</Title>
+    <Text>An investigation has recently finished preliminary judicial hearings against a private cargo hauler who has been accused of smuggling drugs along with his normal haul to make a little extra cash on the side. He was allowed to continue hauling cargo up until the day of the summons but that day is today. Well, we've just received word he is to be brought back to the Starport quickly and you get to do it. He shouldn't put up a fight but don't be afraid to scare 'em should he need it.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>39</ID>
+    <Title>010: Military Debrief</Title>
+    <Text>Well, I don't think anyone could have predicted that response. It seems the hauler had made up his mind long ago that incarceration was never an option. You did what had to be done Captain, well done.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>40</ID>
+    <Title>001: Freelancer Brief</Title>
+    <Text>Looks like you finally got yourself a sponsor then eh, Cap'n? Trachwant isn't a very big corporation so they will be expecting quick results to refill their wallets I am sure. Best to take things slow at first though. It's not as easy as the simulation terminals make it out to be so your first assignment is to pilot this ship to Senlabor.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>41</ID>
+    <Title>001: Freelancer Debrief</Title>
+    <Text>Felt good didn't it? It's always exciting taking the first plunge into the depths of space. More importantly, now that we've been proven competent, we can start worrying about making an income.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>42</ID>
+    <Title>002: Freelancer Brief</Title>
+    <Text>A Kelvyn Co. employee recently won a lottery competition in which he receives a lifetime supply of Glush Cola and you've been volunteered to haul the mountain of beverages to Islay for the lucky guy. Too bad you will get a "free refuel" when you get there.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>43</ID>
+    <Title>002: Freelancer Debrief</Title>
+    <Text>What in the world is he going to do with all that Glush Cola? Build a house with it or something because it sure isn't edible. Stuff tastes like hacked up Galist phlegm. Anyway,  paycheck recieved.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>44</ID>
+    <Title>003: Freelancer Brief</Title>
+    <Text>The Workers at MetNeb are getting hungry and you've been volunteered to ship the next batch of food for the laborers. Ciuin in the Faidh system is MetNeb's premier Factory and keeping the workers happy and fed is high up on the priority list over there.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>45</ID>
+    <Title>003: Freelancer Debrief</Title>
+    <Text>Another job another pay stub. Not quite as extravagent as you pictured eh? Only the best of the best, and sponsored, get to go out into the universe and trade with the aliens of the galaxy. That's where the money is!</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>46</ID>
+    <Title>004: Freelancer Brief</Title>
+    <Text>The frozen planet Diar in the Iobath system is home to a species of thickly furred quadrupeds whose furs are quickly becoming the biggest rage amongst the upper class of Myrrdan. They are a plentiful lot, so clubbing a few and cashing in on them is still quite legal.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>47</ID>
+    <Title>004: Freelancer Debrief</Title>
+    <Text>Oh yes; fashion is truly the pinnacle of disposable income. At the rate these things are selling I wouldn't be surprised to see the wee little Qian's extinct inside the next decade. Luckily for them fads tend to fade away pretty quickly back home; otherwise they'd have no chance.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>48</ID>
+    <Title>005: Freelancer Brief</Title>
+    <Text>Trachwant are interested in looking for an asteroid at which to set up a mining routine. One of the nearer but more unknown is that of Findtha 1220 in the Enna system. You have been instructed to go to Findtha 1220 and perform a planetary scan and report back with the minerals available.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>49</ID>
+    <Title>005: Freelancer Debrief</Title>
+    <Text>The report back was thorough and well organized. Trachwant are happy with the scan's results and are passing the information through to the proper corporate channels in preparation for an executive decision on the matter. Paycheck recieved; well done.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>50</ID>
+    <Title>006: Freelancer Brief</Title>
+    <Text>A private investor is looking to represent the backbone of a major co-operation between corporations involving mining the surface of the planet Carbre which has been reported to obtain the mineral Silver. The private investor is willing to compensate the efforts to make an orbital scan of the planet to ensure such endeavors would be profitable.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>51</ID>
+    <Title>006: Freelancer Debrief</Title>
+    <Text>The planetary scan of Carbre has been sent back to the private investor for review and we have recieved our paystub from them. They must have liked what they saw then.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>52</ID>
+    <Title>007: Freelancer Brief</Title>
+    <Text>Kelvyn Co. has sent a request for a shipment of foodstuffs to be delivered to its research facilities on Islay. Pretty simple job but the pay is quite exquisite due to the extraordinary circumstances. It seems their supplies dropped excessively low due to calculative error and now need an emergency shipment.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>53</ID>
+    <Title>007: Freelancer Debrief</Title>
+    <Text>The Kelvyn Co. was quite happy to recieve the food as quick as we could get it to them. I would be willing to bet that we more or less prevented a worker's revolt at the place.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>54</ID>
+    <Title>008: Freelancer Brief</Title>
+    <Text>Fantwyr Steels has heard of your exploits and is requesting your services. It seems they intercepted the report of your scan on Findtha 1220 to their chief rival Trachwant and are ready to make you an attractive offer. There are small deposits of platinum on areas of the Asteroid and they want you to dig the majority of them up before Trachwant can send in their own mining teams. This should be one of the first steps in a very profitable direction.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>55</ID>
+    <Title>008: Freelancer Debrief</Title>
+    <Text>Fantwyr were quite impressed with the precision and speed with which we were able to extract the minerals.They have informed us that they will be in contact with us again soon.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>56</ID>
+    <Title>009: Freelancer Brief</Title>
+    <Text>The fine folks at Fantwyr Steels are looking to return the favor even more so with this new assignment. Fantwyr Sabatouers within Trachwant report that a new research has deemed the demand of Whistling Isis leaves to be at a premium for an anti-aging remedy. Fantwyr researchers know for a fact that these leaves do nothing of the sort from earlier research but are more than happy to allow their premier rivals to keep on thinking this. To cement that, they are tasking you with picking up some Whistling Isis plants from the planet Diar in the Iobath system and selling them to Trachwant.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>57</ID>
+    <Title>009: Freelancer Debrief</Title>
+    <Text>Fantwyr report that they were able to get quite the profit by selling Trachwant the Whistling Isis plants we gathered. They have given us a very generous gift in the form of monetary units.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>58</ID>
+    <Title>010: Freelancer Brief</Title>
+    <Text>Fantwyr Steels has taken a much kinder approach to dealing with the Kelvyn Co. A deal was ironed out for the purchase of a large sum of titanium from Islay. Islay is home only to a research facility so we need you to mine the Titanium and then bring it back.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>59</ID>
+    <Title>010: Freelancer Debrief</Title>
+    <Text>Once again Fantwyr is ecstatic with our efforts. The Titanium has been extracted from Islay and delievered back to Fantwyr through the Starport. Just another day at the office.</Text>
+  </TextBlob>
+</TextBlobLog>

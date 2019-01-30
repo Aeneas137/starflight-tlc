@@ -1,0 +1,95 @@
+Validating Lua scripts...
+Loading startup script...
+Initializing game...
+Starflight-The Lost Colony v2.0
+Firing up Allegro...
+al-main INFO: Allegro initialised (instance 1)
+Firing up Alfont...
+Firing up graphics system...
+Desktop resolution: 1920 x 1200
+Desktop color depth: 32
+Settings resolution: 1680,1050
+al-gfx INFO: Called set_gfx_mode(-1, 0, 0, 0, 0).
+al-gfx INFO: First call, remembering console state.
+al-gfx INFO: Closing, restoring original console state.
+al-gfx INFO: Graphic mode closed.
+al-gfx INFO: Called set_gfx_mode(1146640206, 1680, 1050, 0, 0).
+al-gfx INFO: The driver will wait for vsync.
+al-gfx INFO: set_gfx_card success for 1680x1050x32.
+Refresh rate: 59
+Creating back buffer (1024,768)...
+Detected video modes:
+32,2715,1697
+32,1920,1200
+32,1920,1080
+32,1680,1050
+32,1600,1200
+32,1600,1024
+32,1600,900
+32,1366,768
+32,1360,768
+32,1280,1024
+32,1280,960
+32,1280,800
+32,1280,768
+32,1152,864
+32,1024,768
+Firing up keyboard and mouse handlers...
+Firing up timers...
+Firing up sound system...
+Creating default fonts...
+Initialization succeeded
+Firing up game state...
+Firing up mode manager...
+Firing up data manager...
+Firing up quest manager...
+Initializing modules...
+
+Launching Startup Module: TITLESCREEN
+ModeMgr: initializing module 'TITLESCREEN'
+ModeMgr: module 'TITLESCREEN' Init(): SUCCESS
+
+Launching game loop...
+ModeMgr: closing module 'TITLESCREEN'
+ModeMgr: module 'TITLESCREEN' closed
+
+ModeMgr: initializing module 'SETTINGS'
+  ModuleSettings Initialize
+ModeMgr: module 'SETTINGS' Init(): SUCCESS
+ModeMgr: closing module 'SETTINGS'
+*** ModuleSettings closing
+Unhandled exception in ModuleSettings::Close
+ModeMgr: module 'SETTINGS' closed
+
+ModeMgr: initializing module 'TITLESCREEN'
+ModeMgr: module 'TITLESCREEN' Init(): SUCCESS
+[shutting down]
+Bailing...
+*** DestroyGame
+[DESTROYING MODULES]
+  Destroying BANK
+  Destroying CANTINA
+  Destroying CAPTAINCREATION
+  Destroying CAPTAINSLOUNGE
+  Destroying CREDITS
+  Destroying CREWHIRE
+  Destroying ENCOUNTER
+  Destroying GAMEOVER
+  Destroying HYPERSPACE
+  Destroying INTERPLANETARY
+  Module MILITARYOPS was previously deleted (object assigned 3x)
+  Destroying PLANETORBIT
+  Destroying PLANETSURFACE
+  Module RESEARCHLAB was previously deleted (object assigned 3x)
+  Destroying SETTINGS
+  Destroying SHIPCONFIG
+  Destroying STARPORT
+  Destroying STARTUP
+  Destroying TITLESCREEN
+  Destroying TRADEDEPOT
+
+Shutdown completed.
+al-gfx INFO: Called set_gfx_mode(-1, 0, 0, 0, 0).
+al-gfx INFO: Closing graphics driver (68712F70) DirectDraw window.
+al-gfx INFO: Closing, restoring original console state.
+al-gfx INFO: Graphic mode closed.

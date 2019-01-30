@@ -1,0 +1,1468 @@
+﻿<QuestLog>
+  <Quest>
+    <ID>0</ID>
+    <State>0</State>
+    <Title>Maiden Voyage</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>1</Type>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="Interact">
+        <InteractID>0</InteractID>
+        <InteractDescription>Deliver Basic Robots and Automatons to Kelvyn Co.</InteractDescription>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+      <Starting Type="Item">
+        <ItemID>148</ItemID>
+        <Amount>20</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>500</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>0</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>1</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>1</ID>
+    <State>0</State>
+    <Title>A Corporate Thing</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>1</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>0</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="Interact">
+        <InteractID>1</InteractID>
+        <InteractDescription>Deliver the Titanium to the Metneb Factory</InteractDescription>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+      <Starting Type="Item">
+        <ItemID>40</ItemID>
+        <Amount>20</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>900</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>2</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>3</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>2</ID>
+    <State>0</State>
+    <Title>Vertruks</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>1</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>0</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="CollectItem">
+        <ItemID>59</ItemID>
+        <Amount>10</Amount>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>1300</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>4</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>5</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>3</ID>
+    <State>0</State>
+    <Title>Explorer Reporting</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>1</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>0</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="PlanetScan">
+        <StarID>75</StarID>
+        <PlanetID>445</PlanetID>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>1700</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>6</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>7</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents />
+  </Quest>
+  <Quest>
+    <ID>4</ID>
+    <State>0</State>
+    <Title>Furry Furries</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>1</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>2</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="CollectItem">
+        <ItemID>65</ItemID>
+        <Amount>15</Amount>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>2200</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>8</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>9</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>5</ID>
+    <State>0</State>
+    <Title>Something in the Air</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>1</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>4</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="PlanetScan">
+        <StarID>71</StarID>
+        <PlanetID>70</PlanetID>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>2600</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>10</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>11</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents />
+  </Quest>
+  <Quest>
+    <ID>6</ID>
+    <State>0</State>
+    <Title>Upgrade Complete</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>1</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>4</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="Interact">
+        <InteractID>6</InteractID>
+        <InteractDescription>Deliver Drill Parts to the mine on De Dannan 1876</InteractDescription>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+      <Starting Type="Item">
+        <ItemID>183</ItemID>
+        <Amount>60</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>3100</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>12</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>13</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>7</ID>
+    <State>0</State>
+    <Title>Endless Fields</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>1</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>5</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="CollectItem">
+        <ItemID>185</ItemID>
+        <Amount>20</Amount>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>3300</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>14</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>15</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>Q_LoadQuestbyID(7);
+if (L_GetPlanetID() == 8 and not(Q_CheckRequirement(0))) then
+    L_LoadScript("data//planetsurface//basicLifeForm.lua")
+    InitImagetoLoad = "data//planetsurface//C_Swift_Galists.tga";
+    InitAngleOffset = 0;
+    InitScale = 1;
+    InitFaceAngle = 0;
+    InitColHalfWidth = 11;
+    InitColHalfHeight = 11;
+    InitObjectType = 0;
+    InitPortraitName = "";
+    InitPortraitImage = "";  
+    for i=1,25,1 do  
+        id = L_CreateNewPSObyItemID("basicLifeForm", 185);    
+    end
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>8</ID>
+    <State>0</State>
+    <Title>Firestorm</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>1</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>7</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="PlanetScan">
+        <StarID>32</StarID>
+        <PlanetID>29</PlanetID>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>3500</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>16</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>17</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents />
+  </Quest>
+  <Quest>
+    <ID>9</ID>
+    <State>0</State>
+    <Title>Goods from Nemed</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>1</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>8</QuestID>
+        <QuestID>6</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="CollectItem">
+        <ItemID>52</ItemID>
+        <Amount>60</Amount>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>3600</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>18</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>19</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>Q_LoadQuestbyID(9);
+if (L_GetPlanetID() == 440 and not(Q_CheckRequirement(0))) then
+    L_LoadScript("data//planetsurface//mineral.lua")
+    for i=1,25,1 do  
+        id = L_CreateNewPSObyItemID("mineral", 52);    
+    end
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>10</ID>
+    <State>0</State>
+    <Title>Battlecruiser Operational</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>4</Type>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="OrbitPlanet">
+        <PlanetID>439</PlanetID>
+        <StarID>33</StarID>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>400</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>20</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>21</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents />
+  </Quest>
+  <Quest>
+    <ID>11</ID>
+    <State>0</State>
+    <Title>First Test</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>4</Type>
+      </Requirement>
+      <Requirement Type="TotalQuestsCompleted">
+        <TotalQuests>999</TotalQuests>
+      </Requirement>
+    </Prerequisites>
+    <Requirements />
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>800</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>22</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>23</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents />
+  </Quest>
+  <Quest>
+    <ID>12</ID>
+    <State>0</State>
+    <Title>Frostbite</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>4</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>10</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="KillAnimal">
+        <AnimalID>56</AnimalID>
+        <Amount>10</Amount>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>1000</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>24</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>25</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>Q_LoadQuestbyID(12);
+if (L_GetPlanetID() == 21 and not(Q_CheckRequirement(0))) then
+    L_LoadScript("data//planetsurface//basicLifeForm.lua")
+    InitImagetoLoad = "data//planetsurface//C_2Leg_Small.tga";
+    InitAngleOffset = 0;
+    InitScale = 1;
+    InitFaceAngle = 0;
+    InitColHalfWidth = 11;
+    InitColHalfHeight = 11;
+    InitObjectType = 0;
+    InitPortraitName = "";
+    InitPortraitImage = "";  
+    for i=1,20,1 do  
+        id = L_CreateNewPSObyItemID("basicLifeForm", 56);    
+    end
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>13</ID>
+    <State>0</State>
+    <Title>Afrywiog</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>4</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>10</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="Interact">
+        <InteractID>13</InteractID>
+        <InteractDescription>Deliver the Prisoners to Diar-Macht, Iobáth</InteractDescription>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+      <Starting Type="Item">
+        <ItemID>186</ItemID>
+        <Amount>60</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>1300</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>26</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>27</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>function AfrywiogPrisonOnEvent()  
+    if (event == 0) then  
+        x,y = L_GetOffsetPosition()
+        x2,y2 = L_GetPlayerTVPosition();
+        if (CheckDistance(x,y,x2,y2) &lt; 150)  then 
+            Q_LoadQuestbyID(13);
+            if (not(Q_CheckRequirement(0))) then
+                if (L_CheckInventoryFor( 186, 60)) then
+                    L_PostMessage(255, 0, 0,"You delivered the Prisoners. Return to the Starport for debriefing.");  
+                    L_Interacted(13); 
+                    L_RemoveItemFromInventory( 186, 60);
+                else
+                    L_PostMessage(0, 0, 255,"You don't have the 60 Prisoners you are suppose to deliver!");  
+                end
+            else
+                L_PostMessage(0, 0, 255,"You have already delivered the 60 Prisoners!");  
+            end
+        else
+             L_PostMessage(0, 0, 255,"You aren't close enough to deliver anything!");  
+        end
+    end 
+end
+
+
+
+function AfrywiogPrisonGetActions()  
+    scanned = L_IsScanned();
+    if (scanned) then 
+        L_SetActions("Deliver"); 
+    end 
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>14</ID>
+    <State>0</State>
+    <Title>Seek and Destroy</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>4</Type>
+      </Requirement>
+      <Requirement Type="TotalQuestsCompleted">
+        <TotalQuests>999</TotalQuests>
+      </Requirement>
+    </Prerequisites>
+    <Requirements />
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>1600</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>28</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>29</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents />
+  </Quest>
+  <Quest>
+    <ID>15</ID>
+    <State>0</State>
+    <Title>Planet Buster</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>4</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>10</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="Interact">
+        <InteractID>15</InteractID>
+        <InteractDescription>Deliver the IPBM parts to Bréo, Beothach</InteractDescription>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+      <Starting Type="Item">
+        <ItemID>188</ItemID>
+        <Amount>60</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>2000</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>30</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>31</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>function MilitaryOutpostOnEvent()  
+    if (event == 0) then  
+        x,y = L_GetOffsetPosition()
+        x2,y2 = L_GetPlayerTVPosition();
+        if (CheckDistance(x,y,x2,y2) &lt; 150)  then 
+            Q_LoadQuestbyID(15);
+            if (not(Q_CheckRequirement(0))) then
+                if (L_CheckInventoryFor( 188, 60)) then
+                    L_PostMessage(255, 0, 0,"You delivered the IPBM Parts. Return to the Starport for debriefing.");  
+                    L_Interacted(15); 
+                    L_RemoveItemFromInventory( 188, 60);
+                else
+                    L_PostMessage(0, 0, 255,"You don't have the 60 IPBM Parts you are suppose to deliver!");  
+                end
+            else
+                L_PostMessage(0, 0, 255,"You have already delivered the 60 IPBM Parts!");  
+            end
+        else
+             L_PostMessage(0, 0, 255,"You aren't close enough to deliver anything!");  
+        end
+    end 
+end
+
+
+
+function MilitaryOutpostGetActions()  
+    scanned = L_IsScanned();
+    if (scanned) then 
+        L_SetActions("Deliver"); 
+    end 
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>16</ID>
+    <State>0</State>
+    <Title>Supply Drop</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>4</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>12</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="Interact">
+        <InteractID>16</InteractID>
+        <InteractDescription>Deliver the Titanium to Bréo in the Beothach System</InteractDescription>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+      <Starting Type="Item">
+        <ItemID>40</ItemID>
+        <Amount>60</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>2500</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>32</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>33</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>function MilitaryOutpostOnEvent()  
+    if (event == 0) then  
+        x,y = L_GetOffsetPosition()
+        x2,y2 = L_GetPlayerTVPosition();
+        if (CheckDistance(x,y,x2,y2) &lt; 150)  then 
+            Q_LoadQuestbyID(16);
+            if (not(Q_CheckRequirement(0))) then
+                if (L_CheckInventoryFor( 40, 60)) then
+                    L_PostMessage(255, 0, 0,"You delivered the Titanium. Return to the Starport for debriefing.");  
+                    L_Interacted(16); 
+                    L_RemoveItemFromInventory( 40, 60);
+                else
+                    L_PostMessage(0, 0, 255,"You don't have the 60 Titanium you are suppose to deliver!");  
+                end
+            else
+                L_PostMessage(0, 0, 255,"You have already delivered the 60 Titanium!");  
+            end
+        else
+             L_PostMessage(0, 0, 255,"You aren't close enough to deliver anything!");  
+        end
+    end 
+end
+
+
+
+function MilitaryOutpostGetActions()  
+    scanned = L_IsScanned();
+    if (scanned) then 
+        L_SetActions("Deliver"); 
+    end 
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>17</ID>
+    <State>0</State>
+    <Title>Violent Vertruks</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>4</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>13</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="CollectItem">
+        <ItemID>187</ItemID>
+        <Amount>20</Amount>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>2900</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>34</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>35</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>Q_LoadQuestbyID(2);
+if (L_GetPlanetID() == 26 and not(Q_CheckRequirement(0))) then
+    L_LoadScript("data//planetsurface//basicLifeForm.lua")
+    InitImagetoLoad = "data//planetsurface//C_Rabid_Vertruk.tga";
+    InitAngleOffset = 0;
+    InitScale = 1;
+    InitFaceAngle = 0;
+    InitColHalfWidth = 13;
+    InitColHalfHeight = 13;
+    InitObjectType = 0;
+    InitPortraitName = "T_Rabid_Vertruk.tga";
+    InitPortraitImage = "data//planetsurface//T_Rabid_Vertruk.tga";  
+    for i=1,35,1 do  
+        id = L_CreateNewPSObyItemID("basicLifeForm", 187);    
+    end
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>18</ID>
+    <State>0</State>
+    <Title>Reconnaissance</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>4</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>15</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="PlanetScan">
+        <StarID>41</StarID>
+        <PlanetID>449</PlanetID>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>3400</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>36</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>37</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents />
+  </Quest>
+  <Quest>
+    <ID>19</ID>
+    <State>0</State>
+    <Title>Violators will be Towed</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>4</Type>
+      </Requirement>
+      <Requirement Type="TotalQuestsCompleted">
+        <TotalQuests>999</TotalQuests>
+      </Requirement>
+    </Prerequisites>
+    <Requirements />
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>3900</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>38</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>39</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents />
+  </Quest>
+  <Quest>
+    <ID>20</ID>
+    <State>0</State>
+    <Title>Full Steam Ahead</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>2</Type>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="OrbitPlanet">
+        <PlanetID>9</PlanetID>
+        <StarID>2</StarID>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>300</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>40</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>41</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents />
+  </Quest>
+  <Quest>
+    <ID>21</ID>
+    <State>0</State>
+    <Title>Glush Lush</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>2</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>20</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="Interact">
+        <InteractID>21</InteractID>
+        <InteractDescription>Deliver Glush Cola to Islay, Sidhichean</InteractDescription>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+      <Starting Type="Item">
+        <ItemID>142</ItemID>
+        <Amount>100</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>600</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>42</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>43</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>function KelvynCoOnEvent()  
+    if (event == 0) then
+        x,y = L_GetOffsetPosition()
+        x2,y2 = L_GetPlayerTVPosition();
+        if (CheckDistance(x,y,x2,y2) &lt; 150)  then
+            Q_LoadQuestbyID(21);
+            if (not(Q_CheckRequirement(0))) then
+                if (L_CheckInventoryFor( 142, 100)) then
+                    L_PostMessage(255, 0, 0,"You delivered the Glush Cola. Return to the Starport for debriefing.");  
+                    L_Interacted(21); 
+                    L_RemoveItemFromInventory( 142, 100);
+                else
+                    L_PostMessage(0, 0, 255,"You don't have the 100 Glush Cola  to deliver!");  
+                end
+            else
+                 L_PostMessage(0, 0, 255,"You have already delivered the 100 Glush Cola!");  
+            end
+        else
+             L_PostMessage(0, 0, 255,"You aren't close enough to deliver anything!");  
+        end 
+    end
+end
+
+
+
+
+
+function KelvynCoGetActions() 
+    scanned = L_IsScanned(); 
+    if (scanned) then 
+        L_SetActions("Deliver"); 
+    end 
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>22</ID>
+    <State>0</State>
+    <Title>Food for Thought</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>2</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>20</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="Interact">
+        <InteractID>22</InteractID>
+        <InteractDescription>Deliver the Synthetic Foods and Chemicals to Ciuin, Faidh</InteractDescription>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+      <Starting Type="Item">
+        <ItemID>133</ItemID>
+        <Amount>100</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>900</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>44</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>45</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>function MetnebFactoryOnEvent()  
+    if (event == 0) then  
+        x,y = L_GetOffsetPosition()
+        x2,y2 = L_GetPlayerTVPosition();
+        if (CheckDistance(x,y,x2,y2) &lt; 150)  then 
+            Q_LoadQuestbyID(22);
+            if (not(Q_CheckRequirement(0))) then
+                if (L_CheckInventoryFor( 133, 100)) then
+                    L_PostMessage(255, 0, 0,"You delivered the Synthetic Foods and Chemicals. Return to the Starport for debriefing.");  
+                    L_Interacted(22); 
+                    L_RemoveItemFromInventory( 133, 100);
+                else
+                    L_PostMessage(0, 0, 255,"You don't have the 100 Synthetic Foods and Chemicals you are suppose to deliver!");  
+                end
+            else
+                L_PostMessage(0, 0, 255,"You have already delivered the 100 Synthetic Foods and Chemicals!");  
+            end
+        else
+             L_PostMessage(0, 0, 255,"You aren't close enough to deliver anything!");  
+        end
+    end 
+end
+
+
+
+
+
+function MetnebFactoryGetActions()  
+    scanned = L_IsScanned();
+    if (scanned) then 
+        L_SetActions("Deliver"); 
+    end 
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>23</ID>
+    <State>0</State>
+    <Title>Furry Furries Indeed</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>2</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>20</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="CollectItem">
+        <ItemID>65</ItemID>
+        <Amount>20</Amount>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>1400</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>46</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>47</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>Q_LoadQuestbyID(23);
+if (L_GetPlanetID() == 441 and not(Q_CheckRequirement(0))) then
+    L_LoadScript("data//planetsurface//basicLifeForm.lua")
+    InitImagetoLoad = "data//planetsurface//C_Bird_Yellow.tga";
+    InitAngleOffset = 0;
+    InitScale = 1;
+    InitFaceAngle = 0;
+    InitColHalfWidth = 17;
+    InitColHalfHeight = 17;
+    InitObjectType = 0;
+    InitPortraitName = "";
+    InitPortraitImage = "";  
+    for i=1,30,1 do  
+        id = L_CreateNewPSObyItemID("basicLifeForm", 65);    
+    end
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>24</ID>
+    <State>0</State>
+    <Title>Asteroid Ahoy</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>2</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>21</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="PlanetScan">
+        <StarID>74</StarID>
+        <PlanetID>443</PlanetID>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>1900</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>48</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>49</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents />
+  </Quest>
+  <Quest>
+    <ID>25</ID>
+    <State>0</State>
+    <Title>The Silver Lining</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>2</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>23</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="PlanetScan">
+        <StarID>72</StarID>
+        <PlanetID>74</PlanetID>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>2350</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>50</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>51</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents />
+  </Quest>
+  <Quest>
+    <ID>26</ID>
+    <State>0</State>
+    <Title>Calculative Error</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>2</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>22</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="Interact">
+        <InteractID>26</InteractID>
+        <InteractDescription>Deliver Synthetic Foods and Chemicals to Islay, Sidhichean</InteractDescription>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+      <Starting Type="Item">
+        <ItemID>133</ItemID>
+        <Amount>100</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>2300</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>52</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>53</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>function KelvynCoOnEvent()  
+    if (event == 0) then
+        x,y = L_GetOffsetPosition()
+        x2,y2 = L_GetPlayerTVPosition();
+        if (CheckDistance(x,y,x2,y2) &lt; 150)  then
+            Q_LoadQuestbyID(26);
+            if (not(Q_CheckRequirement(0))) then
+                if (L_CheckInventoryFor( 133, 100)) then
+                    L_PostMessage(255, 0, 0,"You delivered the Synthetic Foods and Chemicals. Return to the Starport for debriefing.");  
+                    L_Interacted(26); 
+                    L_RemoveItemFromInventory( 133, 100);
+                else
+                    L_PostMessage(0, 0, 255,"You don't have the 100 Synthetic Foods and Chemicals  to deliver!");  
+                end
+            else
+                 L_PostMessage(0, 0, 255,"You have already delivered the 100 Synthetic Foods and Chemicals!");  
+            end
+        else
+             L_PostMessage(0, 0, 255,"You aren't close enough to deliver anything!");  
+        end 
+    end
+end
+
+
+
+
+
+function KelvynCoGetActions() 
+    scanned = L_IsScanned(); 
+    if (scanned) then 
+        L_SetActions("Deliver"); 
+    end 
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>27</ID>
+    <State>0</State>
+    <Title>Corporate Backing</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>2</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>24</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="CollectItem">
+        <ItemID>48</ItemID>
+        <Amount>100</Amount>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>3100</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>54</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>55</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>Q_LoadQuestbyID(27);
+if (L_GetPlanetID() == 443 and not(Q_CheckRequirement(0))) then
+    L_LoadScript("data//planetsurface//mineral.lua")
+    for i=1,25,1 do  
+        id = L_CreateNewPSObyItemID("mineral", 48);    
+    end
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>28</ID>
+    <State>0</State>
+    <Title>A Beautiful Friendship</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>2</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>26</QuestID>
+        <QuestID>27</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="CollectItem">
+        <ItemID>60</ItemID>
+        <Amount>30</Amount>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>3700</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>56</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>57</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>Q_LoadQuestbyID(28);
+if (L_GetPlanetID() == 441 and not(Q_CheckRequirement(0))) then
+    L_LoadScript("data//planetsurface//basicLifeForm.lua")
+    InitImagetoLoad = "data//planetsurface//P_Plant_Small.tga";
+    InitAngleOffset = 0;
+    InitScale = 1;
+    InitFaceAngle = 0;
+    InitColHalfWidth = 15;
+    InitColHalfHeight = 15;
+    InitObjectType = 0;
+    InitPortraitName = "";
+    InitPortraitImage = "";  
+    for i=1,40,1 do  
+        id = L_CreateNewPSObyItemID("basicLifeForm", 60);    
+    end
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+  <Quest>
+    <ID>29</ID>
+    <State>0</State>
+    <Title>A Cleaner Bargain</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>2</Type>
+      </Requirement>
+      <Requirement Type="QuestDependency">
+        <QuestID>28</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="CollectItem">
+        <ItemID>40</ItemID>
+        <Amount>80</Amount>
+      </Requirement>
+    </Requirements>
+    <Startings>
+      <Starting Type="Cash">
+        <Amount>0</Amount>
+      </Starting>
+    </Startings>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>3700</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>58</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>59</ID>
+      </TextBlob>
+    </TextLog>
+    <PlanetSurfaceEvents>
+      <Event>Q_LoadQuestbyID(29);
+if (L_GetPlanetID() == 2 and not(Q_CheckRequirement(0))) then
+    L_LoadScript("data//planetsurface//mineral.lua")
+    for i=1,25,1 do  
+        id = L_CreateNewPSObyItemID("mineral", 40);    
+    end
+end</Event>
+    </PlanetSurfaceEvents>
+  </Quest>
+</QuestLog>

@@ -1,0 +1,7008 @@
+<?xml version="1.0" standalone="yes"?>
+<galaxy>
+  <star>
+    <id>1</id>
+    <name>Mac Howg</name>
+    <x>42</x>
+    <y>53</y>
+    <spectralclass>B</spectralclass>
+    <color>LT BLUE</color>
+    <temperature>20138</temperature>
+    <mass>7</mass>
+    <radius>4.2</radius>
+    <luminosity>21567</luminosity>
+  </star>
+  <star>
+    <id>2</id>
+    <name>Sidhichean</name>
+    <x>125</x>
+    <y>105</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5491</temperature>
+    <mass>0.85</mass>
+    <radius>1.07</radius>
+    <luminosity>1.49</luminosity>
+  </star>
+  <star>
+    <id>5</id>
+    <name>Fingola</name>
+    <x>18</x>
+    <y>213</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>8924</temperature>
+    <mass>3</mass>
+    <radius>2.7</radius>
+    <luminosity>23</luminosity>
+  </star>
+  <star>
+    <id>6</id>
+    <name>Lairgnen</name>
+    <x>19</x>
+    <y>209</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>9537</temperature>
+    <mass>3</mass>
+    <radius>2.7</radius>
+    <luminosity>29</luminosity>
+  </star>
+  <star>
+    <id>7</id>
+    <name>Cahir</name>
+    <x>30</x>
+    <y>137</y>
+    <spectralclass>B</spectralclass>
+    <color>LT BLUE</color>
+    <temperature>27314</temperature>
+    <mass>8</mass>
+    <radius>6.6</radius>
+    <luminosity>38231</luminosity>
+  </star>
+  <star>
+    <id>8</id>
+    <name>Ethniu</name>
+    <x>170</x>
+    <y>181</y>
+    <spectralclass>B</spectralclass>
+    <color>LT BLUE</color>
+    <temperature>25744</temperature>
+    <mass>8</mass>
+    <radius>6.7</radius>
+    <luminosity>25829</luminosity>
+  </star>
+  <star>
+    <id>9</id>
+    <name>Drnid</name>
+    <x>181</x>
+    <y>49</y>
+    <spectralclass>B</spectralclass>
+    <color>LT BLUE</color>
+    <temperature>10562</temperature>
+    <mass>8</mass>
+    <radius>5.7</radius>
+    <luminosity>13822</luminosity>
+  </star>
+  <star>
+    <id>10</id>
+    <name>Lairgnen</name>
+    <x>70</x>
+    <y>142</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5198</temperature>
+    <mass>0.98</mass>
+    <radius>1.09</radius>
+    <luminosity>0.99</luminosity>
+  </star>
+  <star>
+    <id>11</id>
+    <name>Ogma</name>
+    <x>114</x>
+    <y>189</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>6002</temperature>
+    <mass>0.14</mass>
+    <radius>1.4</radius>
+    <luminosity>3</luminosity>
+  </star>
+  <star>
+    <id>12</id>
+    <name>Fodla</name>
+    <x>109</x>
+    <y>55</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>9178</temperature>
+    <mass>3</mass>
+    <radius>2.2</radius>
+    <luminosity>19</luminosity>
+  </star>
+  <star>
+    <id>13</id>
+    <name>Deoch</name>
+    <x>224</x>
+    <y>121</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2545</temperature>
+    <mass>0.08</mass>
+    <radius>0.35</radius>
+    <luminosity>0.075</luminosity>
+  </star>
+  <star>
+    <id>14</id>
+    <name>Bodb</name>
+    <x>224</x>
+    <y>208</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5664</temperature>
+    <mass>1.08</mass>
+    <radius>1</radius>
+    <luminosity>0.74</luminosity>
+  </star>
+  <star>
+    <id>15</id>
+    <name>Oifa</name>
+    <x>23</x>
+    <y>23</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>7168</temperature>
+    <mass>0.14</mass>
+    <radius>1.6</radius>
+    <luminosity>2.2</luminosity>
+  </star>
+  <star>
+    <id>16</id>
+    <name>Danand</name>
+    <x>238</x>
+    <y>14</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2373</temperature>
+    <mass>0.08</mass>
+    <radius>0.35</radius>
+    <luminosity>0.035</luminosity>
+  </star>
+  <star>
+    <id>17</id>
+    <name>Caintigern</name>
+    <x>106</x>
+    <y>18</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>4584</temperature>
+    <mass>0.82</mass>
+    <radius>0.82</radius>
+    <luminosity>0.38</luminosity>
+  </star>
+  <star>
+    <id>18</id>
+    <name>Airmed</name>
+    <x>84</x>
+    <y>202</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>8768</temperature>
+    <mass>2</mass>
+    <radius>2.6</radius>
+    <luminosity>15</luminosity>
+  </star>
+  <star>
+    <id>19</id>
+    <name>Allod</name>
+    <x>181</x>
+    <y>190</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>6212</temperature>
+    <mass>0.15</mass>
+    <radius>1.6</radius>
+    <luminosity>2.7</luminosity>
+  </star>
+  <star>
+    <id>20</id>
+    <name>Jurlagh Duane</name>
+    <x>16</x>
+    <y>70</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2490</temperature>
+    <mass>0.08</mass>
+    <radius>0.21</radius>
+    <luminosity>0.038</luminosity>
+  </star>
+  <star>
+    <id>21</id>
+    <name>Cian</name>
+    <x>25</x>
+    <y>205</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>8136</temperature>
+    <mass>2</mass>
+    <radius>2.3</radius>
+    <luminosity>26</luminosity>
+  </star>
+  <star>
+    <id>22</id>
+    <name>Miach</name>
+    <x>83</x>
+    <y>197</y>
+    <spectralclass>B</spectralclass>
+    <color>LT BLUE</color>
+    <temperature>22341</temperature>
+    <mass>11</mass>
+    <radius>4.2</radius>
+    <luminosity>10760</luminosity>
+  </star>
+  <star>
+    <id>23</id>
+    <name>Delbaeth</name>
+    <x>107</x>
+    <y>183</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5982</temperature>
+    <mass>0.92</mass>
+    <radius>0.96</radius>
+    <luminosity>1.5</luminosity>
+  </star>
+  <star>
+    <id>24</id>
+    <name>Esar Brec</name>
+    <x>39</x>
+    <y>134</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5469</temperature>
+    <mass>0.94</mass>
+    <radius>0.99</radius>
+    <luminosity>0.67</luminosity>
+  </star>
+  <star>
+    <id>25</id>
+    <name>Ove</name>
+    <x>54</x>
+    <y>134</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>4554</temperature>
+    <mass>0.74</mass>
+    <radius>0.78</radius>
+    <luminosity>0.28</luminosity>
+  </star>
+  <star>
+    <id>26</id>
+    <name>Faidh</name>
+    <x>123</x>
+    <y>102</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>7023</temperature>
+    <mass>0.14</mass>
+    <radius>1.6</radius>
+    <luminosity>3.1</luminosity>
+  </star>
+  <star>
+    <id>27</id>
+    <name>Fiochra</name>
+    <x>201</x>
+    <y>192</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5706</temperature>
+    <mass>1.02</mass>
+    <radius>0.98</radius>
+    <luminosity>0.75</luminosity>
+  </star>
+  <star>
+    <id>28</id>
+    <name>Inchegeela</name>
+    <x>59</x>
+    <y>210</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2929</temperature>
+    <mass>0.06</mass>
+    <radius>0.51</radius>
+    <luminosity>0.048</luminosity>
+  </star>
+  <star>
+    <id>29</id>
+    <name>Dagda</name>
+    <x>228</x>
+    <y>192</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>3586</temperature>
+    <mass>0.73</mass>
+    <radius>0.67</radius>
+    <luminosity>0.23</luminosity>
+  </star>
+  <star>
+    <id>30</id>
+    <name>Fiacha</name>
+    <x>219</x>
+    <y>179</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2027</temperature>
+    <mass>0.07</mass>
+    <radius>0.18</radius>
+    <luminosity>0.009</luminosity>
+  </star>
+  <star>
+    <id>31</id>
+    <name>Beothach</name>
+    <x>127</x>
+    <y>102</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5201</temperature>
+    <mass>0.88</mass>
+    <radius>1.02</radius>
+    <luminosity>1.03</luminosity>
+  </star>
+  <star>
+    <id>32</id>
+    <name>Iarbonel</name>
+    <x>125</x>
+    <y>99</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>4087</temperature>
+    <mass>0.79</mass>
+    <radius>0.77</radius>
+    <luminosity>0.18</luminosity>
+  </star>
+  <star>
+    <id>33</id>
+    <name>Nemed</name>
+    <x>125</x>
+    <y>96</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2907</temperature>
+    <mass>0.08</mass>
+    <radius>0.61</radius>
+    <luminosity>0.065</luminosity>
+  </star>
+  <star>
+    <id>34</id>
+    <name>Breothigernd</name>
+    <x>118</x>
+    <y>47</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>9376</temperature>
+    <mass>2</mass>
+    <radius>2.2</radius>
+    <luminosity>15</luminosity>
+  </star>
+  <star>
+    <id>35</id>
+    <name>Credne</name>
+    <x>245</x>
+    <y>11</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5008</temperature>
+    <mass>1.03</mass>
+    <radius>0.93</radius>
+    <luminosity>1.43</luminosity>
+  </star>
+  <star>
+    <id>36</id>
+    <name>Boibniu</name>
+    <x>231</x>
+    <y>17</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2051</temperature>
+    <mass>0.08</mass>
+    <radius>0.2</radius>
+    <luminosity>0.049</luminosity>
+  </star>
+  <star>
+    <id>37</id>
+    <name>Cu</name>
+    <x>47</x>
+    <y>163</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>6213</temperature>
+    <mass>0.16</mass>
+    <radius>1.4</radius>
+    <luminosity>3</luminosity>
+  </star>
+  <star>
+    <id>38</id>
+    <name>Boann</name>
+    <x>115</x>
+    <y>184</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5068</temperature>
+    <mass>1.1</mass>
+    <radius>0.92</radius>
+    <luminosity>0.74</luminosity>
+  </star>
+  <star>
+    <id>39</id>
+    <name>Macha</name>
+    <x>85</x>
+    <y>92</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5223</temperature>
+    <mass>0.88</mass>
+    <radius>0.85</radius>
+    <luminosity>1.17</luminosity>
+  </star>
+  <star>
+    <id>40</id>
+    <name>Etarlam</name>
+    <x>172</x>
+    <y>118</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>6070</temperature>
+    <mass>0.15</mass>
+    <radius>1.3</radius>
+    <luminosity>3.5</luminosity>
+  </star>
+  <star>
+    <id>41</id>
+    <name>Cyffoden</name>
+    <x>116</x>
+    <y>142</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>4811</temperature>
+    <mass>0.8</mass>
+    <radius>0.83</radius>
+    <luminosity>0.2</luminosity>
+  </star>
+  <star>
+    <id>42</id>
+    <name>Lusmore</name>
+    <x>227</x>
+    <y>73</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>3998</temperature>
+    <mass>0.74</mass>
+    <radius>0.72</radius>
+    <luminosity>0.12</luminosity>
+  </star>
+  <star>
+    <id>43</id>
+    <name>MacCecht</name>
+    <x>235</x>
+    <y>74</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>6401</temperature>
+    <mass>0.13</mass>
+    <radius>1.3</radius>
+    <luminosity>3.6</luminosity>
+  </star>
+  <star>
+    <id>44</id>
+    <name>Magmor</name>
+    <x>18</x>
+    <y>117</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>4492</temperature>
+    <mass>0.75</mass>
+    <radius>0.83</radius>
+    <luminosity>0.33</luminosity>
+  </star>
+  <star>
+    <id>45</id>
+    <name>Fir Bolg</name>
+    <x>17</x>
+    <y>93</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2853</temperature>
+    <mass>0.06</mass>
+    <radius>0.32</radius>
+    <luminosity>0.058</luminosity>
+  </star>
+  <star>
+    <id>46</id>
+    <name>Ernmas</name>
+    <x>8</x>
+    <y>93</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2963</temperature>
+    <mass>0.06</mass>
+    <radius>0.58</radius>
+    <luminosity>0.039</luminosity>
+  </star>
+  <star>
+    <id>47</id>
+    <name>Elatha</name>
+    <x>156</x>
+    <y>217</y>
+    <spectralclass>B</spectralclass>
+    <color>LT BLUE</color>
+    <temperature>12741</temperature>
+    <mass>15</mass>
+    <radius>3.2</radius>
+    <luminosity>35904</luminosity>
+  </star>
+  <star>
+    <id>48</id>
+    <name>Tuireann</name>
+    <x>122</x>
+    <y>184</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>9051</temperature>
+    <mass>2</mass>
+    <radius>2.2</radius>
+    <luminosity>49</luminosity>
+  </star>
+  <star>
+    <id>49</id>
+    <name>Bec-Felmas</name>
+    <x>16</x>
+    <y>183</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>3087</temperature>
+    <mass>0.07</mass>
+    <radius>0.54</radius>
+    <luminosity>0.014</luminosity>
+  </star>
+  <star>
+    <id>50</id>
+    <name>Lir</name>
+    <x>175</x>
+    <y>181</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>3138</temperature>
+    <mass>0.05</mass>
+    <radius>0.55</radius>
+    <luminosity>0.02</luminosity>
+  </star>
+  <star>
+    <id>51</id>
+    <name>Manannan</name>
+    <x>181</x>
+    <y>185</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>8630</temperature>
+    <mass>3</mass>
+    <radius>2.5</radius>
+    <luminosity>39</luminosity>
+  </star>
+  <star>
+    <id>52</id>
+    <name>Brigid</name>
+    <x>245</x>
+    <y>109</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>6455</temperature>
+    <mass>0.11</mass>
+    <radius>1.6</radius>
+    <luminosity>3.1</luminosity>
+  </star>
+  <star>
+    <id>53</id>
+    <name>Midir</name>
+    <x>201</x>
+    <y>105</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>4675</temperature>
+    <mass>0.68</mass>
+    <radius>0.76</radius>
+    <luminosity>0.39</luminosity>
+  </star>
+  <star>
+    <id>54</id>
+    <name>Aengus</name>
+    <x>241</x>
+    <y>125</y>
+    <spectralclass>B</spectralclass>
+    <color>LT BLUE</color>
+    <temperature>19563</temperature>
+    <mass>13</mass>
+    <radius>8</radius>
+    <luminosity>51029</luminosity>
+  </star>
+  <star>
+    <id>55</id>
+    <name>Briann</name>
+    <x>235</x>
+    <y>65</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>7116</temperature>
+    <mass>0.11</mass>
+    <radius>1.6</radius>
+    <luminosity>2.8</luminosity>
+  </star>
+  <star>
+    <id>56</id>
+    <name>Iuchar</name>
+    <x>215</x>
+    <y>44</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>9422</temperature>
+    <mass>3</mass>
+    <radius>2.2</radius>
+    <luminosity>34</luminosity>
+  </star>
+  <star>
+    <id>57</id>
+    <name>Ollam</name>
+    <x>180</x>
+    <y>7</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5118</temperature>
+    <mass>0.99</mass>
+    <radius>0.94</radius>
+    <luminosity>1.44</luminosity>
+  </star>
+  <star>
+    <id>58</id>
+    <name>Aoi</name>
+    <x>167</x>
+    <y>16</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2804</temperature>
+    <mass>0.06</mass>
+    <radius>0.21</radius>
+    <luminosity>0.063</luminosity>
+  </star>
+  <star>
+    <id>59</id>
+    <name>Ailil</name>
+    <x>188</x>
+    <y>88</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>9222</temperature>
+    <mass>3</mass>
+    <radius>2.4</radius>
+    <luminosity>17</luminosity>
+  </star>
+  <star>
+    <id>60</id>
+    <name>Nechtan</name>
+    <x>218</x>
+    <y>116</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>3477</temperature>
+    <mass>0.05</mass>
+    <radius>0.45</radius>
+    <luminosity>0.008</luminosity>
+  </star>
+  <star>
+    <id>61</id>
+    <name>Orda</name>
+    <x>148</x>
+    <y>135</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>6152</temperature>
+    <mass>0.11</mass>
+    <radius>1.6</radius>
+    <luminosity>3.9</luminosity>
+  </star>
+  <star>
+    <id>62</id>
+    <name>Bres</name>
+    <x>119</x>
+    <y>189</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5018</temperature>
+    <mass>0.91</mass>
+    <radius>1.07</radius>
+    <luminosity>1.15</luminosity>
+  </star>
+  <star>
+    <id>63</id>
+    <name>Ochone</name>
+    <x>151</x>
+    <y>168</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5754</temperature>
+    <mass>1.03</mass>
+    <radius>1.06</radius>
+    <luminosity>1.19</luminosity>
+  </star>
+  <star>
+    <id>64</id>
+    <name>Balor</name>
+    <x>154</x>
+    <y>161</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>7953</temperature>
+    <mass>3</mass>
+    <radius>2.5</radius>
+    <luminosity>11</luminosity>
+  </star>
+  <star>
+    <id>65</id>
+    <name>Nuada</name>
+    <x>185</x>
+    <y>119</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>7255</temperature>
+    <mass>0.14</mass>
+    <radius>1.6</radius>
+    <luminosity>3.8</luminosity>
+  </star>
+  <star>
+    <id>66</id>
+    <name>Dian Cecht</name>
+    <x>35</x>
+    <y>139</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>7417</temperature>
+    <mass>0.16</mass>
+    <radius>1.5</radius>
+    <luminosity>3.1</luminosity>
+  </star>
+  <star>
+    <id>67</id>
+    <name>Nemain</name>
+    <x>196</x>
+    <y>93</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5083</temperature>
+    <mass>0.96</mass>
+    <radius>0.94</radius>
+    <luminosity>0.9</luminosity>
+  </star>
+  <star>
+    <id>68</id>
+    <name>Elcmar</name>
+    <x>190</x>
+    <y>98</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>4930</temperature>
+    <mass>1.1</mass>
+    <radius>0.91</radius>
+    <luminosity>0.83</luminosity>
+  </star>
+  <star>
+    <id>69</id>
+    <name>Banba</name>
+    <x>150</x>
+    <y>65</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>3632</temperature>
+    <mass>0.66</mass>
+    <radius>0.73</radius>
+    <luminosity>0.19</luminosity>
+  </star>
+  <star>
+    <id>70</id>
+    <name>Eriu</name>
+    <x>154</x>
+    <y>76</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5179</temperature>
+    <mass>0.96</mass>
+    <radius>1.02</radius>
+    <luminosity>0.71</luminosity>
+  </star>
+  <star>
+    <id>71</id>
+    <name>Tat</name>
+    <x>132</x>
+    <y>125</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2621</temperature>
+    <mass>0.07</mass>
+    <radius>0.45</radius>
+    <luminosity>0.007</luminosity>
+  </star>
+  <star>
+    <id>72</id>
+    <name>Allai</name>
+    <x>136</x>
+    <y>125</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>6621</temperature>
+    <mass>0.11</mass>
+    <radius>1.4</radius>
+    <luminosity>6.3</luminosity>
+  </star>
+  <star>
+    <id>73</id>
+    <name>Iobath</name>
+    <x>108</x>
+    <y>109</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>3901</temperature>
+    <mass>0.76</mass>
+    <radius>0.65</radius>
+    <luminosity>0.41</luminosity>
+  </star>
+  <star>
+    <id>74</id>
+    <name>Enna</name>
+    <x>105</x>
+    <y>112</y>
+    <spectralclass>O</spectralclass>
+    <color>BLUE</color>
+    <temperature>33518</temperature>
+    <mass>54</mass>
+    <radius>15</radius>
+    <luminosity>580000</luminosity>
+  </star>
+  <star>
+    <id>75</id>
+    <name>Tabarn</name>
+    <x>102</x>
+    <y>105</y>
+    <spectralclass>B</spectralclass>
+    <color>LT BLUE</color>
+    <temperature>18581</temperature>
+    <mass>9</mass>
+    <radius>6.1</radius>
+    <luminosity>32533</luminosity>
+  </star>
+  <star>
+    <id>76</id>
+    <name>Net</name>
+    <x>55</x>
+    <y>114</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>6405</temperature>
+    <mass>0.16</mass>
+    <radius>1.5</radius>
+    <luminosity>4.9</luminosity>
+  </star>
+  <star>
+    <id>77</id>
+    <name>Indai</name>
+    <x>61</x>
+    <y>114</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5722</temperature>
+    <mass>1.05</mass>
+    <radius>1.06</radius>
+    <luminosity>1</luminosity>
+  </star>
+  <star>
+    <id>78</id>
+    <name>Anu</name>
+    <x>65</x>
+    <y>110</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>4557</temperature>
+    <mass>0.83</mass>
+    <radius>0.79</radius>
+    <luminosity>0.18</luminosity>
+  </star>
+  <star>
+    <id>79</id>
+    <name>Morrigan</name>
+    <x>67</x>
+    <y>103</y>
+    <spectralclass>B</spectralclass>
+    <color>LT BLUE</color>
+    <temperature>17842</temperature>
+    <mass>6</mass>
+    <radius>5.5</radius>
+    <luminosity>8014</luminosity>
+  </star>
+  <star>
+    <id>80</id>
+    <name>Mag Rein</name>
+    <x>101</x>
+    <y>15</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2826</temperature>
+    <mass>0.06</mass>
+    <radius>0.33</radius>
+    <luminosity>0.069</luminosity>
+  </star>
+  <star>
+    <id>81</id>
+    <name>Aircthech</name>
+    <x>100</x>
+    <y>8</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5539</temperature>
+    <mass>1.08</mass>
+    <radius>1.06</radius>
+    <luminosity>1.04</luminosity>
+  </star>
+  <star>
+    <id>82</id>
+    <name>Murias</name>
+    <x>26</x>
+    <y>16</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>9024</temperature>
+    <mass>3</mass>
+    <radius>2.1</radius>
+    <luminosity>25</luminosity>
+  </star>
+  <star>
+    <id>83</id>
+    <name>Morfesa</name>
+    <x>3</x>
+    <y>59</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2586</temperature>
+    <mass>0.07</mass>
+    <radius>0.3</radius>
+    <luminosity>0.072</luminosity>
+  </star>
+  <star>
+    <id>84</id>
+    <name>Semias</name>
+    <x>5</x>
+    <y>66</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>3714</temperature>
+    <mass>0.83</mass>
+    <radius>0.74</radius>
+    <luminosity>0.22</luminosity>
+  </star>
+  <star>
+    <id>85</id>
+    <name>Cermait</name>
+    <x>247</x>
+    <y>218</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>9031</temperature>
+    <mass>2</mass>
+    <radius>1.9</radius>
+    <luminosity>19</luminosity>
+  </star>
+  <star>
+    <id>86</id>
+    <name>Abean</name>
+    <x>15</x>
+    <y>203</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>9196</temperature>
+    <mass>3</mass>
+    <radius>2</radius>
+    <luminosity>31</luminosity>
+  </star>
+  <star>
+    <id>87</id>
+    <name>Mathgen</name>
+    <x>212</x>
+    <y>3</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>7423</temperature>
+    <mass>0.12</mass>
+    <radius>1.5</radius>
+    <luminosity>4</luminosity>
+  </star>
+  <star>
+    <id>88</id>
+    <name>MacCuill</name>
+    <x>245</x>
+    <y>162</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5341</temperature>
+    <mass>0.95</mass>
+    <radius>1.09</radius>
+    <luminosity>1.02</luminosity>
+  </star>
+  <star>
+    <id>89</id>
+    <name>Cethan</name>
+    <x>3</x>
+    <y>165</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5324</temperature>
+    <mass>0.98</mass>
+    <radius>1.03</radius>
+    <luminosity>0.71</luminosity>
+  </star>
+  <star>
+    <id>90</id>
+    <name>Mathgen</name>
+    <x>6</x>
+    <y>120</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2671</temperature>
+    <mass>0.07</mass>
+    <radius>0.36</radius>
+    <luminosity>0.021</luminosity>
+  </star>
+  <star>
+    <id>91</id>
+    <name>Falias</name>
+    <x>9</x>
+    <y>3</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>6812</temperature>
+    <mass>0.12</mass>
+    <radius>1.6</radius>
+    <luminosity>3.5</luminosity>
+  </star>
+  <star>
+    <id>92</id>
+    <name>Gorias</name>
+    <x>5</x>
+    <y>16</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5846</temperature>
+    <mass>1.08</mass>
+    <radius>1.04</radius>
+    <luminosity>1.28</luminosity>
+  </star>
+  <star>
+    <id>93</id>
+    <name>Mongan</name>
+    <x>64</x>
+    <y>4</y>
+    <spectralclass>B</spectralclass>
+    <color>LT BLUE</color>
+    <temperature>15462</temperature>
+    <mass>10</mass>
+    <radius>5.4</radius>
+    <luminosity>34695</luminosity>
+  </star>
+  <star>
+    <id>94</id>
+    <name>Forgoll</name>
+    <x>67</x>
+    <y>11</y>
+    <spectralclass>O</spectralclass>
+    <color>BLUE</color>
+    <temperature>39003</temperature>
+    <mass>34</mass>
+    <radius>14</radius>
+    <luminosity>378000</luminosity>
+  </star>
+  <star>
+    <id>95</id>
+    <name>Findias</name>
+    <x>58</x>
+    <y>10</y>
+    <spectralclass>B</spectralclass>
+    <color>LT BLUE</color>
+    <temperature>15900</temperature>
+    <mass>3</mass>
+    <radius>4.8</radius>
+    <luminosity>47731</luminosity>
+  </star>
+  <star>
+    <id>96</id>
+    <name>Badb</name>
+    <x>79</x>
+    <y>42</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>4906</temperature>
+    <mass>1.02</mass>
+    <radius>1.09</radius>
+    <luminosity>1.05</luminosity>
+  </star>
+  <star>
+    <id>97</id>
+    <name>Cailte</name>
+    <x>61</x>
+    <y>22</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>7681</temperature>
+    <mass>3</mass>
+    <radius>2.3</radius>
+    <luminosity>54</luminosity>
+  </star>
+  <star>
+    <id>98</id>
+    <name>MacGreine</name>
+    <x>157</x>
+    <y>42</y>
+    <spectralclass>G</spectralclass>
+    <color>YELLOW</color>
+    <temperature>5704</temperature>
+    <mass>0.87</mass>
+    <radius>0.88</radius>
+    <luminosity>0.74</luminosity>
+  </star>
+  <star>
+    <id>99</id>
+    <name>Oende</name>
+    <x>134</x>
+    <y>30</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>7306</temperature>
+    <mass>0.12</mass>
+    <radius>1.5</radius>
+    <luminosity>3</luminosity>
+  </star>
+  <star>
+    <id>100</id>
+    <name>Iucharba</name>
+    <x>185</x>
+    <y>45</y>
+    <spectralclass>F</spectralclass>
+    <color>LT YELLOW</color>
+    <temperature>7089</temperature>
+    <mass>0.14</mass>
+    <radius>1.3</radius>
+    <luminosity>4.9</luminosity>
+  </star>
+  <star>
+    <id>100</id>
+    <name>Lug</name>
+    <x>26</x>
+    <y>200</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>8430</temperature>
+    <mass>2</mass>
+    <radius>2.5</radius>
+    <luminosity>32</luminosity>
+  </star>
+  <star>
+    <id>100</id>
+    <name>Ankeria</name>
+    <x>171</x>
+    <y>29</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>3754</temperature>
+    <mass>0.65</mass>
+    <radius>0.73</radius>
+    <luminosity>0.39</luminosity>
+  </star>
+  <star>
+    <id>101</id>
+    <name>Krykie</name>
+    <x>68</x>
+    <y>66</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>2800</temperature>
+    <mass>0.08</mass>
+    <radius>0.48</radius>
+    <luminosity>0.033</luminosity>
+  </star>
+  <star>
+    <id>102</id>
+    <name>Anskiere</name>
+    <x>52</x>
+    <y>188</y>
+    <spectralclass>M</spectralclass>
+    <color>RED</color>
+    <temperature>3318</temperature>
+    <mass>0.06</mass>
+    <radius>0.6</radius>
+    <luminosity>0.037</luminosity>
+  </star>
+  <star>
+    <id>103</id>
+    <name>Othearipi</name>
+    <x>54</x>
+    <y>20</y>
+    <spectralclass>O</spectralclass>
+    <color>BLUE</color>
+    <temperature>47985</temperature>
+    <mass>26</mass>
+    <radius>14</radius>
+    <luminosity>743000</luminosity>
+  </star>
+  <star>
+    <id>104</id>
+    <name>Kercso</name>
+    <x>192</x>
+    <y>152</y>
+    <spectralclass>O</spectralclass>
+    <color>BLUE</color>
+    <temperature>41564</temperature>
+    <mass>55</mass>
+    <radius>9</radius>
+    <luminosity>134000</luminosity>
+  </star>
+  <star>
+    <id>105</id>
+    <name>Knari</name>
+    <x>176</x>
+    <y>185</y>
+    <spectralclass>B</spectralclass>
+    <color>LT BLUE</color>
+    <temperature>18175</temperature>
+    <mass>10</mass>
+    <radius>6.3</radius>
+    <luminosity>20626</luminosity>
+  </star>
+  <star>
+    <id>106</id>
+    <name>Gabtcr Lorin</name>
+    <x>188</x>
+    <y>148</y>
+    <spectralclass>A</spectralclass>
+    <color>WHITE</color>
+    <temperature>8752</temperature>
+    <mass>3</mass>
+    <radius>2.1</radius>
+    <luminosity>11</luminosity>
+  </star>
+  <star>
+    <id>107</id>
+    <name>Chichifa</name>
+    <x>117</x>
+    <y>153</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>4887</temperature>
+    <mass>0.83</mass>
+    <radius>0.84</radius>
+    <luminosity>0.3</luminosity>
+  </star>
+  <star>
+    <id>108</id>
+    <name>Meldin Harbr</name>
+    <x>98</x>
+    <y>105</y>
+    <spectralclass>B</spectralclass>
+    <color>LT BLUE</color>
+    <temperature>17643</temperature>
+    <mass>4</mass>
+    <radius>5.4</radius>
+    <luminosity>44388</luminosity>
+  </star>
+  <star>
+    <id>109</id>
+    <name>P'Atch</name>
+    <x>240</x>
+    <y>26</y>
+    <spectralclass>K</spectralclass>
+    <color>ORANGE</color>
+    <temperature>4385</temperature>
+    <mass>0.77</mass>
+    <radius>0.73</radius>
+    <luminosity>0.33</luminosity>
+  </star>
+  <planet>
+    <id>2</id>
+    <hoststar>2</hoststar>
+    <name>Islay</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather>NONE</weather>
+  </planet>
+  <planet>
+    <id>3</id>
+    <hoststar>2</hoststar>
+    <name>Killaloe</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>9</id>
+    <hoststar>2</hoststar>
+    <name>Senlabor</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>8</id>
+    <hoststar>2</hoststar>
+    <name>Myrrdan</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather>CALM</weather>
+    <landable>false</landable>
+  </planet>
+  <planet>
+    <id>7</id>
+    <hoststar>31</hoststar>
+    <name>Emain</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>12</id>
+    <hoststar>31</hoststar>
+    <name>Lurga</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>20</id>
+    <hoststar>31</hoststar>
+    <name>Airgdech</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>21</id>
+    <hoststar>31</hoststar>
+    <name>Moy-Fevin</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>22</id>
+    <hoststar>31</hoststar>
+    <name>Breo</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>23</id>
+    <hoststar>31</hoststar>
+    <name>Bran 2334</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>24</id>
+    <hoststar>26</hoststar>
+    <name>Coracle</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>5</id>
+    <hoststar>31</hoststar>
+    <name>Cnocc 3945</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>6</id>
+    <hoststar>31</hoststar>
+    <name>Bane</name>
+    <size>LARGE</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>25</id>
+    <hoststar>2</hoststar>
+    <name>Ildathach</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather>NONE</weather>
+  </planet>
+  <planet>
+    <id>26</id>
+    <hoststar>26</hoststar>
+    <name>Ciuin</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather>NONE</weather>
+  </planet>
+  <planet>
+    <id>27</id>
+    <hoststar>31</hoststar>
+    <name>Duma Granerit</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>28</id>
+    <hoststar>32</hoststar>
+    <name>Lethet</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>29</id>
+    <hoststar>32</hoststar>
+    <name>Oidni</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>30</id>
+    <hoststar>33</hoststar>
+    <name>Findtigernd</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>31</id>
+    <hoststar>100</hoststar>
+    <name>Lug I 600</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+    <landable>false</landable>
+  </planet>
+  <planet>
+    <id>32</id>
+    <hoststar>61</hoststar>
+    <name>Niubias</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>33</id>
+    <hoststar>61</hoststar>
+    <name>Oenias</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>34</id>
+    <hoststar>56</hoststar>
+    <name>Iuchar I 412</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>35</id>
+    <hoststar>56</hoststar>
+    <name>Iuchar II 371</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>36</id>
+    <hoststar>55</hoststar>
+    <name>Brian I 364</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>37</id>
+    <hoststar>55</hoststar>
+    <name>Brian II 608</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>38</id>
+    <hoststar>43</hoststar>
+    <name>MacCecht I 338</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>39</id>
+    <hoststar>43</hoststar>
+    <name>MacCecht II 219</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>40</id>
+    <hoststar>43</hoststar>
+    <name>MacCecht III 541</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>41</id>
+    <hoststar>43</hoststar>
+    <name>Caldenwyrd 1956</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>42</id>
+    <hoststar>43</hoststar>
+    <name>MacCecht IV 493</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>43</id>
+    <hoststar>16</hoststar>
+    <name>Danand I 389</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>44</id>
+    <hoststar>16</hoststar>
+    <name>Danand II 968</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>45</id>
+    <hoststar>16</hoststar>
+    <name>Danand III 302</name>
+    <size>LARGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>46</id>
+    <hoststar>36</hoststar>
+    <name>Boibniu I 421</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>47</id>
+    <hoststar>36</hoststar>
+    <name>Boibniu II 861</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>48</id>
+    <hoststar>36</hoststar>
+    <name>Boibniu III 258</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>49</id>
+    <hoststar>36</hoststar>
+    <name>Boibniu IV 300</name>
+    <size>LARGE</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>50</id>
+    <hoststar>35</hoststar>
+    <name>Credne I 284</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>51</id>
+    <hoststar>35</hoststar>
+    <name>Credne II 842</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>52</id>
+    <hoststar>35</hoststar>
+    <name>Credne III 160</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>53</id>
+    <hoststar>35</hoststar>
+    <name>Credne IV 319</name>
+    <size>LARGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>54</id>
+    <hoststar>35</hoststar>
+    <name>Credne V 506</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>55</id>
+    <hoststar>87</hoststar>
+    <name>Mathgen I 409</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>56</id>
+    <hoststar>87</hoststar>
+    <name>Mathgen II 799</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>57</id>
+    <hoststar>87</hoststar>
+    <name>Mathgen III 371</name>
+    <size>LARGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>58</id>
+    <hoststar>57</hoststar>
+    <name>Ollam I 183</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+    <landable>false</landable>
+  </planet>
+  <planet>
+    <id>59</id>
+    <hoststar>57</hoststar>
+    <name>Cadwyr 1806</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+    <landable>false</landable>
+  </planet>
+  <planet>
+    <id>60</id>
+    <hoststar>57</hoststar>
+    <name>Ollam II 913</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>61</id>
+    <hoststar>57</hoststar>
+    <name>Ollam III 130</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>62</id>
+    <hoststar>52</hoststar>
+    <name>Brigid I 796</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>63</id>
+    <hoststar>52</hoststar>
+    <name>Brigid II 246</name>
+    <size>HUGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>64</id>
+    <hoststar>52</hoststar>
+    <name>Brigid III 453</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>65</id>
+    <hoststar>52</hoststar>
+    <name>Brigid IV 267</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>66</id>
+    <hoststar>52</hoststar>
+    <name>Brigid V 570</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>67</id>
+    <hoststar>52</hoststar>
+    <name>Brigid VI 587</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>68</id>
+    <hoststar>52</hoststar>
+    <name>Brigid VII 991</name>
+    <size>SMALL</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>69</id>
+    <hoststar>52</hoststar>
+    <name>Brigid VII 308</name>
+    <size>LARGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>70</id>
+    <hoststar>71</hoststar>
+    <name>Alastir</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>71</id>
+    <hoststar>71</hoststar>
+    <name>Fodlem</name>
+    <size>LARGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>72</id>
+    <hoststar>71</hoststar>
+    <name>Tethra</name>
+    <size>SMALL</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>73</id>
+    <hoststar>72</hoststar>
+    <name>Mata</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>74</id>
+    <hoststar>72</hoststar>
+    <name>Carbre</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>75</id>
+    <hoststar>72</hoststar>
+    <name>Niafer</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>76</id>
+    <hoststar>72</hoststar>
+    <name>Imchiuin</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>77</id>
+    <hoststar>68</hoststar>
+    <name>Cualeinech</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>78</id>
+    <hoststar>68</hoststar>
+    <name>Samildanach</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>79</id>
+    <hoststar>68</hoststar>
+    <name>Cerdre</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>80</id>
+    <hoststar>68</hoststar>
+    <name>Bicelmois</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>81</id>
+    <hoststar>68</hoststar>
+    <name>Luchtyn</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>82</id>
+    <hoststar>68</hoststar>
+    <name>Luachada</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>83</id>
+    <hoststar>58</hoststar>
+    <name>Aoi I 603</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>84</id>
+    <hoststar>58</hoststar>
+    <name>Aoi II 156</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>85</id>
+    <hoststar>58</hoststar>
+    <name>Aoi III 402</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>86</id>
+    <hoststar>58</hoststar>
+    <name>Aoi IV 512</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>87</id>
+    <hoststar>58</hoststar>
+    <name>Aoi V 896</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>88</id>
+    <hoststar>58</hoststar>
+    <name>Aoi VI 274</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>89</id>
+    <hoststar>58</hoststar>
+    <name>Aoi VII 478</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>90</id>
+    <hoststar>98</hoststar>
+    <name>Modron</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>91</id>
+    <hoststar>98</hoststar>
+    <name>Mabon</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>92</id>
+    <hoststar>98</hoststar>
+    <name>Olwen</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>93</id>
+    <hoststar>98</hoststar>
+    <name>Olwain</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>94</id>
+    <hoststar>99</hoststar>
+    <name>Oende I 092</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+    <landable>false</landable>
+  </planet>
+  <planet>
+    <id>95</id>
+    <hoststar>99</hoststar>
+    <name>Oende II 362</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+    <landable>false</landable>
+  </planet>
+  <planet>
+    <id>96</id>
+    <hoststar>99</hoststar>
+    <name>Oende III 603</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+    <landable>false</landable>
+  </planet>
+  <planet>
+    <id>97</id>
+    <hoststar>99</hoststar>
+    <name>Oende IV 195</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>98</id>
+    <hoststar>99</hoststar>
+    <name>Oende V 236</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>99</id>
+    <hoststar>59</hoststar>
+    <name>Arawn</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>100</id>
+    <hoststar>59</hoststar>
+    <name>Blodeuwedd</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>101</id>
+    <hoststar>59</hoststar>
+    <name>Ceridwen</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>102</id>
+    <hoststar>59</hoststar>
+    <name>Gwenn Teir</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>103</id>
+    <hoststar>59</hoststar>
+    <name>Llefelys</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>104</id>
+    <hoststar>59</hoststar>
+    <name>Llaw</name>
+    <size>HUGE</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>105</id>
+    <hoststar>59</hoststar>
+    <name>Eraint</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>106</id>
+    <hoststar>69</hoststar>
+    <name>Essylt</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>107</id>
+    <hoststar>69</hoststar>
+    <name>Gwyrthe</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>108</id>
+    <hoststar>69</hoststar>
+    <name>Gwenhwyfar</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>109</id>
+    <hoststar>69</hoststar>
+    <name>Macsen</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>110</id>
+    <hoststar>69</hoststar>
+    <name>Iseult</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>111</id>
+    <hoststar>17</hoststar>
+    <name>Caintigern I 245</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>112</id>
+    <hoststar>17</hoststar>
+    <name>Caintigern II 129</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>113</id>
+    <hoststar>17</hoststar>
+    <name>Caintigern III 335</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>114</id>
+    <hoststar>17</hoststar>
+    <name>Caintigern IV 489</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>115</id>
+    <hoststar>80</hoststar>
+    <name>Mag Rein I 591</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>116</id>
+    <hoststar>80</hoststar>
+    <name>Mag Rein II 844</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>117</id>
+    <hoststar>80</hoststar>
+    <name>Esthe Magan 1563</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>118</id>
+    <hoststar>80</hoststar>
+    <name>Esthe Fagan 1755</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>119</id>
+    <hoststar>81</hoststar>
+    <name>Aircthech I 312</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>120</id>
+    <hoststar>81</hoststar>
+    <name>Aircthech II 856</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>121</id>
+    <hoststar>81</hoststar>
+    <name>Aircthech III 505</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>122</id>
+    <hoststar>81</hoststar>
+    <name>Aircthech IV 623</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>123</id>
+    <hoststar>81</hoststar>
+    <name>Bor Tuatheh 2019</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>124</id>
+    <hoststar>95</hoststar>
+    <name>Findias I 796</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>125</id>
+    <hoststar>95</hoststar>
+    <name>Findias II 367</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>126</id>
+    <hoststar>95</hoststar>
+    <name>Findias III 886</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>127</id>
+    <hoststar>95</hoststar>
+    <name>Findias IV 561</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>128</id>
+    <hoststar>95</hoststar>
+    <name>Findias V 210</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>129</id>
+    <hoststar>82</hoststar>
+    <name>Murias I 195</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>130</id>
+    <hoststar>82</hoststar>
+    <name>Murias II 791</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>131</id>
+    <hoststar>82</hoststar>
+    <name>Murias III 531</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>132</id>
+    <hoststar>82</hoststar>
+    <name>Murias IV 658</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>133</id>
+    <hoststar>82</hoststar>
+    <name>Murias V 712</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>134</id>
+    <hoststar>82</hoststar>
+    <name>Murias VI 372</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>135</id>
+    <hoststar>91</hoststar>
+    <name>Falias I 847</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>136</id>
+    <hoststar>91</hoststar>
+    <name>Falias II 582</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>137</id>
+    <hoststar>91</hoststar>
+    <name>Falias III 774</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>138</id>
+    <hoststar>91</hoststar>
+    <name>Falias IV 225</name>
+    <size>LARGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>139</id>
+    <hoststar>92</hoststar>
+    <name>Gorias I 135</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>140</id>
+    <hoststar>92</hoststar>
+    <name>Gorias II 2559</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>141</id>
+    <hoststar>92</hoststar>
+    <name>Gorias III 189</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>142</id>
+    <hoststar>92</hoststar>
+    <name>Gorias IV 426</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>143</id>
+    <hoststar>92</hoststar>
+    <name>Gorias V 515</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>144</id>
+    <hoststar>97</hoststar>
+    <name>Cailte I 962</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>145</id>
+    <hoststar>97</hoststar>
+    <name>Cailte II 401</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>146</id>
+    <hoststar>97</hoststar>
+    <name>Cailte III 512</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>147</id>
+    <hoststar>97</hoststar>
+    <name>Cailte IV 116</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+    <landable>false</landable>
+  </planet>
+  <planet>
+    <id>148</id>
+    <hoststar>96</hoststar>
+    <name>Badb I 487</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>149</id>
+    <hoststar>96</hoststar>
+    <name>Badb II 263</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>150</id>
+    <hoststar>96</hoststar>
+    <name>Badb III 584</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>151</id>
+    <hoststar>96</hoststar>
+    <name>Badb IV 293</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>152</id>
+    <hoststar>96</hoststar>
+    <name>Badb V 315</name>
+    <size>LARGE</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>153</id>
+    <hoststar>96</hoststar>
+    <name>Lludd 1641</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>154</id>
+    <hoststar>96</hoststar>
+    <name>Taliesin</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>155</id>
+    <hoststar>96</hoststar>
+    <name>Tiernon</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>156</id>
+    <hoststar>34</hoststar>
+    <name>Cigfa</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>157</id>
+    <hoststar>34</hoststar>
+    <name>Gwern</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>158</id>
+    <hoststar>34</hoststar>
+    <name>Mathonyn</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>159</id>
+    <hoststar>34</hoststar>
+    <name>Matholwych</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>160</id>
+    <hoststar>34</hoststar>
+    <name>Pwyll</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>161</id>
+    <hoststar>12</hoststar>
+    <name>Peredur</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>162</id>
+    <hoststar>12</hoststar>
+    <name>Urien</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>163</id>
+    <hoststar>12</hoststar>
+    <name>Medrawd</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>164</id>
+    <hoststar>12</hoststar>
+    <name>Wledig 2026</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>165</id>
+    <hoststar>39</hoststar>
+    <name>Sreng mac Sengainn</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>166</id>
+    <hoststar>39</hoststar>
+    <name>Tuirill</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>167</id>
+    <hoststar>39</hoststar>
+    <name>Bicreo</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>168</id>
+    <hoststar>39</hoststar>
+    <name>Maeth Sceni</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>169</id>
+    <hoststar>39</hoststar>
+    <name>Eochu</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>170</id>
+    <hoststar>39</hoststar>
+    <name>Coirpre</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>173</id>
+    <hoststar>83</hoststar>
+    <name>Morfesa I 498</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>174</id>
+    <hoststar>83</hoststar>
+    <name>Morfesa II 264</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>175</id>
+    <hoststar>83</hoststar>
+    <name>Morfesa III 300</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>176</id>
+    <hoststar>83</hoststar>
+    <name>Morfesa IV 195</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>177</id>
+    <hoststar>83</hoststar>
+    <name>Morfesa V 578</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>178</id>
+    <hoststar>83</hoststar>
+    <name>Morfesa VI 284</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>179</id>
+    <hoststar>83</hoststar>
+    <name>Morfesa VII 630</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>180</id>
+    <hoststar>84</hoststar>
+    <name>Semias I 852</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>181</id>
+    <hoststar>84</hoststar>
+    <name>Semias II 246</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>182</id>
+    <hoststar>84</hoststar>
+    <name>Semias III 170</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+    <landable>false</landable>
+  </planet>
+  <planet>
+    <id>183</id>
+    <hoststar>84</hoststar>
+    <name>Semias IV 536</name>
+    <size>LARGE</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>184</id>
+    <hoststar>84</hoststar>
+    <name>Semias V 791</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>185</id>
+    <hoststar>84</hoststar>
+    <name>Semias VI 610</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>186</id>
+    <hoststar>70</hoststar>
+    <name>Elatha mac Delbaith</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>187</id>
+    <hoststar>70</hoststar>
+    <name>Edleo mac Echo</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>188</id>
+    <hoststar>70</hoststar>
+    <name>Camall</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>189</id>
+    <hoststar>70</hoststar>
+    <name>Figail</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>190</id>
+    <hoststar>70</hoststar>
+    <name>Abcan</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>191</id>
+    <hoststar>70</hoststar>
+    <name>Corum 1445</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>192</id>
+    <hoststar>46</hoststar>
+    <name>Ernmas I 184</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>193</id>
+    <hoststar>46</hoststar>
+    <name>Ernmas II 875</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>194</id>
+    <hoststar>46</hoststar>
+    <name>Ernmas III 401</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>195</id>
+    <hoststar>46</hoststar>
+    <name>Ernmas IV 596</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>196</id>
+    <hoststar>46</hoststar>
+    <name>Ernmas V 312</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>197</id>
+    <hoststar>45</hoststar>
+    <name>Fir Bolg I 412</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>198</id>
+    <hoststar>45</hoststar>
+    <name>Fir Bolg II 563</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>199</id>
+    <hoststar>45</hoststar>
+    <name>Fir Bolg III 964</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>200</id>
+    <hoststar>45</hoststar>
+    <name>Beywyrd Lloch 1710 </name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>201</id>
+    <hoststar>45</hoststar>
+    <name>Fir Bolg IV 201</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>202</id>
+    <hoststar>79</hoststar>
+    <name>Conall</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>203</id>
+    <hoststar>79</hoststar>
+    <name>Dylais</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>204</id>
+    <hoststar>79</hoststar>
+    <name>Ogyruan</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>205</id>
+    <hoststar>79</hoststar>
+    <name>Efnysien</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>206</id>
+    <hoststar>79</hoststar>
+    <name>Modryn</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>207</id>
+    <hoststar>79</hoststar>
+    <name>Annwyn</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>208</id>
+    <hoststar>44</hoststar>
+    <name>Magmor I 861</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>209</id>
+    <hoststar>44</hoststar>
+    <name>Magmor II 209</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>210</id>
+    <hoststar>44</hoststar>
+    <name>Magmor III 410</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>211</id>
+    <hoststar>44</hoststar>
+    <name>Magmor IV 913</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>212</id>
+    <hoststar>67</hoststar>
+    <name>Lugus</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>213</id>
+    <hoststar>67</hoststar>
+    <name>Lugdunum</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>214</id>
+    <hoststar>67</hoststar>
+    <name>Ertwyn 2189</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>215</id>
+    <hoststar>67</hoststar>
+    <name>Lughnasa</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>216</id>
+    <hoststar>67</hoststar>
+    <name>Batavorum</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>217</id>
+    <hoststar>67</hoststar>
+    <name>Llech Wynn 1456</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>218</id>
+    <hoststar>67</hoststar>
+    <name>Rhianarwyn</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>219</id>
+    <hoststar>37</hoststar>
+    <name>Cu I 386</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>220</id>
+    <hoststar>37</hoststar>
+    <name>Cu II 964</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>221</id>
+    <hoststar>37</hoststar>
+    <name>Cu III 354</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>222</id>
+    <hoststar>37</hoststar>
+    <name>Cu IV 430</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>223</id>
+    <hoststar>78</hoststar>
+    <name>Kygwyn</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>224</id>
+    <hoststar>78</hoststar>
+    <name>Arturwen</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>225</id>
+    <hoststar>78</hoststar>
+    <name>Inghean</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>226</id>
+    <hoststar>78</hoststar>
+    <name>Emer</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>227</id>
+    <hoststar>78</hoststar>
+    <name>Gyffes</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>228</id>
+    <hoststar>77</hoststar>
+    <name>Teig</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>229</id>
+    <hoststar>77</hoststar>
+    <name>Gae Bulg</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>230</id>
+    <hoststar>77</hoststar>
+    <name>Nisien</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>231</id>
+    <hoststar>77</hoststar>
+    <name>Ogyryn</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>232</id>
+    <hoststar>77</hoststar>
+    <name>Arianrhod</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>233</id>
+    <hoststar>76</hoststar>
+    <name>Latiaran</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>234</id>
+    <hoststar>76</hoststar>
+    <name>Glaistig</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>235</id>
+    <hoststar>76</hoststar>
+    <name>Ossian</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>236</id>
+    <hoststar>76</hoststar>
+    <name>Crom Dubwyn</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>237</id>
+    <hoststar>76</hoststar>
+    <name>Elenwyrd</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>238</id>
+    <hoststar>76</hoststar>
+    <name>Bedwyr</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>239</id>
+    <hoststar>40</hoststar>
+    <name>Cualnge</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>240</id>
+    <hoststar>40</hoststar>
+    <name>Eocho</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>241</id>
+    <hoststar>40</hoststar>
+    <name>Fedlech</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>242</id>
+    <hoststar>40</hoststar>
+    <name>Medb</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>243</id>
+    <hoststar>65</hoststar>
+    <name>Findoman</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>244</id>
+    <hoststar>65</hoststar>
+    <name>Findguin</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>245</id>
+    <hoststar>65</hoststar>
+    <name>Rigen</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>246</id>
+    <hoststar>65</hoststar>
+    <name>Enna Agnech</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>247</id>
+    <hoststar>65</hoststar>
+    <name>Berbriu</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>248</id>
+    <hoststar>65</hoststar>
+    <name>Ethne</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>249</id>
+    <hoststar>65</hoststar>
+    <name>Ele</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>250</id>
+    <hoststar>65</hoststar>
+    <name>Clothru</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>251</id>
+    <hoststar>60</hoststar>
+    <name>Llebinogion</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>252</id>
+    <hoststar>60</hoststar>
+    <name>Ogmios</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>253</id>
+    <hoststar>60</hoststar>
+    <name>Taranis</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>254</id>
+    <hoststar>60</hoststar>
+    <name>Teutates 1446</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>255</id>
+    <hoststar>60</hoststar>
+    <name>Esus</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>256</id>
+    <hoststar>53</hoststar>
+    <name>Midir I 356</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>257</id>
+    <hoststar>53</hoststar>
+    <name>Midir II 275</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>258</id>
+    <hoststar>53</hoststar>
+    <name>Midir III 487</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>259</id>
+    <hoststar>53</hoststar>
+    <name>Midir IV 259</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>260</id>
+    <hoststar>53</hoststar>
+    <name>Midir V 395</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+    <landable>false</landable>
+  </planet>
+  <planet>
+    <id>261</id>
+    <hoststar>53</hoststar>
+    <name>Midir VI 538</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>262</id>
+    <hoststar>54</hoststar>
+    <name>Aengus I 652</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>263</id>
+    <hoststar>54</hoststar>
+    <name>Aengus II 366</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>264</id>
+    <hoststar>54</hoststar>
+    <name>Aengus III 825</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>265</id>
+    <hoststar>54</hoststar>
+    <name>Aengus IV 461</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>266</id>
+    <hoststar>54</hoststar>
+    <name>Aengus V 497</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>267</id>
+    <hoststar>54</hoststar>
+    <name>Aengus VI 246</name>
+    <size>HUGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>268</id>
+    <hoststar>54</hoststar>
+    <name>Aengus VII 472</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>269</id>
+    <hoststar>54</hoststar>
+    <name>Aengus VIII 214</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>270</id>
+    <hoststar>88</hoststar>
+    <name>MacCuill I 330</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>271</id>
+    <hoststar>88</hoststar>
+    <name>MacCuill II 286</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>272</id>
+    <hoststar>88</hoststar>
+    <name>Marnwy 2101</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>273</id>
+    <hoststar>88</hoststar>
+    <name>MacCuill III 581</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>274</id>
+    <hoststar>88</hoststar>
+    <name>MacCuill IV 302</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>275</id>
+    <hoststar>88</hoststar>
+    <name>MacCuill V 570</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>276</id>
+    <hoststar>8</hoststar>
+    <name>Icaunus</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>277</id>
+    <hoststar>8</hoststar>
+    <name>Senua</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>278</id>
+    <hoststar>8</hoststar>
+    <name>Cocidius</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>279</id>
+    <hoststar>8</hoststar>
+    <name>Aveta</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>280</id>
+    <hoststar>8</hoststar>
+    <name>Sidhe</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>281</id>
+    <hoststar>8</hoststar>
+    <name>Plor na Wyn</name>
+    <size>LARGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>282</id>
+    <hoststar>8</hoststar>
+    <name>Aife</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>283</id>
+    <hoststar>64</hoststar>
+    <name>Don</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>284</id>
+    <hoststar>64</hoststar>
+    <name>Amaethwyn 2296</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>285</id>
+    <hoststar>64</hoststar>
+    <name>Cessaire</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>286</id>
+    <hoststar>64</hoststar>
+    <name>Borvo</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>287</id>
+    <hoststar>64</hoststar>
+    <name>Smertrios</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>288</id>
+    <hoststar>64</hoststar>
+    <name>Clellwyn</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>289</id>
+    <hoststar>24</hoststar>
+    <name>Esar Brec I 322</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>290</id>
+    <hoststar>24</hoststar>
+    <name>Esar Brec II 591</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>291</id>
+    <hoststar>24</hoststar>
+    <name>Esar Brec III 249</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>292</id>
+    <hoststar>24</hoststar>
+    <name>Esar Brec IV 786</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>293</id>
+    <hoststar>24</hoststar>
+    <name>Esar Brec V 502</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>294</id>
+    <hoststar>24</hoststar>
+    <name>Esar Brec VI 462</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>295</id>
+    <hoststar>24</hoststar>
+    <name>Esar Brec VII 510</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>296</id>
+    <hoststar>24</hoststar>
+    <name>Esar Brec VIII 243</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>297</id>
+    <hoststar>24</hoststar>
+    <name>Cellwy 1830 </name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>298</id>
+    <hoststar>66</hoststar>
+    <name>Dian Cecht I 281</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>299</id>
+    <hoststar>66</hoststar>
+    <name>Dian Cecht II 386</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>300</id>
+    <hoststar>66</hoststar>
+    <name>Dian Cecht III 957</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+    <landable>false</landable>
+  </planet>
+  <planet>
+    <id>301</id>
+    <hoststar>66</hoststar>
+    <name>Dian Cecht IV 473</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>302</id>
+    <hoststar>66</hoststar>
+    <name>Dian Cecht V 349</name>
+    <size>LARGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>303</id>
+    <hoststar>66</hoststar>
+    <name>Clellwyr Sidhe 1917</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>304</id>
+    <hoststar>90</hoststar>
+    <name>Mathgen I 415</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>305</id>
+    <hoststar>90</hoststar>
+    <name>Mathgen II 296</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>306</id>
+    <hoststar>90</hoststar>
+    <name>Borrhod 1944</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>307</id>
+    <hoststar>90</hoststar>
+    <name>Mathgen III 562</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>308</id>
+    <hoststar>90</hoststar>
+    <name>Mathgen IV 768</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>309</id>
+    <hoststar>90</hoststar>
+    <name>Mathgen V 450</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>310</id>
+    <hoststar>89</hoststar>
+    <name>Cethan I 310</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>311</id>
+    <hoststar>89</hoststar>
+    <name>Cethan II 429</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>312</id>
+    <hoststar>89</hoststar>
+    <name>Cethan III 826</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>313</id>
+    <hoststar>89</hoststar>
+    <name>Cethan IV 333</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>314</id>
+    <hoststar>89</hoststar>
+    <name>Cethan V 452</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>315</id>
+    <hoststar>89</hoststar>
+    <name>Cethan VI 587</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>316</id>
+    <hoststar>89</hoststar>
+    <name>Cethan VII 241</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>317</id>
+    <hoststar>89</hoststar>
+    <name>Cethan VIII 161</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>318</id>
+    <hoststar>49</hoststar>
+    <name>Bec-Felmas I 298</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>319</id>
+    <hoststar>49</hoststar>
+    <name>Bec-Felmas II 506</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>320</id>
+    <hoststar>49</hoststar>
+    <name>Bec-Felmas III 799</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>321</id>
+    <hoststar>49</hoststar>
+    <name>Bec-Felmas IV 470</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>322</id>
+    <hoststar>49</hoststar>
+    <name>Bec-Felmas V 409</name>
+    <size>LARGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>323</id>
+    <hoststar>86</hoststar>
+    <name>Abean I 608</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>324</id>
+    <hoststar>86</hoststar>
+    <name>Abean II 324</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>325</id>
+    <hoststar>86</hoststar>
+    <name>Abean III 517</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>326</id>
+    <hoststar>86</hoststar>
+    <name>Abean IV 436</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>327</id>
+    <hoststar>86</hoststar>
+    <name>Abean V 149</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>328</id>
+    <hoststar>86</hoststar>
+    <name>Ravynwyrd 1812</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>329</id>
+    <hoststar>21</hoststar>
+    <name>Cian I 548</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>330</id>
+    <hoststar>21</hoststar>
+    <name>Cian II 783</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>331</id>
+    <hoststar>21</hoststar>
+    <name>Weartyne 1969</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>332</id>
+    <hoststar>21</hoststar>
+    <name>Cian III 402</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>333</id>
+    <hoststar>21</hoststar>
+    <name>Cian IV 190</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>334</id>
+    <hoststar>21</hoststar>
+    <name>Cian V 384</name>
+    <size>LARGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>335</id>
+    <hoststar>18</hoststar>
+    <name>Airmed I 814</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>336</id>
+    <hoststar>18</hoststar>
+    <name>Airmed II 303</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>337</id>
+    <hoststar>18</hoststar>
+    <name>Airmed III 435</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>338</id>
+    <hoststar>18</hoststar>
+    <name>Airmed IV 551</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>339</id>
+    <hoststar>18</hoststar>
+    <name>Airmed V 167</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>340</id>
+    <hoststar>18</hoststar>
+    <name>Airmed VI 269</name>
+    <size>LARGE</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>341</id>
+    <hoststar>22</hoststar>
+    <name>Miach I 915</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>342</id>
+    <hoststar>22</hoststar>
+    <name>Miach II 497</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>343</id>
+    <hoststar>22</hoststar>
+    <name>Miach III 181</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>344</id>
+    <hoststar>22</hoststar>
+    <name>Miach IV 891</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>345</id>
+    <hoststar>56</hoststar>
+    <name>Iuchar III 964</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>346</id>
+    <hoststar>23</hoststar>
+    <name>Heddwyn</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>347</id>
+    <hoststar>23</hoststar>
+    <name>Aeronwy</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>348</id>
+    <hoststar>23</hoststar>
+    <name>Belmawr</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>349</id>
+    <hoststar>23</hoststar>
+    <name>Deirdre</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>350</id>
+    <hoststar>23</hoststar>
+    <name>Fogwyrd</name>
+    <size>SMALL</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>351</id>
+    <hoststar>38</hoststar>
+    <name>Beira</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>352</id>
+    <hoststar>38</hoststar>
+    <name>Anextiomarus</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>353</id>
+    <hoststar>38</hoststar>
+    <name>Andraste</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>354</id>
+    <hoststar>38</hoststar>
+    <name>Mogwyrd</name>
+    <size>LARGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>355</id>
+    <hoststar>38</hoststar>
+    <name>Scotwyn</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>356</id>
+    <hoststar>11</hoststar>
+    <name>Ogma I 612</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>357</id>
+    <hoststar>11</hoststar>
+    <name>Ogma II 254</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>358</id>
+    <hoststar>11</hoststar>
+    <name>Ogma III 796</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>359</id>
+    <hoststar>11</hoststar>
+    <name>Ogma IV 219</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>360</id>
+    <hoststar>11</hoststar>
+    <name>Ogma V 326</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>361</id>
+    <hoststar>11</hoststar>
+    <name>Ogma VI 468</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>362</id>
+    <hoststar>11</hoststar>
+    <name>Lloch Fendwyn 1864</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>363</id>
+    <hoststar>48</hoststar>
+    <name>Tuireann I 386</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>364</id>
+    <hoststar>48</hoststar>
+    <name>Tuireann II 924</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>365</id>
+    <hoststar>48</hoststar>
+    <name>Tuireann III 408</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>366</id>
+    <hoststar>48</hoststar>
+    <name>Tuireann IV 417</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>367</id>
+    <hoststar>48</hoststar>
+    <name>Tuireann V 412</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>368</id>
+    <hoststar>62</hoststar>
+    <name>Rosmerta</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>369</id>
+    <hoststar>62</hoststar>
+    <name>Artio</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>370</id>
+    <hoststar>62</hoststar>
+    <name>Buxena 1872</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>371</id>
+    <hoststar>62</hoststar>
+    <name>Eprecura</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>372</id>
+    <hoststar>62</hoststar>
+    <name>Rudianwyr</name>
+    <size>LARGE</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>373</id>
+    <hoststar>62</hoststar>
+    <name>Cuchulainn</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>374</id>
+    <hoststar>62</hoststar>
+    <name>Cissonius</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>375</id>
+    <hoststar>62</hoststar>
+    <name>Cumulus</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>376</id>
+    <hoststar>63</hoststar>
+    <name>Ambartanen</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>377</id>
+    <hoststar>63</hoststar>
+    <name>Clota</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>378</id>
+    <hoststar>63</hoststar>
+    <name>Oisin</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>379</id>
+    <hoststar>63</hoststar>
+    <name>Tethryn</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>380</id>
+    <hoststar>63</hoststar>
+    <name>Connlyn</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>381</id>
+    <hoststar>63</hoststar>
+    <name>Solais</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>382</id>
+    <hoststar>19</hoststar>
+    <name>Allod I 401</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>383</id>
+    <hoststar>19</hoststar>
+    <name>Allod II 374</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>384</id>
+    <hoststar>19</hoststar>
+    <name>Allod III 517</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>385</id>
+    <hoststar>19</hoststar>
+    <name>Allod IV 349</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>386</id>
+    <hoststar>19</hoststar>
+    <name>Allod V 956</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>387</id>
+    <hoststar>50</hoststar>
+    <name>Lir I 298</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>388</id>
+    <hoststar>50</hoststar>
+    <name>Andewyr 1776</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>389</id>
+    <hoststar>50</hoststar>
+    <name>Lir II 364</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>390</id>
+    <hoststar>50</hoststar>
+    <name>Lir III 251</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>391</id>
+    <hoststar>50</hoststar>
+    <name>Lir IV 531</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>392</id>
+    <hoststar>50</hoststar>
+    <name>Lir V 274</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>393</id>
+    <hoststar>51</hoststar>
+    <name>Manannan I 821</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>394</id>
+    <hoststar>51</hoststar>
+    <name>Manannan II 341</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>395</id>
+    <hoststar>51</hoststar>
+    <name>Manannan III 476</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>396</id>
+    <hoststar>51</hoststar>
+    <name>Manannan IV 784</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>397</id>
+    <hoststar>47</hoststar>
+    <name>Elatha I 443</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>398</id>
+    <hoststar>47</hoststar>
+    <name>Elatha II 482</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>399</id>
+    <hoststar>47</hoststar>
+    <name>Elatha III 316</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>400</id>
+    <hoststar>47</hoststar>
+    <name>Aled Lluin 2096</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>401</id>
+    <hoststar>47</hoststar>
+    <name>Elatha IV 403</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>402</id>
+    <hoststar>47</hoststar>
+    <name>Aled Aerona 2102</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>403</id>
+    <hoststar>30</hoststar>
+    <name>Fiacha I 225</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>404</id>
+    <hoststar>30</hoststar>
+    <name>Fiacha II 852</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>405</id>
+    <hoststar>30</hoststar>
+    <name>Fiacha III 483</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>406</id>
+    <hoststar>30</hoststar>
+    <name>Fiacha IV 271</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>407</id>
+    <hoststar>30</hoststar>
+    <name>Fiacha V 549</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>408</id>
+    <hoststar>30</hoststar>
+    <name>Fiacha VI 212</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>409</id>
+    <hoststar>29</hoststar>
+    <name>Dagda I 538</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>410</id>
+    <hoststar>29</hoststar>
+    <name>Dagda II 408</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>411</id>
+    <hoststar>29</hoststar>
+    <name>Dagda III 246</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>412</id>
+    <hoststar>29</hoststar>
+    <name>Dagda IV 482</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>413</id>
+    <hoststar>29</hoststar>
+    <name>Dagda V 836</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>414</id>
+    <hoststar>29</hoststar>
+    <name>Dagda VI 301</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>415</id>
+    <hoststar>29</hoststar>
+    <name>Dagda VII 819</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>416</id>
+    <hoststar>29</hoststar>
+    <name>Dagda VIII 620</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>417</id>
+    <hoststar>14</hoststar>
+    <name>Bodb I 410</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>418</id>
+    <hoststar>14</hoststar>
+    <name>Bodb II 381</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>419</id>
+    <hoststar>14</hoststar>
+    <name>Bodb III 862</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>420</id>
+    <hoststar>14</hoststar>
+    <name>Bodb IV 268</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>421</id>
+    <hoststar>14</hoststar>
+    <name>Bodb V 571</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>422</id>
+    <hoststar>14</hoststar>
+    <name>Lloch Wyrdling 1864</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>423</id>
+    <hoststar>14</hoststar>
+    <name>Bodb VI 309</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>424</id>
+    <hoststar>85</hoststar>
+    <name>Cermait I 582</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>425</id>
+    <hoststar>85</hoststar>
+    <name>Cermait II 476</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>426</id>
+    <hoststar>85</hoststar>
+    <name>Cermait III 476</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>427</id>
+    <hoststar>85</hoststar>
+    <name>Cermait IV 236</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>428</id>
+    <hoststar>85</hoststar>
+    <name>Cermait V 546</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>429</id>
+    <hoststar>85</hoststar>
+    <name>Cermait VI 384</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+    <landable>false</landable>
+  </planet>
+  <planet>
+    <id>430</id>
+    <hoststar>85</hoststar>
+    <name>Cermait VII 953</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>431</id>
+    <hoststar>85</hoststar>
+    <name>Cermait VIII 470</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>432</id>
+    <hoststar>92</hoststar>
+    <name>Gorias VI 663</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>433</id>
+    <hoststar>92</hoststar>
+    <name>Gorias VII 899</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>434</id>
+    <hoststar>5</hoststar>
+    <name>Fingola I 841</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>435</id>
+    <hoststar>5</hoststar>
+    <name>Fingola II 582</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>436</id>
+    <hoststar>5</hoststar>
+    <name>Fingola III 736</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>437</id>
+    <hoststar>5</hoststar>
+    <name>Fingola IV 350</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>438</id>
+    <hoststar>5</hoststar>
+    <name>Fingola V 319</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>439</id>
+    <hoststar>33</hoststar>
+    <name>Tuatha</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>440</id>
+    <hoststar>33</hoststar>
+    <name>De Dannan 1876</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>441</id>
+    <hoststar>73</hoststar>
+    <name>Diar</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>442</id>
+    <hoststar>73</hoststar>
+    <name>Diar-Mait</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>443</id>
+    <hoststar>74</hoststar>
+    <name>Findtha 1220</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>444</id>
+    <hoststar>75</hoststar>
+    <name>En mac Ethamain</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>445</id>
+    <hoststar>75</hoststar>
+    <name>Culum Cuale</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>446</id>
+    <hoststar>93</hoststar>
+    <name>Mongan I 186</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>447</id>
+    <hoststar>93</hoststar>
+    <name>Mongan II 361</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>448</id>
+    <hoststar>41</hoststar>
+    <name>Aflafar</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>449</id>
+    <hoststar>41</hoststar>
+    <name>Cariadferch</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>450</id>
+    <hoststar>2</hoststar>
+    <name>Lough Leane 2389</name>
+    <size>SMALL</size>
+    <type>ASTEROID</type>
+    <color>GRAY</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>451</id>
+    <hoststar>2</hoststar>
+    <name>Dearg</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>452</id>
+    <hoststar>2</hoststar>
+    <name>Samhain</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>453</id>
+    <hoststar>2</hoststar>
+    <name>Oilell</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>454</id>
+    <hoststar>2</hoststar>
+    <name>Aran</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>GREEN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>455</id>
+    <hoststar>94</hoststar>
+    <name>Forgoll I 452</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>456</id>
+    <hoststar>94</hoststar>
+    <name>Forgoll II 635</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>457</id>
+    <hoststar>15</hoststar>
+    <name>Oifa I 284</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>458</id>
+    <hoststar>15</hoststar>
+    <name>Oifa II 496</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>459</id>
+    <hoststar>9</hoststar>
+    <name>Drnid I 312</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>460</id>
+    <hoststar>1</hoststar>
+    <name>Mac Howg I 299</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>461</id>
+    <hoststar>1</hoststar>
+    <name>Mac Howg II 865</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>462</id>
+    <hoststar>20</hoststar>
+    <name>Jurlagh Duane I 356</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TROPICAL</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>463</id>
+    <hoststar>20</hoststar>
+    <name>Jurlagh Duane II 710</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>464</id>
+    <hoststar>20</hoststar>
+    <name>Jurlagh Duane III 453</name>
+    <size>MEDIUM</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>465</id>
+    <hoststar>42</hoststar>
+    <name>Lusmore I 563</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>466</id>
+    <hoststar>42</hoststar>
+    <name>Lusmore II 752</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>467</id>
+    <hoststar>32</hoststar>
+    <name>Dermod</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>468</id>
+    <hoststar>13</hoststar>
+    <name>Deoch I 846</name>
+    <size>LARGE</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>469</id>
+    <hoststar>13</hoststar>
+    <name>Deoch II 469</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>470</id>
+    <hoststar>13</hoststar>
+    <name>Deoch III 371</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>VERY HEAVY</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>471</id>
+    <hoststar>7</hoststar>
+    <name>Cahir I 768</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>472</id>
+    <hoststar>7</hoststar>
+    <name>Cahir II 602</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>473</id>
+    <hoststar>7</hoststar>
+    <name>Cahir III 357</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>474</id>
+    <hoststar>7</hoststar>
+    <name>Cahir IV 241</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>475</id>
+    <hoststar>25</hoststar>
+    <name>Imlogue</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>476</id>
+    <hoststar>25</hoststar>
+    <name>Fada</name>
+    <size>MEDIUM</size>
+    <type>OCEANIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>477</id>
+    <hoststar>10</hoststar>
+    <name>Conn</name>
+    <size>LARGE</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>478</id>
+    <hoststar>28</hoststar>
+    <name>Inchegeela I 812</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>479</id>
+    <hoststar>28</hoststar>
+    <name>Inchegeela II 536</name>
+    <size>MEDIUM</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>480</id>
+    <hoststar>28</hoststar>
+    <name>Inchegeela III 273</name>
+    <size>LARGE</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>SUB-ARCTIC</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>481</id>
+    <hoststar>27</hoststar>
+    <name>Fiochra I 597</name>
+    <size>MEDIUM</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>INFERNO</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>FIRESTORM</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>482</id>
+    <hoststar>27</hoststar>
+    <name>Fiochra II 891</name>
+    <size>SMALL</size>
+    <type>MOLTEN</type>
+    <color>RED</color>
+    <temperature>SEARING</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>TRACE GASES</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>483</id>
+    <hoststar>27</hoststar>
+    <name>Fiacha III 136</name>
+    <size>HUGE</size>
+    <type>GAS GIANT</type>
+    <color>VIOLET</color>
+    <temperature>INFERNO</temperature>
+    <gravity>CRUSHING</gravity>
+    <atmosphere>TOXIC</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>484</id>
+    <hoststar>6</hoststar>
+    <name>Lairgnen I 916</name>
+    <size>SMALL</size>
+    <type>ROCKY</type>
+    <color>BROWN</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>VERY LOW</gravity>
+    <atmosphere>NONE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>485</id>
+    <hoststar>6</hoststar>
+    <name>Lairgnen II 857</name>
+    <size>SMALL</size>
+    <type>FROZEN</type>
+    <color>WHITE</color>
+    <temperature>ARCTIC</temperature>
+    <gravity>NEGLIGIBLE</gravity>
+    <atmosphere>BREATHABLE</atmosphere>
+    <weather />
+  </planet>
+  <planet>
+    <id>486</id>
+    <hoststar>87</hoststar>
+    <name>Mathgen IV 486</name>
+    <size>MEDIUM</size>
+    <type>ACIDIC</type>
+    <color>BLUE</color>
+    <temperature>TEMPERATE</temperature>
+    <gravity>OPTIMAL</gravity>
+    <atmosphere>ACIDIC</atmosphere>
+    <weather />
+  </planet>
+  <sector>
+    <id>1</id>
+    <row>1</row>
+    <col>1</col>
+    <faction>PIRATE</faction>
+    <piracy>75</piracy>
+    <military>0</military>
+    <trade>0</trade>
+  </sector>
+</galaxy>

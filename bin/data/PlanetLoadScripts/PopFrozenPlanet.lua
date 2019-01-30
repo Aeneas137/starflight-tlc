@@ -1,0 +1,123 @@
+-- Populate Frozen Planet Script
+
+
+--lifeForm = { ItemID, ScriptPath, ScriptName, InitImagetoLoad, InitAngleOffset, InitScale, InitFaceAngle, InitColHalfWidth, InitColHalfHeight,
+--				InitObjectType, InitPortraitName, InitPortraitImage }
+
+lifeForms = {}
+
+-- 56 - Goransil			
+lifeForm = { 56, "data\\basicLifeForm.lua", "basicLifeForm", "data//C_2Leg_Small.tga", 0, 1, 0, 11, 11, 0, "", "" }
+lifeForms[0] = lifeForm
+
+-- 109 - Brass Harpooner			
+lifeForm = { 109, "data\\basicLifeForm.lua", "basicLifeForm", "data//C_2Leg_Large.tga", 0, 1, 0, 17, 17, 0, "", "" }
+lifeForms[1] = lifeForm
+
+-- 103 - Purple Screecher			
+lifeForm = { 103, "data\\basicLifeForm.lua", "basicLifeForm", "data//C_Bird_Large.tga", 0, 1, 0, 16, 16, 0, "", "" }
+lifeForms[2] = lifeForm
+
+-- 97 - Breykil
+lifeForm = { 97, "data\\basicLifeForm.lua", "basicLifeForm", "data//C_Rodent_Huge.tga", 0, 1, 0, 18, 18, 0, "", "" }
+lifeForms[3] = lifeForm 
+
+-- 84 - Crystal Sponge Plant
+lifeForm = { 84, "data\\basicLifeForm.lua", "basicLifeForm", "data//P_Crystal_Small.tga", 0, 1, 0, 15, 15, 0, "", "" }
+lifeForms[4] = lifeForm 
+
+-- 83 - Poison Glider
+lifeForm = { 83, "data\\basicLifeForm.lua", "basicLifeForm", "data//C_Bat_Large.tga", 0, 1, 0, 9, 9, 0, "", "" }
+lifeForms[5] = lifeForm 
+
+-- 76 - Parachute Spider
+lifeForm = { 76, "data\\basicLifeForm.lua", "basicLifeForm", "data//C_Spider_Giant.tga", 0, 1, 0, 19, 19, 0, "", "" }
+lifeForms[6] = lifeForm 
+
+-- 68 - Spinning Crab
+lifeForm = { 68, "data\\basicLifeForm.lua", "basicLifeForm", "data//C_Starfish_Large.tga", 0, 1, 0, 15, 15, 0, "", "" }
+lifeForms[7] = lifeForm 
+
+-- 65 - Woolen Qian
+lifeForm = { 65, "data\\basicLifeForm.lua", "basicLifeForm", "data//C_Bird_Yellow.tga", 0, 1, 0, 17, 17, 0, "", "" }
+lifeForms[8] = lifeForm
+
+-- 64 - Scaly Blue Hopper
+lifeForm = { 64, "data\\basicLifeForm.lua", "basicLifeForm", "data//C_Bat_Large.tga", 0, 1, 0, 17, 17, 0, "", "" }
+lifeForms[9] = lifeForm
+
+-- 60 - Whistling Isis			
+lifeForm = { 60, "data\\basicLifeForm.lua", "basicLifeForm", "data//P_Plant_Small.tga", 0, 1, 0, 15, 15, 0, "", "" }
+lifeForms[10] = lifeForm
+
+
+TotalLifeForms = 11
+
+L_LoadScript("data\\basicLifeForm.lua")
+numLifeFormTypes = math.random(7)
+
+
+for i=0, numLifeFormTypes do
+
+	LifeFormID = math.random(TotalLifeForms)
+	numLifeForm = math.random(10)
+
+	--Load the script
+	L_LoadScript(lifeForms[LifeFormID][2])
+
+	-- fill up the init variables
+	InitImagetoLoad = lifeForms[LifeFormID][4]
+	InitAngleOffset = lifeForms[LifeFormID][5]
+	InitScale = lifeForms[LifeFormID][6]
+	InitFaceAngle = lifeForms[LifeFormID][7]
+	InitColHalfWidth = lifeForms[LifeFormID][8]
+	InitColHalfHeight = lifeForms[LifeFormID][9]
+	InitObjectType = lifeForms[LifeFormID][10]
+	InitPortraitName = lifeForms[LifeFormID][11]
+	InitPortraitImage = lifeForms[LifeFormID][12]
+
+	for j=0, numLifeForm do
+		--print( "LifeForm " .. lifeForms[LifeFormID] )
+
+		id = L_CreateNewPSObyItemID(lifeForms[LifeFormID][3], lifeForms[LifeFormID][1])
+
+	end
+end
+
+
+
+-- 30 - Lead
+-- 31 - Iron
+-- 32 - Cobalt
+-- 33 - Nickel
+-- 34 - Copper
+-- 35 - Zinc
+-- 36 - Molybdenum
+-- 37 - Tin
+-- 38 - Magnesium
+-- 39 - Aluminum
+-- 40 - Titanium
+-- 41 - Chromium
+-- 51 - Berisin
+
+minerals = {30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 51}
+
+TotalMinerals = 12
+
+L_LoadScript("data\\mineral.lua")
+numMineralTypes = math.random(5)
+
+
+for i=0, numMineralTypes do
+
+	MineralID = math.random(TotalMinerals)
+	numMineral = math.random(10)
+	for j=0, numMineral do
+		--print( "Mineral " .. minerals[MineralID] )
+		id = L_CreateNewPSObyItemID("mineral", minerals[MineralID])
+
+	end
+end	
+	
+
+

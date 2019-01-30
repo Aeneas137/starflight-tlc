@@ -1,0 +1,1448 @@
+<!-- 
+	STARFLIGHT - THE LOST COLONY
+	Item database: Lifeforms, Minerals, Trade Items, Artifacts
+		Note: Ship Upgrades and Specialty Goods have been removed!
+		Note: The Item Editor / Quest Editor tools are no longer up to date, so don't use them!
+	Available item id's to be recycled:  see bottom of database
+	Artifact notes: 	Map Center = 0,0
+				X = longitude; -X = West; +X = East
+				Y = latitude; -Y = North; +Y = South
+-->
+<?xml version="1.0" standalone="yes"?>
+<items>
+  <item>
+    <ID>1</ID>
+    <Type>Artifact</Type>
+    <Name>Tafel Wreck Debris</Name>
+    <planetid>78</planetid>
+    <x>28</x>
+	<y>71</y>
+  </item>
+  <item>
+    <ID>2</ID>
+    <Type>Artifact</Type>
+    <Name>Hypercube</Name>
+    <planetid>8</planetid>
+    <x>-10</x>
+	<y>20</y>
+  </item>
+  <item>
+    <ID>3</ID>
+    <Type>Artifact</Type>
+    <Name>Shimmering Pyramid</Name>
+    <planetid>197</planetid>
+    <x>-72</x>
+	<y>49</y>
+  </item>
+  <item>
+    <ID>4</ID>
+    <Type>Artifact</Type>
+    <Name>Ancient Database Plates</Name>
+    <planetid>391</planetid>
+    <x>-11</x>
+	<y>-24</y>
+  </item>
+  <item>
+    <ID>5</ID>
+    <Type>Artifact</Type>
+    <Name>Crystal Sphere</Name>
+    <planetid>308</planetid>
+    <x>-13</x>
+	<y>-29</y>
+  </item>
+  <item>
+    <ID>30</ID>
+    <Type>Mineral</Type>
+    <Name>Lead</Name>
+    <Value>40</Value>
+  </item>
+  <item>
+    <ID>31</ID>
+    <Type>Mineral</Type>
+    <Name>Iron</Name>
+    <Value>60</Value>
+  </item>
+  <item>
+    <ID>32</ID>
+    <Type>Mineral</Type>
+    <Name>Cobalt</Name>
+    <Value>80</Value>
+    <ShipRepairMetal>true</ShipRepairMetal>
+  </item>
+  <item>
+    <ID>33</ID>
+    <Type>Mineral</Type>
+    <Name>Nickel</Name>
+    <Value>100</Value>
+  </item>
+  <item>
+    <ID>34</ID>
+    <Type>Mineral</Type>
+    <Name>Copper</Name>
+    <Value>120</Value>
+  </item>
+  <item>
+    <ID>35</ID>
+    <Type>Mineral</Type>
+    <Name>Zinc</Name>
+    <Value>140</Value>
+  </item>
+  <item>
+    <ID>36</ID>
+    <Type>Mineral</Type>
+    <Name>Molybdenum</Name>
+    <Value>160</Value>
+    <ShipRepairMetal>true</ShipRepairMetal>
+  </item>
+  <item>
+    <ID>37</ID>
+    <Type>Mineral</Type>
+    <Name>Tin</Name>
+    <Value>180</Value>
+  </item>
+  <item>
+    <ID>38</ID>
+    <Type>Mineral</Type>
+    <Name>Magnesium</Name>
+    <Value>200</Value>
+  </item>
+  <item>
+    <ID>39</ID>
+    <Type>Mineral</Type>
+    <Name>Aluminum</Name>
+    <Value>220</Value>
+    <ShipRepairMetal>true</ShipRepairMetal>
+  </item>
+  <item>
+    <ID>40</ID>
+    <Type>Mineral</Type>
+    <Name>Titanium</Name>
+    <Value>240</Value>
+    <ShipRepairMetal>true</ShipRepairMetal>
+  </item>
+  <item>
+    <ID>41</ID>
+    <Type>Mineral</Type>
+    <Name>Potassium</Name>
+    <Value>260</Value>
+  </item>
+  <item>
+    <ID>42</ID>
+    <Type>Mineral</Type>
+    <Name>Antimony</Name>
+    <Value>280</Value>
+  </item>
+  <item>
+    <ID>43</ID>
+    <Type>Mineral</Type>
+    <Name>Sulfur</Name>
+    <Value>240</Value>
+  </item>
+  <item>
+    <ID>44</ID>
+    <Type>Mineral</Type>
+    <Name>Silica</Name>
+    <Value>320</Value>
+    <ShipRepairMetal>true</ShipRepairMetal>
+  </item>
+  <item>
+    <ID>45</ID>
+    <Type>Mineral</Type>
+    <Name>Bismuth</Name>
+    <Value>340</Value>
+  </item>
+  <item>
+    <ID>46</ID>
+    <Type>Mineral</Type>
+    <Name>Silver</Name>
+    <Value>360</Value>
+  </item>
+  <item>
+    <ID>47</ID>
+    <Type>Mineral</Type>
+    <Name>Gold</Name>
+    <Value>380</Value>
+  </item>
+  <item>
+    <ID>48</ID>
+    <Type>Mineral</Type>
+    <Name>Platinum</Name>
+    <Value>400</Value>
+  </item>
+  <item>
+    <ID>49</ID>
+    <Type>Mineral</Type>
+    <Name>Thorium</Name>
+    <Value>420</Value>
+  </item>
+  <item>
+    <ID>50</ID>
+    <Type>Mineral</Type>
+    <Name>Iridium</Name>
+    <Value>440</Value>
+  </item>
+  <item>
+    <ID>51</ID>
+    <Type>Mineral</Type>
+    <Name>Radium</Name>
+    <Value>460</Value>
+  </item>
+  <item>
+    <ID>52</ID>
+    <Type>Mineral</Type>
+    <Name>Uranium</Name>
+    <Value>480</Value>
+  </item>
+  <item>
+    <ID>53</ID>
+    <Type>Mineral</Type>
+    <Name>Quorsitanium</Name>
+    <Value>750</Value>
+  </item>
+  <item>
+    <ID>54</ID>
+    <Type>Mineral</Type>
+    <Name>Endurium</Name>
+    <Value>800</Value>
+  </item>
+  <item>
+    <ID>55</ID>
+    <Type>Life Form</Type>
+    <Name>Pop Berry Plant</Name>
+    <Value>400</Value>
+    <Size>1</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>56</ID>
+    <Type>Life Form</Type>
+    <Name>Goransil</Name>
+    <Value>550</Value>
+    <Size>1</Size>
+    <Speed>1</Speed>
+    <Danger>1</Danger>
+    <Damage>20</Damage>
+  </item>
+  <item>
+    <ID>57</ID>
+    <Type>Life Form</Type>
+    <Name>Plant Bird</Name>
+    <Value>600</Value>
+    <Size>1</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>58</ID>
+    <Type>Life Form</Type>
+    <Name>Rocket Melons</Name>
+    <Value>600</Value>
+    <Size>3</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>59</ID>
+    <Type>Life Form</Type>
+    <Name>Vertruks</Name>
+    <Value>600</Value>
+    <Size>3</Size>
+    <Speed>1</Speed>
+    <Danger>1</Danger>
+    <Damage>40</Damage>
+    <Portrait>T_Plain_Vertruk.tga</Portrait>
+  </item>
+  <item>
+    <ID>60</ID>
+    <Type>Life Form</Type>
+    <Name>Whistling Isis</Name>
+    <Value>650</Value>
+    <Size>1</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>61</ID>
+    <Type>Life Form</Type>
+    <Name>Red Puff-Wart</Name>
+    <Value>700</Value>
+    <Size>1</Size>
+    <Speed>1</Speed>
+    <Danger>1</Danger>
+    <Damage>30</Damage>
+  </item>
+  <item>
+    <ID>62</ID>
+    <Type>Life Form</Type>
+    <Name>Sticky Fruit</Name>
+    <Value>800</Value>
+    <Size>2</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>63</ID>
+    <Type>Life Form</Type>
+    <Name>Hive Plant</Name>
+    <Value>900</Value>
+    <Size>3</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>64</ID>
+    <Type>Life Form</Type>
+    <Name>Scaly Blue Hopper</Name>
+    <Value>900</Value>
+    <Size>1</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>65</ID>
+    <Type>Life Form</Type>
+    <Name>Woolen Qians</Name>
+    <Value>1000</Value>
+    <Size>2</Size>
+    <Speed>3</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>66</ID>
+    <Type>Life Form</Type>
+    <Name>Hill Rat</Name>
+    <Value>1000</Value>
+    <Size>1</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>67</ID>
+    <Type>Life Form</Type>
+    <Name>Pulsating Gummy</Name>
+    <Value>1200</Value>
+    <Size>2</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>68</ID>
+    <Type>Life Form</Type>
+    <Name>Spinning Crab</Name>
+    <Value>1200</Value>
+    <Size>1</Size>
+    <Speed>3</Speed>
+    <Danger>1</Danger>
+    <Damage>50</Damage>
+  </item>
+  <item>
+    <ID>69</ID>
+    <Type>Life Form</Type>
+    <Name>Black Acid Squirter</Name>
+    <Value>1600</Value>
+    <Size>2</Size>
+    <Speed>1</Speed>
+    <Danger>1</Danger>
+    <Damage>70</Damage>
+  </item>
+  <item>
+    <ID>70</ID>
+    <Type>Life Form</Type>
+    <Name>Humanoid Hopper</Name>
+    <Value>1950</Value>
+    <Size>3</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>71</ID>
+    <Type>Life Form</Type>
+    <Name>Verant Rose</Name>
+    <Value>2000</Value>
+    <Size>1</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>72</ID>
+    <Type>Life Form</Type>
+    <Name>Vacuum Slug</Name>
+    <Value>2000</Value>
+    <Size>2</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>73</ID>
+    <Type>Life Form</Type>
+    <Name>Hot Fungus</Name>
+    <Value>2000</Value>
+    <Size>1</Size>
+    <Speed>1</Speed>
+    <Danger>3</Danger>
+    <Damage>350</Damage>
+  </item>
+  <item>
+    <ID>74</ID>
+    <Type>Life Form</Type>
+    <Name>Psychic Blaster</Name>
+    <Value>2200</Value>
+    <Size>2</Size>
+    <Speed>3</Speed>
+    <Danger>1</Danger>
+    <Damage>100</Damage>
+  </item>
+  <item>
+    <ID>75</ID>
+    <Type>Life Form</Type>
+    <Name>Oily Spore Bush</Name>
+    <Value>2250</Value>
+    <Size>3</Size>
+    <Speed>1</Speed>
+    <Danger>1</Danger>
+    <Damage>1</Damage>
+  </item>
+  <item>
+    <ID>76</ID>
+    <Type>Life Form</Type>
+    <Name>Parachute Spider</Name>
+    <Value>2400</Value>
+    <Size>3</Size>
+    <Speed>3</Speed>
+    <Danger>1</Danger>
+    <Damage>50</Damage>
+  </item>
+  <item>
+    <ID>77</ID>
+    <Type>Life Form</Type>
+    <Name>Wandering Chandelier</Name>
+    <Value>2500</Value>
+    <Size>10</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>78</ID>
+    <Type>Life Form</Type>
+    <Name>Wheel Snake</Name>
+    <Value>2600</Value>
+    <Size>2</Size>
+    <Speed>3</Speed>
+    <Danger>3</Danger>
+    <Damage>230</Damage>
+  </item>
+  <item>
+    <ID>79</ID>
+    <Type>Life Form</Type>
+    <Name>Glowing Spinner</Name>
+    <Value>2700</Value>
+    <Size>4</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>80</ID>
+    <Type>Life Form</Type>
+    <Name>Fei Raptor</Name>
+    <Value>2700</Value>
+    <Size>4</Size>
+    <Speed>5</Speed>
+    <Danger>3</Danger>
+    <Damage>350</Damage>
+  </item>
+  <item>
+    <ID>81</ID>
+    <Type>Life Form</Type>
+    <Name>Breathing Cactus</Name>
+    <Value>2700</Value>
+    <Size>3</Size>
+    <Speed>1</Speed>
+    <Danger>1</Danger>
+    <Damage>75</Damage>
+  </item>
+  <item>
+    <ID>82</ID>
+    <Type>Life Form</Type>
+    <Name>Green Baloon</Name>
+    <Value>3000</Value>
+    <Size>6</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>83</ID>
+    <Type>Life Form</Type>
+    <Name>Poison Glider</Name>
+    <Value>3000</Value>
+    <Size>2</Size>
+    <Speed>3</Speed>
+    <Danger>3</Danger>
+    <Damage>350</Damage>
+  </item>
+  <item>
+    <ID>84</ID>
+    <Type>Life Form</Type>
+    <Name>Crystal Sponge Plant</Name>
+    <Value>3250</Value>
+    <Size>5</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>85</ID>
+    <Type>Life Form</Type>
+    <Name>Vercingle</Name>
+    <Value>3400</Value>
+    <Size>3</Size>
+    <Speed>1</Speed>
+    <Danger>2</Danger>
+    <Damage>210</Damage>
+  </item>
+  <item>
+    <ID>86</ID>
+    <Type>Life Form</Type>
+    <Name>Golden Whisper</Name>
+    <Value>3400</Value>
+    <Size>1</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>87</ID>
+    <Type>Life Form</Type>
+    <Name>Expanding Hippo</Name>
+    <Value>3500</Value>
+    <Size>7</Size>
+    <Speed>2</Speed>
+    <Danger>4</Danger>
+    <Damage>250</Damage>
+  </item>
+  <item>
+    <ID>88</ID>
+    <Type>Life Form</Type>
+    <Name>Beryl Fox</Name>
+    <Value>3500</Value>
+    <Size>2</Size>
+    <Speed>4</Speed>
+    <Danger>4</Danger>
+    <Damage>350</Damage>
+  </item>
+  <item>
+    <ID>89</ID>
+    <Type>Life Form</Type>
+    <Name>Single Leaf</Name>
+    <Value>3575</Value>
+    <Size>11</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>90</ID>
+    <Type>Life Form</Type>
+    <Name>Yellow Hugger</Name>
+    <Value>3600</Value>
+    <Size>4</Size>
+    <Speed>3</Speed>
+    <Danger>2</Danger>
+    <Damage>160</Damage>
+  </item>
+  <item>
+    <ID>91</ID>
+    <Type>Life Form</Type>
+    <Name>Hereis Fern</Name>
+    <Value>3800</Value>
+    <Size>6</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>92</ID>
+    <Type>Life Form</Type>
+    <Name>Fur Tree</Name>
+    <Value>4000</Value>
+    <Size>20</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>93</ID>
+    <Type>Life Form</Type>
+    <Name>Milmataur</Name>
+    <Value>4150</Value>
+    <Size>14</Size>
+    <Speed>1</Speed>
+    <Danger>5</Danger>
+    <Damage>450</Damage>
+  </item>
+  <item>
+    <ID>94</ID>
+    <Type>Life Form</Type>
+    <Name>Electric Baloon</Name>
+    <Value>4250</Value>
+    <Size>5</Size>
+    <Speed>3</Speed>
+    <Danger>2</Danger>
+    <Damage>180</Damage>
+  </item>
+  <item>
+    <ID>95</ID>
+    <Type>Life Form</Type>
+    <Name>Running Fungus</Name>
+    <Value>4500</Value>
+    <Size>5</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>96</ID>
+    <Type>Life Form</Type>
+    <Name>Grey Anemone</Name>
+    <Value>4500</Value>
+    <Size>6</Size>
+    <Speed>3</Speed>
+    <Danger>2</Danger>
+    <Damage>200</Damage>
+  </item>
+  <item>
+    <ID>97</ID>
+    <Type>Life Form</Type>
+    <Name>Breykil</Name>
+    <Value>4550</Value>
+    <Size>4</Size>
+    <Speed>1</Speed>
+    <Danger>4</Danger>
+    <Damage>350</Damage>
+  </item>
+  <item>
+    <ID>98</ID>
+    <Type>Life Form</Type>
+    <Name>Green Blob</Name>
+    <Value>4800</Value>
+    <Size>8</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>99</ID>
+    <Type>Life Form</Type>
+    <Name>Funnel Tree</Name>
+    <Value>4800</Value>
+    <Size>16</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>100</ID>
+    <Type>Life Form</Type>
+    <Name>Jerkyl Fern</Name>
+    <Value>4800</Value>
+    <Size>1</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>101</ID>
+    <Type>Life Form</Type>
+    <Name>Bestruggle</Name>
+    <Value>4850</Value>
+    <Size>4</Size>
+    <Speed>3</Speed>
+    <Danger>6</Danger>
+    <Damage>620</Damage>
+  </item>
+  <item>
+    <ID>102</ID>
+    <Type>Life Form</Type>
+    <Name>Marwick Sprinter</Name>
+    <Value>4950</Value>
+    <Size>5</Size>
+    <Speed>5</Speed>
+    <Danger>4</Danger>
+    <Damage>400</Damage>
+  </item>
+  <item>
+    <ID>103</ID>
+    <Type>Life Form</Type>
+    <Name>Purple Screecher</Name>
+    <Value>5200</Value>
+    <Size>4</Size>
+    <Speed>4</Speed>
+    <Danger>2</Danger>
+    <Damage>170</Damage>
+  </item>
+  <item>
+    <ID>104</ID>
+    <Type>Life Form</Type>
+    <Name>Peacock Tree</Name>
+    <Value>5200</Value>
+    <Size>13</Size>
+    <Speed>1</Speed>
+    <Danger>2</Danger>
+    <Damage>150</Damage>
+  </item>
+  <item>
+    <ID>105</ID>
+    <Type>Life Form</Type>
+    <Name>Sandpit Stalker</Name>
+    <Value>6000</Value>
+    <Size>4</Size>
+    <Speed>1</Speed>
+    <Danger>3</Danger>
+    <Damage>400</Damage>
+  </item>
+  <item>
+    <ID>106</ID>
+    <Type>Life Form</Type>
+    <Name>Eight-Legged Rhino</Name>
+    <Value>9800</Value>
+    <Size>7</Size>
+    <Speed>3</Speed>
+    <Danger>5</Danger>
+    <Damage>450</Damage>
+  </item>
+  <item>
+    <ID>107</ID>
+    <Type>Life Form</Type>
+    <Name>Radit Slug</Name>
+    <Value>9950</Value>
+    <Size>11</Size>
+    <Speed>2</Speed>
+    <Danger>6</Danger>
+    <Damage>650</Damage>
+  </item>
+  <item>
+    <ID>108</ID>
+    <Type>Life Form</Type>
+    <Name>Stinging Cone</Name>
+    <Value>10000</Value>
+    <Size>10</Size>
+    <Speed>1</Speed>
+    <Danger>2</Danger>
+    <Damage>190</Damage>
+  </item>
+  <item>
+    <ID>109</ID>
+    <Type>Life Form</Type>
+    <Name>Brass Harpooner</Name>
+    <Value>14400</Value>
+    <Size>8</Size>
+    <Speed>3</Speed>
+    <Danger>5</Danger>
+    <Damage>450</Damage>
+  </item>
+  <item>
+    <ID>110</ID>
+    <Type>Life Form</Type>
+    <Name>Midloth Fruit-tree</Name>
+    <Value>16800</Value>
+    <Size>12</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>111</ID>
+    <Type>Life Form</Type>
+    <Name>Brescin Fireling</Name>
+    <Value>18000</Value>
+    <Size>6</Size>
+    <Speed>5</Speed>
+    <Danger>7</Danger>
+    <Damage>750</Damage>
+  </item>
+  <item>
+    <ID>112</ID>
+    <Type>Life Form</Type>
+    <Name>Humming Rock</Name>
+    <Value>0</Value>
+    <Size>3</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+  </item>
+  <item>
+    <ID>113</ID>
+    <Type>Life Form</Type>
+    <Name>Dark Lightning</Name>
+    <Value>0</Value>
+    <Size>6</Size>
+    <Speed>3</Speed>
+    <Danger>9</Danger>
+    <Damage>1000</Damage>
+  </item>
+  <item>
+    <ID>114</ID>
+    <Type>Trade Item</Type>
+    <Name>Native Meats</Name>
+    <Value>120</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Livestock.tga</Portrait>
+  </item>
+  <item>
+    <ID>115</ID>
+    <Type>Trade Item</Type>
+    <Name>Native Vegetables</Name>
+    <Value>120</Value>
+    <Age>Stone</Age>
+    <Portrait>T_FruitsandVeg.tga</Portrait>
+  </item>
+  <item>
+    <ID>116</ID>
+    <Type>Trade Item</Type>
+    <Name>Seeds and Spores</Name>
+    <Value>185</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Seeds.tga</Portrait>
+  </item>
+  <item>
+    <ID>117</ID>
+    <Type>Trade Item</Type>
+    <Name>Stone Age Tools and Weapons</Name>
+    <Value>215</Value>
+    <Age>Stone</Age>
+    <Portrait>T_FarmTools.tga</Portrait>
+  </item>
+  <item>
+    <ID>118</ID>
+    <Type>Trade Item</Type>
+    <Name>Stone Age Musical Instruments</Name>
+    <Value>260</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Instruments.tga</Portrait>
+  </item>
+  <item>
+    <ID>119</ID>
+    <Type>Trade Item</Type>
+    <Name>Stone Age Art Objects</Name>
+    <Value>290</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Art.tga</Portrait>
+  </item>
+  <item>
+    <ID>120</ID>
+    <Type>Trade Item</Type>
+    <Name>Narcotics</Name>
+    <Value>310</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Medicine.tga</Portrait>
+  </item>
+  <item>
+    <ID>121</ID>
+    <Type>Trade Item</Type>
+    <Name>Gemstones amd Geoforms</Name>
+    <Value>530</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Gems.tga</Portrait>
+  </item>
+  <item>
+    <ID>122</ID>
+    <Type>Trade Item</Type>
+    <Name>Poisonous Fauna</Name>
+    <Value>590</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Skins.tga</Portrait>
+  </item>
+  <item>
+    <ID>123</ID>
+    <Type>Trade Item</Type>
+    <Name>Furs and Skins</Name>
+    <Value>630</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Furs.tga</Portrait>
+  </item>
+  <item>
+    <ID>124</ID>
+    <Type>Trade Item</Type>
+    <Name>Cloths</Name>
+    <Value>310</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Furs</Portrait>
+  </item>
+  <item>
+    <ID>125</ID>
+    <Type>Trade Item</Type>
+    <Name>Tapestries</Name>
+    <Value>360</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Art.tga</Portrait>
+  </item>
+  <item>
+    <ID>126</ID>
+    <Type>Trade Item</Type>
+    <Name>Religious Icons</Name>
+    <Value>400</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Art.tga</Portrait>
+  </item>
+  <item>
+    <ID>127</ID>
+    <Type>Trade Item</Type>
+    <Name>Metal Age Weapons and Armor</Name>
+    <Value>430</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Weapons_Metal</Portrait>
+  </item>
+  <item>
+    <ID>128</ID>
+    <Type>Trade Item</Type>
+    <Name>Metal Age Tools</Name>
+    <Value>445</Value>
+    <Age>Metal</Age>
+    <Portrait>T_FarmTools.tga</Portrait>
+  </item>
+  <item>
+    <ID>129</ID>
+    <Type>Trade Item</Type>
+    <Name>Metal Age Medicines</Name>
+    <Value>510</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Medicine.tga</Portrait>
+  </item>
+  <item>
+    <ID>130</ID>
+    <Type>Trade Item</Type>
+    <Name>Native Science Texts</Name>
+    <Value>530</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Books.tga</Portrait>
+  </item>
+  <item>
+    <ID>131</ID>
+    <Type>Trade Item</Type>
+    <Name>Native Literature</Name>
+    <Value>630</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Books.tga</Portrait>
+  </item>
+  <item>
+    <ID>132</ID>
+    <Type>Trade Item</Type>
+    <Name>Assorted Gemstones</Name>
+    <Value>800</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Gems.tga</Portrait>
+  </item>
+  <item>
+    <ID>133</ID>
+    <Type>Trade Item</Type>
+    <Name>Synthetic Foods and Chemicals</Name>
+    <Value>500</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_FruitsandVeg.tga</Portrait>
+  </item>
+  <item>
+    <ID>134</ID>
+    <Type>Trade Item</Type>
+    <Name>Synthetic Materials</Name>
+    <Value>550</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Seeds.tga</Portrait>
+  </item>
+  <item>
+    <ID>135</ID>
+    <Type>Trade Item</Type>
+    <Name>I.A. Civilian Electronics</Name>
+    <Value>580</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Electronics.tga</Portrait>
+  </item>
+  <item>
+    <ID>136</ID>
+    <Type>Trade Item</Type>
+    <Name>Hypnotic Instruments</Name>
+    <Value>750</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Instruments.tga</Portrait>
+  </item>
+  <item>
+    <ID>137</ID>
+    <Type>Trade Item</Type>
+    <Name>I.A. Military Electronics</Name>
+    <Value>800</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Electronics.tga</Portrait>
+  </item>
+  <item>
+    <ID>138</ID>
+    <Type>Trade Item</Type>
+    <Name>Genetically Enhanced Cattle</Name>
+    <Value>920</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Livestock.tga</Portrait>
+  </item>
+  <item>
+    <ID>139</ID>
+    <Type>Trade Item</Type>
+    <Name>I.A. Medicines</Name>
+    <Value>970</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Medicine.tga</Portrait>
+  </item>
+  <item>
+    <ID>140</ID>
+    <Type>Trade Item</Type>
+    <Name>Basic Computing Essentials</Name>
+    <Value>1200</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Electronics.tga</Portrait>
+  </item>
+  <item>
+    <ID>141</ID>
+    <Type>Trade Item</Type>
+    <Name>Hardy Ameobas</Name>
+    <Value>1350</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>142</ID>
+    <Type>Trade Item</Type>
+    <Name>Glush Cola</Name>
+    <Value>75</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Booze.tga</Portrait>
+  </item>
+  <item>
+    <ID>143</ID>
+    <Type>Trade Item</Type>
+    <Name>Data Hold</Name>
+    <Value>100</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Computuers.tga</Portrait>
+  </item>
+  <item>
+    <ID>144</ID>
+    <Type>Trade Item</Type>
+    <Name>Lovely Glortblorps</Name>
+    <Value>150</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_FruitsandVeg.tga</Portrait>
+  </item>
+  <item>
+    <ID>145</ID>
+    <Type>Trade Item</Type>
+    <Name>Data Shell</Name>
+    <Value>190</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Reactor.tga</Portrait>
+  </item>
+  <item>
+    <ID>146</ID>
+    <Type>Trade Item</Type>
+    <Name>Data Crystals</Name>
+    <Value>225</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Computuers.tga</Portrait>
+  </item>
+  <item>
+    <ID>147</ID>
+    <Type>Trade Item</Type>
+    <Name>Net Probes</Name>
+    <Value>225</Value>
+    <Age>Spacefaring</Age>
+    <BlackMarket>true</BlackMarket>
+    <Portrait>T_Reactor.tga</Portrait>
+  </item>
+  <item>
+    <ID>148</ID>
+    <Type>Trade Item</Type>
+    <Name>Basic Robots and Automatons</Name>
+    <Value>260</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Robots.tga</Portrait>
+  </item>
+  <item>
+    <ID>149</ID>
+    <Type>Trade Item</Type>
+    <Name>Escape Pod</Name>
+    <Value>350</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_EscapePod.tga</Portrait>
+  </item>
+  <item>
+    <ID>150</ID>
+    <Type>Trade Item</Type>
+    <Name>Decoder</Name>
+    <Value>445</Value>
+    <Age>Spacefaring</Age>
+    <BlackMarket>true</BlackMarket>
+    <Portrait>T_Electronics.tga</Portrait>
+  </item>
+  <item>
+    <ID>151</ID>
+    <Type>Trade Item</Type>
+    <Name>Adv. Robots and Automatons</Name>
+    <Value>540</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Robots.tga</Portrait>
+  </item>
+  <item>
+    <ID>152</ID>
+    <Type>Trade Item</Type>
+    <Name>Holovids</Name>
+    <Value>610</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_NavComputer.tga</Portrait>
+  </item>
+  <item>
+    <ID>153</ID>
+    <Type>Trade Item</Type>
+    <Name>Universal Power Adapter</Name>
+    <Value>725</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Reactor.tga</Portrait>
+  </item>
+  <item>
+    <ID>154</ID>
+    <Type>Trade Item</Type>
+    <Name>Heavy Molecules</Name>
+    <Value>780</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Liquid.tga</Portrait>
+  </item>
+  <item>
+    <ID>155</ID>
+    <Type>Trade Item</Type>
+    <Name>Dreamgrids</Name>
+    <Value>800</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>156</ID>
+    <Type>Trade Item</Type>
+    <Name>C.E. Robots and Automatons</Name>
+    <Value>850</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Robots.tga</Portrait>
+  </item>
+  <item>
+    <ID>157</ID>
+    <Type>Trade Item</Type>
+    <Name>Break-it-down Enzymes</Name>
+    <Value>875</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Pottery.tga</Portrait>
+  </item>
+  <item>
+    <ID>158</ID>
+    <Type>Trade Item</Type>
+    <Name>Spacefaring Age Medicines</Name>
+    <Value>900</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Medicine.tga</Portrait>
+  </item>
+  <item>
+    <ID>159</ID>
+    <Type>Trade Item</Type>
+    <Name>Screech Harps</Name>
+    <Value>1000</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Instruments.tag</Portrait>
+  </item>
+  <item>
+    <ID>160</ID>
+    <Type>Trade Item</Type>
+    <Name>Genetic Materials</Name>
+    <Value>1075</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Medicine.tga</Portrait>
+  </item>
+  <item>
+    <ID>161</ID>
+    <Type>Trade Item</Type>
+    <Name>Cargo Life-ship</Name>
+    <Value>1120</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_EscapePod.tga</Portrait>
+  </item>
+  <item>
+    <ID>162</ID>
+    <Type>Trade Item</Type>
+    <Name>Fusion Splicer</Name>
+    <Value>1190</Value>
+    <Age>Spacefaring</Age>
+    <BlackMarket>true</BlackMarket>
+    <Portrait>T_Weapons_Laser.tga</Portrait>
+  </item>
+  <item>
+    <ID>163</ID>
+    <Type>Trade Item</Type>
+    <Name>Terrestrial Flightcraft</Name>
+    <Value>1200</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Ship.tga</Portrait>
+  </item>
+  <item>
+    <ID>164</ID>
+    <Type>Trade Item</Type>
+    <Name>Luxury Liquid-speeder</Name>
+    <Value>1250</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Ship.tga</Portrait>
+  </item>
+  <item>
+    <ID>165</ID>
+    <Type>Trade Item</Type>
+    <Name>Terraform Mold</Name>
+    <Value>1300</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Liquid.tga</Portrait>
+  </item>
+  <item>
+    <ID>166</ID>
+    <Type>Trade Item</Type>
+    <Name>Phase Inductors</Name>
+    <Value>1325</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Weapons_Laser.tga</Portrait>
+  </item>
+  <item>
+    <ID>167</ID>
+    <Type>Trade Item</Type>
+    <Name>Firegem</Name>
+    <Value>1400</Value>
+    <Age>Spacefaring</Age>
+    <BlackMarket>true</BlackMarket>
+    <Portrait>T_Gems.tga</Portrait>
+  </item>
+  <item>
+    <ID>168</ID>
+    <Type>Trade Item</Type>
+    <Name>Gravitational Compensator</Name>
+    <Value>1400</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Computuers.tga</Portrait>
+  </item>
+  <item>
+    <ID>169</ID>
+    <Type>Trade Item</Type>
+    <Name>Godmasks</Name>
+    <Value>1410</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Drill_Good.tga</Portrait>
+  </item>
+  <item>
+    <ID>170</ID>
+    <Type>Trade Item</Type>
+    <Name>Cutting Edge Military Elec.</Name>
+    <Value>1550</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Electronics.tga</Portrait>
+  </item>
+  <item>
+    <ID>171</ID>
+    <Type>Trade Item</Type>
+    <Name>Cutting Edge Scanners</Name>
+    <Value>1700</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_NavComputer.tga</Portrait>
+  </item>
+  <item>
+    <ID>172</ID>
+    <Type>Trade Item</Type>
+    <Name>Mindforge</Name>
+    <Value>2000</Value>
+    <Age>Spacefaring</Age>
+    <BlackMarket>true</BlackMarket>
+    <Portrait>T_Drill_Good.tga</Portrait>
+  </item>
+  <item>
+    <ID>173</ID>
+    <Type>Trade Item</Type>
+    <Name>Jeweled Xsiao Xingtay</Name>
+    <Value>2200</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Gems.tga</Portrait>
+  </item>
+  <item>
+    <ID>174</ID>
+    <Type>Trade Item</Type>
+    <Name>Harmony Stone</Name>
+    <Value>2400</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Gems.tga</Portrait>
+  </item>
+  <item>
+    <ID>175</ID>
+    <Type>Trade Item</Type>
+    <Name>Fusion Reactors</Name>
+    <Value>2700</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Reactor.tga</Portrait>
+  </item>
+  <item>
+    <ID>176</ID>
+    <Type>Trade Item</Type>
+    <Name>Bio-Organs</Name>
+    <Value>3000</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>177</ID>
+    <Type>Trade Item</Type>
+    <Name>Fusion Elements</Name>
+    <Value>3200</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Reactor.tga</Portrait>
+  </item>
+  <item>
+    <ID>178</ID>
+    <Type>Trade Item</Type>
+    <Name>Laser Reflectors</Name>
+    <Value>2800</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Weapons_Laser.tga</Portrait>
+  </item>
+  <item>
+    <ID>185</ID>
+    <Type>Life Form</Type>
+    <Name>Swift Galists</Name>
+    <Value>600</Value>
+    <Size>1</Size>
+    <Speed>3</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+    <Portrait>T_Swift_Gaslists.tga</Portrait>
+  </item>
+  <item>
+    <ID>186</ID>
+  </item>
+  <item>
+    <ID>187</ID>
+    <Type>Life Form</Type>
+    <Name>Rabid Vertruks</Name>
+    <Value>1000</Value>
+    <Size>3</Size>
+    <Speed>2</Speed>
+    <Danger>3</Danger>
+    <Damage>150</Damage>
+    <Portrait>T_Rabid_Vertruk.tga</Portrait>
+  </item>
+  <item>
+    <ID>188</ID>
+    <Type>Trade Item</Type>
+    <Name>IPBM Parts</Name>
+    <Value>750000</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_IPBM.tga</Portrait>
+  </item>
+  <item>
+    <ID>7</ID>
+  </item>
+  <item>
+    <ID>8</ID>
+  </item>
+  <item>
+    <ID>9</ID>
+  </item>
+  <item>
+    <ID>10</ID>
+  </item>
+  <item>
+    <ID>11</ID>
+  </item>
+  <item>
+    <ID>12</ID>
+  </item>
+  <item>
+    <ID>13</ID>
+  </item>
+  <item>
+    <ID>14</ID>
+  </item>
+  <item>
+    <ID>15</ID>
+  </item>
+  <item>
+    <ID>16</ID>
+  </item>
+  <item>
+    <ID>17</ID>
+  </item>
+  <item>
+    <ID>18</ID>
+  </item>
+  <item>
+    <ID>19</ID>
+  </item>
+  <item>
+    <ID>20</ID>
+  </item>
+  <item>
+    <ID>21</ID>
+  </item>
+  <item>
+    <ID>22</ID>
+  </item>
+  <item>
+    <ID>23</ID>
+  </item>
+  <item>
+    <ID>24</ID>
+  </item>
+  <item>
+    <ID>25</ID>
+  </item>
+  <item>
+    <ID>26</ID>
+  </item>
+  <item>
+    <ID>27</ID>
+  </item>
+  <item>
+    <ID>28</ID>
+  </item>
+  <item>
+    <ID>29</ID>
+  </item>
+  <item>
+    <ID>190</ID>
+  </item>
+  <item>
+    <ID>192</ID>
+  </item>
+  <item>
+    <ID>194</ID>
+  </item>
+  <item>
+    <ID>196</ID>
+  </item>
+  <item>
+    <ID>179</ID>
+  </item>
+  <item>
+    <ID>182</ID>
+  </item>
+  <item>
+    <ID>183</ID>
+  </item>
+  
+</items>

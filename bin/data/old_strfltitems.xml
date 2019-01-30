@@ -1,0 +1,2711 @@
+<!-- 	STARFLIGHT - THE LOST COLONY
+	Item database: Lifeforms, Minerals, Trade Items, Artifacts, Ruins
+		Note: Ship Upgrades and Specialty Goods have been removed!
+		Note: The Item Editor / Quest Editor tools are no longer up to date, so don't use them!
+	Artifact notes: 	Map Center = 0,0
+				Y = longitude; -Y = West; +Y = East
+				X = latitude; -X = North; +X = South
+	What ever you do, don't change any IDs!!!! They're referenced all over the place by ID.
+	If you need to add a new item, regardless of type, it must be added to the bottom, and kept in sequential order!
+-->
+<?xml version="1.0" standalone="yes"?>
+<items>
+
+<!-- ARTIFACTS: IDs 1-29 DO NOT CHANGE IDs! -->
+  <item>
+    <ID>1</ID>
+    <Type>Artifact</Type>
+    <Name>Tafel Cargo</Name>
+    <Value>0</Value>
+    <Size>12.7</Size>
+    <Portrait>T_Seeds.tga</Portrait>
+	<planetid>78</planetid> <!-- Samildanach, Elcmar 190,98 -->
+	<y>60</y>
+	<x>28</x>
+  </item>
+  <item>
+    <ID>2</ID>
+    <Type>Artifact</Type>
+    <Name>Hypercube</Name>
+    <Value>0</Value>
+    <Size>0.1</Size>
+    <Portrait>Hypercube.tga</Portrait>
+	<planetid>26</planetid> <!-- Ciuin in the Faidh system - Training Mission -->
+	<y>31</y>
+	<x>-96</x>
+  </item>
+  <item>
+    <ID>3</ID>
+    <Type>Artifact</Type>
+    <Name>Shimmering Hologram</Name>
+    <Value>0</Value>
+    <Size>3.1</Size>
+    <Portrait>T_NavComputer.tga</Portrait>
+	<planetid>197</planetid>  <!-- Fir Bolg I 17,93 -->
+	<y>-143</y>
+	<x>-54</x>
+  </item>
+  <item>
+    <ID>4</ID>
+    <Type>Artifact</Type>
+    <Name>Ancient Database Plates</Name>
+    <Value>0</Value>
+    <Size>0.7</Size>
+    <Portrait>T_Books.tga</Portrait>
+	<planetid>391</planetid> <!--  Lir IV -->
+	<y>-8</y>
+	<x>-37</x>
+  </item>
+  <item>
+    <ID>5</ID>
+    <Type>Artifact</Type>
+    <Name>Crystal Sphere</Name>
+    <Value>0</Value>
+    <Size>0.4</Size>
+    <Portrait>Crystal_Sphere.tga</Portrait>
+	<planetid>486</planetid> <!--Mathgen IV 212,3-->
+	<y>16</y>
+	<x>5</x>
+  </item>
+
+
+
+  <item>
+    <ID>7</ID>
+    <Type>Artifact</Type>
+    <Name>Tafel Data System</Name>
+    <Value>0</Value>
+    <Size>6.1</Size>
+    <Portrait>T_Computers.tga</Portrait>
+  </item>
+  <item>
+    <ID>8</ID>
+    <Type>Artifact</Type>
+    <Name>Pirate Cargo</Name>
+    <Value>2500</Value>
+    <Size>0.6</Size>
+    <Portrait>T_Booze.tga</Portrait>
+  </item>
+  <item>
+    <ID>9</ID>
+    <Type>Artifact</Type>
+    <Name>Pirate Small Arms</Name>
+    <Value>1400</Value>
+    <Size>1</Size>
+    <Portrait>T_Weapons_Laser.tga</Portrait>
+  </item>
+  <item>
+    <ID>10</ID>
+    <Type>Artifact</Type>
+    <Name>Elowan Shield Capacitor</Name>
+    <Value>5800</Value>
+    <Size>14.5</Size>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>11</ID>
+    <Type>Artifact</Type>
+    <Name>Elowan Mobius</Name>
+    <Value>1900</Value>
+    <Size>1</Size>
+    <Portrait>T_FarmTools.tga</Portrait>
+  </item>
+  <item>
+    <ID>12</ID>
+    <Type>Artifact</Type>
+    <Name>Spemin Nutritional Chemicals</Name>
+    <Value>200</Value>
+    <Size>4.5</Size>
+    <Portrait>T_Liquid.tga</Portrait>
+  </item>
+  <item>
+    <ID>13</ID>
+    <Type>Artifact</Type>
+    <Name>Spiral Lens</Name>
+    <Value>0</Value>
+    <Size>0.1</Size>
+    <Portrait>T_EscapePod.tga</Portrait>
+	<planetid>240</planetid> <!-- Eocho, Etarlam 172,118 -->
+	<y>-95</y>
+	<x>47</x>
+  </item>
+  <item>
+    <ID>14</ID>
+    <Type>Artifact</Type>
+    <Name>Thrynn Battle Machine</Name>
+    <Value>9500</Value>
+    <Size>1.3</Size>
+    <Portrait>T_Robots.tga</Portrait>
+  </item>
+  <item>
+    <ID>15</ID>
+    <Type>Artifact</Type>
+    <Name>Bar-Zhon Data Cube</Name>
+    <Value>0</Value>
+    <Size>0.1</Size>
+    <Portrait>T_AlienArtifact.tga</Portrait>
+	<planetid>439</planetid> <!--Tuatha, Nemed 125,96-->
+	<y>63</y>
+	<x>-40</x>
+  </item>
+  <item>
+    <ID>16</ID>
+    <Type>Artifact</Type>
+    <Name>Whining Orb</Name>
+    <Value>0</Value>
+    <Size>0.2</Size>
+    <Constant>WHININGORB</Constant>
+    <Portrait>T_Reactor.tga</Portrait>
+	<planetid>70</planetid> <!-- Alastir, Tat 132,125 -->
+	<y>0</y>
+	<x>-155</x>
+  </item>
+  <item>
+    <ID>17</ID>
+    <Type>Artifact</Type>
+    <Name>Erratic Energy Devices</Name>
+    <Value>0</Value>
+    <Size>1.0</Size>
+    <Portrait>T_Wizards.tga</Portrait>  <!--  Inchegeela II 59,210 -->
+	<planetid>479</planetid>
+	<y>-133</y>
+	<x>-135</x>
+  </item>
+  <item>
+    <ID>18</ID>
+    <Type>Artifact</Type>
+    <Name>Artistic Containers</Name>
+    <Value>0</Value>
+    <Size>3.3</Size>
+    <Portrait>T_Pottery.tga</Portrait>
+	<planetid>25</planetid>
+	<y>-124</y>
+	<x>49</x>
+  </item>
+  <item>
+    <ID>19</ID>
+    <Type>Artifact</Type>
+    <Name>Nyssian Baubles</Name>
+    <Value>1950</Value>
+    <Size>0.6</Size>
+    <Portrait>T_Gems.tga</Portrait>
+  </item>
+  <item>
+    <ID>20</ID>
+    <Type>Artifact</Type>
+    <Name>Coalition Afterburner</Name>
+    <Value>12000</Value>
+    <Size>2.7</Size>
+    <Portrait>T_Ship.tga</Portrait>
+  </item>
+  <item>
+    <ID>21</ID>
+    <Type>Artifact</Type>
+    <Name>Minex Golden Device</Name>
+    <Value>9500</Value>
+    <Size>0.1</Size>
+    <Portrait>Golden_Device.tga</Portrait>
+  </item>
+  <item>
+    <ID>22</ID>
+    <Type>Artifact</Type>
+    <Name>Minex Electronics</Name>
+    <Value>18000</Value>
+    <Size>0.1</Size>
+    <Portrait>T_Electronics.tga</Portrait>
+  </item>
+  <item>
+    <ID>23</ID>
+    <Type>Artifact</Type>
+    <Name>Minex Silver Gadget</Name>
+    <Value>6600</Value>
+    <Size>0.5</Size>
+    <Portrait>T_Drill_Good.tga</Portrait>
+  </item>
+  <item>
+    <ID>24</ID>
+    <Type>Artifact</Type>
+    <Name>Artistic Baubles</Name>
+    <Value>700</Value>
+    <Size>1.1</Size>
+    <Portrait>T_Art.tga</Portrait>
+	<planetid>224</planetid> <!-- Arturwen, Anu 65,110 -->
+	<y>-69</y>
+	<x>-88</x>
+  </item>
+  <item>
+    <ID>25</ID>
+    <Type>Artifact</Type>
+    <Name>Ticking Cylinder</Name>
+    <Value>0</Value>
+    <Size>0.1</Size>
+    <Portrait>T_Plates.tga</Portrait>
+	<planetid>405</planetid>  <!-- Fiacha III 219,179 -->
+	<y>-63</y>
+	<x>-147</x>
+  </item>
+  <item>
+    <ID>26</ID>
+    <Type>Artifact</Type>
+    <Name>Amazing Artifact</Name>
+    <Value>5000</Value>
+    <Size>1.0</Size>
+    <Portrait>T_Furs.tga</Portrait>
+  </item>
+  <item>
+    <ID>27</ID>
+    <Type>Artifact</Type>
+    <Name>Shattered Drone</Name>
+    <Value>0</Value>
+    <Size>0.8</Size>
+    <Portrait>T_IPBM.tga</Portrait>
+	<planetid>120</planetid> <!-- Aircthech II 100,8 -->
+	<y>-25</y>
+	<x>37</x>
+  </item>
+  <item>
+    <ID>28</ID>
+    <Type>Artifact</Type>
+    <Name>Strange manuscripts</Name>
+    <Value>1000</Value>
+    <Size>0.2</Size>
+    <Portrait>T_Fliers.tga</Portrait>
+  </item>
+  <item>
+    <ID>29</ID>
+    <Type>Artifact</Type>
+    <Name>Strange Acoustic Devices</Name>
+    <Value>6500</Value>
+    <Size>7.1</Size>
+    <Portrait>T_Instruments.tga</Portrait>
+  </item>
+
+<!-- NOTE: ADDITIONAL ARTIFACTS AND RUINS ADDED AT BOTTOM, we didn't anticipate having more than 30 -->
+
+
+<!-- MINERALS: IDs 30-54 plus ID 6 ! DO NOT CHANGE IDs -->
+  <item>
+    <ID>6</ID>
+    <Type>Mineral</Type>
+    <Name>Plutonium</Name>
+    <Value>900</Value>
+  </item>
+  <item>
+    <ID>30</ID>
+    <Type>Mineral</Type>
+    <Name>Lead</Name>
+    <Value>40</Value>
+  </item>
+  <item>
+    <ID>31</ID>
+    <Type>Mineral</Type>
+    <Name>Iron</Name>
+    <Value>60</Value>
+  </item>
+  <item>
+    <ID>32</ID>
+    <Type>Mineral</Type>
+    <Name>Cobalt</Name>
+    <Value>80</Value>
+    <ShipRepairMetal>true</ShipRepairMetal>
+  </item>
+  <item>
+    <ID>33</ID>
+    <Type>Mineral</Type>
+    <Name>Nickel</Name>
+    <Value>100</Value>
+  </item>
+  <item>
+    <ID>34</ID>
+    <Type>Mineral</Type>
+    <Name>Copper</Name>
+    <Value>120</Value>
+  </item>
+  <item>
+    <ID>35</ID>
+    <Type>Mineral</Type>
+    <Name>Zinc</Name>
+    <Value>140</Value>
+  </item>
+  <item>
+    <ID>36</ID>
+    <Type>Mineral</Type>
+    <Name>Molybdenum</Name>
+    <Value>160</Value>
+    <ShipRepairMetal>true</ShipRepairMetal>
+  </item>
+  <item>
+    <ID>37</ID>
+    <Type>Mineral</Type>
+    <Name>Tin</Name>
+    <Value>180</Value>
+  </item>
+  <item>
+    <ID>38</ID>
+    <Type>Mineral</Type>
+    <Name>Magnesium</Name>
+    <Value>200</Value>
+  </item>
+  <item>
+    <ID>39</ID>
+    <Type>Mineral</Type>
+    <Name>Aluminum</Name>
+    <Value>220</Value>
+    <ShipRepairMetal>true</ShipRepairMetal>
+  </item>
+  <item>
+    <ID>40</ID>
+    <Type>Mineral</Type>
+    <Name>Titanium</Name>
+    <Value>240</Value>
+    <ShipRepairMetal>true</ShipRepairMetal>
+  </item>
+  <item>
+    <ID>41</ID>
+    <Type>Mineral</Type>
+    <Name>Potassium</Name>
+    <Value>260</Value>
+  </item>
+  <item>
+    <ID>42</ID>
+    <Type>Mineral</Type>
+    <Name>Antimony</Name>
+    <Value>280</Value>
+  </item>
+  <item>
+    <ID>43</ID>
+    <Type>Mineral</Type>
+    <Name>Sulfur</Name>
+    <Value>240</Value>
+  </item>
+  <item>
+    <ID>44</ID>
+    <Type>Mineral</Type>
+    <Name>Silica</Name>
+    <Value>320</Value>
+    <ShipRepairMetal>true</ShipRepairMetal>
+  </item>
+  <item>
+    <ID>45</ID>
+    <Type>Mineral</Type>
+    <Name>Bismuth</Name>
+    <Value>340</Value>
+  </item>
+  <item>
+    <ID>46</ID>
+    <Type>Mineral</Type>
+    <Name>Silver</Name>
+    <Value>360</Value>
+  </item>
+  <item>
+    <ID>47</ID>
+    <Type>Mineral</Type>
+    <Name>Gold</Name>
+    <Value>380</Value>
+  </item>
+  <item>
+    <ID>48</ID>
+    <Type>Mineral</Type>
+    <Name>Platinum</Name>
+    <Value>400</Value>
+  </item>
+  <item>
+    <ID>49</ID>
+    <Type>Mineral</Type>
+    <Name>Thorium</Name>
+    <Value>420</Value>
+  </item>
+  <item>
+    <ID>50</ID>
+    <Type>Mineral</Type>
+    <Name>Iridium</Name>
+    <Value>440</Value>
+  </item>
+  <item>
+    <ID>51</ID>
+    <Type>Mineral</Type>
+    <Name>Radium</Name>
+    <Value>460</Value>
+  </item>
+  <item>
+    <ID>52</ID>
+    <Type>Mineral</Type>
+    <Name>Uranium</Name>
+    <Value>480</Value>
+  </item>
+  <item>
+    <ID>53</ID>
+    <Type>Mineral</Type>
+    <Name>Quorsitanium</Name>
+    <Value>750</Value>
+  </item>
+  <item>
+    <ID>54</ID>
+    <Type>Mineral</Type>
+    <Name>Endurium</Name>
+    <Value>800</Value>
+  </item>
+
+
+<!-- LIFEFORMS: IDs 55-113  ! DO NOT CHANGE OR INSERT IDs -->
+  <item>
+    <ID>55</ID>
+    <Type>Life Form</Type>
+    <Name>Pop Berry Plant</Name>
+    <Value>400</Value>
+    <Size>1</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A small delicate, rust colored plant with a few large hexagonally shaped leaves. Growing from the base of this plant are several large clusters of small pink berries with black spots. When this plant is disturbed, it releases a chemical into the berries causing them to explode like loud firecrackers, thus frightening off any predators.</Description>
+  </item>
+  <item>
+    <ID>56</ID>
+    <Type>Life Form</Type>
+    <Name>Goransil</Name>
+    <Value>550</Value>
+    <Size>1</Size>
+    <Speed>1</Speed>
+    <Danger>1</Danger>
+    <Damage>20</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>57</ID>
+    <Type>Life Form</Type>
+    <Name>Plant Bird</Name>
+    <Value>710</Value>
+    <Size>1</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>Approximately the size of a small bird, this is a legless plant creature with green leafy wings. The creature's body has no discernable head, but is dotted with tiny, inefficient eyes. Under each wing is an organ resembling a small flower whose apparent function is to detect sound. As this creature flies it makes a soft purring sound. </Description>
+  </item>
+  <item>
+    <ID>58</ID>
+    <Type>Life Form</Type>
+    <Name>Rocket Melons</Name>
+    <Value>300</Value>
+    <Size>3</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A mass of tangled green vines with numerous upright red and yellow striped melons. At the base of each oblong melon are several rigid leaf structures, like rocket fins, that hold it upright. As the melons grow, great pressure builds up inside them until, finally, the weakest part of the melons, the plugs on the underside, pop out. The melons then rocket into the air in some direction, where they fall and break, spreading their seeds.</Description>
+  </item>
+  <item>
+    <ID>59</ID>
+    <Type>Life Form</Type>
+    <Name>Vertruks</Name>
+    <Value>400</Value>
+    <Size>3</Size>
+    <Speed>1</Speed>
+    <Danger>4</Danger>
+    <Damage>40</Damage>
+	<Description></Description>
+    <Portrait>T_Plain_Vertruk.tga</Portrait>
+  </item>
+  <item>
+    <ID>60</ID>
+    <Type>Life Form</Type>
+    <Name>Whistling Isis</Name>
+    <Value>550</Value>
+    <Size>1</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>61</ID>
+    <Type>Life Form</Type>
+    <Name>Red Puff-Wart</Name>
+    <Value>620</Value>
+    <Size>1</Size>
+    <Speed>1</Speed>
+    <Danger>3</Danger>
+    <Damage>30</Damage>
+	<Description>A small lifeform that resembles a lump of bubbling, bright-red wax. The top of the creature is roughly dome-shaped, while the underside is flat and surrounded by small pink tentacles, two of which are barbed and much longer than the others. Periodically, the creature puffs out and then emits a long, high-pitched whistle. </Description>
+  </item>
+  <item>
+    <ID>62</ID>
+    <Type>Life Form</Type>
+    <Name>Sticky Fruit</Name>
+    <Value>700</Value>
+    <Size>2</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A medium sized bush of gnarled, fibrous branches. The branches are deep blue at the base, going to light violet at the tips, and hanging from them are many large, globular fruits. The spherical fruits are a translucent white and HAVE an extremely sticky surface. They also give off a strong scent similar to cinnamon. When approached, the entire bush shakes violently. </Description>
+  </item>
+  <item>
+    <ID>63</ID>
+    <Type>Life Form</Type>
+    <Name>Hive Plant</Name>
+    <Value>500</Value>
+    <Size>3</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A medium sized plant with a ring of long symmetrical stems growing up from the base. On the end of each alternating stem is a large yellow flower, and on each other stem is a heart shaped leaf. In the center is a thick stalk growing straight up, on top of which is a large thistle covered pod. This pod is hollow with many holes, and in it live thousands of tiny, symbiotic flying creatures which pollinate the plant's flowers. </Description>
+  </item>
+  <item>
+    <ID>64</ID>
+    <Type>Life Form</Type>
+    <Name>Scaly Blue Hopper</Name>
+    <Value>625</Value>
+    <Size>1</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A creature that resembles a very small, featherless ostrich. It has a large, clawed feet, a small round body covered with blue scales, a telescoping neck, and a wide head with a huge curved beak and throat sack. When in groups of any size these creatures have the curious behavior of hopping in long single file lines. </Description>
+  </item>
+  <item>
+    <ID>65</ID>
+    <Type>Life Form</Type>
+    <Name>Woolen Qians</Name>
+    <Value>475</Value>
+    <Size>2</Size>
+    <Speed>3</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>66</ID>
+    <Type>Life Form</Type>
+    <Name>Hill Rat</Name>
+    <Value>250</Value>
+    <Size>1</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A small, spherical bodied creature with four legs and long, red, luxuriant fur. Sticking out of the fur at one end of the creature is a long, rigid rat like tail. At the other end is a pointed snout with long downward curving whiskers. The creature's primary habitat is along hillsides, as is evidenced that its two left legs are shorter than its two right legs. On flat ground it seems to tilt and has a tendency to go in circles. </Description>
+  </item>
+  <item>
+    <ID>67</ID>
+    <Type>Life Form</Type>
+    <Name>Pulsating Gummy</Name>
+    <Value>780</Value>
+    <Size>2</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A small, gummy looking creature suspended by a webwork of threads inside multiple interwoven amorphous structure of bone approximately the size of a beach ball. The creature seems to pulsate slowly. With each pulse it glows brighter and emits a low-pitched buzzing sound. </Description>
+  </item>
+  <item>
+    <ID>68</ID>
+    <Type>Life Form</Type>
+    <Name>Spinning Crab</Name>
+    <Value>560</Value>
+    <Size>1</Size>
+    <Speed>3</Speed>
+    <Danger>5</Danger>
+    <Damage>50</Damage>
+	<Description>A small multi-legged creature that resembles a disk-shaped crab. The hard shell covering its body has a dark carapace and a light plastron, and it is thick in the middle, thinning to a razor sharp edge.  Along the edges are curved serrations, like a circular saw. This carnivore attacks its prey by launching itself with its powerful legs. Once in the air it gives its body a ferocious spin by expelling gas with great force from holes in its shell. </Description>
+  </item>
+  <item>
+    <ID>69</ID>
+    <Type>Life Form</Type>
+    <Name>Black Acid Squirter</Name>
+    <Value>335</Value>
+    <Size>2</Size>
+    <Speed>1</Speed>
+    <Danger>7</Danger>
+    <Damage>70</Damage>
+	<Description>A multihued, fuzzy, radial creature about the size of a rabbit. At the center of the creature are several blue white globular clusters of light and heat sensors. Surrounding each cluster is a ring of small holes through which the creature shoots a powerful acid substance. The creature's rasp like eating apparatus is on its sticky underside.</Description>
+  </item>
+  <item>
+    <ID>70</ID>
+    <Type>Life Form</Type>
+    <Name>Humanoid Hopper</Name>
+    <Value>105</Value>
+    <Size>3</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A tall, stocky, two legged creature vaguely humanoid in shape. Its two slender legs bend in the reverse direction of a human's, and support a small body with a bulbous, upturned, insect like abdomen. It has long, human looking arms, and a noseless, humanoid face dominated by a single, large eye. Its body is covered with a fine downy fur, dark blue grey in color. The creature seems to be a herbivore, and it is obviously capable of hopping at great speeds on its long legs. </Description>
+  </item>
+  <item>
+    <ID>71</ID>
+    <Type>Life Form</Type>
+    <Name>Verant Rose</Name>
+    <Value>875</Value>
+    <Size>1</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>72</ID>
+    <Type>Life Form</Type>
+    <Name>Vacuum Slug</Name>
+    <Value>1230</Value>
+    <Size>2</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A long tube of shiny green gelatinous material. Projecting out along the body of this lifeform are thousands of small waving feelers. At each end of the creature is a writhing hose. As it moves the front hose sucks up dirt and small lifeforms while the rear hose shoots out the debris. The lifeform leaves a trail of slime as it moves, and gives off a pungent odor of rotten meat. </Description>
+  </item>
+  <item>
+    <ID>73</ID>
+    <Type>Life Form</Type>
+    <Name>Hot Fungus</Name>
+    <Value>1300</Value>
+    <Size>1</Size>
+    <Speed>1</Speed>
+    <Danger>10</Danger>
+    <Damage>100</Damage>
+	<Description>A small, rounded, fungoid lifeform with a slimy red exterior. The surface of the fungus is cracked, and issuing from the cracks is steam and a deep red glow. The lifeform also gives off a tremendous amount of heat. Whenever a creature approaches too closely, the fungus sprays a shower of molten rock in that direction.</Description>
+  </item>
+  <item>
+    <ID>74</ID>
+    <Type>Life Form</Type>
+    <Name>Psychic Blaster</Name>
+    <Value>1430</Value>
+    <Size>2</Size>
+    <Speed>3</Speed>
+    <Danger>10</Danger>
+    <Damage>100</Damage>
+	<Description>A small creature with four beady eyes, a long conical snout, and a stocky rat-like tail. The creature's green, furry, armless body tapers down to two spindly legs with large splayed feet. In spite of its appearance, this creature is capable of emitting a blast of psychic energy that can stun and even kill creatures many times its size.</Description>
+  </item>
+  <item>
+    <ID>75</ID>
+    <Type>Life Form</Type>
+    <Name>Oily Spore Bush</Name>
+    <Value>100</Value>
+    <Size>3</Size>
+    <Speed>1</Speed>
+    <Danger>1</Danger>
+    <Damage>10</Damage>
+	<Description>A tangled bush like lifeform that appears to have some kind of webbing, similar to a spider's webbing, all over and through it. The bush's branches are twisted and oily, and inside it can be seen pods with small grey flowers. When this bush is approached it gives off a dense cloud of tiny, stinging self propelled spores which swarm onto the approaching creature.</Description>
+  </item>
+  <item>
+    <ID>76</ID>
+    <Type>Life Form</Type>
+    <Name>Parachute Spider</Name>
+    <Value>285</Value>
+    <Size>3</Size>
+    <Speed>3</Speed>
+    <Danger>5</Danger>
+    <Damage>50</Damage>
+	<Description>A small bodied, spiny creature suspended upon many long spider legs. Between each pair of legs are tough transparent membranes that form a large dome when the legs are spread. At the feet are hooks that the creature can use to link the feet together. It feeds by leaping high into the air and then descending slowly and silently onto its victims, which it encases in its membrane until they suffocate.</Description>
+  </item>
+  <item>
+    <ID>77</ID>
+    <Type>Life Form</Type>
+    <Name>Wandering Chandelier</Name>
+    <Value>425</Value>
+    <Size>10</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A squat tree with thick branches. The trunk extends up about two meters and then spreads out to form an extremely wide, low canopy. From this canopy hang thousands of long teardrop shaped leaves that seem to be made of glass or crystal. The tree has several thick, tentacle-like roots that it uses to move itself about in search of mineral deposits. As it moves its leaves make a loud tinkling sound.</Description>
+  </item>
+  <item>
+    <ID>78</ID>
+    <Type>Life Form</Type>
+    <Name>Wheel Snake</Name>
+    <Value>600</Value>
+    <Size>2</Size>
+    <Speed>3</Speed>
+    <Danger>3</Danger>
+    <Damage>30</Damage>
+	<Description>A long, flat, snake like creature. This creature has the curious habit of suspending parts of its body above the ground and creating an exaggerated vertical wave motion propelling itself quickly by powerful muscular contractions. It is capable of delivering a powerful electrical charge. </Description>
+  </item>
+  <item>
+    <ID>79</ID>
+    <Type>Life Form</Type>
+    <Name>Glowing Spinner</Name>
+    <Value>550</Value>
+    <Size>4</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A human sized creature resembling a huge, three legged starfish with all of its legs pointing downwards. Ringing the rounded top of the creature is a circle of flexible eyestalks. This creature is bioluminescent and glows a soft bluish-white. When it moves it spins like a top, on its three legs. Nightly these creatures can be seen to congregate and perform complex dances, weaving and spinning around each other.</Description>
+  </item>
+  <item>
+    <ID>80</ID>
+    <Type>Life Form</Type>
+    <Name>Fei Raptor</Name>
+    <Value>1500</Value>
+    <Size>4</Size>
+    <Speed>5</Speed>
+    <Danger>9</Danger>
+    <Damage>90</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>81</ID>
+    <Type>Life Form</Type>
+    <Name>Breathing Cactus</Name>
+    <Value>450</Value>
+    <Size>3</Size>
+    <Speed>1</Speed>
+    <Danger>7</Danger>
+    <Damage>70</Damage>
+	<Description>A spine covered cactus like plant with black, fleshy branches and triangular leaves. Covering the surface of this plant are many small pores which rhythmically take in and expel air with a hissing sound. Each time the plant breathes in, it visibly expands. Radiating out from the base of this plant are long, moving tentacle like branches, each of which has a rosette of long poison tipped needles at the end.</Description>
+  </item>
+  <item>
+    <ID>82</ID>
+    <Type>Life Form</Type>
+    <Name>Green Balloon</Name>
+    <Value>175</Value>
+    <Size>6</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A tremendous conical plant that appears to be filled with gas, like a balloon. The plant's surface is smooth and rubbery and seems to be covered with a film that causes the dark shades of greens in it to swirl and shimmer. Pushed along by wind, the huge conical plant is often lifted by a strong gust. Each time it hits the ground it makes a loud sound like a large bass drum.</Description>
+  </item>
+  <item>
+    <ID>83</ID>
+    <Type>Life Form</Type>
+    <Name>Poison Glider</Name>
+    <Value>345</Value>
+    <Size>2</Size>
+    <Speed>3</Speed>
+    <Danger>9</Danger>
+    <Damage>90</Damage>
+	<Description>A cat sized, insect like carnivore. This creature's body is covered with a shiny black exoskeleton with a grayish camouflaging pattern. It has two powerful rear legs for jumping, and extendable membranous flaps which allow it to glide long distances. Its front claws are hooked for grasping and it has a small swivel head with four large compound eye. It also has a retractable, needle like mouthpiece capable of injecting a potent poison.</Description>
+  </item>
+  <item>
+    <ID>84</ID>
+    <Type>Life Form</Type>
+    <Name>Crystal Sponge Plant</Name>
+    <Value>225</Value>
+    <Size>5</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A many faceted crystalline creature with various crystalline protrusions extending upward at all angles from a spongy base. The bright, multi colored light refracted by the crystals make the creature difficult to look at. Buried within the crystals can be seen small structures which photosynthesize the focused light.</Description>
+  </item>
+  <item>
+    <ID>85</ID>
+    <Type>Life Form</Type>
+    <Name>Nid Berry Bush</Name>
+    <Value>150</Value>
+    <Size>1</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A small strange plant with numerous leaves. Every leaf on this plant is a different size, shape, and color from every other leaf. Some are small and dark, others are big and shiny, some are serrated, some are rounded, and so on. It's as if each one is from a completely different plant. The various branches of the plant seem to be covered with all different kinds of bark. At the top of this plant extends a branch with three juicy, purple berries on it.</Description>
+  </item>
+  <item>
+    <ID>86</ID>
+    <Type>Life Form</Type>
+    <Name>Golden Whisper</Name>
+    <Value>400</Value>
+    <Size>1</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>87</ID>
+    <Type>Life Form</Type>
+    <Name>Expanding Hippo</Name>
+    <Value>300</Value>
+    <Size>7</Size>
+    <Speed>2</Speed>
+    <Danger>7</Danger>
+    <Damage>70</Damage>
+	<Description>A rotund, bulbous bodied creature on three spindly legs. This creature seems to be a cross between a fat hippopotamus and a spiny blowfish. The creature's thick hide is covered with sharp quills, and when threatened, it can quickly blow itself up to a tremendous size. When it does this it also emits an ear splitting whine which generally frightens off most predators.</Description>
+  </item>
+  <item>
+    <ID>88</ID>
+    <Type>Life Form</Type>
+    <Name>Beryl Fox</Name>
+    <Value>350</Value>
+    <Size>2</Size>
+    <Speed>4</Speed>
+    <Danger>3</Danger>
+    <Damage>30</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>89</ID>
+    <Type>Life Form</Type>
+    <Name>Single Leaf</Name>
+    <Value>575</Value>
+    <Size>11</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>An extremely tall, straight, slender tree with one single gargantuan leaf at its top. The bark of the tree is a dark red, and ringed with serrated ridges from bottom to top. Early in the day the giant leaf is red in color, and as the position of the sun changes, the leaf's color cycles up through the spectrum to violet, and then down again: the position of the leaf changes so that it is always facing the sun.</Description>
+  </item>
+  <item>
+    <ID>90</ID>
+    <Type>Life Form</Type>
+    <Name>Yellow Hugger</Name>
+    <Value>360</Value>
+    <Size>4</Size>
+    <Speed>3</Speed>
+    <Danger>6</Danger>
+    <Damage>60</Damage>
+	<Description>A low, wide, powerful looking biped. The creature is covered with matted yellow fur and has two muscular arms and a large spherical head. Along the inside lengths of each of its arms are holes out of which the creature can effect long stiletto spikes. It does this when tightly squeezing its prey in its four gorilla arms. In the center of the mouth of the creature are eight small red eyes and a circular gaping mouth with inward facing teeth.</Description>
+  </item>
+  <item>
+    <ID>91</ID>
+    <Type>Life Form</Type>
+    <Name>Hereis Fern</Name>
+    <Value>380</Value>
+    <Size>6</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>92</ID>
+    <Type>Life Form</Type>
+    <Name>Fur Tree</Name>
+    <Value>500</Value>
+    <Size>10</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A very tall, tree like lifeform. It has a tall straight trunk that is covered with thick, soft greenish fur. Hanging from some of the branches are long fur covered cylindrical fruits. The leaves of the tree are huge black and saucer shaped. They are all upturned in order to catch the rain water which runs down the stem at the center of each leaf.</Description>
+  </item>
+  <item>
+    <ID>93</ID>
+    <Type>Life Form</Type>
+    <Name>Milmataur</Name>
+    <Value>300</Value>
+    <Size>10</Size>
+    <Speed>1</Speed>
+    <Danger>10</Danger>
+    <Damage>100</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>94</ID>
+    <Type>Life Form</Type>
+    <Name>Electric Balloon</Name>
+    <Value>940</Value>
+    <Size>5</Size>
+    <Speed>2</Speed>
+    <Danger>9</Danger>
+    <Damage>90</Damage>
+	<Description>A Translucent, jellyfish like creature with a large, spherical, floating body, and two violet, long, dangling tentacles. The creature's body is so transparent that against the sky it is very difficult to see. As it floats along it makes a sound like crackling electricity, and occasional discharges of lightning can be seen coming from its writhing tentacles when it nears the ground.</Description>
+  </item>
+  <item>
+    <ID>95</ID>
+    <Type>Life Form</Type>
+    <Name>Running Fungus</Name>
+    <Value>295</Value>
+    <Size>5</Size>
+    <Speed>2</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>An irregularly shaped, spongy, fungoid lifeform with numerous branching leg appendages. It has a yellowish, wart covered surface. The Creature seems to stand very still, then scurry in some direction. It moves with surprising speed, then stops suddenly. When they are in the same area it can be seen that they are synchronized in their starting and stopping.</Description>
+  </item>
+  <item>
+    <ID>96</ID>
+    <Type>Life Form</Type>
+    <Name>Grey Anemone</Name>
+    <Value>370</Value>
+    <Size>6</Size>
+    <Speed>3</Speed>
+    <Danger>2</Danger>
+    <Damage>20</Damage>
+	<Description>A tiny anemone like creature with six small, hooked legs. It has a tough, cracked, leathery surface, and the whole creature is a dull grey in color. This creature generally hangs from trees and drops on its prey, but it can also run fast for a short distance. Each of the creature's tentacles is a symbiotic lifeform, capable of delivering a powerful sting, but incapable of moving under its own power.</Description>
+  </item>
+  <item>
+    <ID>97</ID>
+    <Type>Life Form</Type>
+    <Name>Breykil</Name>
+    <Value>450</Value>
+    <Size>4</Size>
+    <Speed>1</Speed>
+    <Danger>5</Danger>
+    <Damage>50</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>98</ID>
+    <Type>Life Form</Type>
+    <Name>Green Blob</Name>
+    <Value>200</Value>
+    <Size>8</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A large, amorphous creature that appears to be made of translucent green gelatin. The glistening gelatin is shot through with bluish veins, and visible inside it are luminescent yellow organs that move slowly around. The entire creature quivers continually, and every so often its body spasms as it emits gas with a loud, familiar sound.</Description>
+  </item>
+  <item>
+    <ID>99</ID>
+    <Type>Life Form</Type>
+    <Name>Funnel Tree</Name>
+    <Value>300</Value>
+    <Size>16</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A large tree with twin trunks twisting around each other in a spiral. The trunks of the tree are soft, pink, and fleshy, and covered with small thorns. The upper part of the tree is composed of many tiny green leaves that spread out in a funnel shape. The tree makes a deep thrumming sound. In the middle of a forest the thrumming can be so loud as to block out all other sounds.</Description>
+  </item>
+  <item>
+    <ID>100</ID>
+    <Type>Life Form</Type>
+    <Name>Jerkyl Fern</Name>
+    <Value>350</Value>
+    <Size>1</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>101</ID>
+    <Type>Life Form</Type>
+    <Name>Bestruggle</Name>
+    <Value>450</Value>
+    <Size>4</Size>
+    <Speed>3</Speed>
+    <Danger>6</Danger>
+    <Damage>60</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>102</ID>
+    <Type>Life Form</Type>
+    <Name>Marwick Sprinter</Name>
+    <Value>495</Value>
+    <Size>5</Size>
+    <Speed>5</Speed>
+    <Danger>4</Danger>
+    <Damage>40</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>103</ID>
+    <Type>Life Form</Type>
+    <Name>Purple Screecher</Name>
+    <Value>775</Value>
+    <Size>4</Size>
+    <Speed>4</Speed>
+    <Danger>7</Danger>
+    <Damage>70</Damage>
+	<Description>A long, slender, four legged creature that resembles a large, hairless, tail less bird. The skin of the creature is a deep purple in color and extremely smooth. It has curved tusks, and two sets of eyes, the second of which are extremely large and are only opened at night. These creatures are extremely agile and generally hunt in pairs. When agitated or excited they will often emit a piercing screech.</Description>
+  </item>
+  <item>
+    <ID>104</ID>
+    <Type>Life Form</Type>
+    <Name>Peacock Tree</Name>
+    <Value>850</Value>
+    <Size>13</Size>
+    <Speed>1</Speed>
+    <Danger>2</Danger>
+    <Damage>20</Damage>
+	<Description>A fairly large tree with a straight but flexible trunk. Projecting off the trunk at an upward angle, from the base to the top, are large feathers that bear an unlikely resemblance to dark green peacock feathers. Even when there is no wind, the trunk of this tree sways in a hypnotic fashion. At the base of this tree can be seen smaller creatures which have been grabbed by the strong prehensile roots of the tree and squeezed to death.</Description>
+  </item>
+  <item>
+    <ID>105</ID>
+    <Type>Life Form</Type>
+    <Name>Sandpit Stalker</Name>
+    <Value>1025</Value>
+    <Size>4</Size>
+    <Speed>1</Speed>
+    <Danger>4</Danger>
+    <Damage>40</Damage>
+	<Description>A lifeform resembling a plant with a single tall, thick stem. It stands in a circle of finely grained sand. The stalk of the stem sways gently back and forth, and is covered with large, beautiful, red and white flowers. The lifeform exudes a strong, sweet odor that seems to attract other creatures. When it is approached, the stem immediately wraps itself around the creature and pulls it under the sand where the bulk of this creature actually resides.</Description>
+  </item>
+  <item>
+    <ID>106</ID>
+    <Type>Life Form</Type>
+    <Name>Eight-Legged Rhino</Name>
+    <Value>1165</Value>
+    <Size>7</Size>
+    <Speed>3</Speed>
+    <Danger>6</Danger>
+    <Damage>60</Damage>
+	<Description>A large armor plated creature vaguely resembling an eight legged rhinoceros. The creature is however, longer and lower to the ground than a rhino, and along its back are two parallel ridges of bone spikes. The creature has no visible eyes, and on its snout is a thick, spiral horn. Before charging something this creature rears on its hind legs and sways from side to side. This behavior seems to help it zero in on its target.</Description>
+  </item>
+  <item>
+    <ID>107</ID>
+    <Type>Life Form</Type>
+    <Name>Radit Slug</Name>
+    <Value>1170</Value>
+    <Size>11</Size>
+    <Speed>2</Speed>
+    <Danger>6</Danger>
+    <Damage>60</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>108</ID>
+    <Type>Life Form</Type>
+    <Name>Stinging Cone</Name>
+    <Value>1525</Value>
+    <Size>10</Size>
+    <Speed>1</Speed>
+    <Danger>1</Danger>
+    <Damage>10</Damage>
+	<Description>A massive greenish blue, conically shaped creature. It has a cracked, mucousy surface and a long, whip like projection at its top. Around the base are several long, vertical slits that are filled with sharp, tooth like serrations. This creature exudes a strong odor which has narcotic properties and seems to have the effect of luring other creatures within range of its stinging whip.</Description>
+  </item>
+  <item>
+    <ID>109</ID>
+    <Type>Life Form</Type>
+    <Name>Brass Harpooner</Name>
+    <Value>1800</Value>
+    <Size>8</Size>
+    <Speed>3</Speed>
+    <Danger>4</Danger>
+    <Damage>40</Damage>
+	<Description>A large, rounded creature completely covered by metallic, brass colored, overlapping plates of armor. It seems to propel itself by means of thousands of small tentacles on its underside. Protruding from the front end of the creature is a single, barbed spike which the creature is capable of shooting from its body. Upon harpooning its victim, these can then be pulled in by the sinewy chords that attach them.</Description>
+  </item>
+  <item>
+    <ID>110</ID>
+    <Type>Life Form</Type>
+    <Name>Midloth Fruit-tree</Name>
+    <Value>1975</Value>
+    <Size>12</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>111</ID>
+    <Type>Life Form</Type>
+    <Name>Brescin Fireling</Name>
+    <Value>2500</Value>
+    <Size>6</Size>
+    <Speed>5</Speed>
+    <Danger>6</Danger>
+    <Damage>60</Damage>
+	<Description></Description>
+  </item>
+  <item>
+    <ID>112</ID>
+    <Type>Life Form</Type>
+    <Name>Humming Rock</Name>
+    <Value>1000</Value>
+    <Size>3</Size>
+    <Speed>0</Speed>
+    <Danger>0</Danger>
+    <Damage>0</Damage>
+	<Description>A creature resembling a large, solid looking rock. It is coarse and grey like granite, veined with brown and silvery lines. This lifeform exhibits no behaviors, with the one exception that it hums continuously. Periodically, and for no apparent reason, this humming seems to grow louder and more energetic. The rhythm and melody of the humming seem strikingly familiar to an off key rendition of an ancient song known as the Gilligan's Island theme.</Description>
+  </item>
+  <item>
+    <ID>113</ID>
+    <Type>Life Form</Type>
+    <Name>Dark Lightning</Name>
+    <Value>2000</Value>
+    <Size>6</Size>
+    <Speed>3</Speed>
+    <Danger>9</Danger>
+    <Damage>400</Damage>
+	<Description>This appears to be a large cube of blazing energy hovering several feet off the ground. Approximately three times the size of the terrain vehicle, it moves rapidly with no visible means of propulsion. Within the shifting core is seen charged electric energy that appears as writhing, dark, inverse lightning. The object or lifeform projects a crackling, throbbing, subsonic force that is deeply disturbing and at close range, utterly unbearable.</Description>
+  </item>
+
+<!-- TRADE ITEMS: 114-177  DO NOT CHANGE IDs! -->
+  <item>
+    <ID>114</ID>
+    <Type>Trade Item</Type>
+    <Name>Native Meats</Name>
+    <Value>120</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Livestock.tga</Portrait>
+  </item>
+  <item>
+    <ID>115</ID>
+    <Type>Trade Item</Type>
+    <Name>Native Vegetables</Name>
+    <Value>120</Value>
+    <Age>Stone</Age>
+    <Portrait>T_FruitsandVeg.tga</Portrait>
+  </item>
+  <item>
+    <ID>116</ID>
+    <Type>Trade Item</Type>
+    <Name>Seeds and Spores</Name>
+    <Value>185</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Seeds.tga</Portrait>
+  </item>
+  <item>
+    <ID>117</ID>
+    <Type>Trade Item</Type>
+    <Name>Stone Age Tools and Weapons</Name>
+    <Value>215</Value>
+    <Age>Stone</Age>
+    <Portrait>T_FarmTools.tga</Portrait>
+  </item>
+  <item>
+    <ID>118</ID>
+    <Type>Trade Item</Type>
+    <Name>Stone Age Musical Instruments</Name>
+    <Value>260</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Instruments.tga</Portrait>
+  </item>
+  <item>
+    <ID>119</ID>
+    <Type>Trade Item</Type>
+    <Name>Stone Age Art Objects</Name>
+    <Value>290</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Art.tga</Portrait>
+  </item>
+  <item>
+    <ID>120</ID>
+    <Type>Trade Item</Type>
+    <Name>Narcotics</Name>
+    <Value>310</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Medicine.tga</Portrait>
+  </item>
+  <item>
+    <ID>121</ID>
+    <Type>Trade Item</Type>
+    <Name>Gemstones amd Geoforms</Name>
+    <Value>530</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Gems.tga</Portrait>
+  </item>
+  <item>
+    <ID>122</ID>
+    <Type>Trade Item</Type>
+    <Name>Poisonous Fauna</Name>
+    <Value>590</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Skins.tga</Portrait>
+  </item>
+  <item>
+    <ID>123</ID>
+    <Type>Trade Item</Type>
+    <Name>Furs and Skins</Name>
+    <Value>630</Value>
+    <Age>Stone</Age>
+    <Portrait>T_Furs.tga</Portrait>
+  </item>
+  <item>
+    <ID>124</ID>
+    <Type>Trade Item</Type>
+    <Name>Cloths</Name>
+    <Value>310</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Furs.tga</Portrait>
+  </item>
+  <item>
+    <ID>125</ID>
+    <Type>Trade Item</Type>
+    <Name>Tapestries</Name>
+    <Value>360</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Art.tga</Portrait>
+  </item>
+  <item>
+    <ID>126</ID>
+    <Type>Trade Item</Type>
+    <Name>Religious Icons</Name>
+    <Value>400</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Art.tga</Portrait>
+  </item>
+  <item>
+    <ID>127</ID>
+    <Type>Trade Item</Type>
+    <Name>Metal Age Weapons and Armor</Name>
+    <Value>430</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Weapons_Metal.tga</Portrait>
+  </item>
+  <item>
+    <ID>128</ID>
+    <Type>Trade Item</Type>
+    <Name>Metal Age Tools</Name>
+    <Value>445</Value>
+    <Age>Metal</Age>
+    <Portrait>T_FarmTools.tga</Portrait>
+  </item>
+  <item>
+    <ID>129</ID>
+    <Type>Trade Item</Type>
+    <Name>Metal Age Medicines</Name>
+    <Value>510</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Medicine.tga</Portrait>
+  </item>
+  <item>
+    <ID>130</ID>
+    <Type>Trade Item</Type>
+    <Name>Native Science Texts</Name>
+    <Value>530</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Books.tga</Portrait>
+  </item>
+  <item>
+    <ID>131</ID>
+    <Type>Trade Item</Type>
+    <Name>Native Literature</Name>
+    <Value>630</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Books.tga</Portrait>
+  </item>
+  <item>
+    <ID>132</ID>
+    <Type>Trade Item</Type>
+    <Name>Assorted Gemstones</Name>
+    <Value>800</Value>
+    <Age>Metal</Age>
+    <Portrait>T_Gems.tga</Portrait>
+  </item>
+  <item>
+    <ID>133</ID>
+    <Type>Trade Item</Type>
+    <Name>Synthetic Foods and Chemicals</Name>
+    <Value>500</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_FruitsandVeg.tga</Portrait>
+  </item>
+  <item>
+    <ID>134</ID>
+    <Type>Trade Item</Type>
+    <Name>Synthetic Materials</Name>
+    <Value>550</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Seeds.tga</Portrait>
+  </item>
+  <item>
+    <ID>135</ID>
+    <Type>Trade Item</Type>
+    <Name>I.A. Civilian Electronics</Name>
+    <Value>580</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Electronics.tga</Portrait>
+  </item>
+  <item>
+    <ID>136</ID>
+    <Type>Trade Item</Type>
+    <Name>Hypnotic Instruments</Name>
+    <Value>750</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Instruments.tga</Portrait>
+  </item>
+  <item>
+    <ID>137</ID>
+    <Type>Trade Item</Type>
+    <Name>I.A. Military Electronics</Name>
+    <Value>800</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Electronics.tga</Portrait>
+  </item>
+  <item>
+    <ID>138</ID>
+    <Type>Trade Item</Type>
+    <Name>Genetically Enhanced Cattle</Name>
+    <Value>920</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Livestock.tga</Portrait>
+  </item>
+  <item>
+    <ID>139</ID>
+    <Type>Trade Item</Type>
+    <Name>I.A. Medicines</Name>
+    <Value>970</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Medicine.tga</Portrait>
+  </item>
+  <item>
+    <ID>140</ID>
+    <Type>Trade Item</Type>
+    <Name>Basic Computing Essentials</Name>
+    <Value>1200</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Electronics.tga</Portrait>
+  </item>
+  <item>
+    <ID>141</ID>
+    <Type>Trade Item</Type>
+    <Name>Hardy Ameobas</Name>
+    <Value>1350</Value>
+    <Age>Industrial</Age>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>142</ID>
+    <Type>Trade Item</Type>
+    <Name>Glush Cola</Name>
+    <Value>75</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Booze.tga</Portrait>
+  </item>
+  <item>
+    <ID>143</ID>
+    <Type>Trade Item</Type>
+    <Name>Data Hold</Name>
+    <Value>100</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Computers.tga</Portrait>
+  </item>
+  <item>
+    <ID>144</ID>
+    <Type>Trade Item</Type>
+    <Name>Lovely Glortblorps</Name>
+    <Value>150</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_FruitsandVeg.tga</Portrait>
+  </item>
+  <item>
+    <ID>145</ID>
+    <Type>Trade Item</Type>
+    <Name>Data Shell</Name>
+    <Value>190</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Reactor.tga</Portrait>
+  </item>
+  <item>
+    <ID>146</ID>
+    <Type>Trade Item</Type>
+    <Name>Data Crystals</Name>
+    <Value>225</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Computers.tga</Portrait>
+  </item>
+  <item>
+    <ID>147</ID>
+    <Type>Trade Item</Type>
+    <Name>Net Probes</Name>
+    <Value>225</Value>
+    <Age>Spacefaring</Age>
+    <BlackMarket>true</BlackMarket>
+    <Portrait>T_Reactor.tga</Portrait>
+  </item>
+  <item>
+    <ID>148</ID>
+    <Type>Trade Item</Type>
+    <Name>Basic Robots and Automatons</Name>
+    <Value>260</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Robots.tga</Portrait>
+  </item>
+  <item>
+    <ID>149</ID>
+    <Type>Trade Item</Type>
+    <Name>Escape Pod</Name>
+    <Value>350</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_EscapePod.tga</Portrait>
+  </item>
+  <item>
+    <ID>150</ID>
+    <Type>Trade Item</Type>
+    <Name>Decoder</Name>
+    <Value>445</Value>
+    <Age>Spacefaring</Age>
+    <BlackMarket>true</BlackMarket>
+    <Portrait>T_Electronics.tga</Portrait>
+  </item>
+  <item>
+    <ID>151</ID>
+    <Type>Trade Item</Type>
+    <Name>Adv. Robots and Automatons</Name>
+    <Value>540</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Robots.tga</Portrait>
+  </item>
+  <item>
+    <ID>152</ID>
+    <Type>Trade Item</Type>
+    <Name>Holovids</Name>
+    <Value>610</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_NavComputer.tga</Portrait>
+  </item>
+  <item>
+    <ID>153</ID>
+    <Type>Trade Item</Type>
+    <Name>Universal Power Adapter</Name>
+    <Value>725</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Reactor.tga</Portrait>
+  </item>
+  <item>
+    <ID>154</ID>
+    <Type>Trade Item</Type>
+    <Name>Heavy Molecules</Name>
+    <Value>780</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Liquid.tga</Portrait>
+  </item>
+  <item>
+    <ID>155</ID>
+    <Type>Trade Item</Type>
+    <Name>Dreamgrids</Name>
+    <Value>800</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>156</ID>
+    <Type>Trade Item</Type>
+    <Name>C.E. Robots and Automatons</Name>
+    <Value>850</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Robots.tga</Portrait>
+  </item>
+  <item>
+    <ID>157</ID>
+    <Type>Trade Item</Type>
+    <Name>Break-it-down Enzymes</Name>
+    <Value>875</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Pottery.tga</Portrait>
+  </item>
+  <item>
+    <ID>158</ID>
+    <Type>Trade Item</Type>
+    <Name>Spacefaring Age Medicines</Name>
+    <Value>900</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Medicine.tga</Portrait>
+  </item>
+  <item>
+    <ID>159</ID>
+    <Type>Trade Item</Type>
+    <Name>Screech Harps</Name>
+    <Value>1000</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Instruments.tga</Portrait>
+  </item>
+  <item>
+    <ID>160</ID>
+    <Type>Trade Item</Type>
+    <Name>Genetic Materials</Name>
+    <Value>1075</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Medicine.tga</Portrait>
+  </item>
+  <item>
+    <ID>161</ID>
+    <Type>Trade Item</Type>
+    <Name>Cargo Life-ship</Name>
+    <Value>1120</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_EscapePod.tga</Portrait>
+  </item>
+  <item>
+    <ID>162</ID>
+    <Type>Trade Item</Type>
+    <Name>Fusion Splicer</Name>
+    <Value>1190</Value>
+    <Age>Spacefaring</Age>
+    <BlackMarket>true</BlackMarket>
+    <Portrait>T_Weapons_Laser.tga</Portrait>
+  </item>
+  <item>
+    <ID>163</ID>
+    <Type>Trade Item</Type>
+    <Name>Terrestrial Flightcraft</Name>
+    <Value>1200</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Ship.tga</Portrait>
+  </item>
+  <item>
+    <ID>164</ID>
+    <Type>Trade Item</Type>
+    <Name>Luxury Liquid-speeder</Name>
+    <Value>1250</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Ship.tga</Portrait>
+  </item>
+  <item>
+    <ID>165</ID>
+    <Type>Trade Item</Type>
+    <Name>Terraform Mold</Name>
+    <Value>1300</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Liquid.tga</Portrait>
+  </item>
+  <item>
+    <ID>166</ID>
+    <Type>Trade Item</Type>
+    <Name>Phase Inductors</Name>
+    <Value>1325</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Weapons_Laser.tga</Portrait>
+  </item>
+  <item>
+    <ID>167</ID>
+    <Type>Trade Item</Type>
+    <Name>Firegem</Name>
+    <Value>1400</Value>
+    <Age>Spacefaring</Age>
+    <BlackMarket>true</BlackMarket>
+    <Portrait>T_Gems.tga</Portrait>
+  </item>
+  <item>
+    <ID>168</ID>
+    <Type>Trade Item</Type>
+    <Name>Gravitational Compensator</Name>
+    <Value>1400</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Computers.tga</Portrait>
+  </item>
+  <item>
+    <ID>169</ID>
+    <Type>Trade Item</Type>
+    <Name>Godmasks</Name>
+    <Value>1410</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Drill_Good.tga</Portrait>
+  </item>
+  <item>
+    <ID>170</ID>
+    <Type>Trade Item</Type>
+    <Name>Cutting Edge Military Elec.</Name>
+    <Value>1550</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Electronics.tga</Portrait>
+  </item>
+  <item>
+    <ID>171</ID>
+    <Type>Trade Item</Type>
+    <Name>Cutting Edge Scanners</Name>
+    <Value>1700</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_NavComputer.tga</Portrait>
+  </item>
+  <item>
+    <ID>172</ID>
+    <Type>Trade Item</Type>
+    <Name>Mindforge</Name>
+    <Value>2000</Value>
+    <Age>Spacefaring</Age>
+    <BlackMarket>true</BlackMarket>
+    <Portrait>T_Drill_Good.tga</Portrait>
+  </item>
+  <item>
+    <ID>173</ID>
+    <Type>Trade Item</Type>
+    <Name>Jeweled Xsiao Xingtay</Name>
+    <Value>2200</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Gems.tga</Portrait>
+  </item>
+  <item>
+    <ID>174</ID>
+    <Type>Trade Item</Type>
+    <Name>Harmony Stone</Name>
+    <Value>2400</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Gems.tga</Portrait>
+  </item>
+  <item>
+    <ID>175</ID>
+    <Type>Trade Item</Type>
+    <Name>Fusion Reactors</Name>
+    <Value>2700</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Reactor.tga</Portrait>
+  </item>
+  <item>
+    <ID>176</ID>
+    <Type>Trade Item</Type>
+    <Name>Bio-Organs</Name>
+    <Value>3000</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>177</ID>
+    <Type>Trade Item</Type>
+    <Name>Fusion Elements</Name>
+    <Value>3200</Value>
+    <Age>Spacefaring</Age>
+    <Portrait>T_Reactor.tga</Portrait>
+  </item>
+
+<!-- RUINS: IDs 178-? -->
+  <item>
+    <ID>178</ID>
+    <Type>Ruin</Type>
+    <Name>Ancient Monolith</Name>
+	<Description>A huge ceramic monolith is firmly planted in the bedrock at this location.  The crystalline material is impossible to date.  On the northern facing side, etchings can be seen that appears to be a map of sorts.  Based on the layout of the continents, you recognize the frozen planet Ildathach.  Based on ground markings on the surrounding terrain, it appears that a number of vehicles have visited this site recently.</Description>
+    <Portrait>B_Tomb.tga</Portrait>
+	<planetid>2</planetid> <!-- Islay - 35S X 15W -->
+	<y>-15</y>
+	<x>35</x>
+  </item>
+
+<!-- INSERT NEW ITEMS HERE STARTING AT LAST ID, REGARDLESS OF TYPE; NOTE: ID'S DO NOT NEED TO BE SEQUENTIAL, ONLY UNIQUE. -->
+
+  <item>
+    <ID>179</ID>
+    <Type>Ruin</Type>
+    <Name>Research Outpost</Name>
+	<Description>This abandoned research station shows recent signs of construction.  Scientific equipment has been smashed and chewed?  Projectile-based weapon damage etches the walls and the ceiling.  The central computer is intact but all data has been wiped cleaned of data.</Description>
+    <Portrait>B_Research.tga</Portrait>
+	<planetid>78</planetid> <!-- Samildanach, Elcmar 190,98  -  Tafel Cargo -->
+	<y>29</y>
+	<x>59</x>
+  </item>
+  <item>
+    <ID>180</ID>
+    <Type>Ruin</Type>
+    <Name>Outpost</Name>
+	<Description>This apparatus appears to be a robotically built transmitter capable of broadcasting a signal into space.  The power source is long dead.</Description>
+    <Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>25</planetid> <!--  Ildathach -  Hypercube -->
+	<y>18</y>
+	<x>11</x>
+  </item>
+  <item>
+    <ID>181</ID>
+    <Type>Ruin</Type>
+    <Name>Excavation</Name>
+	<Description>This area of ground appears to be artificially disturbed in some way.</Description>
+    <Portrait>B_Mine.tga</Portrait>
+	<planetid>197</planetid> <!-- ** unable to study this ruin for some reason **  Fir Bolg I 17,93  -  Shimmering Holograms -->
+	<y>-142</y>
+	<x>-53</x>
+  </item>
+  <item>
+    <ID>182</ID>
+    <Type>Ruin</Type>
+    <Name>Ancient Ruin</Name>
+	<Description>This ancient symmetrical structure defies categorization.  Deep in a cave formation under the city itself a block formation made entirely of etched endurium has been found. Xenoarchaeologists have theorized that this device may be some data storage unit or ancient database organized by thick stacks of bound plates.</Description>
+    <Portrait>B_Tomb.tga</Portrait>
+	<planetid>391</planetid> <!--  ** unable to study this ruin for some reason **  Lir IV  -  Ancient Database Plates -->
+	<y>-9</y>
+	<x>-36</x>
+  </item>
+  <item>
+    <ID>183</ID>
+    <Type>Ruin</Type>
+    <Name>Ancient Ruin</Name>
+    <Description>This ancient symmetrical structure defies categorization.  This ancient structure is several times more massive than similar structures.</Description>
+    <Portrait>B_Tomb.tga</Portrait>
+	<planetid>486</planetid> <!--Mathgen IV 212,3  -  Crystal Sphere -->
+	<y>15</y>
+	<x>4</x>
+  </item>
+  <item>
+    <ID>184</ID>
+    <Type>Ruin</Type>
+    <Name>Myrrdan Archaeological Dig # 163</Name>
+    <Description>Myrrdan scientists and engineers greet you on your arrival and direct your attention to the data core stored in the facility next to this dig.</Description>
+    <Portrait>B_Mine.tga</Portrait>
+	<planetid>439</planetid> <!-- Tuatha, Nemed 125,96  -  Tafel Data System -->
+	<y>62</y>
+	<x>-41</x>
+  </item>
+  <item>
+    <ID>185</ID>
+    <Type>Ruin</Type>
+    <Name>Abandoned Facility</Name>
+    <Description>This long abandoned facility appears to be previously stripped of anything of value. Primitive and heavy machinery of indeterminate value and purpose lies in crumbling buildings. Radiometric decay indicates a passage of 48 years since anything was active at this site.</Description>
+    <Portrait>B_Factory.tga</Portrait>
+	<planetid>240</planetid> <!-- Eocho, Etarlam 172,118 -  Spiral Lens -->
+	<y>-94</y>
+	<x>46</x>
+  </item>
+  <item>
+    <ID>186</ID>
+    <Type>Ruin</Type>
+    <Name>Primitive Structures</Name>
+    <Description>This pirate repair facility is primitive and appears abandoned. Extremely basic facilities are in bad repair and full of the debris and trash.</Description>
+    <Constant>WHININGORB</Constant>
+    <Portrait>B_ShantyTown.tga</Portrait>
+	<planetid>70</planetid> <!-- ** unable to study this ruin for some reason ** -  Whining Orb --> <!-- Alastir, Tat 132,125 -->
+	<y>-1</y>
+	<x>-154</x>
+  </item>
+  <item>
+    <ID>187</ID>
+    <Type>Ruin</Type>
+    <Name>Enigmatic Town</Name>
+    <Description>This uncanny facility is extremely alien and appears unnatural. Buildings are manufactured with only the most primitive materials and their architecture lacks any sort of symmetry or consistency.  There are no signs of habitation or life, yet not a single trace of dust or corrosion. The buildings absorb and dampen all forms of electromagnetic radiation making dating impossible.</Description>
+    <Portrait>B_ShantyTown.tga</Portrait>
+	<planetid>479</planetid> <!-- Inchegeela II 59,210  -  Erratic Energy Devices -->
+	<y>-132</y>
+	<x>-136</x>
+  </item>
+  <item>
+    <ID>188</ID>
+    <Type>Ruin</Type>
+	<Name>Myrrdan Archaeological Dig # 42</Name>
+    <Description>Myrrdan scientists and engineers greet you on your arrival and direct your attention to the storage area adjacent to the facility.</Description>
+    <Portrait>B_Pottery.tga</Portrait>
+	<planetid>25</planetid> <!-- ** unable to study this ruin for some reason **  Ildathach  -  Artistic Containers -->
+	<y>-123</y>
+	<x>48</x>
+  </item>
+  <item>
+    <ID>189</ID>
+    <Type>Ruin</Type>
+    <Name>Sealed Outpost</Name>
+    <Description>This highly advanced outpost appears to have been destroyed by orbital weapons during an early stage of its construction.  Melted images of bear like creatures in military formations cover several surviving surfaces.</Description>
+    <Portrait>B_Research.tga</Portrait>
+	<planetid>224</planetid> <!--  Arturwen, Anu 65,110  -  Artistic Baubles -->
+	<y>-68</y>
+	<x>-88</x>
+  </item>
+  <item>
+    <ID>190</ID>
+    <Type>Ruin</Type>
+    <Name>Industrial City</Name>
+    <Description>Ruins of a plastics and ceramics age civilization.</Description>
+    <Portrait>B_Metropolis.tga</Portrait>
+	<planetid>405</planetid> <!--   Fiacha III 219,179 -  Ticking Cylinder -->
+	<y>-62</y>
+	<x>-146</x>
+  </item>
+  <item>
+    <ID>191</ID>
+    <Type>Ruin</Type>
+    <Name>Thrynn Propulsion System</Name>
+    <Description>Remains of an automated propulsion system of Thrynn origin. Only minor damage apparent and the guidance system apparently performed a flawless landing, since there are no signs of impact.  Power to both the primary and backup tachyon communication systems have failed.</Description>
+    <Portrait>B_WeaponsPlacement.tga</Portrait>
+	<planetid>120</planetid> <!-- Aircthech II 100,8  -  Shattered Drone -->
+	<y>-26</y>
+	<x>38</x>
+  </item>
+  <item>
+    <ID>192</ID>
+    <Type>Ruin</Type>
+    <Name>Crumbling Structure</Name>
+    <Description>Remains of a once ornate religious shrine lost to the ages. Simple columns of white stone in a rectangular arrangement adorned with ornate carvings once supported some sort of roofing system which has long since vanished.  Evidence of a low-grade explosion and fire marks the structure.</Description>
+    <Portrait>B_Tomb.tga</Portrait>
+	<planetid>26</planetid> <!-- Ciuin in the Faidh system - Training Mission -->
+	<y>92</y>
+	<x>21</x>
+  </item>
+  <item>
+    <ID>194</ID>
+    <Type>Ruin</Type>
+    <Name>Primitive Structures</Name>
+    <Description>These primitive ruins show signs of extreme age and terrible disrepair.</Description>
+    <Portrait>B_ShantyTown.tga</Portrait>
+	<planetid>26</planetid><!-- Ciuin in the Faidh system - Training Mission -->
+	<y>32</y>
+	<x>-95</x>
+  </item>
+  <item>
+    <ID>195</ID>
+    <Type>Artifact</Type>
+    <Name>Nid Berry Statue</Name>
+    <Value>0</Value>
+    <Size>0.1</Size>
+    <Portrait>T_FarmTools.tga</Portrait>
+	<planetid>454</planetid> <!-- Aran 130S X 60E - Training Mission -->
+	<y>60</y>
+	<x>125</x>
+  </item>
+  <item>
+    <ID>196</ID>
+    <Type>Ruin</Type>
+    <Name>Myrrdan Marker</Name>
+    <Description>This marker bears the following riddle: Go west young man </Description>
+    <Portrait>B_Tomb.tga</Portrait>
+	<planetid>30</planetid> <!-- Findtigernd in the Nemed system - 43s X 48E -->
+	<y>48</y>
+	<x>43</x>
+  </item>
+  <item>
+    <ID>211</ID>
+    <Type>Ruin</Type>
+    <Name>Myrrdan Marker</Name>
+    <Description>This marker bears the following riddle: Twins of acid provide two spheres, the cooler one we wish to see.  The coldest extremes create two lines which intersect at 60 only once.</Description>
+    <Portrait>B_Tomb.tga</Portrait>
+	<planetid>30</planetid> <!-- Findtigernd in the Nemed system - 43s X 105W -->
+	<y>-105</y>
+	<x>43</x>
+  </item>
+  <item>
+    <ID>197</ID>
+    <Type>Artifact</Type>
+    <Name>Rod Device</Name>
+    <Value>0</Value>
+    <Size>0.1</Size>
+    <Portrait>T_Weapons_Laser.tga</Portrait>
+	<planetid>453</planetid> <!-- Oilell - 94N X 25E -->
+	<y>25</y>
+	<x>-94</x>
+  </item>
+  <item>
+    <ID>198</ID>
+    <Type>Ruin</Type>
+    <Name>Crumbling Facility</Name>
+    <Description>... We move to place on other side of gas giants at 115N X 46E. ... Harrison promise us scanner tech.  He  smart, but we watch him ... He show us evidence at 55S X 35W on the planet of fire.  He should discover its exact location soon ... must remember to add 20 to numbers...</Description>
+    <Portrait>B_ShantyTown.tga</Portrait>
+	<planetid>450</planetid> <!-- Lough Leane 2389 - 118N X 112W -->
+	<y>-112</y>
+	<x>-118</x>
+  </item>
+  <item>
+    <ID>199</ID>
+    <Type>Ruin</Type>
+    <Name>crumbling facility</Name>
+    <Description>This facility has been heavily damaged by orbital weapons fire.  </Description>
+    <Portrait>B_ShantyTown.tga</Portrait>
+	<planetid>453</planetid> <!-- Oilell - 95N X 26E -->
+	<y>26</y>
+	<x>-95</x>
+  </item>
+  <item>
+    <ID>200</ID>
+    <Type>Ruin</Type>
+    <Name>Merced's Perry</Name>
+    <Description>This mining facility already has had their fission reactor replaced with a Mark five Fusion Dynamo several months ago.</Description>
+    <Portrait>B_Mine.tga</Portrait>
+	<planetid>467</planetid> <!-- Dermod/Iarbonel system (125, 99) - 38N X 154W -->
+	<y>-154</y>
+	<x>-38</x>
+  </item>
+  <item>
+    <ID>201</ID>
+    <Type>Ruin</Type>
+    <Name>Red Firestone</Name>
+    <Description>This mining facility retrieves and processes a number of low grade ores for ship construction.  The fission plant is located directly outside the compound.</Description>
+    <Portrait>B_Mine.tga</Portrait>
+	<planetid>467</planetid> <!-- Dermod/Iarbonel system (125, 99) - 62N X 42E -->
+	<y>42</y>
+	<x>-62</x>
+  </item>
+  <item>
+    <ID>202</ID>
+    <Type>Artifact</Type>
+    <Name>Fusion Reactor</Name>
+    <Value>0</Value>
+    <Size>16.7</Size>
+    <Portrait>T_EscapePod.tga</Portrait>
+	<planetid>467</planetid>  <!-- Dermod/Iarbonel system (125, 99) - 61N X 43E -->
+	<y>43</y>
+	<x>-61</x>
+  </item>
+  <item>
+    <ID>203</ID>
+    <Type>Artifact</Type>
+    <Name>Scanner Components</Name>
+    <Value>0</Value>
+    <Size>16.7</Size>
+    <Portrait>T_Electronics.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) - 26S X 76E -->
+	<y>76</y>
+	<x>26</x>
+  </item>
+  <item>
+    <ID>204</ID>
+    <Type>Ruin</Type>
+    <Name>Communications Tower</Name>
+    <Description>Log: Noah 2 and 3 have done quite well for themselves.  I think that will see how Noah 6 is faring next.  I can always go hyper-relative again if their civilization takes an extra hundred or even a thousand years to develop.  My only regret is failing to track down that Myrrdan sensor probe.  Historical records revealed that standard procedure in Empire times was to land a stable 4th dimensional object close to the equator and prime meridian.  Perturbations within the contained artifact were relayed back to the ship over a few hours time.  Shame I didn't discover that months ago.  Not worth the risk to venture that close to Myrrdan territory now.  -H</Description>
+    <Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) - 25S X 75E -->
+	<y>75</y>
+	<x>25</x>
+  </item>
+  <item>
+    <ID>205</ID>
+    <Type>Ruin</Type>
+    <Name>Nav Marker</Name>
+    <Description>A primitive form of navigational marker.  An ideogram depicts a forest with several pathways stretching out off the end of the image in straight perpendicular lines.  Infinite vectors extend to the north, east, and south in this image from the center but the pathway to the west is blocked.</Description>
+    <Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) -->
+	<y>0</y>
+	<x>0</x>
+  </item>
+  <item>
+    <ID>206</ID>
+    <Type>Ruin</Type>
+    <Name>Nav Marker</Name>
+    <Description>A primitive form of navigational marker.  An ideogram depicts a forest with several pathways stretching out off the end of the image in straight perpendicular lines.  Infinite vectors extend to the east and south in this image from the center but the pathways to the north and west are blocked.</Description>
+    <Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) -->
+	<y>1</y>
+	<x>-39</x>
+  </item>
+  <item>
+    <ID>207</ID>
+    <Type>Ruin</Type>
+    <Name>Nav Marker</Name>
+    <Description>A primitive form of navigational marker.  An ideogram depicts a forest with several pathways stretching out off the end of the image in straight perpendicular lines.  Infinite vectors extend to the east and West in this image from the center but the pathways to the north and south are blocked.</Description>
+    <Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) -->
+	<y>89</y>
+	<x>-39</x>
+  </item>
+  <item>
+    <ID>208</ID>
+    <Type>Ruin</Type>
+    <Name>Nav Marker</Name>
+    <Description>A primitive form of navigational marker.  An ideogram depicts a forest with several pathways stretching out off the end of the image in straight perpendicular lines.  Infinite vectors extend to the north, West and south in this image from the center but the pathway to the east is blocked.</Description>
+    <Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) -->
+	<y>145</y>
+	<x>-39</x>
+  </item>
+  <item>
+    <ID>209</ID>
+    <Type>Ruin</Type>
+    <Name>Nav Marker</Name>
+    <Description>A primitive form of navigational marker.  An ideogram depicts a forest with several pathways stretching out off the end of the image in straight perpendicular lines.  An infinite vector extends to the south in this image from the center but the pathways to the north, east, and west are blocked.</Description>
+    <Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) -->
+	<y>145</y>
+	<x>-128</x>
+  </item>
+  <item>
+    <ID>210</ID>
+    <Type>Ruin</Type>
+    <Name>Nav Marker</Name>
+    <Description>A primitive form of navigational marker.  An ideogram depicts a forest with several pathways stretching out off the end of the image in straight perpendicular lines.  Infinite vectors extend to the north, east, and south in this image from the center but the pathway to the west is blocked.</Description>
+    <Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) -->
+	<y>0</y>
+	<x>44</x>
+  </item>
+  <item>
+    <ID>212</ID>
+    <Type>Ruin</Type>
+    <Name>Nav Marker</Name>
+    <Description>A primitive form of navigational marker.  An ideogram depicts a forest with several pathways stretching out off the end of the image in straight perpendicular lines.  Infinite vectors extend to the east and West in this image from the center but the pathways to the north and south are blocked.</Description>
+    <Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) -->
+	<y>13</y>
+	<x>45</x>
+  </item>
+  <item>
+    <ID>213</ID>
+    <Type>Ruin</Type>
+    <Name>Nav Marker</Name>
+    <Description>A primitive form of navigational marker.  An ideogram depicts a forest with several pathways stretching out off the end of the image in straight perpendicular lines.  Infinite vectors extend to the north, West, and south in this image from the center but the pathway to the east is blocked.</Description>
+    <Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) -->
+	<y>73</y>
+	<x>46</x>
+  </item>
+  <item>
+    <ID>214</ID>
+    <Type>Ruin</Type>
+    <Name>Nav Marker</Name>
+    <Description>A primitive form of navigational marker.  An ideogram depicts a forest with several pathways stretching out off the end of the image in straight perpendicular lines.  Infinite vectors extend to the north and East in this image from the center but the pathways to the West and south are blocked.</Description>
+    <Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) -->
+	<y>0</y>
+	<x>69</x>
+  </item>
+  <item>
+    <ID>215</ID>
+    <Type>Ruin</Type>
+    <Name>Nav Marker</Name>
+    <Description>A primitive form of navigational marker.  An ideogram depicts a forest with several pathways stretching out off the end of the image in straight perpendicular lines.  Infinite vectors extend to the east and West in this image from the center but the pathways to the north and south are blocked.</Description>
+    <Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) -->
+	<y>11</y>
+	<x>69</x>
+  </item>
+  <item>
+    <ID>216</ID>
+    <Type>Ruin</Type>
+    <Name>Nav Marker</Name>
+    <Description>A primitive form of navigational marker.  An ideogram depicts a forest with several pathways stretching out off the end of the image in straight perpendicular lines.  Infinite vectors extend to the north, east and West in this image from the center but the pathway to the south is blocked.</Description>
+    <Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) -->
+	<y>77</y>
+	<x>69</x>
+  </item>
+  <item>
+    <ID>217</ID>
+    <Type>Ruin</Type>
+    <Name>Nav Marker</Name>
+    <Description>A primitive form of navigational marker.  An ideogram depicts a forest with several pathways stretching out off the end of the image in straight perpendicular lines.  Infinite vectors extend to the north and West in this image from the center but the pathways to the east and south are blocked.</Description>
+<Portrait>B_ListeningPost.tga</Portrait>
+	<planetid>23</planetid>  <!-- Bran/Breothach system (127, 102) -->
+	<y>142</y>
+	<x>69</x>
+  </item>
+  <item>
+    <ID>218</ID>
+    <Type>Artifact</Type>
+    <Name>Sonic Disruptor</Name>
+    <Value>0</Value>
+    <Size>0.1</Size>
+    <Portrait>T_Weapons_Laser.tga</Portrait>
+  </item>
+    <item>
+    <ID>219</ID>
+    <Type>Artifact</Type>
+    <Name>Reaper</Name>
+    <Value>0</Value>
+    <Size>0.4</Size>
+    <Portrait>T_Weapons_Laser.tga</Portrait>
+  </item>
+    <item>
+    <ID>220</ID>
+    <Type>Artifact</Type>
+    <Name>Miniature Funnel Bushes</Name>
+    <Value>0</Value>
+    <Size>2.4</Size>
+    <Portrait>T_Drill_Good.tga</Portrait>
+	<planetid> 144 </planetid> <!--  Cáilte I 6N X 55E -->
+	<y>55</y>
+	<x>-6</x>
+  </item>
+  <item>
+	<ID>221</ID>
+	<Type>Ruin</Type>
+	<Name>Ruin</Name>
+	<description>Science report: Captain, this is an enclosed structure, isometric dating over 10,000 years of age. Nothing of value or interest remains of the civilization which constructed this structure, yet the trapped atmosphere within still bears traces of a directional tachyon signature. Triangulating from several points of trapped atmosphere on this planet surface shows that the tachyons surge is moving towards a point on the northern end of the equatorial island almost extremely enclosed in lava. The strength of the signature is identical to a Myrrdan-class vessel. No outward traveling particles matching the drive signature of any vessel have been detected so precise identification is impossible.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid>144</planetid> <!--  Cáilte I 73S X 21W -->
+	<y>-21</y>
+	<x>73</x>
+  </item>
+  <item>
+	<ID>222</ID>
+	<Type>Ruin</Type>
+	<Name>Abandoned Base</Name>
+	<description>Within this abandoned research outpost many broken and discarded curio artifacts have been found. The base itself is of human origin and several items of furniture bears the signature of Diligent's fabricators. The base appears to have been recently scrapped and all useful equipment and items have been removed with one exception, a large cylindrical dish holding three delicate Tillandsia. The plants appear to follow Elowan idiosyncrasies.</description>
+	<Portrait>B_Research.tga</Portrait>
+	<planetid>144</planetid><!--  Cáilte I 4N X 56E -->
+	<y>56</y>
+	<x>-4</x>
+  </item>
+  <item>
+    <ID>223</ID>
+    <Type>Artifact</Type>
+    <Name>Intrepid Sensor Data</Name>
+    <Value>0</Value>
+    <Size>0.1</Size>
+    <Portrait>T_Computers.tga</Portrait> <!--  Used in quest #37 -->
+  </item>
+  <item>
+    <ID>224</ID>
+    <Type>Artifact</Type>
+    <Name>Bar-zhon genetic material</Name>
+    <Value>0</Value>
+    <Size>10.0</Size>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>225</ID>
+    <Type>Artifact</Type>
+    <Name>Bx genetic material</Name>
+    <Value>0</Value>
+    <Size>10.0</Size>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>226</ID>
+    <Type>Artifact</Type>
+    <Name>Sabion genetic material</Name>
+    <Value>0</Value>
+    <Size>10.0</Size>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>227</ID>
+    <Type>Artifact</Type>
+    <Name>Transmodra genetic material</Name>
+    <Value>0</Value>
+    <Size>10.0</Size>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>228</ID>
+    <Type>Artifact</Type>
+    <Name>Elowan genetic material</Name>
+    <Value>0</Value>
+    <Size>10.0</Size>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>229</ID>
+    <Type>Artifact</Type>
+    <Name>Minex genetic material</Name>
+    <Value>0</Value>
+    <Size>10.0</Size>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>230</ID>
+    <Type>Artifact</Type>
+    <Name>Nyssian genetic material</Name>
+    <Value>0</Value>
+    <Size>10.0</Size>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>231</ID>
+    <Type>Artifact</Type>
+    <Name>Pirate genetic material</Name>
+    <Value>0</Value>
+    <Size>10.0</Size>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>232</ID>
+    <Type>Artifact</Type>
+    <Name>Spemin genetic material</Name>
+    <Value>0</Value>
+    <Size>10.0</Size>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>233</ID>
+    <Type>Artifact</Type>
+    <Name>Tafel genetic material</Name>
+    <Value>0</Value>
+    <Size>10.0</Size>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>234</ID>
+    <Type>Artifact</Type>
+    <Name>Thrynn genetic material</Name>
+    <Value>0</Value>
+    <Size>10.0</Size>
+    <Portrait>T_Prisoners.tga</Portrait>
+  </item>
+  <item>
+    <ID>235</ID>
+    <Type>Artifact</Type>
+    <Name>Elowan Viral Research Data</Name>
+    <Value>0</Value>
+    <Size>10.0</Size>
+    <Portrait>T_Plates.tga</Portrait>
+  </item>
+  <item>
+    <ID>236</ID>
+    <Type>Artifact</Type>
+    <Name>Coalition Computer</Name>
+    <Value>0</Value>
+    <Size>15.8</Size>
+    <Portrait>T_Computers.tga</Portrait>
+  </item>
+  <item>
+    <ID>237</ID>
+    <Type>Artifact</Type>
+    <Name>Diplomatic Pouch</Name>
+    <Value>0</Value>
+    <Size>0.1</Size>
+    <Portrait>T_NavComputer.tga</Portrait>
+  </item>
+  <item>
+    <ID>238</ID>
+    <Type>Artifact</Type>
+    <Name>Bar-zhon Governmental Communique</Name>
+    <Value>0</Value>
+    <Size>0.1</Size>
+    <Portrait>T_NavComputer.tga</Portrait>
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+	<ID>1000</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 20 </y>
+	<x> -138 </x>
+</item>
+<item>
+	<ID>1001</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -113 </y>
+	<x> -16 </x>
+</item>
+<item>
+	<ID>1002</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 54 </y>
+	<x> -1 </x>
+</item>
+<item>
+	<ID>1003</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -5 </y>
+	<x> -144 </x>
+</item>
+<item>
+	<ID>1004</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -130 </y>
+	<x> -146 </x>
+</item>
+<item>
+	<ID>1005</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 98 </y>
+	<x> -134 </x>
+</item>
+<item>
+	<ID>1006</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -14 </y>
+	<x> 74 </x>
+</item>
+<item>
+	<ID>1007</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -147 </y>
+	<x> -90 </x>
+</item>
+<item>
+	<ID>1008</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -2 </y>
+	<x> -120 </x>
+</item>
+<item>
+	<ID>1009</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -70 </y>
+	<x> 124 </x>
+</item>
+<item>
+	<ID>1010</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 100 </y>
+	<x> 153 </x>
+</item>
+<item>
+	<ID>1011</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 61 </y>
+	<x> -7 </x>
+</item>
+<item>
+	<ID>1012</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 2 </y>
+	<x> 31 </x>
+</item>
+<item>
+	<ID>1013</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 123 </y>
+	<x> 51 </x>
+</item>
+<item>
+	<ID>1014</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -100 </y>
+	<x> 22 </x>
+</item>
+<item>
+	<ID>1015</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -70 </y>
+	<x> 35 </x>
+</item>
+<item>
+	<ID>1016</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -73 </y>
+	<x> -106 </x>
+</item>
+<item>
+	<ID>1017</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -82 </y>
+	<x> 120 </x>
+</item>
+<item>
+	<ID>1018</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -11 </y>
+	<x> 6 </x>
+</item>
+<item>
+	<ID>1019</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 136 </y>
+	<x> -128 </x>
+</item>
+<item>
+	<ID>1020</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -137 </y>
+	<x> 95 </x>
+</item>
+<item>
+	<ID>1021</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -39 </y>
+	<x> 151 </x>
+</item>
+<item>
+	<ID>1022</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -35 </y>
+	<x> -64 </x>
+</item>
+<item>
+	<ID>1023</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 20 </y>
+	<x> -103 </x>
+</item>
+<item>
+	<ID>1024</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 34 </y>
+	<x> 97 </x>
+</item>
+<item>
+	<ID>1025</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -137 </y>
+	<x> 106 </x>
+</item>
+<item>
+	<ID>1026</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -98 </y>
+	<x> -103 </x>
+</item>
+<item>
+	<ID>1027</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -125 </y>
+	<x> -61 </x>
+</item>
+<item>
+	<ID>1028</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -81 </y>
+	<x> -3 </x>
+</item>
+<item>
+	<ID>1029</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -142 </y>
+	<x> -52 </x>
+</item>
+<item>
+	<ID>1030</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -61 </y>
+	<x> -10 </x>
+</item>
+<item>
+	<ID>1031</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 153 </y>
+	<x> -69 </x>
+</item>
+<item>
+	<ID>1032</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -139 </y>
+	<x> 1 </x>
+</item>
+<item>
+	<ID>1033</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 135 </y>
+	<x> -144 </x>
+</item>
+<item>
+	<ID>1034</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 21 </y>
+	<x> 125 </x>
+</item>
+<item>
+	<ID>1035</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -123 </y>
+	<x> 140 </x>
+</item>
+<item>
+	<ID>1036</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 11 </y>
+	<x> 11 </x>
+</item>
+<item>
+	<ID>1037</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 44 </y>
+	<x> 121 </x>
+</item>
+<item>
+	<ID>1038</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -83 </y>
+	<x> -42 </x>
+</item>
+<item>
+	<ID>1039</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -74 </y>
+	<x> 153 </x>
+</item>
+<item>
+	<ID>1040</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 11 </y>
+	<x> -49 </x>
+</item>
+<item>
+	<ID>1041</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -5 </y>
+	<x> -101 </x>
+</item>
+<item>
+	<ID>1042</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 33 </y>
+	<x> 99 </x>
+</item>
+<item>
+	<ID>1043</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -147 </y>
+	<x> 72 </x>
+</item>
+<item>
+	<ID>1044</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -2 </y>
+	<x> -56 </x>
+</item>
+<item>
+	<ID>1045</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 105 </y>
+	<x> -50 </x>
+</item>
+<item>
+	<ID>1046</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -148 </y>
+	<x> 152 </x>
+</item>
+<item>
+	<ID>1047</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -71 </y>
+	<x> 118 </x>
+</item>
+<item>
+	<ID>1048</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> 100 </y>
+	<x> -90 </x>
+</item>
+<item>
+	<ID>1049</ID>
+	<Type>Ruin</Type>
+	<Name>Generic Ruin</Name>
+	<description>Science report: Captain, I am detecting a faint tachyon signature within the trapped atmosphere of this ruin. Please travel to 73S X 21W so I may take additional readings.</description>
+	<Portrait>B_Tomb.tga</Portrait>
+	<planetid> 144 </planetid>
+	<y> -33 </y>
+	<x> -31 </x>
+</item>
+
+</items>

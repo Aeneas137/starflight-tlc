@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<dsShips xmlns="http://tempuri.org/dsShips.xsd">
+  <ships>
+    <id>1</id>
+    <name>USS Enterprise</name>
+    <race>Human</race>
+    <energy>100</energy>
+    <mass>200</mass>
+    <size>12</size>
+    <firingrate>4</firingrate>
+    <armorpoints>150</armorpoints>
+    <shieldpoints>40</shieldpoints>
+    <armorclass>3</armorclass>
+    <shieldclass>2</shieldclass>
+    <laserclass>3</laserclass>
+    <missileclass>0</missileclass>
+    <constelement>Titanium</constelement>
+    <shyneumdebris>4</shyneumdebris>
+    <debrisamount>5</debrisamount>
+  </ships>
+  <ships>
+    <id>2</id>
+    <name>USS Atlantis</name>
+    <race>Human</race>
+    <energy>100</energy>
+    <mass>200</mass>
+    <size>12</size>
+    <firingrate>4</firingrate>
+    <armorpoints>150</armorpoints>
+    <shieldpoints>40</shieldpoints>
+    <armorclass>3</armorclass>
+    <shieldclass>2</shieldclass>
+    <laserclass>3</laserclass>
+    <missileclass>0</missileclass>
+    <constelement>Titanium</constelement>
+    <shyneumdebris>4</shyneumdebris>
+    <debrisamount>5</debrisamount>
+  </ships>
+</dsShips>

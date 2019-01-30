@@ -17,3 +17,8 @@ Major dependencies (included):
 * ALFont
 * FMOD
 * Perlin (libnoise)
+
+
+Note about assets (.\bin\data):
+The game does not load the individual asset files under bin\data despite these files being present. I extracted them from the Allegro datafiles before uploading to the repo. We need to revise the game modules to load these assets directly and do away with the .dat files. Use the Allegro dat tool to manage them. I've gone down this road before and it's messy. Allegro de-allocates the assets when you close a datafile, so ALL of the allocation/deallocation code has to be written to load assets and destroy them. This should be done carefully, one module at a time, with testing to ensure no memory leaks are introduced. I've had to scrap weeks of work due to this very issue. Recommend caution.
+
