@@ -1,0 +1,8 @@
+STARFLIGHT : THE LOST COLONY
+
+The include and lib folders here contain all of the header and lib files referenced
+by the project in a single location, so there is no need to install Allegro, AllegroGL,
+or FMOD separately, with all the required files contained here.
+
+You will need to add an Include and Library reference to these folders in Visual C++
+(look in Tools -> Options -> Projects and Solutions - > VC++ Directories).

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2C27E004-2CD7-4DC0-B8C9-5F7E20DEEC4C}</ProjectGuid>
+    <RootNamespace>starflighttlc</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>starflighttlc</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4312;4075;4748;4099;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <UseFullPaths>true</UseFullPaths>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+    </ClCompile>
+    <Link>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(SolutionDir)..\..\..\bin\$(ProjectName)d.exe</OutputFile>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MSVC;WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4312;4075;4748;4099;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <UseFullPaths>true</UseFullPaths>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(SolutionDir)..\..\..\bin\$(ProjectName).exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\TestManager.cpp" />
+    <ClCompile Include="env.cpp" />
+    <ClCompile Include="..\..\ModuleAuxiliaryDisplay.cpp" />
+    <ClCompile Include="..\..\ModuleBank.cpp" />
+    <ClCompile Include="..\..\ModuleCantina.cpp" />
+    <ClCompile Include="..\..\ModuleCaptainCreation.cpp" />
+    <ClCompile Include="..\..\ModuleCaptainsLounge.cpp" />
+    <ClCompile Include="..\..\ModuleCargoWindow.cpp" />
+    <ClCompile Include="..\..\ModuleControlPanel.cpp" />
+    <ClCompile Include="..\..\ModuleCredits.cpp" />
+    <ClCompile Include="..\..\ModuleCrewHire.cpp" />
+    <ClCompile Include="..\..\ModuleEncounter.cpp" />
+    <ClCompile Include="..\..\ModuleEngineer.cpp" />
+    <ClCompile Include="..\..\ModuleGameOver.cpp" />
+    <ClCompile Include="..\..\ModuleInterplanetaryTravel.cpp" />
+    <ClCompile Include="..\..\ModuleInterstellarTravel.cpp" />
+    <ClCompile Include="..\..\ModuleMedical.cpp" />
+    <ClCompile Include="..\..\ModuleMessageGUI.cpp" />
+    <ClCompile Include="..\..\ModulePlanetOrbit.cpp" />
+    <ClCompile Include="..\..\ModulePlanetSurface.cpp" />
+    <ClCompile Include="..\..\ModuleQuestLog.cpp" />
+    <ClCompile Include="..\..\ModuleSettings.cpp" />
+    <ClCompile Include="..\..\ModuleShipConfig.cpp" />
+    <ClCompile Include="..\..\ModuleStarmap.cpp" />
+    <ClCompile Include="..\..\ModuleStarport.cpp" />
+    <ClCompile Include="..\..\ModuleStartup.cpp" />
+    <ClCompile Include="..\..\ModuleTitleScreen.cpp" />
+    <ClCompile Include="..\..\ModuleTopGUI.cpp" />
+    <ClCompile Include="..\..\ModuleTradeDepot.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\env.h" />
+    <ClInclude Include="..\..\ModuleAuxiliaryDisplay.h" />
+    <ClInclude Include="..\..\ModuleBank.h" />
+    <ClInclude Include="..\..\ModuleCantina.h" />
+    <ClInclude Include="..\..\ModuleCaptainCreation.h" />
+    <ClInclude Include="..\..\ModuleCaptainsLounge.h" />
+    <ClInclude Include="..\..\ModuleCargoWindow.h" />
+    <ClInclude Include="..\..\ModuleControlPanel.h" />
+    <ClInclude Include="..\..\ModuleCredits.h" />
+    <ClInclude Include="..\..\ModuleCrewHire.h" />
+    <ClInclude Include="..\..\ModuleEncounter.h" />
+    <ClInclude Include="..\..\ModuleEngineer.h" />
+    <ClInclude Include="..\..\ModuleGameOver.h" />
+    <ClInclude Include="..\..\ModuleInterplanetaryTravel.h" />
+    <ClInclude Include="..\..\ModuleInterstellarTravel.h" />
+    <ClInclude Include="..\..\ModuleMedical.h" />
+    <ClInclude Include="..\..\ModuleMessageGUI.h" />
+    <ClInclude Include="..\..\ModulePlanetOrbit.h" />
+    <ClInclude Include="..\..\ModulePlanetSurface.h" />
+    <ClInclude Include="..\..\ModuleQuestLog.h" />
+    <ClInclude Include="..\..\ModuleSettings.h" />
+    <ClInclude Include="..\..\ModuleShipConfig.h" />
+    <ClInclude Include="..\..\ModuleStarmap.h" />
+    <ClInclude Include="..\..\ModuleStarport.h" />
+    <ClInclude Include="..\..\ModuleStartup.h" />
+    <ClInclude Include="..\..\ModuleTitleScreen.h" />
+    <ClInclude Include="..\..\ModuleTopGUI.h" />
+    <ClInclude Include="..\..\ModuleTradeDepot.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="EngineCore.vcxproj">
+      <Project>{2fcf30b6-c79a-4a75-bc07-b30a5b271e78}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

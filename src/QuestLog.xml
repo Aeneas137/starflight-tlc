@@ -1,0 +1,173 @@
+<QuestLog>
+  <Quest>
+    <ID>0</ID>
+    <State>0</State>
+    <Title>Go to planet A</Title>
+    <Prerequisites>
+      <Requirement Type="GameTime">
+        <GameTime>123</GameTime>
+      </Requirement>
+      <Requirement Type="CargoSize">
+        <Size>123</Size>
+      </Requirement>
+      <Requirement Type="FactionStanding">
+        <Faction>8</Faction>
+        <LowValue>0</LowValue>
+        <HighValue>123</HighValue>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="PlanetScan">
+        <PlanetID>8</PlanetID>
+      </Requirement>
+    </Requirements>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>200</Amount>
+      </Reward>
+      <Reward Type="Item">
+        <ItemID>1</ItemID>
+        <Amount>10</Amount>
+      </Reward>
+      <Reward Type="Item">
+        <ItemID>2</ItemID>
+        <Amount>20</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>0</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>3</ID>
+      </TextBlob>
+    </TextLog>
+  </Quest>
+  <Quest>
+    <ID>1</ID>
+    <State>0</State>
+    <Title>Go to planet B</Title>
+    <Prerequisites>
+      <Requirement Type="QuestDependency">
+        <QuestID>0</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="PlanetScan">
+        <PlanetID>1234</PlanetID>
+      </Requirement>
+    </Requirements>
+    <Rewards />
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>1</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>3</ID>
+      </TextBlob>
+    </TextLog>
+  </Quest>
+  <Quest>
+    <ID>2</ID>
+    <State>0</State>
+    <Title>Go to planet C</Title>
+    <Prerequisites>
+      <Requirement Type="QuestDependency">
+        <QuestID>0</QuestID>
+        <QuestID>1</QuestID>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="PlanetScan">
+        <PlanetID>12345</PlanetID>
+      </Requirement>
+      <Requirement Type="CollectItem">
+        <ItemID>12</ItemID>
+        <Amount>10</Amount>
+      </Requirement>
+    </Requirements>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>10000</Amount>
+      </Reward>
+      <Reward Type="Item">
+        <ItemID>4</ItemID>
+        <Amount>100</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>2</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>3</ID>
+      </TextBlob>
+    </TextLog>
+  </Quest>
+  <Quest>
+    <ID>3</ID>
+    <State>0</State>
+    <Title>Save the Cheerleader, Save the World</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>4</Type>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="PlanetScan">
+        <PlanetID>88</PlanetID>
+      </Requirement>
+      <Requirement Type="CollectItem">
+        <ItemID>88</ItemID>
+        <Amount>88</Amount>
+      </Requirement>
+    </Requirements>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>88888</Amount>
+      </Reward>
+      <Reward Type="Item">
+        <ItemID>8</ItemID>
+        <Amount>8</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>4</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>5</ID>
+      </TextBlob>
+    </TextLog>
+  </Quest>
+  <Quest>
+    <ID>4</ID>
+    <State>0</State>
+    <Title>You shouldn't see me unless your a Science Captain</Title>
+    <Prerequisites>
+      <Requirement Type="CaptainType">
+        <Type>1</Type>
+      </Requirement>
+    </Prerequisites>
+    <Requirements>
+      <Requirement Type="FactionStanding">
+        <Faction>3</Faction>
+        <LowValue>1</LowValue>
+        <HighValue>123</HighValue>
+      </Requirement>
+    </Requirements>
+    <Rewards>
+      <Reward Type="Cash">
+        <Amount>12345</Amount>
+      </Reward>
+    </Rewards>
+    <TextLog>
+      <TextBlob Type="Briefing">
+        <ID>6</ID>
+      </TextBlob>
+      <TextBlob Type="Debriefing">
+        <ID>3</ID>
+      </TextBlob>
+    </TextLog>
+  </Quest>
+</QuestLog>

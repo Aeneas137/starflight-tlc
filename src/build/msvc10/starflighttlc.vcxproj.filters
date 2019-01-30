@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\main">
+      <UniqueIdentifier>{efc0bcb3-f996-4a3c-bf60-771f34334413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{2a2d9d62-6f4c-4f71-8284-4d4f04dc4d2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\modules">
+      <UniqueIdentifier>{136209ef-88ff-42b3-9b89-d02fc49c447a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\starport">
+      <UniqueIdentifier>{120054de-f745-475a-99d6-e05470ec62c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\module testing">
+      <UniqueIdentifier>{07c96ad9-f3b5-4119-8ed4-171d191a64e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="env.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleMessageGUI.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleTopGUI.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleQuestLog.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleStartup.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleTitleScreen.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleSettings.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleAuxiliaryDisplay.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleControlPanel.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleCargoWindow.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleCredits.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleEncounter.cpp">
+      <Filter>Source Files\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleEngineer.cpp">
+      <Filter>Source Files\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleShipConfig.cpp">
+      <Filter>Source Files\starport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleStarport.cpp">
+      <Filter>Source Files\starport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleTradeDepot.cpp">
+      <Filter>Source Files\starport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleBank.cpp">
+      <Filter>Source Files\starport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleCantina.cpp">
+      <Filter>Source Files\starport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleCaptainCreation.cpp">
+      <Filter>Source Files\starport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleCaptainsLounge.cpp">
+      <Filter>Source Files\starport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleCrewHire.cpp">
+      <Filter>Source Files\starport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleGameOver.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleInterplanetaryTravel.cpp">
+      <Filter>Source Files\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleInterstellarTravel.cpp">
+      <Filter>Source Files\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleMedical.cpp">
+      <Filter>Source Files\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModulePlanetOrbit.cpp">
+      <Filter>Source Files\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModulePlanetSurface.cpp">
+      <Filter>Source Files\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ModuleStarmap.cpp">
+      <Filter>Source Files\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TestManager.cpp">
+      <Filter>Source Files\module testing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\env.h">
+      <Filter>Source Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleMessageGUI.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleTopGUI.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleQuestLog.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleStartup.h">
+      <Filter>Source Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleTitleScreen.h">
+      <Filter>Source Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleSettings.h">
+      <Filter>Source Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleAuxiliaryDisplay.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleControlPanel.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleCargoWindow.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleCredits.h">
+      <Filter>Source Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleEncounter.h">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleEngineer.h">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleShipConfig.h">
+      <Filter>Source Files\starport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleStarport.h">
+      <Filter>Source Files\starport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleTradeDepot.h">
+      <Filter>Source Files\starport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleBank.h">
+      <Filter>Source Files\starport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleCantina.h">
+      <Filter>Source Files\starport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleCaptainCreation.h">
+      <Filter>Source Files\starport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleCaptainsLounge.h">
+      <Filter>Source Files\starport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleCrewHire.h">
+      <Filter>Source Files\starport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleGameOver.h">
+      <Filter>Source Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleStarmap.h">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleInterplanetaryTravel.h">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleInterstellarTravel.h">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModuleMedical.h">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModulePlanetOrbit.h">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ModulePlanetSurface.h">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2FCF30B6-C79A-4A75-BC07-B30A5B271E78}</ProjectGuid>
+    <RootNamespace>EngineCore</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)vc80.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996; 4312;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MSVC;WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996; 4312;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\TexturedSphere.cpp" />
+    <ClCompile Include="..\..\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\..\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\..\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="..\..\noiseutils.cpp" />
+    <ClCompile Include="..\..\Perlin.cpp" />
+    <ClCompile Include="..\..\Button.cpp" />
+    <ClCompile Include="..\..\Label.cpp" />
+    <ClCompile Include="..\..\MessageBoxWindow.cpp" />
+    <ClCompile Include="..\..\PauseMenu.cpp" />
+    <ClCompile Include="..\..\ScrollBox.cpp" />
+    <ClCompile Include="..\..\Archive.cpp" />
+    <ClCompile Include="..\..\AudioSystem.cpp" />
+    <ClCompile Include="..\..\DataMgr.cpp" />
+    <ClCompile Include="..\..\Game.cpp" />
+    <ClCompile Include="..\..\GameState.cpp" />
+    <ClCompile Include="..\..\main.cpp" />
+    <ClCompile Include="..\..\Math.cpp" />
+    <ClCompile Include="..\..\ModeMgr.cpp" />
+    <ClCompile Include="..\..\Module.cpp" />
+    <ClCompile Include="..\..\QuestMgr.cpp" />
+    <ClCompile Include="..\..\Script.cpp" />
+    <ClCompile Include="..\..\Stardate.cpp" />
+    <ClCompile Include="..\..\Timer.cpp" />
+    <ClCompile Include="..\..\Util.cpp" />
+    <ClCompile Include="..\..\Vector3.cpp" />
+    <ClCompile Include="..\..\AdvancedTileScroller.cpp" />
+    <ClCompile Include="..\..\CombatObject.cpp" />
+    <ClCompile Include="..\..\Flux.cpp" />
+    <ClCompile Include="..\..\PlanetSurfaceObject.cpp" />
+    <ClCompile Include="..\..\PlanetSurfacePlayerVessel.cpp" />
+    <ClCompile Include="..\..\PlayerShipSprite.cpp" />
+    <ClCompile Include="..\..\Sprite.cpp" />
+    <ClCompile Include="..\..\TileScroller.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\TexturedSphere.h" />
+    <ClInclude Include="..\..\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\..\noiseutils.h" />
+    <ClInclude Include="..\..\Perlin.h" />
+    <ClInclude Include="..\..\Button.h" />
+    <ClInclude Include="..\..\Label.h" />
+    <ClInclude Include="..\..\MessageBoxWindow.h" />
+    <ClInclude Include="..\..\PauseMenu.h" />
+    <ClInclude Include="..\..\ScrollBox.h" />
+    <ClInclude Include="..\..\Archive.h" />
+    <ClInclude Include="..\..\AudioSystem.h" />
+    <ClInclude Include="..\..\DataMgr.h" />
+    <ClInclude Include="..\..\EventMgr.h" />
+    <ClInclude Include="..\..\Events.h" />
+    <ClInclude Include="..\..\Game.h" />
+    <ClInclude Include="..\..\GameState.h" />
+    <ClInclude Include="..\..\ModeMgr.h" />
+    <ClInclude Include="..\..\Module.h" />
+    <ClInclude Include="..\..\QuestMgr.h" />
+    <ClInclude Include="..\..\Script.h" />
+    <ClInclude Include="..\..\Stardate.h" />
+    <ClInclude Include="..\..\Timer.h" />
+    <ClInclude Include="..\..\Util.h" />
+    <ClInclude Include="..\..\Vector3.h" />
+    <ClInclude Include="..\..\AdvancedTileScroller.h" />
+    <ClInclude Include="..\..\CombatObject.h" />
+    <ClInclude Include="..\..\Flux.h" />
+    <ClInclude Include="..\..\PlanetSurfaceObject.h" />
+    <ClInclude Include="..\..\PlanetSurfacePlayerVessel.h" />
+    <ClInclude Include="..\..\PlayerShipSprite.h" />
+    <ClInclude Include="..\..\Point2D.h" />
+    <ClInclude Include="..\..\Sprite.h" />
+    <ClInclude Include="..\..\TileScroller.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

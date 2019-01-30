@@ -1,0 +1,37 @@
+<TextBlobLog>
+  <TextBlob>
+    <ID>0</ID>
+    <Title>Planet A</Title>
+    <Text>Go to planet A and scan it.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>1</ID>
+    <Title>Planet B</Title>
+    <Text>Go to planet B and scan it.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>2</ID>
+    <Title>Planet C</Title>
+    <Text>Go to planet C and scan it.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>3</ID>
+    <Title>Completion</Title>
+    <Text>Great job! Here's your reward!</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>4</ID>
+    <Title>Save the Cheerleader</Title>
+    <Text>Go to planet 88, and destroy the evil serpents. Infiltrate their base and tear off their heads and eat them.  You will gain great power if you eat their heads. Use this power to enter the main corridor and kill their leader, ValGurdbo.  Once he is dead you can take his key and save the cheerleader.</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>5</ID>
+    <Title>end:Save the Cheerleader</Title>
+    <Text>Congradulations you saved the cheerleader! You saved the world! yay yay pat pat</Text>
+  </TextBlob>
+  <TextBlob>
+    <ID>6</ID>
+    <Title>Science</Title>
+    <Text>You can't see me!!!!</Text>
+  </TextBlob>
+</TextBlobLog>
