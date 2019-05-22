@@ -16,6 +16,8 @@
 // all eventType definitions should go here, really.
 
 const int CARGO_EVENT_UPDATE  = -9959;
+const int EVENT_HIDE_CONTROLS = -9960;
+const int EVENT_SHOW_CONTROLS = -9961;
 
 //NOTE: the game engine doesn't treat this as anything special and will happily broadcast it.
 const int EVENT_NONE          = -300;

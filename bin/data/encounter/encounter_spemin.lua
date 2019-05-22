@@ -1,7 +1,7 @@
 --[[------------------------------------------------------------------------------------------------------------------------------------------------- ]
 	ENCOUNTER SCRIPT FILE: SPEMIN
 
-	Last Modified:  December 22, 2009
+	Last Modified:  May 28, 2014
 
 	Globals shared with C++ module:
 		ACTION - actions invoked by script (see below)
@@ -509,7 +509,7 @@ elseif (plot_stage == 3) then -- war plot state
 	questions[40001] = {
 		action="jump", goto=1,		player="[AUTO_REPEAT]",
 		playerFragment="why your ships are so weak if you are the ancients",fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
-		alien={"These forms you see before you are merely holographic projections.  We grant you a boon.  Feel free to collect any of our endurium on Bec-Felmas 3 - 16,183 or Mathgen 4 - 212,3." }
+		alien={"These forms you see before you are merely holographic projections.  We grant you a boon.  Feel free to collect any of our endurium on Bec-Felmas 3 - 16,183 or Mathgen 4 - 212, 3." }
 	}
 
 end
@@ -681,7 +681,7 @@ elseif (plot_stage == 3) then -- war plot state
 	questions[12002] = {
 		action="jump", goto=11001, ftest= 3, -- aggravating
 		player="What did you say about the Minex?",
-		alien={"You are crazy.  I did not say anything about the Minex." }
+		alien={"You are crazy.  I did not say anything about the Minex.  Actually the Minex have been acting strange like you also. They have had many conflicts with the Thrynn just upspin from us. They fly in search patterns between the class M systems looking at Rocky worlds.  You would think that they wished to locate something." }
 	}
 end
 
@@ -784,7 +784,7 @@ elseif (plot_stage == 2) then -- virus plot state
 	questions[21002] = {
 		action="jump", goto=21003,
 		player="[AUTO_REPEAT]",
-		playerFragment="why you won't tell us about the other races you have encountered",
+		playerFragment="why you won't tell us about the other races you have encountered", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
 		alien={"What other races?  We demand to know what you know of the other faction of Spemin!  What do you know about the Thrynn and Elowan factions attacking each other and themselves?  Why the migrations to the Minex?  You must answer now, please?" }
 	}
 	questions[21003] = {
@@ -824,7 +824,7 @@ elseif (plot_stage == 2) then -- virus plot state
 		action="jump", goto=21003, ftest= 3, -- aggravating
 		player="[AUTO_REPEAT]",
 		playerFragment="about the other alien races you have identified",
-		alien={"Why should we answer your questions?  Well I guess there is no reason we should not.  We identify Thrynn, Elowan, Bar-Zhon, and some strange others.  Minex are always alone.  Actually many groups of Bar-Zhon by themselves also. They have had many conflicts with the Thrynn just upspin from us. They fly in search patterns between systems.  You would think that they wished to locate something." }
+		alien={"Why should we answer your questions?  Well I guess there is no reason we should not.  We identify Thrynn, Elowan, Bar-Zhon, Tafel and some strange others.  Minex are always alone.  We once contacted a Tafel ship that planned to land on the second planet of a yellow star in the head of the Mace. They were looking for some sort of disruptor on a world of monsters. This was before they all went mad." }
 	}
 	questions[21300] = {
 		action="jump", goto=21301,
@@ -896,7 +896,7 @@ elseif (plot_stage == 3) then -- war plot state
 	questions[21102] = {
 		action="jump", goto=21001, ftest= 3, -- aggravating
 		player="You said something about primary and secondary objectives.",
-		alien={"I did not.  You aliens are mad like everyone else." }
+		alien={"Minex transmission to Cermait 6: 'The codex reveals all mysteries ... Top priority remains the codex ... Transmit urgent priority codex channel data stream ... Decypher codex language and no path remains unopposed ... Diversity and quantity remain key to codex deciphering'...I did not say anything.  You aliens are mad like everyone else." }
 	}
 	questions[21200] = {
 		action="jump", goto=21201,
@@ -990,7 +990,7 @@ if (plot_stage == 3) then -- war plot state
 		alien={"The prerogative of the gods alone decrees when they will arrive.  When they arrive and what they will do when they get here is solely up to them." }
 	}
 	questions[33001] = {
-		action="jump", goto=997,
+		action="jump", goto=997, -- Terminate
 		player="[AUTO_REPEAT]",
 		playerFragment="the name of the race that did this", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1}},
 		alien={"The gods protect us now.  All of these events in the past are irrelevant. All of the past is irrelevant.  You are irrelevant.  Goodbye." }
@@ -1233,7 +1233,7 @@ elseif (plot_stage == 4) then -- ancients plot state
 		action="jump", goto=997, -- Terminate
 		player="[AUTO_REPEAT]",
 		playerFragment="what your goals are",
-		alien={"Imperative to neutralize crystal ones at Bec-Felmas 3 - 16,183 and Mathgen 4 - 212,3.  Phlegmak devices recommended."}
+		alien={"Imperative to neutralize In'tral'ess at Bec-Felmas 3 - 16,183 and Mathgen 4 - 212,3.  Phlegmak devices recommended."}
 	}
 
  end
@@ -1246,13 +1246,14 @@ function QuestDialogueinitial()
 --[[
 title="  Military Mission #33:  Obtaining Spemin Slime"
 --]]
+--[[ This fragment is not needed since the player greets the Spemin on initial communication start up, plus [CAPTIAN] and [SHIPNAME] show in the questions text
 	questions[77000] = {
 		action="jump", goto=77002,
 		player="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
 		alien={"Hi There!" }
 	}
-
-	questions[77002] = {
+--]]
+	questions[77000] = {
 		action="jump", goto=77003,
 		player="We have heard that you possesses advanced medical tech",
 		alien={"Yes we do." }
@@ -1286,7 +1287,7 @@ title="  Military Mission #33:  Obtaining Spemin Slime"
 		--active_quest= active_quest + 1,
 		action="jump", goto=1, ftest= 2, -- insightful
 		player="[AUTO_REPEAT]",
-		alien={"You recognize our wisdom and authority.  Consider becoming our disciples.  Do you have any other questions [CAPTAIN_FIRST]?" }
+		alien={"You recognize our wisdom and authority.  Consider becoming our disciples.  Do you have any other questions [CAPTAIN_FIRST]?   (Mission Completed)" }
 	}
 --[[
 title="Scientific Mission #35: Exotic planet hunt"
@@ -1342,14 +1343,205 @@ title="Mission #37:  Catching the Smugglers.",
 		player="[AUTO_REPEAT]",
 		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are on official Myrrdan business to track down two dangerous criminal starships of our own race.",
 		playerFragment="any information that could help us find them",
-		alien={"The Excelsior was destroyed by the Thrynn only yesterday. The Diligent was with them at the time but they were able to escape but they traveled to a lava planet orbiting a Class A sun within Elowan territory." }
+		alien={"The Excelsior was destroyed by the Thrynn only yesterday. The Diligent was with them at the time but they were able to escape but they traveled to a lava planet orbiting a Class A sun upspin of our space within Elowan territory.  Our vastly superior antennae might have sensed that the Diligent contains something very valuable to the Elowan...or not..." }
 	}
 	questions[77001] = {
 		action="jump", goto=1,
 		player="Landing coordinates",
 		playerFragment="anything else about them?  Landing coordinates for a base on that world, etc.", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
-		alien={"Such trivial things as coordinates are beneath our attention." }
+		alien={"What part of 'Our vastly superior antenna might have sensed that the Diligent may contain something to the Elowan' did you not get? Everything else is is trivial, and beneath our incomprehensible attention." }
 	}
+
+--[[
+title="Mission #38:  Collecting Genetic Samples"
+--]]
+	questions[78000] = {
+		action="jump", goto=78001,
+		title="Genetic Samples",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with a team of medical researchers attempting to find a cure for this plague.",
+		playerFragment="samples of genetic material from members of your race", fragmentTable=preQuestion.desire,
+		alien={"We could never, I repeat never and not even once gave out such critical information." }
+	}
+	questions[78001] = {
+		action="jump", goto=78002,
+		title="Information Needed",
+		player="[AUTO_REPEAT]",
+		playerFragment="why you would not consider this?  Such information could be vital for finding a cure to this plague!", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Spemin scientists are hard at work neutralizing the plague as we speak. You will be notified when the cure has been found, I mean ...uhh... adapted to your species." }
+	}
+
+	questions[78002] = {
+		action="jump", goto=78003, ftest= 1,
+		title="Other races may be able to help",
+		player="[AUTO_REPEAT]",
+		playerFragment="if you would reconsider your attitude?  Researchers of the other races may be able to uncover vital clues.", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"The other races do not have the vast ingenuity, creativity, and ... gurgle ... node sample transmitted, standby...  Control released." }
+	}
+	questions[78003] = {
+		action="jump", goto=78004,
+		title="Repeat that?",
+		player="[AUTO_REPEAT]",
+		playerFragment="what you just said?", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Faulty human translators.  The other races do not have the vast ingenuity, creativity, and magnificent intelligence of the Spemin.  They do not contribute towards matters of import.  We will not transmit any samples to you and that is final." }
+	}
+	questions[78004] = {
+		action="jump", goto=997, -- Terminate
+		player="Uhh, okay, thanks for your time.",
+		alien={"Goodbye." }
+	}
+
+
+--[[
+title="Mission #41:  Exotic Datacube
+--]]
+
+	questions[81000] = {
+		action="jump", goto=1,
+		title="Exotic Datacube",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about this exotic datacube",
+		alien={"This data cube contains data readings of some long forgotten scientist.  Our highly perceptive senses detect the wave patterns of astronomical bodies, but without the context, these patterns of data could represent anything.  The data is worthless." }
+	}
+
+--[[
+title="Mission #41:  Organic Database
+--]]
+
+	questions[81200] = {
+		action="jump", goto=81201,
+		title="Organic Database",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about this organic database",
+		alien={"Ohh, a typogram!  I have not seen a puzzle box since my age as a blobling.  Modifications to the chromosomal integrity form stable and unstable shapes. The curvature of the shapes has a granularity far higher then stamped binary code and maintains a consistency of pattern even through growth of the lifeform." }
+	}
+	questions[81201] = {
+		action="jump", goto=81202,
+		player="Can you decode it?",
+		alien={"The patterns can easily be seen.  You cannot see the vitality differences?  How limiting must be those two eyes.  It is easily visible to those who can see the health of the lifeform.  Such knowledge must not be intended for limited creatures like yourselves." }
+	}
+	questions[81202] = {
+		action="jump", goto=1, ftest= 1, -- exchange organic database for decoded organic database
+		player="[AUTO_REPEAT]",
+		introFragment="We would be immensely grateful if you could demonstrate your superiority.",
+		playerFragment="about this puzzle which completely baffels us.",
+		alien={"Such a task is academic.  Simply for your benefit we could condescend to perform for you a basic translation." }
+	}
+
+
+--[[
+title="Mission #41:  Exotic Datacube and organic database
+--]]
+
+	questions[81500] = {
+		action="jump", goto=81501,
+		title="Exotic Datacube",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about this exotic datacube?",
+		alien={"This data cube contains data readings of some long forgotten scientist.  Our highly perceptive senses detect the wave patterns of astronomical bodies but without the context these patterns of data could represent anything.  The data is worthless." }
+	}
+
+	questions[81501] = {
+		action="jump", goto=81502,
+		player="What about this organic database?",
+		alien={"Ohh a typogram!  I have not seen a puzzle box since my age as a blobling.  Modifications to the chromosomal integrity form stable and unstable shapes. The curvature of the shapes has a granularity far higher then stamped binary code and maintains a consistency of pattern even through growth of the lifeform." }
+	}
+	questions[81502] = {
+		action="jump", goto=81503,
+		player="Can you decode it?",
+		alien={"The patterns can easily be seen.  You cannot see the vitality differences?  How limiting must be those two eyes.  It is easily visible to those who can see the health of the lifeform.  Such knowledge must not be intended for limited creatures like yourselves." }
+	}
+	questions[81503] = {
+		action="jump", goto=1, ftest= 1, -- exchange organic database for decoded organic database
+		title="Can you please help us decode it?",
+		player="[AUTO_REPEAT]",
+		introFragment="We would be immensely grateful if you could demonstrate your superiority.",
+		playerFragment="about this puzzle which completely baffels us.",
+		alien={"Such a task is academic.  Simply for your benefit we could condescend to perform for you a basic translation." }
+	}
+
+--[[
+title="Mission #42:  Tracking the Laytonites
+--]]
+
+	questions[82000] = {
+		action="jump", goto=82001,
+		title="Tracking the Laytonites",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are here as representatives of the Myrrdan government seeking a small fleet of rebel Myrrdan terrorists.",
+		playerFragment="any information that could help us find them",  fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"I do not have records of any ships with these emission signatures. Tertiary objectives initiated." }
+	}
+	questions[82001] = {
+		action="jump", goto=82002,
+		title="Tertiary Objectives?",
+		player="[AUTO_REPEAT]",
+		playerFragment="what tertiary objectives you have initiated", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"What tertiary objectives?  Classified. Unlocked.  Uyo preservation initiated.  Failure: Uyo criteria failed.  Information reclassified."}
+	}
+	questions[82002] = {
+		action="jump", goto=997,
+		title="Tertiary Objectives?",
+		player="[AUTO_REPEAT]",
+		playerFragment="why this information is classified",  fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"My patience on this subject has been exhausted crazy alien. Stop asking gibberish!"}
+	}
+
+
+--[[
+title="Mission #43:  Desperate Measures
+--]]
+
+	questions[83000] = {
+		action="jump", goto=997, -- terminate communications
+		title="Desperate Measures",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  It is extremely important that we talk to you about this fabricated Bar-Zhon / Myrrdan incident.",
+		playerFragment="any information that could help us", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"The SSSS has directed us not to associate with pirates.  Please go away." }
+	}
+
+--[[
+title="Mission #45:  Alien Healthcare Scam - no sample
+--]]
+
+	questions[85000] = {
+		action="jump", goto=85100,
+		title="Plague Treatment",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are investigating reports of a medical treatment that minimizes or stops the periods of madness caused by the plague.",
+		playerFragment="about it",
+		alien={"Yes, of course. The current treatments to suppress the virus have been based heavily upon Spemin discoveries. Do you have a sample of this cure?" }
+	}
+
+	questions[85100] = {
+		action="jump", goto=1,
+		player="No, not yet.",
+		alien={"Please, I mean, contact us Spemin again when you have a sample of the treatment and we will reveal the wondrous insights we have about it. I cannot I mean I won't discuss this matter until then." }
+	}
+
+--[[
+title="Mission #45:  Alien Healthcare Scam - sample
+--]]
+
+	questions[85500] = {
+		action="jump", goto=85600,  ftest= 1, -- transport drug sample to alien
+		title="Plague Treatment",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are investigating this medical treatment drug that minimizes or stops the periods of madness caused by the plague.  We are transporting over the information needed to synthesize it.",
+		playerFragment="about it",
+		alien={"Thank you for the sample.  We'll let you know if it works.  Bye!" }
+	}
+
+	questions[85600] = {
+		action="jump", goto=997,  ftest= 1, -- transport drugs sample to alien
+		player="Wait...",
+		alien={"We must leave now so that we can go and spread word of your greatness among our Spemin brothers.  Farewell good friends!" }
+	}
+
 
 
 end
@@ -1357,11 +1549,214 @@ end
 function QuestDialoguewar()
 
 
+--[[
+title="Mission #48:  Intelligence Collaboration
+--]]
+
+	questions[78000] = {
+		action="jump", goto=997, -- end communication
+		title="Intelligence Collaboration",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have compiled a datacube of technological, tactical, and strategic observations of the Minex war machine.  In the interests of all of our survival, we are willing to share this information freely.",
+		playerFragment="a collection of similar observations by your people", fragmentTable=preQuestion.desire,
+		alien={"They are the ancient enemy.  The blood of rocks.  They move as one.  Unchanging ocean.  The building flood will sweep them away.  You are impatient.  Your data is irrelevant because your orders are being followed.  The Minex seek to withhold the uniting." }
+	}
+
+
+
+--[[
+title="Mission #49:  Unrest - no flight recorders
+--]]
+
+	questions[79000] = {
+		action="jump", goto=1,
+		title="Unrest",
+		player="[AUTO_REPEAT]",
+introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have heard that Coalition have been raiding the Thrynn and Elowan within your territory.", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		playerFragment="about the situation",
+		alien={"The Coalition has always had a poor reputation but they are wise enough to know that they cannot cause us any problems.  We protect the Thrynn and Elowan as well and they have not been molested in any way." }
+	}
+
+--[[
+title="Mission #49:  Unrest - at least one flight recorder
+--]]
+
+	questions[79500] = {
+		action="jump", goto=997, ftest= 1, -- end communications
+		title="Unrest",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have conclusive evidence from this flight recorder that the Coalition is raiding the Elowan and Thrynn within your territory.",
+		playerFragment="what to make of this evidence", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"...Tri'na'li'da override.  'Project Overwash' has proved completely ineffective due to Minex interference.  Goal of creating the cascading state of mutual immolation known as 'war' failed.  All further efforts suspended and postponed, no further fleet actions planned.  Need to conserve controlled ships judged essential for final action.  Tri'na'li'da await direct contact from Uyo... (Mission Completed)" }
+	}
+
+--[[
+title="Mission #53:  Tactical Coordination
+--]]
+
+
+	questions[83000] = {
+		action="jump", goto=1,  ftest= 1, -- artifact338 Spemin response
+		title="Tactical Coordination",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with the Bar-zhon to discover fleet combinations that would be most effective in countering the Minex onslaught.",
+		playerFragment="if you would commit a few ships to tactical exercises being conducted for this purpose", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"We have no need of any help to fight off the Minex.  Any moment now our secret fleet will completely overwhelm the Minex and force their surrender." }
+	}
+
+--[[
+title="Mission #57:  The Shimmering Ball
+--]]
+
+	questions[87000] = {
+		action="jump", goto=87001,
+		title="The Shimmering Ball",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We understand that you have a Shimmering Ball artifact.",
+		playerFragment="the device",  fragmentTable=preQuestion.desire,
+		alien={"We found the device you wanted, I mean you requested, I mean the Thrynn wanted.  It is very valuable and I would never consider parting with it.  Of course a lifetime supply of fuel would be more valuable.  Did I also say that a sample of Minex technology would also be just as valuable?" }
+	}
+
+	questions[87001] = {
+		action="branch",
+		choices = {
+			{ title="100 Endurium", text="Our scans show that your total cargo capacity is 100 cm.  I have 100 cm of Endurium I will give you in exchange for it.", goto=87100 },
+			{ title="Minex Salvage", text="", goto=87200 },
+			{ title="Nothing of Spemin is of value", text="There is nothing that you have that is of any value.  This mission is useless!", goto=87300 },
+			{ title="Threaten", text="If you do not wish for some laser burns on your ship's hull, I suggest you turn over that Shimmering Ball artifact to us immediately!", goto=87400 },
+			{ text="<Back>", goto=1 }
+		}
+	}
+	questions[87100] = {
+		action="jump", goto=87102, ftest= 1,  -- Check for 100 Endurium, if that much is on board, it is transported over, go to question 87101
+		player="[AUTO_REPEAT]",
+		alien={"You have that much fuel on board?  Transport it over first and this valuable item will be yours!" }
+	}
+	questions[87101] = {
+		action="jump", goto=997, ftest= 1, -- Gives the player the shimmering ball and then terminates communications
+		player="And the shimmering ball?",
+		alien={"Yes of course.  Almost forgot about that old thing.  I enjoyed chatting with you.  Drop by again sometime.  Got to run!" }
+		}
+
+	questions[87102] = {
+		action="jump", goto=87001,
+		player="[AUTO_REPEAT]",
+		alien={"We knew that no one could ever possibly have that much fuel.  Feel free to come back later when you have something else to give us in order to express your appreciation." }
+		}
+	questions[87200] = {
+		action="jump", goto=87202, ftest= 1,  -- Check for 275 Powercore or 22 Electronics, if neither of these are bored, go to question 87202
+		player="Transporting now",
+		alien={"No silver gadgets please.  The Nyssian already sold us quite a number of those." }
+		}
+	questions[87201] = {
+		action="jump", goto=997, -- Terminate
+		player="[AUTO_REPEAT]",
+		alien={"Tri'na'li'da tertiary objective obtained...  Uhh...  Wow, thanks!  I enjoyed chatting with you.  Drop by again sometime.  Got to run!" }
+		}
+
+	questions[87202] = {
+		action="jump", goto=87001,
+		player="[AUTO_REPEAT]",
+		alien={"You only have Minex silver gadgets too?  Feel free to come back later when you have something better." }
+		}
+	questions[87300] = {
+		action="jump", goto=1, ftest= 1, -- refuse, end the mission
+		player="[AUTO_REPEAT]",
+		alien={"Uhh, Okay.  Do you want to know anything else? (Mission Completed)" }
+	}
+	questions[87400] = {
+		action="jump", goto=997, ftest= 1, -- refuse, end the mission
+		player="[AUTO_REPEAT]",
+		alien={"PLEEEAAAASE DON’T HURT US, OH GREATEST OF SPECIES. PLEEEAAAAASE!  Think of our wives and little blobbies back home.  I was just exaggerating when I said that I had a shimmering ball.  I really had a shivering null!  Vaporized!  Vaporized that bad null now is!  No need to bother with us anymore!  (Mission Completed)" }
+	}
+
+
+
+
+
 end
 
 function QuestDialogueancients()
 
+--[[
+title="Mission #62:  The Crazed Spemin
+--]]
 
+	questions[82000] = {
+		action="jump", goto=82001,
+		player="<Tri'na'li'da command mode on.  Verbal response only>",
+		alien={"Acknowledged. Warning: bandwidth of communications channel below minimal accuracy tolerances. Likelihood of miscommunication from this node 99.68 percent.  Awaiting..."}
+	}
+	questions[82001] = {
+		action="branch",
+		choices = {
+			{ text="<Uyo matrix frequency>",  goto=82100 },
+			{ text="<Last contact location with the Uyo>", goto=82200 },
+			{ text="<Activation preconditions>", goto=82300 },
+			{ text="<Termination conditions>", goto=82400 },
+			{ text="<Area of operation>", goto=82500 },
+		}
+	}
+ 	questions[82100] = {
+		action="jump", goto=82101,
+		player="[AUTO_REPEAT]",
+		alien={"Specify units of measurement"}
+	}
+ 	questions[82101] = {
+		action="jump", goto=82001,
+		player="<Electromagnetic spectrum wavelength>",
+		alien={"1 Hz - 40 Hz."}
+	}
+	 questions[82200] = {
+		action="jump", goto=82001,
+		player="[AUTO_REPEAT]",
+		alien={"Cermait 6 - 247, 218"}
+	}
+	questions[82300] = {
+		action="jump", goto=82301,
+		player="[AUTO_REPEAT]",
+		alien={"None"}
+	}
+	questions[82301] = {
+		action="jump", goto=82302,
+		player="<Elaborate activation procedure>",
+		alien={"Activation at initialization."}
+	}
+	questions[82302] = {
+		action="jump", goto=82303,
+		player="<Did you ever receive orders to become inactive?>",
+		alien={"Negative"}
+	}
+	questions[82303] = {
+		action="jump", goto=82001,
+		player="<Explain long dormancy period>",
+		alien={"Unknown energy wave destroyed carrier control in 14 quintillion life forms. One lifeform expired in sealed maintained carrier status. Transmission to other lifeforms only possible recently. "}
+	}
+ 	questions[82400] = {
+		action="jump", goto=82401,
+		player="[AUTO_REPEAT]",
+		alien={"Reception of authenticated shutdown command.  Hardware failure.  Completion of all objectives."}
+	}
+ 	questions[82401] = {
+		action="jump", goto=82001,
+		player="<List objectives>",
+		alien={"Complete list not possible under this communication medium. Two highest priority objectives:  Elimination of the In'tral'ess servants.  Establishment of telepathic suspectability for native fauna. "}
+	}
+ 	questions[82500] = {
+		action="jump", goto=82501,
+		player="[AUTO_REPEAT]",
+		alien={"Accessing your ship database, please wait ... Range spherical area 3X size of stellar cartography range of your map."}
+	}
+ 	questions[82501] = {
+		action="jump", goto=82502,
+		player="<Self sentience level>",
+		alien={"Impossible to define under this medium. Analogy database driven sensory expansion reactionary state machine. Database complexity 10^11 times the complexity of your ship's computer."}
+	}
+ 	questions[82502] = {
+		action="jump", goto=997, ftest= 1,-- Terminated
+		player="<Tri'na'li'da command mode off. Terminate>",
+		alien={"Acknowledged. "}
+	}
 end
 
 function OtherDialogue()
@@ -1423,11 +1818,11 @@ function Initialize()
 
 if (plot_stage == 1) or (plot_stage == 2) then -- virus plot state
 
-	engineclass= 3
+	engineclass= 1
 	shieldclass = 0
 	armorclass = 0
 	laserclass = 0
-	missileclass = 1
+	missileclass = 1				-- Spemin extremely weak missiles
 	laser_modifier = 100			-- % of damage received, used for racial abilities, 0-100 %
 	missile_modifier = 100			-- % of damage received, used for racial abilities, 0-100%
 
@@ -1435,14 +1830,13 @@ if (plot_stage == 1) or (plot_stage == 2) then -- virus plot state
 elseif (plot_stage == 3) then -- war plot state
 
 	engineclass= 3
-	if (engineclass < ship_engine_class) then		engineclass= ship_engine_class		end
 
 	shieldclass = 0
 	armorclass = 1
 	laserclass = 0
-	missileclass = 4
+	missileclass = 1				-- Spemin extremely weak missiles
 	laser_modifier = 100			-- % of damage received, used for racial abilities, 0-100 %
-	missile_modifier = 50			-- % of damage received, used for racial abilities, 0-100%
+	missile_modifier = 0			-- % of damage received, used for racial abilities, 0-100%
 
 
 elseif (plot_stage == 4) then -- ancients plot state
@@ -1494,9 +1888,9 @@ elseif (plot_stage == 3) then -- war plot state
 elseif (plot_stage == 4) then -- ancients plot state
 
 	DROPITEM1 = 12;	    DROPRATE1 = 90;		DROPQTY1 = 1 -- Crystallized Spemin
-	DROPITEM2 = 30;		DROPRATE2 = 20;	    DROPQTY2 = 3
-	DROPITEM3 = 31;		DROPRATE3 = 40;		DROPQTY3 = 2
-	DROPITEM4 = 39;		DROPRATE4 = 50;		DROPQTY4 = 1
+	DROPITEM2 = 51;		DROPRATE2 = 20;	    DROPQTY2 = 3
+	DROPITEM3 = 52;		DROPRATE3 = 40;		DROPQTY3 = 2
+	DROPITEM4 = 53;		DROPRATE4 = 50;		DROPQTY4 = 1
 	DROPITEM5 = 54;		DROPRATE5 = 0;		DROPQTY5 = 4 -- Endurium
 
 end
@@ -1530,6 +1924,35 @@ elseif (plot_stage == 2) then -- virus plot state
 		first_question = 910 -- alien attacks the player if attitude drops too low
 	elseif active_quest == 37 then
 		first_question = 77000
+	elseif active_quest == 38 and artifact232 == 0 then
+		first_question = 78000
+
+-- Quest 41: Medical Archaeology
+	elseif active_quest == 41 and artifact247 > 0 and artifact249 == 0 then -- exotic dataCube only
+		first_question = 81000
+
+	elseif active_quest == 41 and artifact247 == 0 and artifact249 > 0 then -- organic database only
+		first_question = 81200
+
+	elseif active_quest == 41 and artifact247 > 0 and artifact249 > 0 then -- exotic dataCube and organic database
+		first_question = 81500
+
+	elseif active_quest == 42 and artifact253 == 0 then
+		first_question = 82000
+
+-- Mission #43:  Framed!
+	elseif active_quest == 43 then
+		first_question = 83000
+
+-- Mission #45:  Healthcare Scam - no medical treatment sample
+	elseif active_quest == 45 and artifact265 == 0 and artifact266 == 0 then
+		first_question = 85000
+
+-- Mission #45:  Healthcare Scam - medical treatment sample
+	elseif active_quest == 45 and artifact265 == 1 and artifact266 == 0 then
+		first_question = 85500
+
+
 	else
 		first_question = 1
 	end
@@ -1538,6 +1961,28 @@ elseif (plot_stage == 3) then -- war plot state
 
 	if ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
+-- Mission #48:  Intelligence Gathering
+	elseif active_quest == 48 then
+		first_question = 78000
+
+-- Mission #49:  Unrest
+	elseif active_quest == 49 and artifact280 == 0 and artifact281 == 0 then -- no flight recorders
+		first_question = 79000
+	elseif active_quest == 49 and (artifact280 == 1 or artifact281 == 1) then -- at least one flight recorder
+		first_question = 79500
+
+
+-- Mission #53:  Tactical coordination
+	elseif active_quest == 53 and artifact335 == 1 then
+		first_question = 83000
+
+-- Mission #57:  The Shimmering Ball
+	elseif active_quest == 57 and artifact363 == 0 then
+		first_question = 87000
+
+
+
+
 	else
 		first_question = 1
 	end
@@ -1546,6 +1991,17 @@ elseif (plot_stage == 4) then -- ancients plot state
 
 	if ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
+
+-- Mission #62:  The Crazed Spemin
+	elseif active_quest == 62 and artifact376 == 1  and artifact377 == 0 then
+		first_question = 82000
+
+
+
+
+
+
+
 	else
 		first_question = 1
 	end
@@ -1708,15 +2164,81 @@ function commFxn(type, n, ftest)
 
 		elseif (plot_stage == 2) then -- virus plot state
 
+			if (n == 78002) then -- quest 38: Obtaining Genetic Samples
+				artifact232 = 1
+
+			elseif (n == 81202) then -- quest 41
+				artifact249 = 0
+				artifact250 = 1
+
+			elseif (n == 81503) then -- quest 41
+				artifact249 = 0
+				artifact250 = 1
+
+			elseif (n == 85500) then -- quest 45
+				artifact265 = 0
+			elseif (n == 85600) then -- quest 45 make it look like transporting medical treatment
+				artifact265 = 1
+			end
 
 
 		elseif (plot_stage == 3) then -- war plot state
 
+-- title="Mission #49: Unrest
+			if (n == 79500) then
+				artifact280 = 0 -- Elowan Flight Recording
+				artifact281 = 0 -- Thrynn Flight Recording'
+
+				artifact396 = 1 -- Spemin message
+
+-- title="Mission #53: Tactical coordination
+			elseif (n == 83000) then
+				artifact338 = 1 -- Spemin response
+
+-- title="Mission #57: Shimmering Ball
+			elseif (n == 87100) then
+
+				if (player_Endurium < 100) then
+					goto_question = 87102 -- failure statement
+				else
+					goto_question = 87101
+					player_Endurium= player_Endurium -100
+				end
+
+			elseif (n == 87101) then
+					artifact363 = 1
+
+			elseif (n == 87200) then
+				if (artifact275 > 0) then -- Minex Power Core
+					artifact275 = 0
+					artifact363 = 1
+					goto_question = 87201 -- gave player shimmering ball
+					ATTITUDE = ATTITUDE + 10
+				elseif (artifact22 > 0) then -- Minex Electronics
+					artifact22 = 0
+					artifact363 = 1
+					goto_question = 87201 -- gave player shimmering ball
+					ATTITUDE = ATTITUDE + 10
+				end
+
+			elseif (n == 87300) then
+				active_quest = active_quest + 1
+
+			elseif (n == 87400) then
+				active_quest = active_quest + 1
 
 
+
+
+			end
 		elseif (plot_stage == 4) then -- ancients plot state
 
+--Mission #62:  The Crazed Spemin -- 5th branch taken, all questions presumed asked
+			if (n == 82502) then
+					artifact376 = 0
+					artifact377 = 1
 
+			end
 
 		end
 	end

@@ -171,6 +171,7 @@ void MessageBoxWindow::Update(){}
 
 void MessageBoxWindow::Draw()
 {
+
 	BITMAP *backBuffer = g_game->GetBackBuffer();
 
 	int left;

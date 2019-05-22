@@ -600,8 +600,8 @@ function Initialize()
 
 if (plot_stage == 1) then -- initial plot state
 
-	DROPITEM1 = 8;	    DROPRATE1 = 90;		DROPQTY1 = 1 -- pirate cargo
-	DROPITEM2 = 9;		DROPRATE2 = 86;	    DROPQTY2 = 1 -- pirate small arms
+	DROPITEM1 = 8;	    DROPRATE1 = 80;		DROPQTY1 = 1 -- pirate cargo
+	DROPITEM2 = 9;		DROPRATE2 = 72;	    DROPQTY2 = 1 -- pirate small arms
 	DROPITEM3 = 31;		DROPRATE3 = 25;		DROPQTY3 = 4
 	DROPITEM4 = 33;		DROPRATE4 = 50;		DROPQTY4 = 5
 	DROPITEM5 = 54;		DROPRATE5 = 0;		DROPQTY5 = 3 -- Endurium

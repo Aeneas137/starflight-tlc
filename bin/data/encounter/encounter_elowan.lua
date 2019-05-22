@@ -1,7 +1,7 @@
 --[[------------------------------------------------------------------------------------------------------------------------------------------------- ]
 	ENCOUNTER SCRIPT FILE: ELOWAN
 
-	Last Modified:  December 23, 2009
+	Last Modified:  October 6, 2013
 
 	Globals shared with C++ module:
 		ACTION - actions invoked by script (see below)
@@ -399,25 +399,21 @@ end
 		alien= friendlyGreetTable }
 	greetings[4] = {
 		action="",
-		player="Dude, that is one green ship you have there!",
+		player="How's it going, weird, carnivorous plant things?",
 		alien= friendlyGreetTable }
 	greetings[5] = {
 		action="",
-		player="How's it going, weird, carnivorous plant things?",
+		player="Greetings.  Your ship seems to be very powerful.",
 		alien= friendlyGreetTable }
 	greetings[6] = {
 		action="",
-		player="Greetings.  Your ship seems to be very powerful.",
+		player="Hello there.  Your ship appears very unusual.",
 		alien= friendlyGreetTable }
 	greetings[7] = {
 		action="",
-		player="Hello there.  Your ship appears very unusual.",
-		alien= friendlyGreetTable }
-	greetings[8] = {
-		action="",
 		player="We come in peace from Myrrdan, please trust me.",
 		alien= friendlyGreetTable }
-	greetings[9] = {
+	greetings[8] = {
 		action="",
 		player="Greetings friend!  There is no limit to what both our races can gain from mutual exchange.",
 		alien= friendlyGreetTable }
@@ -910,7 +906,7 @@ elseif (plot_stage == 4) then -- ancients plot state
 		action="jump", goto=60001,
 		player="[AUTO_REPEAT]",
 		playerFragment="about telepathy or purely mental communication",
-		alien={"The insectoid Veloxi of our home sector sector possessed a hive mind of limited range.  Drones could communicate over a distance of several miles.  Queens could instantaneously, without restrictions, control vast fleets in space.  The Spemin in both our home sector and this doth claim perception above the norm.  In sooth they knowest little and mostly do they bluster.  Such claims of all should one with skepticism pursue."}
+		alien={"The insectoid Veloxi of our home sector possessed a hive mind of limited range.  Drones could communicate over a distance of several miles.  Queens could instantaneously, without restrictions, control vast fleets in space.  The Spemin in both our home sector and this doth claim perception above the norm.  In sooth they knowest little and mostly do they bluster.  Such claims of all should one with skepticism pursue."}
 	}
 	questions[60001] = {
 		action="jump", goto=50000,
@@ -1359,7 +1355,7 @@ if (plot_stage == 4) then -- ancients plot state
 		action="jump", goto=40001,
 		player="[AUTO_REPEAT]",
 		playerFragment="if you have heard of a city of the ancients", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
-		alien={"We had ascertained that a city of the ancients existed in our home sector, within a system inside the rim of starforming nebulae, almost exactly 100 parsecs outward from the war-torn Veloxi homeworld.  Landing coordinates in empire terminology were 29N X 13W.  How thou couldst make use of this knowledge is not known since that realm is nay inaccessible." }
+		alien={"We had ascertained that a city of the ancients existed in our home sector, within a system inside the rim of starforming nebulae, almost exactly 100 parsecs upspin from the war-torn Veloxi homeworld.  Landing coordinates in empire terminology were 15N X 6E.  How thou couldst make use of this knowledge is not known since that realm is nay inaccessible." }
 	}
 	questions[43000] = {
 		action="jump", goto=40001,
@@ -1390,7 +1386,7 @@ title="Science Mission #35:  An exotic planet.",
 		action="jump", goto=1, ftest= 2, -- insightful
 		player="Quest for the exotic planet.",
 		introFragment= "Elowan vessel.  This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are on a quest to further the knowledge of all sentients.",
-		playerFragment= "what you can decode from this derelict's computer data concerning an exotic planet",
+		playerFragment= "what you can decode from this derelict's computer data concerning an exotic planet", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
 		alien={"Thou dost seek after the rare truth indeed.  'Tis our analysis that the location orbits a F or G class star.  Fragmentary lies all other data." }
 	}
 
@@ -1444,7 +1440,7 @@ title="Freelance Mission #32:  Elowan / Thrynn war zone. - Thrynn Battle Machine
 --		ship_shield_class = ship_shield_class + 1,
 		action="jump", goto=1, ftest= 1,
 		player="I'm sending it now.",
-		alien={"We are transporting to thee specifications of our shielding technology." }
+		alien={"We are transporting to thee specifications of our shielding technology.   (Mission Completed)" }
 	}
 	questions[96106] = {
 --		artifact20 = 0,
@@ -1452,7 +1448,7 @@ title="Freelance Mission #32:  Elowan / Thrynn war zone. - Thrynn Battle Machine
 --		ship_shield_class = ship_shield_class + 1,
 		action="jump", goto=1, ftest= 1,
 		player="I'm sending it now.",
-		alien={"Surpassed our own technology, your shielding has.  We offer instead an exchange of Myrrdan energy crystals." }
+		alien={"Surpassed our own technology, your shielding has.  We offer instead an exchange of Myrrdan energy crystals.   (Mission Completed)" }
 	}
 
 --[[
@@ -1540,10 +1536,345 @@ title="Mission #37:  Catching the Smugglers. After obtaining miniature funnel bu
 		alien={"Thy accusations we wish we could deny, for the Elowan neither tolerate nor condon lawlessness in any form. The air plant which thou doth possess was bestowed upon the Myrrdan vessel Intrepid. Their vessel did present quite a different sensor signature from the one which thou purports to be the Diligent. We urge much haste in bringing this signature data to thy government. Perhaps its use has been employed to deceive both of our peoples." }
 	}
 
+--[[
+title="Mission #38:  Collecting Genetic Samples"
+--]]
+	questions[78000] = {
+		action="jump", goto=78001,
+		title="Genetic Samples",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with a team of medical researchers attempting to find a cure for this plague.",
+		playerFragment="samples of genetic material from members of your race", fragmentTable=preQuestion.desire,
+		alien={"Yes Captain [CAPTAIN], speakest of things already known.  Thou seekest for that which we likewise search.  Thou hast another inquiry?" }
+	}
+	questions[78001] = {
+		action="branch",
+		choices = {
+			{ title="Elowan Data Needed", text="In good faith for the search would you provide your own genetic data to the collection?", goto=78100 },
+			{ title="5 Different Samples", text="We have acquired at least 5 different genetic samples", goto=78200 },
+			{ text="Nevermind for now",  goto=1 },
+		}
+	}
+	questions[78100] = {
+		action="jump", goto=1,  ftest= 1, -- test attitude if 85+
+		player="[AUTO_REPEAT]",
+		alien={"Thou art truthfully inquiring concerning our own contribution?" }
+	}
+
+	questions[78105] = {
+		action="jump", goto=78001, -- already contributed
+		player="Yes, we want your data",
+		alien={"Thou already possessest Elowan genetic data." }
+	}
+	questions[78106] = {
+		action="jump", goto=78001, -- attitude to low
+		player="Yes, we want your data",
+		alien={"Thou hast not need for our data.  Thou art gravely mistaken upon its benefit to the cause.  'Tis a mistaken concept thou laborest under for we are in no way affected by this pervasion nor would thou benefit forthwith with this data." }
+	}
+	questions[78107] = {
+		action="jump", goto=78001,  ftest= 1, -- attitude above 85
+		player="Yes, we want your data",
+		alien={"'eye, allies of the peaceful.  Such data be freely provide to thee.  Headfruit samples provided 'en loan.  Returnest them immediate upon thy missions completion we entrust." }
+	}
+
+	questions[78200] = {
+		action="jump", goto=1,  ftest= 1,
+		player="[AUTO_REPEAT]",
+		alien={"We await transport of thy library." }
+	}
+
+	questions[78205] = {
+		action="jump", goto=997,  ftest= 1, -- Mission completed
+		player="Is that everything?",
+		alien={"Yes.  Thou hast done a marvelous service for the galaxy.  We bequeath thee our preliminary research data and prognosticate future gain." }
+	}
+	questions[78206] = {
+		action="jump", goto=78001, -- Not enough samples collected
+		player="Transporting samples now",
+		alien={"'Tis not 5 or more.  Thou hast mistaken thyself.  Simple mathematics are not thy forte" }
+	}
+
+
+--[[
+title="Mission #41:  Exotic Datacube
+--]]
+
+	questions[81000] = {
+		action="jump", goto=1,
+		title="Exotic Datacube",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about this exotic datacube found in an archaeological dig",
+		alien={"What thou call'est data 'ere perchance a precious gem.  A repository of music of the highest repertoire and the composers spiritually must be very much our kin.  'Tis the greatest shame of the loss of those who could produce such wonderful artistry, such breathtaking beauty." }
+	}
+
+--[[
+title="Mission #41:  Organic Database
+--]]
+
+	questions[81200] = {
+		action="jump", goto=1,
+		title="Organic Database",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about this organic database",
+		alien={"Such a device is of a foreign style unknown to our culture.   If even authentic, the encoding 'tis beyond our ability to translate.  Such prior assumptions of organic construction require familiarity with organic design, 'ere nothing more than indecipherable jargon will appear." }
+	}
+
+--[[
+title="Mission #41:  Exotic Datacube and organic database
+--]]
+
+	questions[81500] = {
+		action="jump", goto=81501,
+		title="Exotic Datacube",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about this exotic datacube found in an archaeological dig",
+		alien={"What thou call'est data 'ere perchance a precious gem.  A repository of music of the highest repertoire and the composers spiritually must be very much our kin.  'Tis the greatest shame of the loss of those who could produce such wonderful artistry, such breathtaking beauty." }
+	}
+	questions[81501] = {
+		action="jump", goto=1,
+		player="What about this organic database?",
+		alien={"Such a device is of a foreign style unknown to our culture.   If even authentic, the encoding 'tis beyond our ability to translate.  Such prior assumptions of organic construction require familiarity with organic design, 'ere nothing more than indecipherable jargon will appear." }
+	}
+
+--[[
+title="Mission #42:  Tracking the Laytonites
+--]]
+
+	questions[82000] = {
+		action="jump", goto=1,
+		title="Tracking the Laytonites",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are here as representatives of the Myrrdan government seeking a small fleet of rebel Myrrdan terrorists.",
+		playerFragment="any information that could help us find them",  fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"In sooth, we indeed none of us encountered either vessels of that description, emission signature, or number.  But alack, however unlikely 'ere such a group might risk transgression of a war zone amongst non-sympathetic aliens and still remain undetected, such an incursion remains theoretically possible.  We wish thee the best in thy pursuit for racial tranquility and will assist however possible in their neutralization." }
+	}
+
+--[[
+title="Mission #43:  Desperate Measures
+--]]
+
+	questions[83000] = {
+		action="jump", goto=83001,
+		title="Desperate Measures",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  It is extremely important that we talk to you about this fabricated Bar-Zhon / Myrrdan incident.",
+		playerFragment="any information that could help us", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"We extend the vine of sympathy to all under our shared pogrom.  Military aid is limited to our regret lest those who seek weakness perform the same to us.  Knowledge of this affair perhaps we hath encroached incidentally." }
+	}
+
+	questions[83001] = {
+		action="jump", goto=83002,
+		title="What Knowledge?",
+		player="[AUTO_REPEAT]",
+		playerFragment="about this incident",
+		alien={"Our vessels hath been termed scouts as intelligence of Thrynn movements is vital to our defense, stealth is a specialty or so I prognosticate.  Collaboration with the Coalition towards an unknown purpose we have observed, ere'long to different degrees, at locations diverse at irregular times." }
+	}
+
+	questions[83002] = {
+		action="jump", goto=1,
+		title="Where?",
+		player="[AUTO_REPEAT]",
+		playerFragment="about their last known meeting location",
+		alien={"We ascertained the location of their latest known redezerous was at Wledig 2026 (120S X 14E) in the Fodla system (109, 55)" }
+	}
+
+
+--[[
+title="Mission #43:  Desperate Measures - after red herring
+--]]
+
+	questions[83200] = {
+		action="jump", goto=1,
+		title="Desperate Measures",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We located this mysterious artifact and little else at the location you gave us.",
+		playerFragment="about it",
+		alien={"We have no inclination to the intention of such a device. Perchance an earlier local may assist in the growth of thy understanding. Another rendezvous local mays't thou find at Bor Tuatheh 2019 (32N X 57E) in the Aircthech system (100, 8)" }
+	}
+
+
+--[[
+title="Mission #43:  Desperate Measures - holographic scan
+--]]
+
+	questions[83500] = {
+		action="jump", goto=997, --end communications
+		title="Desperate Measures",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We located a factory producing Myrrdan style armor at the location you gave us.",
+		playerFragment="about it",
+		alien={"We share a common enemy.  Obvious should it be that some factions of the Thrynn and Coalition have conspired to commit acts of piracy and impersonate Myrrdan ships in the attempt.  Thou shoulds't rush to the Bar-zhon with this evidence." }
+	}
+
+--[[
+title="Mission #44:  Decontamination Transporter - no specifications
+--]]
+
+	questions[84000] = {
+		action="jump", goto=84110,
+		title="Decontamination Transporter",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="if you would be able to create operational software for this life form reconstruction transporter, which theoretically could filter out the plague affecting all of the races",  fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"'Tis an unfortunate requirement that thou must first provide hardware specifications for such a device. Notwithstanding intent, we await such a disclosure on your part." }
+	}
+	questions[84110] = {
+		action="jump", goto=997,
+		player="Uhh, we don't have the specs.",
+		alien={"Thou must first obtain such details before we may'st help thee.  Return thou to thy source." }
+	}
+--[[
+title="Mission #44:  Decontamination Transporter - specifications
+--]]
+
+	questions[84500] = {
+		action="jump", goto=84502, ftest= 1, -- Remove artifact261: genetic transport specifications
+		title="Decontamination Transporter",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="if you would be able to create operational software for this life form reconstruction transporter, which theoretically could filter out the plague affecting all of the races.  We are transmitting specifications now",  fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"We detect the hand of the Thrynn in this endeavor.  No matter.  In sooth, what pettiness of spirit would any think that we must possess to naysay any such possible cure. Wherefore the abusive potential of such a device doth give us momentary pause, the advantage of a cure outweighs all other concerns." }
+	}
+	questions[84502] = {
+		action="jump", goto=84501,
+		player="We apologize for not mentioning them.",
+		alien={"We hope perhaps understanding of us may take branch in all whom use this device.  One further inquiry, doest thou know the interlock frequency of this device?" }
+	}
+	questions[84501] = {
+		action="branch",
+		choices = {
+			{ title="110 Ghz", text="This sophisticated device runs at 110 Ghz.", goto=84510 },
+			{ title="18.7 Ghz", text="Our transporters operate at 18.7 Ghz.", goto=84520 },
+			{ title="5.15 Ghz", text="I know that the Bliy Skup interlock frequency of Bar-zhon transporters is 5.15 Ghz.", goto=84530 },
+			{ title="1.33 Ghz", text="The transporter operates at the frequency of 1.33 Ghz.", goto=84540 },
+			{ title="850 Mhz", text="I am quite certain the frequency is 850 Mhz.", goto=84550 }
+		}
+	}
+	questions[84510] = {
+		action="jump",  goto=997, ftest= 1, -- give the player artifact263: broken transporter operational code
+		player="[AUTO_REPEAT]",
+		alien={"Pray in a moment doth we grow such a splendorous promise and hope contained in such a program...  We now transmit to you, operational code upon thy premises." }
+	}
+	questions[84520] = {
+		action="jump",  goto=997, ftest= 1, -- give the player artifact263: broken transporter operational code
+		player="[AUTO_REPEAT]",
+		alien={"Pray in a moment doth we grow such a splendorous promise and hope contained in such a program...  We now transmit to you, operational code upon thy premises." }
+	}
+	questions[84530] = {
+		action="jump",  goto=997, ftest= 1, -- give the player artifact262: operational transporter operational code
+		player="[AUTO_REPEAT]",
+		alien={"Pray in a moment doth we grow such a splendorous promise and hope contained in such a program...  We now transmit to you, operational code upon thy premises." }
+	}
+	questions[84540] = {
+		action="jump",  goto=997, ftest= 1, -- give the player artifact263: broken transporter operational code
+		player="[AUTO_REPEAT]",
+		alien={"Pray in a moment doth we grow such a splendorous promise and hope contained in such a program...  We now transmit to you, operational code upon thy premises." }
+	}
+	questions[84550] = {
+		action="jump", goto=84501,
+		player="[AUTO_REPEAT]",
+		alien={"Surely thou doest jest!" }
+	}
+
+--[[
+title="Mission #45:  Alien Healthcare Scam - no sample
+--]]
+
+	questions[85000] = {
+		action="jump", goto=1,
+		title="Plague Treatment",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are investigating reports of a medical treatment that minimizes or stops the periods of madness caused by the plague.",
+		playerFragment="about it",
+		alien={"In sooth, only rumors we have heard.  If thou doest uncover or receive a sample forthwith, our expertise we will make freely available to thee." }
+	}
+
+
+--[[
+title="Mission #45:  Alien Healthcare Scam - sample
+--]]
+
+	questions[85500] = {
+		action="jump", goto=85600,  ftest= 1, -- transport drugs sample to alien
+		title="Plague Treatment",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are investigating this medical treatment drug that minimizes or stops the periods of madness caused by the plague.  We are transporting over the information needed to synthesize it.",
+		playerFragment="about it",
+		alien={"Please wait a moment..." }
+	}
+
+	questions[85600] = {
+		action="jump", goto=997,  ftest= 1, -- transport artifact226 to player, Elowan Medical Treatment Analysis
+		player="Take your time",
+		alien={"Indeed within reason this medication is partially effective.  New strains rapidly appear to counteract this particular drug's effectiveness, however perchance the first glimmer of hope this medication represents that a final treatment may yet be developed.  Transporting our results over to you now." }
+	}
+
+
+
+
+
+
+
 end
 
 function QuestDialoguewar()
 
+
+--[[
+title="Mission #48:  Intelligence Collaboration
+--]]
+
+	questions[78000] = {
+		action="jump", goto=1,
+		title="Intelligence Collaboration",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME]. We have compiled a datacube of technological, tactical, and strategic observations of the Minex war machine.  In the interests of all of our survival, we are willing to share this information freely.",
+		playerFragment="a collection of similar observations by your people", fragmentTable=preQuestion.desire,
+		alien={"Thy undistilled Empire technology doth encourage us, forthwith we may add little.  The Minex act aggressively against solitary ships but cautiously against large fleets. They avoid large population areas but destroy listening posts and small outposts without warning.  One may presume that they wish to encourage congregation within tight borders, for what purpose we know not.  More than this I may not say." }
+	}
+
+--[[
+title="Mission #49:  Unrest - no flight recorders
+--]]
+
+	questions[79000] = {
+		action="jump", goto=1, ftest= 1, -- artifact280 Elowan Flight Recording
+		title="Unrest",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have heard that Coalition have been raiding the Thrynn and yourselves.",
+		playerFragment="about the situation",
+		alien={"'Twas only recently that the Coalition hath begun their senseless attacks.  Little do we understand their purpose, as they have blown against our heaviest offenses and achieved little more than their own self-immolation.  We will momentarily provide to thee, video of their useless gestures." }
+	}
+
+--[[
+title="Mission #49:  Unrest - at least one flight recorder
+--]]
+
+
+	questions[79500] = {
+		action="jump", goto=1, ftest= 1, -- artifact280 Elowan Flight Recording
+		title="Unrest",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have heard that Coalition have been raiding the Thrynn and yourselves.",
+		playerFragment="about the situation",
+		alien={"'Twas only recently that the Coalition hath begun their senseless attacks.  Little do we understand their purpose, as they have blown against our heaviest offenses and achieved little more than their own self-immolation.  Our sensors show that you already have video of their useless gestures." }
+	}
+
+--[[
+title="Mission #53:  Tactical Coordination
+--]]
+
+	questions[83000] = {
+		action="jump", goto=1,  ftest= 1, -- artifact336 Elowan response
+		title="Tactical Coordination",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with the Bar-zhon to discover fleet combinations that would be most effective in countering the Minex onslaught.",
+		playerFragment="if you would commit a few ships to tactical exercises being conducted for this purpose", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"'Tis a lofty and commendable goal thou doth seek.  We commit to the Bar-zhon program 10 ships for tactical exercises." }
+	}
 
 end
 
@@ -1662,7 +1993,6 @@ if (plot_stage == 1) then -- initial plot state
 	mass= 1
 
 	engineclass= 3
-	if (engineclass < ship_engine_class) then		engineclass= ship_engine_class		end
 
 	shieldclass= gen_random(6)
 	if (shieldclass < 3) then						shieldclass= 3						end
@@ -1687,8 +2017,7 @@ elseif (plot_stage == 2) then -- virus plot state
 
 	mass= 1
 
-	engineclass= gen_random(3)
-	if (engineclass < ship_engine_class) then		engineclass= ship_engine_class		end
+	engineclass= gen_random(5)
 
 	shieldclass= gen_random(6)
 	if (shieldclass < 3) then						shieldclass= 3						end
@@ -1717,7 +2046,6 @@ elseif (plot_stage == 3) or (plot_stage == 4) then -- war and ancients plot stat
 
 	engineclass= gen_random(6)
 	if (engineclass < 4) then						engineclass= 4						end
-	if (engineclass < ship_engine_class) then		engineclass= ship_engine_class		end
 
 	shieldclass= gen_random(6)
 	if (shieldclass < 3) then						shieldclass= 3						end
@@ -1759,7 +2087,7 @@ function Initialize()
 
 if (plot_stage == 1) then -- initial plot state
 
-	DROPITEM1 = 10;	    DROPRATE1 = 90;		DROPQTY1 = 1 -- Elowan Shield Capacitor
+	DROPITEM1 = 10;	    DROPRATE1 = 80;		DROPQTY1 = 1 -- Elowan Shield Capacitor
 	DROPITEM2 = 54;		DROPRATE2 = 25;	    DROPQTY2 = 2 -- Endurium
 	DROPITEM3 = 36;		DROPRATE3 = 40;		DROPQTY3 = 2
 	DROPITEM4 = 52;		DROPRATE4 = 75;		DROPQTY4 = 1
@@ -1796,7 +2124,7 @@ end
 
 	number_of_actions = 0   -- number_of_actions counts the number of questions asked during the encounter
 
-	--active_quest = 31 	--  debugging use
+	--active_quest = 37 	--  debugging use
 	--artifact14 = 1		--  debugging use
 	--plot_stage = 1
 
@@ -1834,6 +2162,55 @@ elseif (plot_stage == 2) then -- virus plot state
 		first_question = 77000
 	elseif active_quest == 37 and artifact220 > 0 then -- miniature funnel bush
 		first_question = 77500
+	elseif active_quest == 38 and artifact235 == 0 then -- genetic data search, not completed
+		first_question = 78000
+
+-- Quest 41: Medical Archaeology
+	elseif active_quest == 41 and artifact247 > 0 and artifact249 == 0 then -- exotic dataCube only
+		first_question = 81000
+
+	elseif active_quest == 41 and artifact247 == 0 and artifact249 > 0 then -- organic database only
+		first_question = 81200
+
+	elseif active_quest == 41 and artifact247 > 0 and artifact249 > 0 then -- exotic dataCube and organic database
+		first_question = 81500
+
+	elseif active_quest == 42 and artifact253 == 0 then
+		first_question = 82000
+
+-- Mission #43:  Framed!
+	elseif active_quest == 43 and artifact255 == 0 and artifact260 == 0 then
+		first_question = 83000
+
+-- Mission #43:  Framed! with Red Herring
+	elseif active_quest == 43 and artifact255 > 0 and artifact260 == 0 then
+		first_question = 83200
+
+-- Mission #43:  Framed! with holographic evidence
+	elseif active_quest == 43 and artifact260 > 0 then
+		first_question = 83500
+
+-- Mission #44:  Decontamination Transporter
+	elseif active_quest == 44 and artifact261 == 0 then
+		first_question = 84000
+
+-- Mission #44:  Decontamination Transporter specifications
+	elseif active_quest == 44 and artifact261 == 1 then
+		first_question = 84500
+
+-- Mission #44:  Decontamination Transporter finished
+	elseif active_quest == 44 and artifact264 == 1 then
+		first_question = 1
+
+-- Mission #45:  Healthcare Scam - no medical treatment sample
+	elseif active_quest == 45 and artifact265 == 0 and artifact266 == 0 then
+		first_question = 85000
+
+-- Mission #45:  Healthcare Scam - medical treatment sample
+	elseif active_quest == 45 and artifact265 == 1 and artifact266 == 0 then
+		first_question = 85500
+
+
 	else
 		first_question = 1
 	end
@@ -1842,6 +2219,22 @@ elseif (plot_stage == 3) then -- war plot state
 
 	if ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
+
+-- Mission #48:  Intelligence Gathering
+	elseif active_quest == 48 then
+		first_question = 78000
+
+-- Mission #49:  Unrest
+	elseif active_quest == 49 and artifact280 == 0 and artifact281 == 0 then -- no flight recorders
+		first_question = 79000
+	elseif active_quest == 49 and (artifact280 == 1 or artifact281 == 1) then -- at least one flight recorder
+		first_question = 79500
+
+-- Mission #53:  Tactical coordination
+	elseif active_quest == 53 and artifact335 == 1 then
+		first_question = 83000
+
+
 	else
 		first_question = 1
 	end
@@ -2078,13 +2471,115 @@ function commFxn(type, n, ftest)
 
 		elseif (plot_stage == 2) then -- virus plot state
 
-
 			if (n == 77500) then -- Quest 37: Information about the smugglers
 				artifact223 = 1
+			elseif (n == 78100) then -- Quest 38: Genetic Samples
+				if (artifact235 > 0) then
+					goto_question = 78105
+				elseif (ATTITUDE < 85) then
+					goto_question = 78106
+				else
+					goto_question = 78107
+				end
+			elseif (n == 78107) then
+				artifact235 = 1
+			elseif (n == 78200) then -- Quest 38: Genetic Samples library test
+				if (artifact224 > 1) then -- reduce all samples to quantity 1
+					artifact224 = 1
+				end
+				if (artifact225 > 1) then
+					artifact225 = 1
+				end
+				if (artifact226 > 1) then
+					artifact226 = 1
+				end
+				if (artifact227 > 1) then
+					artifact227 = 1
+				end
+				if (artifact228 > 1) then
+					artifact228 = 1
+				end
+				if (artifact229 > 1) then
+					artifact229 = 1
+				end
+				if (artifact230 > 1) then
+					artifact230 = 1
+				end
+				if (artifact231 > 1) then
+					artifact231 = 1
+				end
+				if (artifact232 > 1) then
+					artifact232 = 1
+				end
+				if (artifact233 > 1) then
+					artifact233 = 1
+				end
+				if (artifact234 > 1) then
+					artifact234 = 1
+				end
+				if (artifact224 + artifact225 + artifact226 + artifact227 + artifact228 + artifact229 + artifact230 + artifact231 + artifact232 + artifact234 > 4) then -- evaluate if the player has collected 5 or more samples
+					goto_question = 78205
+					artifact224 = 0
+					artifact225 = 0
+					artifact226 = 0
+					artifact227 = 0
+					artifact228 = 0
+					artifact229 = 0
+					artifact230 = 0
+					artifact231 = 0
+					artifact232 = 0
+					artifact233 = 0
+					artifact234 = 0
+					artifact235 = 1
+				else
+					goto_question = 78206
+				end
+
+			-- title="Mission #44: Decontamination Transporter
+
+			elseif (n == 84500) then
+				artifact261 = 0  -- Remove artifact261: genetic transport specifications
+			elseif (n == 84510) then
+				artifact261 = 1  -- return artifact261: genetic transport specifications
+				artifact263 = 1  -- give the player artifact263: broken transporter operational code
+			elseif (n == 84520) then
+				artifact261 = 1  -- return artifact261: genetic transport specifications
+				artifact263 = 1  -- give the player artifact263: broken transporter operational code
+			elseif (n == 84530) then
+				artifact261 = 1  -- return artifact261: genetic transport specifications
+				artifact262 = 1  -- give the player artifact262: operational transporter operational code
+			elseif (n == 84540) then
+				artifact261 = 1  -- return artifact261: genetic transport specifications
+				artifact263 = 1  -- give the player artifact263: broken transporter operational code
+
+
+			elseif (n == 85500) then -- quest 45 make it look like transporting medical treatment
+				artifact265 = 0
+				artifact265 = 1
+			elseif (n == 85600) then -- quest 45
+				artifact266 = 1 -- elowan analysis of medical treatment
+
+
+
+
+
 			end
 
 		elseif (plot_stage == 3) then -- war plot state
 
+-- title="Mission #49: Unrest
+			if (n == 79000) then
+				artifact280 = 1 -- Elowan Flight Recording
+			elseif (n == 79500) then
+				artifact280 = 1 -- Elowan Flight Recording
+
+-- title="Mission #53: Tactical coordination
+			elseif (n == 83000) then
+				artifact336 = 1 -- Elowan response
+
+
+
+			end
 
 
 		elseif (plot_stage == 4) then -- ancients plot state

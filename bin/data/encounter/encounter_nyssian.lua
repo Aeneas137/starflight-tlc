@@ -1,7 +1,7 @@
 --[[------------------------------------------------------------------------------------------------------------------------------------------------- ]
 	ENCOUNTER SCRIPT FILE: NYSSIAN
 
-	Last Modified:  December 23, 2009
+	Last Modified:  May 28, 2014
 
 	Globals shared with C++ module:
 		ACTION - actions invoked by script (see below)
@@ -359,7 +359,7 @@ elseif (plot_stage == 3) or (plot_stage == 4) then -- ancients plot state
 	greetings[8] = {
 		action="",
 		player="We come in peace from Myrrdan, please trust me.",
-		alien={"The reputation of the [SHIPNAME] precedes you, [SHIPNAME]."} }
+		alien={"The reputation of the [SHIPNAME] precedes you, [CAPTAIN]."} }
 	greetings[9] = {
 		action="",
 		player="There is no limit to what both our races can gain from mutual exchange.",
@@ -439,7 +439,7 @@ end
 		action="jump", ftest= 4, -- terminate
 		player="We require information. Comply or be destroyed.",
 		alien= hostileGreetTable }
-	greetings[x] = {
+	greetings[6] = {
 		action="jump", ftest= 4, -- terminate
 		player="Flying garbage scow with all that weak embellishment.  Identify yourself.",
 		alien= hostileGreetTable }
@@ -926,7 +926,7 @@ end
 		action="jump", goto=31401,
 		player="[AUTO_REPEAT]",
 		playerFragment="what your people trade",
-		alien={"Information in the form of knowledge or wisdom.  We are trading now.  Do not bother asking of crass physical possessions.  You do not have what I want and nothing of mine would be understandable by you." }
+		alien={"Information in the form of knowledge or wisdom.  We are trading now.  Do not bother asking of crass physical possessions.  You do not have what I want and nothing of mine would be understandable by you.  I will grant you as a boon one valuable insight into this sector.  Many will refer to the ancient Hyperspace constellations: The Bow = 60,110, The Pearl Cluster = 20,210, The Wee Dipper = 115,180, The Mace = 200, 105, and the Ruby Tower = 10,90." }
 	}
 	questions[31440] = {
 		action="jump", goto=31401,
@@ -1011,7 +1011,7 @@ if (plot_stage == 2) then -- virus plot state
 		action="jump", goto=61001,
 		player="[AUTO_REPEAT]",
 		playerFragment="about this infection",
-		alien={"It is death, simultaneously destroying all without reservation." }
+		alien={"It is death, simultaneously destroying all without reservation.  The Tafel woke this blight shortly after they landed on a monstrous world, the second planet of a yellow star in the head of the Mace." }
 	}
 	questions[62000] = {
 		action="jump", goto=60001,
@@ -1178,13 +1178,13 @@ elseif (plot_stage == 3) then -- war plot state
 		action="jump", goto=63002,
 		player="[AUTO_REPEAT]",
 		playerFragment="about the deserted city",
-		alien={"Back in the age of the ancients war, planetary surfaces were wiped clean by unimaginable forces.  A single city was once discovered in the Dagda system, but its location has been lost with time.  The remnants of the imperialists, The Coalition, may retain further information." }
+		alien={"Back in the age of the ancients war, planetary surfaces were wiped clean by unimaginable forces.  A single city was once discovered in the Dagda system, but its location has been lost with time.  Those responsible for extinguishing the imperialists, The Bar-zhon, may retain further information." }
 	}
 	questions[63200] = {
 		action="jump", goto=63002,
 		player="[AUTO_REPEAT]",
 		playerFragment="about the relationship between the Minex and these withered beings", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
-		alien={"Our people have insights into the activities of all races, with the only exception of yours and the Minex.  The Minex appear conventional, but have an energy and form which we cannot emulate or fully understand.  Their biology is quite unique and follows patterns quite foreign to all others.  It is almost as if their life form was designed." }
+		alien={"Our people have insights into the activities of all races, with the only exception of yours and the Minex.  The Minex appear conventional, but have an energy and form which we cannot emulate or fully understand.  Their biology is quite unique and follows patterns quite foreign to all others.  It is almost as if their life form was designed, possibly by this " }
 	}
 	questions[63300] = {
 		action="jump", goto=63002, ftest= 2, -- insightful
@@ -1205,7 +1205,7 @@ elseif (plot_stage == 4) then -- ancients plot state
 	questions[60001] = {
 		action="branch",
 		choices = {
-			{ text="<Reveal Minex Secret>", goto=61000 },
+			{ title="<Reveal Minex Secret>", text="The Minex revealed that the Ancients may have a base located at Lir IV.", goto=61000 },
 			{ text="Nano-machines?", goto=62000 },
 			{ text="Galactic Situation", goto=63000 },
 			{ text="Ancients might be causing the problems", goto=64000 },
@@ -1214,13 +1214,13 @@ elseif (plot_stage == 4) then -- ancients plot state
 	}
 	questions[61000] = {
 		action="jump", goto=61001, ftest= 2, -- insightful
-		player="The Minex revealed that the Ancients may have a cure.",
-		alien={"Our most prized lore concerning the Ancients reveals two clues that may be of use to locate information about them.  The first is that the largest and most densely concentrated ancient ruins are always found on the oldest m-class stars." }
+		player="[AUTO_REPEAT]",
+		alien={"I do not know anything about that particular planet, but our most prized lore concerning the Ancients reveals two clues that may be of use to locate information about them.  The first is that the largest and most densely concentrated ancient ruins are always found on the oldest m-class stars." }
 	}
 	questions[61001] = {
 		action="jump", goto=60001,
 		player="[AUTO_REPEAT]",
-		alien={"The other clue is this: Interpolating patterns of ancient ruins show a particular focus and symmetry around the planetary coordinates of 47N X 45E or alternatively 29N X 13W.  Significant finds on many ancient worlds are often found at these coordinates." }
+		alien={"The other clue is this: Interpolating patterns of ancient ruins show a particular focus and symmetry around the planetary coordinates of 47N X 45E and 37N X 8W.  Significant finds on many ancient worlds are often found at these coordinates.  I am not equipped for planetary expeditions. You will have to investigate yourself." }
 	}
 	questions[62000] = {
 		action="jump", goto=62001, ftest= 2, -- insightful
@@ -1429,7 +1429,7 @@ title="Freelance Mission #27:  sell artifact from archaeological dig - ticking s
 --		endurium = endurium + 9
 		action="jump", goto=1, ftest= 1,
 		player="[AUTO_REPEAT]",
-		alien={"Very Good." }
+		alien={"Very Good.  (Mission Completed)" }
 	}
 	questions[91200] = {
 		action="jump", goto=91001,
@@ -1482,7 +1482,7 @@ title="Freelance Mission #28:  Obtain Data Crystals - no reaper
 --		active_quest = active_quest + 1
 		action="jump", goto=1, ftest= 1,
 		player="[AUTO_REPEAT]",
-		alien={"Wise choice.  You would be unlikely to profit from this.  Perform other tasks and do not inquire again." }
+		alien={"Wise choice.  You would be unlikely to profit from this.  Perform other tasks and do not inquire again.  (Mission Completed)" }
 	}
 --[[
 title="Freelance Mission #28:  Obtain Data Crystals - player possesses a reaper
@@ -1645,10 +1645,340 @@ title="Mission #37:  Catching the Smugglers.",
 		alien={"Your urgency is none of my concern.  All of our societies are approaching their end and your focus is upon trivial matters.  We have nothing more to say." }
 	}
 
+--[[
+title="Mission #38:  Collecting Genetic Samples"
+--]]
+	questions[78000] = {
+		action="jump", goto=78001,
+		title="Genetic Samples",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with a team of medical researchers attempting to find a cure for this plague.",
+		playerFragment="samples of genetic material from members of your race", fragmentTable=preQuestion.desire,
+		alien={"I do indeed have such sampling of my race. It is yours for a trifle. Would you transmit a scan of the hypercube artifact which you obtained earlier?" }
+	}
+	questions[78001] = {
+		action="branch",
+		choices = {
+			{ title="Yes", text="Yes, transmitting hypercube scanning data to you now.", goto=78002 },
+			{ text="No",  goto=1 },
+		}
+	}
+	questions[78002] = {
+		action="jump", goto=1, ftest= 1,
+		player="[AUTO_REPEAT]",
+		alien={"Transporting samples now." }
+	}
 
+
+--[[
+title="Mission #41:  Exotic Datacube
+--]]
+
+	questions[81000] = {
+		action="jump", goto=1,
+		title="Exotic Datacube",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about this exotic datacube",
+		alien={"This so-called device is nothing but random noise. There is no correlation between our vast databases of language and any recognizable pattern here." }
+	}
+
+--[[
+title="Mission #41:  Organic Database
+--]]
+
+	questions[81200] = {
+		action="jump", goto=81201,
+		title="Organic Database",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about this organic database",
+		alien={"This is exquisite. What a breathtaking construction of primitive genius!  Such simplistic yet marvelous ingenuity created such a wonder!  And both of these artifacts at the site of an extinguished expedition?" }
+	}
+	questions[81201] = {
+		action="jump", goto=1,
+		player="Can you decode it?",
+		alien={"Decode it?  This is not a database of words and language. It is a genetic piece of art!  Sublime in it's majesty and message of hope.  Does a sunset speak in words?  Yes, but not in words that a computer might understand and translate.  There is no secret decodable message here!" }
+	}
+
+
+--[[
+title="Mission #41:  Exotic Datacube and organic database
+--]]
+
+	questions[81500] = {
+		action="jump", goto=81501,
+		title="Exotic Datacube",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about this exotic datacube",
+		alien={"This so-called device is nothing but random noise. There is no correlation between our vast databases of language and any recognizable pattern here." }
+	}
+
+	questions[81501] = {
+		action="jump", goto=81502,
+		player="What about this organic database?",
+		alien={"This is exquisite. What a breathtaking construction of primitive genius!  Such simplistic yet marvelous ingenuity created such a wonder!  And both of these artifacts at the site of an extinguished expedition?" }
+	}
+	questions[81502] = {
+		action="jump", goto=1,
+		player="Can you decode it?",
+		alien={"Decode it?  This is not a database of words and language. It is a genetic piece of art!  Sublime in it's majesty and message of hope.  Does a sunset speak in words?  Yes, but not in words that a computer might understand and translate.  There is no secret decodable message here!" }
+	}
+
+--[[
+title="Mission #42:  Tracking the Laytonites
+--]]
+
+	questions[82000] = {
+		action="jump", goto=1,
+		title="Tracking the Laytonites",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are here as representatives of the Myrrdan government seeking a small fleet of rebel Myrrdan terrorists.",
+		playerFragment="any information that could help us find them",  fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"None of the ship emission signatures or silloettes have been observed by any of our vessels. We will contact your government if they are spotted." }
+	}
+
+
+--[[
+title="Mission #43:  Desperate Measures
+--]]
+
+	questions[83000] = {
+		action="jump", goto=997, -- terminate communications
+		title="Desperate Measures",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  It is extremely important that we talk to you about this fabricated Bar-Zhon / Myrrdan incident.",
+		playerFragment="any information that could help us", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"We are assisting the Bar-zhon in the investigation of the incident.  Until this investigation is concluded we request that your ships maintain station only within your home system.  This statement in no way should be construed as any sort of threat, merely a helpful suggestion to prevent future unfortunate incidents." }
+	}
+
+--[[
+title="Mission #45:  Alien Healthcare Scam - no sample
+--]]
+
+	questions[85000] = {
+		action="jump", goto=85100,
+		title="Plague Treatment",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are investigating reports of a medical treatment that minimizes or stops the periods of madness caused by the plague.",
+		playerFragment="about it",
+		alien={"The fools that try to contain Vissah have not even a sliver of a chance of success. This group of aliens trying to profit off of a treatment for reducing the side effects of the plague is no exception.  Their drug is not even medication, their members composed primarily of coalition exiles are not even doctors.  Only a Bar-zhon envoy fell for the deception." }
+	}
+
+	questions[85100] = {
+		action="jump", goto=1,
+		player="Bar-zhon Envoy?",
+		alien={"Yes, a sole cruiser was sent to contact the group and obtain the treatment.  I have recently learned that shortly afterwards their ship crashed upon Lusmore 1 (227, 73) at 99N X 115E.  The hand of the black wind is very long." }
+	}
+
+--[[
+title="Mission #45:  Alien Healthcare Scam - sample
+--]]
+
+	questions[85500] = {
+		action="jump", goto=997,  ftest= 1, -- transport drugs sample to alien
+		title="Plague Treatment",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are investigating this medical treatment drug that minimizes or stops the periods of madness caused by the plague.  We are transporting over the information needed to synthesize it.",
+		playerFragment="about it",
+		alien={"This is an insane concoction of mind altering drugs.  I would rather drink reactor coolant.  The only crew foolish enough to try it went insane and crash dived into a planet.  What does that tell you?" }
+	}
+
+--[[
+title="Mission #46:  Shield phase synchronizer
+--]]
+
+	questions[86000] = {
+		action="jump", goto=86001,
+		title="Shield phase synchronizer",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have been told that you have a special artifact for us.",
+		playerFragment="for this unique device", fragmentTable=preQuestion.desire,
+		alien={"Excellent, most excellent! I have this Na'tash disrupter available for you today for only 25 radioactives or 120 endurium. What currency do you want to pay with?" }
+	}
+	questions[86001] = {
+		action="branch",
+		choices = {
+			{ text="25 radioactives", goto=86100 },
+			{ text="120 endurium", goto=86200 },
+			{ title="Barter", text="We don't quite have that many resources available. What about in exchange for 60 endurium?", goto=86300 },
+			{ title="Request Further Details", text="Could you describe exactly what the Na'tash generator does?", goto=86400 },
+			{ text="<New subject>", goto=1 }
+		}
+	}
+	questions[86100] = {
+		action="jump", goto=1, ftest= 1, -- artifact267 Na'tash generator
+		player="[AUTO_REPEAT]",
+		playerFragment="the device for 25 radioactives",  fragmentTable=preQuestion.desire,
+		alien={"Indeed we are ready to receive your transport." }
+	}
+	questions[86110] = {
+		action="jump", goto=997, -- terminate communications
+		player="[AUTO_REPEAT]",
+		alien={"Good exchange.  May you be ever pleased with your purchase." }
+	}
+	questions[86120] = {
+		action="jump", goto=86001,
+		player="[AUTO_REPEAT]",
+		alien={"Our sensors indicate you do not have sufficient quantity of radioactive available. Perhaps you may wish to utilize an alternative payment method?" }
+	}
+	questions[86200] = {
+		action="jump", goto=1, ftest= 1, -- artifact267 Na'tash generator
+		player="[AUTO_REPEAT]",
+		playerFragment="the device for 120 endurium",  fragmentTable=preQuestion.desire,
+		alien={"Indeed we are ready to receive your transport." }
+	}
+	questions[86210] = {
+		action="jump", goto=997, -- terminate communications
+		player="[AUTO_REPEAT]",
+		alien={"Good exchange.  May you be ever pleased with your purchase." }
+	}
+	questions[86220] = {
+		action="jump", goto=86001,
+		player="[AUTO_REPEAT]",
+		alien={"Our sensors indicate you do not have sufficient quantity of fuel available. Perhaps you may wish to utilize an alternative payment method?" }
+	}
+	questions[86300] = {
+		action="jump", goto=86001,
+		player="[AUTO_REPEAT]",
+		alien={"" }
+	}
+	questions[86400] = {
+		action="jump", goto=86401,
+		player="[AUTO_REPEAT]",
+		alien={"The Na'tash generator creates a white noise jamming field that disrupts many long range devices." }
+	}
+	questions[86401] = {
+		action="jump", goto=86402,
+		player="Does it disrupt shields?",
+		alien={"No, that is another unique artifact I have available: The Krang. A wondrous Shield phase synchronizer capable of allowing a ship to pass through most force shields.  Same price." }
+	}
+	questions[86402] = {
+		action="jump", goto=86501,
+		player="Why did you offer us the Na'tash first?",
+		alien={"Because I have one.  So are you ready to purchase The Krang?" }
+	}
+--[[
+title="Mission #46:  Shield phase synchronizer - player previously fooled into purchasing the Na'tash disrupter
+--]]
+
+	questions[86500] = {
+		action="jump", goto=86501,
+		title="Shield phase synchronizer",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  This Na'tash generator doesn't work. It fails to penetrate any of our test forcefields.",
+		playerFragment="why you deceived us",  fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"I never said it would penetrate force fields. The Na'tash generator creates a white noise jamming field that disrupts many long range devices.  It has many other uses.  You are seeking another device known as the the Krang.  It is available for the same price: 25 radioactives or 120 endurium. " }
+	}
+	questions[86501] = {
+		action="branch",
+		choices = {
+			{ text="25 radioactives", goto=86600 },
+			{ text="120 endurium", goto=86700 },
+			{ title="Why the Na'tash?", text="Why did you offer us the Na'tash first?", goto=86800 },
+			{ title="Does it work?", text="Does this Krang device actually work to penetrate shields?", goto=86900 },
+			{ text="<New subject>", goto=1 }
+		}
+	}
+	questions[86600] = {
+		action="jump", goto=1, ftest= 1, -- artifact268 The Krang
+		player="[AUTO_REPEAT]",
+		playerFragment="the device for 25 radioactives",  fragmentTable=preQuestion.desire,
+		alien={"Indeed we are ready to receive your transport." }
+	}
+	questions[86610] = {
+		action="jump", goto=997, -- terminate communications
+		player="[AUTO_REPEAT]",
+		alien={"Good exchange.  May you be ever pleased with your purchase." }
+	}
+	questions[86620] = {
+		action="jump", goto=86501,
+		player="[AUTO_REPEAT]",
+		alien={"Our sensors indicate you do not have sufficient quantity of radioactives available. Perhaps you may wish to utilize an alternative payment method?" }
+	}
+	questions[86700] = {
+		action="jump", goto=1, ftest= 1, -- artifact268 The Krang
+		player="[AUTO_REPEAT]",
+		playerFragment="the device for 120 endurium",  fragmentTable=preQuestion.desire,
+		alien={"Indeed we are ready to receive your transport." }
+	}
+	questions[86710] = {
+		action="jump", goto=997, -- terminate communications
+		player="[AUTO_REPEAT]",
+		alien={"Good exchange.  May you be ever pleased with your purchase." }
+	}
+	questions[86720] = {
+		action="jump", goto=86501,
+		player="[AUTO_REPEAT]",
+		alien={"Our sensors indicate you do not have sufficient quantity of fuel available. Perhaps you may wish to utilize an alternative payment method?" }
+	}
+	questions[86800] = {
+		action="jump", goto=86501,
+		player="[AUTO_REPEAT]",
+		alien={"Because I have one.  So are you ready to purchase The Krang?" }
+	}
+	questions[86900] = {
+		action="jump", goto=86501,
+		player="[AUTO_REPEAT]",
+		alien={"Yes, I guarantee it will penetrate most shielding. It is a unique device that has changed hands throughout the ages but no modern science has yet to reverse engineer." }
+	}
 end
 
 function QuestDialoguewar()
+
+
+--[[
+title="Mission #48:  Intelligence Collaboration
+--]]
+
+	questions[78000] = {
+		action="jump", goto=78001,
+		title="Intelligence Collaboration",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have compiled a datacube of technological, tactical, and strategic observations of the Minex war machine.  In the interests of all of our survival, we are willing to share this information freely.",
+		playerFragment="a collection of similar observations by your people", fragmentTable=preQuestion.desire,
+		alien={"Fleet combat is not my forte.  I have no tactical information on Minex warships since I have been completely successful at avoiding them.  These things I have long known about the Minex psyche:  They are sensitive to losses.  If you overwhelm them with overwhelming opposition they will instantly change tactics from seeking the largest numbers of ships of yours to destroy to preserving the greatest number of their ships.  They have absolutely no strategic goals." }
+	}
+	questions[78001] = {
+		action="jump", goto=60001,
+		title="Intelligence Collaboration",
+		player="[AUTO_REPEAT]",
+		playerFragment="why they have no strategic goals", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"This is unclear. I know only that the Minex have been given death's chariot and dominion to destroy all others." }
+	}
+
+--[[
+title="Mission #53:  Tactical Coordination
+--]]
+
+	questions[83000] = {
+		action="jump", goto=1,  ftest= 1, -- artifact339 Nyssian response
+		title="Tactical Coordination",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with the Bar-zhon to discover fleet combinations that would be most effective in countering the Minex onslaught.",
+		playerFragment="if you would commit a few ships to tactical exercises being conducted for this purpose", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Combat is not the purpose of our existence. Space is vast and observers like ourselves have no need to enter hopeless conflicts. When your race has learned the unavoidable inevitability of the cycles of prosperity and decline then you will at last know wisdom." }
+	}
+
+
+--[[
+title="Mission #56:  Scavenger Hunt - 362 Bar-zhon Analyzed Organic Monstrosity
+--]]
+
+	questions[86000] = {
+		action="jump", goto=86001, ftest= 1, -- remove and replace artifact362 Bar-zhon Analyzed Organic Monstrosity
+		title="Scavenger Hunt",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about this Organic Monstrosity we found at an archeological site.",
+		alien={"You did not find this at an archaeological site, this is a ship fragment of an Gazurtoid colony vessel shot down a thousand years ago by the Sabion and kept at a secret underground lab.  For decades this was their secret doomsday project.  If they were successful in deciphering its technology, they could have grown an invulnerable organic ship with complete immunity to all projectile weaponry." }
+	}
+	questions[86001] = {
+		action="jump", goto=1, ftest= 1,
+		player="<More>",
+		alien={"Fortunately the Gazurtoid are very unorthodox and creative thinkers that few can ever hope to understand.  They suffer a high level of insanity and counterbalance their tendencies with rigid laws and a rigid belief system in order to give their civilization a modicum of stability.  I tell you this knowing that Myrrdan engineers are still going to try to waste their time deciphering the secrets of this artifact.  I wish them luck nevertheless." }
+	}
 
 
 end
@@ -1718,45 +2048,45 @@ if (plot_stage == 1) then -- initial plot state
 
 
 	engineclass = 2
-	shieldclass = 6
+	shieldclass = 8
 	armorclass = 6
 	laserclass = 1
 	missileclass = 1
-	laser_modifier = 30				-- % of damage received, used for racial abilities, 0-100%
+	laser_modifier = 10				-- % of damage received, used for racial abilities, 0-100%
 	missile_modifier = 60			-- % of damage received, used for racial abilities, 0-100%
 
 elseif (plot_stage == 2) then -- virus plot state
 
 
 	engineclass = 3
-	shieldclass = 6
+	shieldclass = 8
 	armorclass = 6
 	laserclass = 1
 	missileclass = 1
-	laser_modifier = 20				-- % of damage received, used for racial abilities, 0-100%
-	missile_modifier = 60			-- % of damage received, used for racial abilities, 0-100%
+	laser_modifier = 0				-- % of damage received, used for racial abilities, 0-100%
+	missile_modifier = 40			-- % of damage received, used for racial abilities, 0-100%
 
 elseif (plot_stage == 3) then -- war plot state
 
 
 	engineclass = 3
-	shieldclass = 6
+	shieldclass = 8
 	armorclass = 6
 	laserclass = 2
 	missileclass = 1
-	laser_modifier = 10				-- % of damage received, used for racial abilities, 0-100%
-	missile_modifier = 60			-- % of damage received, used for racial abilities, 0-100%
+	laser_modifier = 0				-- % of damage received, used for racial abilities, 0-100%
+	missile_modifier = 30			-- % of damage received, used for racial abilities, 0-100%
 
 elseif (plot_stage == 4) then -- ancients plot state
 
 
 	engineclass = 4
-	shieldclass = 6
+	shieldclass = 8
 	armorclass = 6
 	laserclass = 4
 	missileclass = 1
 	laser_modifier = 0				-- % of damage received, used for racial abilities, 0-100%
-	missile_modifier = 60			-- % of damage received, used for racial abilities, 0-100%
+	missile_modifier = 30			-- % of damage received, used for racial abilities, 0-100%
 
 end
 
@@ -1841,8 +2171,48 @@ elseif (plot_stage == 2) then -- virus plot state
 
 	if ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
-	elseif active_quest == 37 then
+
+	elseif active_quest == 37 then -- catching the smugglers
 		first_question = 77000
+
+	elseif active_quest == 38 then -- medical samples
+		first_question = 78000
+
+
+-- Quest 41: Medical Archaeology
+	elseif active_quest == 41 and artifact247 > 0 and artifact249 == 0 then -- exotic dataCube only
+		first_question = 81000
+
+	elseif active_quest == 41 and artifact247 == 0 and artifact249 > 0 then -- organic database only
+		first_question = 81200
+
+	elseif active_quest == 41 and artifact247 > 0 and artifact249 > 0 then -- exotic dataCube and organic database
+		first_question = 81500
+
+	elseif active_quest == 42 and artifact253 == 0 then
+		first_question = 82000
+
+-- Mission #43:  Framed!
+	elseif active_quest == 43 then
+		first_question = 83000
+
+
+-- Mission #45:  Healthcare Scam - no medical treatment sample
+	elseif active_quest == 45 and artifact265 == 0 and artifact266 == 0 then
+		first_question = 85000
+
+-- Mission #45:  Healthcare Scam - medical treatment sample
+	elseif active_quest == 45 and artifact265 == 1 and artifact266 == 0 then
+		first_question = 85500
+
+-- Mission #46:  Shield phase synchronizer initial
+	elseif active_quest == 46 and artifact267 == 0 and artifact268 == 0 then
+		first_question = 86000
+
+-- Mission #46:  Shield phase synchronizer - purchased from device
+	elseif active_quest == 46 and artifact267 == 1 and artifact268 == 0 then
+		first_question = 86500
+
 	else
 		first_question = 1
 	end
@@ -1851,6 +2221,21 @@ elseif (plot_stage == 3) then -- war plot state
 
 	if ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
+
+-- Mission #48:  Intelligence Gathering
+	elseif active_quest == 48 then
+		first_question = 78000
+
+
+-- Mission #53:  Tactical coordination
+	elseif active_quest == 53 and artifact335 == 1 then
+		first_question = 83000
+
+-- Mission #56:  Scavenger Hunt - 362 Bar-zhon Analyzed Organic Monstrosity
+	elseif active_quest == 56 and artifact362 == 1 then
+		first_question = 86000
+
+
 	else
 		first_question = 1
 	end
@@ -2051,12 +2436,74 @@ function commFxn(type, n, ftest)
 					goto_question = 77206
 					player_Endurium= player_Endurium -5
 				end
-			end
+			elseif (n == 78002) then -- quest 38: Obtaining Genetic Samples, player is assumed to have hypercube data
+				artifact230 = 1
 
+			elseif (n == 85500) then -- quest 45 make it look like transporting medical treatment
+				artifact265 = 0
+				artifact265 = 1
+
+			elseif (n == 86100) then
+				if (player_Radium + player_Uranium + player_Thorium >= 25) then
+					player_Thorium = 0
+					player_Radium = 0
+					player_Uranium = 0
+					artifact267 = 1
+					goto_question = 86110 -- give the player the Na'tash generator for radioactives
+					ATTITUDE = ATTITUDE + 10
+				else
+					goto_question = 86120 -- complain about lack of radioactives
+					ATTITUDE = ATTITUDE - 5
+				end
+
+			elseif (n == 86200) then
+				if (player_Endurium >= 120) then
+					player_Endurium = player_Endurium - 120
+					artifact267 = 1
+					goto_question = 86210 -- give the player the Na'tash generator for fuel
+					ATTITUDE = ATTITUDE + 10
+				else
+					goto_question = 86220 -- complain about lack of fuel
+					ATTITUDE = ATTITUDE - 5
+				end
+
+			elseif (n == 86600) then
+				if (player_Radium + player_Uranium >= 25) then
+					player_Radium = 0
+					player_Uranium = 0
+					artifact268 = 1
+					goto_question = 86610 -- give the player the Krang for radioactives
+					ATTITUDE = ATTITUDE + 10
+				else
+					goto_question = 86620 -- complain about lack of radioactives
+					ATTITUDE = ATTITUDE - 5
+				end
+
+			elseif (n == 86700) then
+				if (player_Endurium >= 120) then
+					player_Endurium = player_Endurium - 120
+					artifact268 = 1
+					goto_question = 86710 -- give the player the Krang for fuel
+					ATTITUDE = ATTITUDE + 10
+				else
+					goto_question = 86720 -- complain about lack of fuel
+					ATTITUDE = ATTITUDE - 5
+				end
+
+			end
 		elseif (plot_stage == 3) then -- war plot state
 
+-- Mission #53: Tactical coordination
+			if (n == 83000) then
+				artifact339 = 1 -- Nyssian response
 
+-- Mission #56: Scavenger Hunt
+			elseif (n == 86000) then
+					artifact362 = 0
+			elseif (n == 86001) then
+					artifact362 = 1
 
+			end
 		elseif (plot_stage == 4) then -- ancients plot state
 
 

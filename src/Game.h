@@ -179,6 +179,10 @@ public:
 	//used by the ModeMgr sanity checks
 	bool IsRunning() { return m_keepRunning; }
 
+	//on/off toggle of some gui elements to reduce vertical visual clutter
+	bool doShowControls() { return showControls; }
+	void toggleShowControls();
+
     //used to itemize detected video modes reported by the DirectX driver for use in Settings
     struct VideoMode
     {
@@ -210,6 +214,7 @@ private:
 
     void UpdateAlienRaceAttitudes();
 
+	bool showControls;
 	bool m_keepRunning;
 	bool m_pause;
 	bool timePause;			//set for modules in which game time should not update (starport, etc.)

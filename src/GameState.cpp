@@ -472,6 +472,9 @@ std::string convertClassTypeToString(int num)
 	case 4: return "Class 4";
 	case 5: return "Class 5";
 	case 6: return "Class 6";
+	case 7: return "Class 7";
+	case 8: return "Class 8";
+	case 9: return "Class 9";
 	}
 	return "Error in convertClassTypeToString()";
 }
@@ -554,6 +557,9 @@ int Ship::getMissileLauncherDamage()
 		case 4: return g_game->getGlobalNumber("MISSILE4_DAMAGE"); break;
 		case 5: return g_game->getGlobalNumber("MISSILE5_DAMAGE"); break;
 		case 6: return g_game->getGlobalNumber("MISSILE6_DAMAGE"); break;
+		case 7: return g_game->getGlobalNumber("MISSILE7_DAMAGE"); break;
+		case 8: return g_game->getGlobalNumber("MISSILE8_DAMAGE"); break;
+		case 9: return g_game->getGlobalNumber("MISSILE9_DAMAGE"); break;
 		default: return 0;
 	}
 }
@@ -568,6 +574,9 @@ int Ship::getMissileLauncherFiringRate()
 		case 4: return g_game->getGlobalNumber("MISSILE4_FIRERATE"); break;
 		case 5: return g_game->getGlobalNumber("MISSILE5_FIRERATE"); break;
 		case 6: return g_game->getGlobalNumber("MISSILE6_FIRERATE"); break;
+		case 7: return g_game->getGlobalNumber("MISSILE7_FIRERATE"); break;
+		case 8: return g_game->getGlobalNumber("MISSILE8_FIRERATE"); break;
+		case 9: return g_game->getGlobalNumber("MISSILE9_FIRERATE"); break;
 		default: return 0;
 	}
 }
@@ -582,6 +591,9 @@ int Ship::getLaserDamage()
 		case 4: return g_game->getGlobalNumber("LASER4_DAMAGE"); break;
 		case 5: return g_game->getGlobalNumber("LASER5_DAMAGE"); break;
 		case 6: return g_game->getGlobalNumber("LASER6_DAMAGE"); break;
+		case 7: return g_game->getGlobalNumber("LASER7_DAMAGE"); break;
+		case 8: return g_game->getGlobalNumber("LASER8_DAMAGE"); break;
+		case 9: return g_game->getGlobalNumber("LASER9_DAMAGE"); break;
 		default: return 0;
 	}
 }
@@ -596,6 +608,9 @@ int Ship::getLaserFiringRate()
 		case 4: return g_game->getGlobalNumber("LASER4_FIRERATE"); break;
 		case 5: return g_game->getGlobalNumber("LASER5_FIRERATE"); break;
 		case 6: return g_game->getGlobalNumber("LASER6_FIRERATE"); break;
+		case 7: return g_game->getGlobalNumber("LASER7_FIRERATE"); break;
+		case 8: return g_game->getGlobalNumber("LASER8_FIRERATE"); break;
+		case 9: return g_game->getGlobalNumber("LASER9_FIRERATE"); break;
 		default: return 0;
 	}
 }
@@ -626,6 +641,8 @@ float Ship::getMaxShieldCapacity()
 		case 4: return g_game->getGlobalNumber("SHIELD4_STRENGTH") * shieldIntegrity/100.0f; break;
 		case 5: return g_game->getGlobalNumber("SHIELD5_STRENGTH") * shieldIntegrity/100.0f; break;
 		case 6: return g_game->getGlobalNumber("SHIELD6_STRENGTH") * shieldIntegrity/100.0f; break;
+		case 7: return g_game->getGlobalNumber("SHIELD7_STRENGTH") * shieldIntegrity/100.0f; break;
+		case 8: return g_game->getGlobalNumber("SHIELD8_STRENGTH") * shieldIntegrity/100.0f; break;
 		default: return 0;
 	}
 }
@@ -639,6 +656,8 @@ float Ship::getMaxShieldCapacityAtFullIntegrity()
 		case 4: return g_game->getGlobalNumber("SHIELD4_STRENGTH"); break;
 		case 5: return g_game->getGlobalNumber("SHIELD5_STRENGTH"); break;
 		case 6: return g_game->getGlobalNumber("SHIELD6_STRENGTH"); break;
+		case 7: return g_game->getGlobalNumber("SHIELD7_STRENGTH"); break;
+		case 8: return g_game->getGlobalNumber("SHIELD8_STRENGTH"); break;
 		default: return 0;
 	}
 }
@@ -864,17 +883,17 @@ void Ship::setMaxArmorClass(int armorClass)
 }
 void Ship::setMaxShieldClass(int shieldClass)
 {
-	ASSERT(shieldClass >= 1 && shieldClass <= 6);
+	ASSERT(shieldClass >= 1 && shieldClass <= 8);
 	maxShieldClass = shieldClass;
 }
 void Ship::setMaxLaserClass(int laserClass)
 {
-	ASSERT(laserClass >= 1 && laserClass <= 6);
+	ASSERT(laserClass >= 1 && laserClass <= 9);
 	maxLaserClass = laserClass;
 }
 void Ship::setMaxMissileLauncherClass(int missileLauncherClass)
 {
-	ASSERT(missileLauncherClass >= 1 && missileLauncherClass <= 6);
+	ASSERT(missileLauncherClass >= 1 && missileLauncherClass <= 9);
 	maxMissileLauncherClass = missileLauncherClass;
 }
 
@@ -1572,14 +1591,14 @@ PlayerInfo& PlayerInfo::operator=(const PlayerInfo& rhs)
 void GameState::Reset()
 {
 	//initialize alien race attitudes
-	alienAttitudes[ALIEN_ELOWAN] = 80;
-	alienAttitudes[ALIEN_SPEMIN] = 50;
+	alienAttitudes[ALIEN_ELOWAN] = 40;
+	alienAttitudes[ALIEN_SPEMIN] = 70;
 	alienAttitudes[ALIEN_THRYNN] = 50;
 	alienAttitudes[ALIEN_BARZHON] = 40;
 	alienAttitudes[ALIEN_NYSSIAN] = 60;
-	alienAttitudes[ALIEN_TAFEL] = 95;
-	alienAttitudes[ALIEN_MINEX] = 20;
-	alienAttitudes[ALIEN_COALITION] = 10;
+	alienAttitudes[ALIEN_TAFEL] = 10;
+	alienAttitudes[ALIEN_MINEX] = 50;
+	alienAttitudes[ALIEN_COALITION] = 40;
 	alienAttitudes[ALIEN_PIRATE] = 10;
 
 	//start alien attitude update time
@@ -2073,15 +2092,19 @@ GameState * GameState::LoadGame(std::string fileName) {
     int reqAmt = g_game->questMgr->questReqAmt;
 	g_game->questMgr->VerifyRequirements( reqCode, reqType, reqAmt );
 
+	/* when loading a saved game, the plot stage was being set incorrectly. It was a switch statement in 
+	GameState::LoadGame() function. The switch statement is not needed, because the plot stage is set
+	with the call to QuestMgr::getActiveQuest(), which is being called from GameState::LoadGame() function. */
+
 	//Set the corresponding plot stage
-	switch ( g_game->gameState->getActiveQuest() ) {
+/*	switch ( g_game->gameState->getActiveQuest() ) {
 		case 36: g_game->gameState->setPlotStage(2); break;
 		case 37: g_game->gameState->setPlotStage(3); break;
 		case 38: case 39: g_game->gameState->setPlotStage(4); break;
 
 		default: g_game->gameState->setPlotStage(1); break;
 	}
-
+*/
 
 	//Set maximum ship upgrades available given captain profession
 	int maxEngineClass=0, maxShieldClass=0, maxArmorClass=0, maxMissileLauncherClass=0, maxLaserClass=0;

@@ -1,7 +1,7 @@
 --[[------------------------------------------------------------------------------------------------------------------------------------------------- ]
 	ENCOUNTER SCRIPT FILE: THRYNN
 
-	Last Modified:  December 23, 2009
+	Last Modified:  May 28, 2014
 
 	Globals shared with C++ module:
 		ACTION - actions invoked by script (see below)
@@ -188,13 +188,13 @@ elseif (plot_stage == 3) then -- war plot state
 elseif (plot_stage == 4) then -- ancients plot state
 
 		obsequiousGreetTable= {
-			"Our initial suspicions were correct.  You are Uyo.  Your people created and released this virus.  Your timing upon entering this sector, your advanced technology, your control of the Minex, your physical descriptions at the ancient sites all correspond.  We will exterminate your people!"
+			"Our initial suspicions were correct.  You are Uyo!  Your people created and released this virus.  Your timing upon entering this sector, your advanced technology, your control of the Minex, your physical descriptions at the ancient sites all correspond.  We will exterminate your people!"
 	}
 
 end
 
 
-if (plot_stage == 1) or (plot_stage == 3) then -- initial or war plot states
+if (plot_stage == 1) or (plot_stage == 2) or (plot_stage == 3) then -- initial or war plot states
 
 	greetings[1] = {
 		action="",
@@ -245,7 +245,7 @@ if (plot_stage == 1) or (plot_stage == 3) then -- initial or war plot states
 		player="We understand that you could destroy us if you chose. I beg you not to do this.",
 		alien= obsequiousGreetTable }
 
-elseif (plot_stage == 2) or (plot_stage == 4) then -- virus or ancients plot states
+elseif (plot_stage == 4) then -- virus or ancients plot states
 
 	greetings[1] = {
 		action="attack",
@@ -345,13 +345,13 @@ elseif (plot_stage == 3) then -- war plot state
 elseif (plot_stage == 4) then -- ancients plot state
 
 		friendlyGreetTable= {
-			"Our initial suspicions were correct.  You are Uyo.  Your people created and released this virus.  Your timing upon entering this sector, your advanced technology, your control of the Minex, your physical descriptions at the ancient sites all correspond.  We will exterminate your people!"
+			"Our initial suspicions were correct.  You are Uyo!  Your people created and released this virus.  Your timing upon entering this sector, your advanced technology, your control of the Minex, your physical descriptions at the ancient sites all correspond.  We will exterminate your people!"
 	}
 
 end
 
 
-if (plot_stage == 1) or (plot_stage == 3) then -- initial or war plot states
+if (plot_stage == 1) or (plot_stage == 2) or (plot_stage == 3) then -- initial or war plot states
 
 	greetings[1] = {
 		action="",
@@ -367,31 +367,27 @@ if (plot_stage == 1) or (plot_stage == 3) then -- initial or war plot states
 		alien= friendlyGreetTable }
 	greetings[4] = {
 		action="",
-		player="Dude, that is one crazy powerful ship you have there!",
+		player="That is one crazy powerful ship you have there!",
 		alien= friendlyGreetTable }
 	greetings[5] = {
 		action="",
-		player="How's it going, lizard guys?",
+		player="Greetings.  Your ship seems to be very powerful.",
 		alien= friendlyGreetTable }
 	greetings[6] = {
 		action="",
-		player="Greetings.  Your ship seems to be very powerful.",
+		player="Hello there.  Your ship appears very elaborate.",
 		alien= friendlyGreetTable }
 	greetings[7] = {
 		action="",
-		player="Hello there.  Your ship appears very elaborate.",
-		alien= friendlyGreetTable }
-	greetings[8] = {
-		action="",
 		player="We come in peace from Myrrdan, please trust me.",
 		alien= friendlyGreetTable }
-	greetings[9] = {
+	greetings[8] = {
 		action="",
 		player="Greetings friend!  There is no limit to what both our races can gain from mutual exchange.",
 		alien= friendlyGreetTable }
 
 
-elseif (plot_stage == 2) or (plot_stage == 4) then -- virus or ancients plot states
+elseif (plot_stage == 4) then -- virus or ancients plot states
 
 	greetings[1] = {
 		action="attack",
@@ -407,25 +403,21 @@ elseif (plot_stage == 2) or (plot_stage == 4) then -- virus or ancients plot sta
 		alien= friendlyGreetTable }
 	greetings[4] = {
 		action="attack",
-		player="Dude, that is one crazy powerful ship you have there!",
+		player="That is one crazy powerful ship you have there!",
 		alien= friendlyGreetTable }
 	greetings[5] = {
 		action="attack",
-		player="How's it going, lizard guys?",
+		player="Greetings.  Your ship seems to be very powerful.",
 		alien= friendlyGreetTable }
 	greetings[6] = {
 		action="attack",
-		player="Greetings.  Your ship seems to be very powerful.",
+		player="Hello there.  Your ship appears very elaborate.",
 		alien= friendlyGreetTable }
 	greetings[7] = {
 		action="attack",
-		player="Hello there.  Your ship appears very elaborate.",
-		alien= friendlyGreetTable }
-	greetings[8] = {
-		action="attack",
 		player="We come in peace from Myrrdan, please trust me.",
 		alien= friendlyGreetTable }
-	greetings[9] = {
+	greetings[8] = {
 		action="attack",
 		player="Greetings friend!  There is no limit to what both our races can gain from mutual exchange.",
 		alien= friendlyGreetTable }
@@ -470,7 +462,7 @@ elseif (plot_stage == 3) then -- war plot state
 elseif (plot_stage == 4) then -- ancients plot state
 
 		hostileGreetTable= {
-			"Our suspicions are correct.  You are Uyo.  Your people created and released this virus.  Your timing upon entering this sector, your advanced technology, your control of the Minex, your physical descriptions at the ancient sites all correspond.  We will exterminate your people!"
+			"Our suspicions are correct.  You are Uyo!  Your people created and released this virus.  Your timing upon entering this sector, your advanced technology, your control of the Minex, your physical descriptions at the ancient sites all correspond.  We will exterminate your people!"
 	}
 end
 
@@ -603,6 +595,45 @@ if (plot_stage == 1) then -- initial plot state
 			{ text="<Back>",  goto=1 }
 		}
 	}
+
+elseif (plot_stage == 2) then -- virus plot state
+
+	--player questions / alien responses
+	--VALID ACTIONS: terminate, attack, restart
+	--YOURSELVES THREAD
+
+	questions[10000] = {
+		action="jump", goto=999,
+		player="[AUTO_REPEAT]",
+		playerFragment="about yourselves",
+		alien={"By the agreement of 17439 one is warned not to interfere in our affairs nor encroach upon our territory."}
+	}
+	questions[20000] = {
+		action="jump", goto=999,
+		player="[AUTO_REPEAT]",
+		playerFragment="about the other races in the galaxy",
+		alien={"By the agreement of 17439 one is warned not to interfere in our affairs nor encroach upon our territory."}
+	}
+	questions[30000] = {
+		action="jump", goto=999,
+		player="[AUTO_REPEAT]",
+		playerFragment="about the past",
+		alien={"By the agreement of 17439 one is warned not to interfere in our affairs nor encroach upon our territory."}
+	}
+	questions[40000] = {
+		action="jump", goto=999,
+		player="[AUTO_REPEAT]",
+		playerFragment="about the Ancients",
+		alien={"By the agreement of 17439 one is warned not to interfere in our affairs nor encroach upon our territory."}
+	}
+
+	questions[50000] = {
+		action="jump", goto=999,
+		player="[AUTO_REPEAT]",
+		playerFragment="..",
+		alien={"By the agreement of 17439 one is warned not to interfere in our affairs nor encroach upon our territory."}
+	}
+
 elseif (plot_stage == 3) then -- war plot state
 
 	questions[20000] = {
@@ -781,7 +812,7 @@ elseif (plot_stage == 3) then -- war plot state
 		action="jump", goto=60001,
 		player="[AUTO_REPEAT]",
 		playerFragment="about the artifacts developed with the same technology as a virus",
-		alien={"Artifacts from the Bx.  They were known to scavenge and adapt nightmarish technologies taken from an underground city millions of years old.  If this virus originated from anywhere it would be there. The exact system location was lost after the Bar-Zhon war, but was known to be in an M class system on the outward edge of this region of space." }
+		alien={"The now captive BX from their former headquarters at 58N X 96E were known to scavenge and adapt nightmarish technologies taken from an underground city millions of years old.  If this virus originated from anywhere it would be there. The exact system location was lost after the Bar-Zhon war, but was known to be in an M class system on the outward edge of this region of space." }
 	}
 	questions[63000] = {
 		action="jump", goto=60001, ftest= 2, -- insightful
@@ -1024,7 +1055,7 @@ elseif (plot_stage == 3) then -- war plot state
 		action="jump", goto=22105,
 		player="[AUTO_REPEAT]",
 		playerFragment="about the Minex",
-		alien={"The Minex used to be isolationist industrialists but have set their sights on conquering the galaxy.  Their ships are almost as dangerous as the Gazurtoid and possess similar resistance to missile weaponry.  We have experienced a minor inconvenience at repulsing their waves of ships." }
+		alien={"The Minex used to be isolationist industrialists but have set their sights on conquering the galaxy.  Besides circling the center of the Tower constellation, they engage our fleets almost daily.  Their ships are almost as dangerous as the Gazurtoid and possess similar resistance to missile weaponry.  We have experienced a minor inconvenience at repulsing their waves of ships." }
 	}
 	questions[22105] = {
 		action="jump", goto=22101, ftest= 2, -- insightful
@@ -1089,12 +1120,12 @@ title="Military Mission #31:  The Thrynn / Elowan Conflict - Shield Capacitor"
 		questions[74105] = {
 		action="jump", goto=1, ftest= 1,
 		player="Transporting device now.",
-		alien={"We are transmitting specifications for our advanced laser cannons.  Your people should be able to adapt the technology easily. " }
+		alien={"We are transmitting specifications for our advanced laser cannons.  Your people should be able to adapt the technology easily.  (Mission Completed)" }
 	}
 	questions[74106] = {
 		action="jump", goto=1, ftest= 1,
 		player="Transporting device now.",
-		alien={"We assess that your vessel's energy weapon technology is equivalent to ours.  Most unfortunate.  We are transporting a number of energy crystals instead of what to you would be superfluous technology." }
+		alien={"We assess that your vessel's energy weapon technology is equivalent to ours.  Most unfortunate.  We are transporting a number of energy crystals instead of what to you would be superfluous technology.  (Mission Completed)" }
 	}
 --[[
 title="Military Mission #35:  Minex Electronics"
@@ -1120,7 +1151,7 @@ title="Military Mission #35:  Minex Electronics"
 --		active_quest = active_quest + 1,
 --		ship_laser_class = 6,
 		player="[AUTO_REPEAT]",
-		alien={"Our engineers are being sent over your ship as we speak.  Installation of our advanced technology will be completed shortly." }
+		alien={"Our engineers are being sent over your ship as we speak.  Installation of our advanced technology will be completed shortly. (Mission Completed)" }
 	}
 	questions[79200] = {
 		action="jump", goto=1,
@@ -1173,7 +1204,7 @@ title="Freelance Mission #28:  Obtain Data Crystals - obtaining a reaper
 --		active_quest = active_quest + 1
 		action="jump", goto=997,  ftest=1,
 		player="[AUTO_REPEAT]",
-		alien={"The Nyssian do nothing but spy for the other races.  I will politely suggest that you never inquire of any Thrynn concerning this subject again.  We will remember those who try to act as stooges for our enemies and will not tolerate any smaller action in the future." }
+		alien={"The Nyssian do nothing but spy for the other races.  I will politely suggest that you never inquire of any Thrynn concerning this subject again.  We will remember those who try to act as stooges for our enemies and will not tolerate any smaller action in the future.   (Mission Completed)" }
 	}
 	questions[92200] = {
 		action="jump", goto=92201,
@@ -1212,8 +1243,6 @@ title="Freelance Mission #28:  Obtain Data Crystals - obtaining a reaper
 		alien={"Do not attempt deception. Return when you have sufficient quantities." }
 	}
 
-
-
 	questions[92300] = {
 		action="jump", goto= 999, -- attack
 		player="[AUTO_REPEAT]",
@@ -1223,7 +1252,7 @@ title="Freelance Mission #28:  Obtain Data Crystals - obtaining a reaper
 --		active_quest = active_quest + 1
 		action="jump", goto=1, ftest= 1,
 		player="[AUTO_REPEAT]",
-		alien={"Very well." }
+		alien={"Very well. (Mission Completed)" }
 	}
 
 --[[
@@ -1253,13 +1282,13 @@ title="Freelance Mission #32:  The Thrynn / Elowan conflict -  Shield Capacitor"
 	questions[96105] = {
 		action="jump", goto=96101, ftest= 1,
 		player="Transporting device now.",
-		alien={"We are transmitting specifications for our advanced laser cannons.  Your people should be able to adapt the technology easily. " }
+		alien={"We are transmitting specifications for our advanced laser cannons.  Your people should be able to adapt the technology easily.  (Mission Completed)" }
 	}
 
 	questions[96106] = {
 		action="jump", goto=96101, ftest= 1,
 		player="Transporting device now.",
-		alien={"We assess that your vessel's energy weapon technology is equivalent to ours.  Most unfortunate.  We are transporting a number of energy crystals instead of what to you would be superfluous technology." }
+		alien={"We assess that your vessel's energy weapon technology is equivalent to ours.  Most unfortunate.  We are transporting a number of energy crystals instead of what to you would be superfluous technology.  (Mission Completed)" }
 	}
 
 	questions[96101] = {
@@ -1292,7 +1321,7 @@ title="Freelance Mission #34:  Artistic Containers"
 --		active_quest = active_quest + 1
 		action="jump", goto=1, ftest= 1,
 		player="[AUTO_REPEAT]",
-		alien={"Commencing exchange. " }
+		alien={"Commencing exchange.  (Mission Completed)" }
 	}
 	questions[98200] = {
 		action="jump", goto=1,
@@ -1345,10 +1374,474 @@ title="Mission #37:  Catching the Smugglers.",
 		playerFragment="any information that could help us find them",
 		alien={"Growl !!" }
 	}
+
+--[[
+title="Mission #38:  Collecting Genetic Samples"
+--]]
+	questions[78000] = {
+		action="jump", goto=999, -- Attack the player
+		title="Genetic Samples",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with a team of medical researchers attempting to find a cure for this plague.",
+		playerFragment="samples of genetic material from members of your race", fragmentTable=preQuestion.desire,
+		alien={"Growl !!" }
+	}
+
+
+--[[
+title="Mission #43:  Desperate Measures
+--]]
+
+	questions[83000] = {
+		action="jump", goto=999, -- attack the player
+		title="Desperate Measures",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  It is extremely important that we talk to you about this fabricated Bar-Zhon / Myrrdan incident.",
+		playerFragment="any information that could help us", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Flee you pirates!  Your time is coming soon!" }
+	}
+
+
+--[[
+title="Mission #44:  Decontamination transporter
+--]]
+
+	questions[84000] = {
+		action="jump", goto=997, -- terminate
+		title="Decontamination Transporter",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about this decontamination transporter you guys requested our help with",
+		alien={"You should not be seen with us. Please contact the Bar-zhon concerning our joint venture." }
+	}
+
+--[[
+title="Mission #44:  Decontamination Transporter - operational code
+--]]
+
+	questions[84300] = {
+		action="jump", goto=84301, ftest= 1, -- Remove artifact262: operating code
+		title="Decontamination Transporter",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="what we should do with this transporter software we received from the Elowan", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"You have performed for us a useful service. Perhaps the condemnation our leaders have placed upon you may no longer be appropriate" }
+	}
+	questions[84301] = {
+		action="jump", goto=997,  ftest= 1, --  provide artifact264, a data cube
+		player="Please talk to your leaders",
+		alien={"We will do this. For now I will provide a working sample transporter in exchange for the Elowan data. The reconstruction filters should immediately be operational if their modeling data is complete and accurate." }
+	}
+
+--[[
+title="Mission #44:  Decontamination Transporter - broken code
+--]]
+
+	questions[84600] = {
+		action="jump", goto=84601, ftest= 1, -- Remove artifact263: broken operating code,
+		title="Decontamination Transporter",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="what we should do with this transporter software we received from the Elowan", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"You have performed for us a useful service. Perhaps the condemnation our leaders have placed upon you may no longer be appropriate." }
+	}
+	questions[84601] = {
+		action="jump", goto=997, -- Terminate communications
+		player="Please talk to your leaders",
+		alien={"Perhaps I spoke too hastily.  This software in operation is not useful.  Basic lifeforms are completely scrambled by this useless Elowan code.  We will provide you with one more opportunity to confront the Elowan concerning their failure.  Do not disappoint us." }
+	}
+
+--[[
+title="Mission #45:  Alien Healthcare Scam - no sample
+--]]
+
+	questions[85000] = {
+		action="jump", goto=997, -- Terminate
+		title="Plague Treatment",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are investigating reports of a medical treatment that minimizes or stops the periods of madness caused by the plague.",
+		playerFragment="about it",
+		alien={"Rumors and mystical concoctions that not even the Nyssian worms are interested in are quite beneath our attention.  Scram!" }
+	}
+
+
+--[[
+title="Mission #45:  Alien Healthcare Scam - sample
+--]]
+
+	questions[85500] = {
+		action="jump", goto=997,  ftest= 1, -- transport drugs sample to alien
+		title="Plague Treatment",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are investigating this medical treatment drug that minimizes or stops the periods of madness caused by the plague.  We are transporting over the information needed to synthesize it.",
+		playerFragment="about it",
+		alien={"Chemical analysis shows that this is nothing but a soup of mind altering poisons.  Mixing it in with biological strains of the virus show that the virus is not affected.  Since this plague does not affect non-sentents, we are unable and unwilling to test it.  My crew declines the opportunity to rot out their minds." }
+	}
+
+
+
 end
 
 function QuestDialoguewar()
 
+
+--[[
+title="Mission #48:  Intelligence Collaboration
+--]]
+
+	questions[78000] = {
+		action="jump", goto=78001,
+		title="Intelligence Collaboration",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have compiled a datacube of technological, tactical, and strategic observations of the Minex war machine.  In the interests of all of our survival, we are willing to share this information freely.",
+		playerFragment="a collection of similar observations by your people", fragmentTable=preQuestion.desire,
+		alien={"Your data is appreciated.  The Minex utilize large maneuverable vessels and aggressively attack isolated targets, strongly avoiding casualties and fleet action.  Either they must be destroyed or we all will be destroyed.  In exchange for your data, I am authorized to give you one sample of any of the following: a Minex targeting system, power core, beam mount, missile turret, or a silver gadget." }
+	}
+	questions[78001] = {
+		action="branch",
+		choices = {
+			{ title="Targeting System", text="Sounds good, please transport over the Minex targeting system.", goto=78100 },
+			{ title="Power Core", text="Sounds good, please transport over the Minex power core.", goto=78200 },
+			{ title="Beam Mount", text="Sounds good, please transport over the Minex beam mount.", goto=78300 },
+			{ title="Missile Turret", text="Sounds good, please transport over the Minex missile turret.", goto=78400 },
+			{ title="Silver Gadget", text="Sounds good, please transport over the Minex silver gadget.", goto=78500 },
+		}
+	}
+	questions[78100] = {
+		action="jump", goto=997,  ftest= 1,-- terminate
+		player="[AUTO_REPEAT]",
+		alien={"Transporting now.  Good voyage to you.  We must now depart." }
+	}
+	questions[78200] = {
+		action="jump", goto=997,  ftest= 1,-- terminate
+		player="[AUTO_REPEAT]",
+		alien={"Transporting now.  Good voyage to you.  We must now depart." }
+	}
+	questions[78300] = {
+		action="jump", goto=997,  ftest= 1,-- terminate
+		player="[AUTO_REPEAT]",
+		alien={"Transporting now.  Good voyage to you.  We must now depart." }
+	}
+	questions[78400] = {
+		action="jump", goto=997,  ftest= 1,-- terminate
+		player="[AUTO_REPEAT]",
+		alien={"Transporting now.  Good voyage to you.  We must now depart." }
+	}
+	questions[78500] = {
+		action="jump", goto=997,  ftest= 1,-- terminate
+		player="[AUTO_REPEAT]",
+		alien={"Transporting now.  Good voyage to you.  We must now depart." }
+	}
+
+--[[
+title="Mission #49:  Unrest - no flight recorders
+--]]
+
+	questions[79000] = {
+		action="jump", goto=1, ftest= 1, -- artifact281 Thrynn Flight Recording
+		title="Unrest",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have heard that Coalition have been raiding the Elowan and yourselves.",
+		playerFragment="about the situation",
+		alien={"The Coalition is not a force to be concerned to be reckoned with. A few of their ships attacked one of our patrols within Spemin territory and were dispatched without difficulty. If you wish to confront them, I will transmitting the flight recorder data to you immediately." }
+	}
+
+--[[
+title="Mission #49:  Unrest - at least one flight recorder
+--]]
+
+	questions[79500] = {
+		action="jump", goto=1, ftest= 1, -- artifact281 Thrynn Flight Recording
+		title="Unrest",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have heard that Coalition have been raiding the Elowan and yourselves.",
+		playerFragment="about the situation",
+		alien={"Do not be overly concerned over the Coalition's useless antagonism.  As long as they are foolish enough to blindly attack large military patrols as you already may see in the Elowan flight recorder data you possess, our concern is minimal.  Here is our recording of the same event." }
+	}
+
+
+--[[
+title="Mission #51: Wreck salvaging initial
+--]]
+
+	questions[81000] = {
+		action="jump", goto=81001,
+		title="Wreck salvaging",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about this wreck salvaging task",
+		alien={"Welcome Myrrdan. You have proven your steel. We seek strong and confident allies for the difficult days ahead. Are you up to the challenge?" }
+	}
+	questions[81001] = {
+		action="branch",
+		choices = {
+			{ title="Yes", text="Yes, we are ready.", goto=81010 },
+			{ title="No", text="No, not right now.", goto=81020 },
+			{ title="Challenge?", text="What challenge do you mean?", goto=81030 },
+		}
+	}
+	questions[81010] = {
+		action="jump", goto=81050,
+		player="[AUTO_REPEAT]",
+		alien={"The Thissaliss Corporation has been contracted for salvage and research in the aftermath of Alliance battles with the Minex." }
+	}
+	questions[81020] = {
+		action="jump", goto=997, ftest= 1, -- terminate
+		player="[AUTO_REPEAT]",
+		alien={"Get lost weakling! (Mission Completed)" }
+	}
+	questions[81030] = {
+		action="jump", goto=81001,
+		player="[AUTO_REPEAT]",
+		alien={"Do not play foolish human. You were briefed before being dispatched." }
+	}
+
+
+	questions[81050] = {
+		action="jump", goto=81051,
+		player="Okay.  And?",
+		alien={"Our number of atmosphere capable vessels has been sharply reduced by recent unfortunate loses during hostilities. Myrrdan was recently allowed into our market and your government's bid for your services was ... competitive." }
+	}
+	questions[81051] = {
+		action="branch",
+		choices = {
+			{ title="Bid?", text="What was our bid?", goto=81060 },
+			{ title="Task", text="What task do you have for us?", goto=81070 },
+			{ title="Terminate", text="Something urgent has come up, we'll be back later", goto=81080 },
+		}
+	}
+	questions[81060] = {
+		action="jump", goto=81061,
+		player="[AUTO_REPEAT]",
+		alien={"That is restricted, need too know only." }
+	}
+	questions[81061] = {
+		action="jump", goto=81051,
+		player="I need to know",
+		alien={"No you do not. Your superiors dictate what you are told. We will not supply you the claws for premature advancement." }
+	}
+
+	questions[81070] = {
+		action="jump", goto=81071,
+		player="[AUTO_REPEAT]",
+		alien={"Investigation of post re-entry debris from a number of smaller skirmishes. Tracer scouts have already investigated locations and verified surface debris from orbital scans." }
+	}
+	questions[81071] = {
+		action="jump", goto=81072,
+		player="Okay.  Send us the list of sites.",
+		alien={"Per your contract locations will be revealed one at a time. You will be required to bring holos and any artifacts to any Thrynn ship before the next site will be disclosed." }
+	}
+	questions[81072] = {
+		action="jump", goto=997, -- terminate
+		player="Ok, where do we go first?",
+		alien={"The first location is Glaistig (22N X 104W) in the Net system (55, 114)" }
+	}
+
+
+	questions[81080] = {
+		action="jump", goto=997, -- terminate
+		player="[AUTO_REPEAT]",
+		alien={"Our patience is limited." }
+	}
+
+
+--[[
+title="Mission #51: Wreck salvaging - returning melted composite debris
+--]]
+
+	questions[81100] = {
+		action="jump", goto=997, ftest= 1, -- remove artifacts 296-300 Melted Composite
+		title="Wreck Salvaging 2",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  These melted composites are the only significant items we found. Transporting over samples plus a holo survey of the site.",
+		playerFragment="about them",
+		alien={"Disappointing but not unexpected.  The composites are simply sections of nonconductive fragments of Minex armor superheated and sheared off by laser.  Must have shadowed larger debris during reentry. The next site is Magmor 1. (31S X 88E) (18,117)" }
+	}
+
+--[[
+title="Mission #51: Wreck salvaging - returning artifact308 Geometric Crystals
+--]]
+
+	questions[81200] = {
+		action="jump", goto=997, ftest= 1, -- remove artifact308 Geometric Crystals
+		title="Wreck Salvaging 3",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  These geometric crystals are the only significant items we found. Transporting over samples plus a holo survey of the site.",
+		playerFragment="about them",
+		alien={"More useless inert material. The next site is Inghean (118S X 72E) in the Anu system. (65, 110)" }
+	}
+
+--[[
+title="Mission #51: Wreck salvaging - returning artifact312 and 313
+--]]
+
+	questions[81300] = {
+		action="jump", goto=997, ftest= 1, -- remove artifact312-313 engine components and gravity field generator
+		title="Wreck Salvaging 4",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We located these two artifacts, Engine components and a gravity field generator.  Transporting over samples plus a holo survey of the site.",
+		playerFragment="about them",
+		alien={"This intact Minex inertia compensator is quite a find. Far more efficient than our designs. The next location is Kygwyn (85S X 139E) also in the Anu system. (65, 110)" }
+	}
+
+--[[
+title="Mission #51: Wreck salvaging - returning artifact324 organic growth
+--]]
+
+	questions[81400] = {
+		action="jump", goto=997, ftest= 1, -- remove artifact324 organic growth
+		title="Wreck Salvaging 5",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  The only interesting item we found at this site was this unusual organic growth",
+		playerFragment="about it",
+		alien={"This fungal growth has no significance. The next site is Conn (33N X 145W) in the Lairgnen system. (70, 142)" }
+	}
+
+
+--[[
+title="Mission #51: Wreck salvaging - returning artifact327 Cone device
+--]]
+
+	questions[81500] = {
+		action="jump", goto=81501, ftest= 1, -- remove artifact327 Cone device
+		title="Wreck Salvaging 6",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  The only interesting item we found at this site was Conical device. Appears to have been attached to a laser turret.",
+		playerFragment="about it",
+		alien={"Very fortunate find. We have recovered a number of intact turrets before but these amplifiers are usually overloaded during the destruction of a Minex vessel." }
+	}
+	questions[81501] = {
+		action="jump", goto=997, -- terminate
+		title="How valuable is it?",
+		player="[AUTO_REPEAT]",
+		playerFragment="how valuable this artifact is",  fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Since the Minex use gas lasers with massive power requirements these amplifiers are probably not much use to Myrrdan. The next site is Jurlagh Duane III. (18N X 12W) (16, 70)" }
+	}
+
+--[[
+title="Mission #51: Wreck salvaging - returning artifacts329-334 Radioactive Exotic Elements
+--]]
+
+	questions[81600] = {
+		action="jump", goto=997, ftest= 1, -- remove artifacts329-334 Radioactive Exotic Elements, provide 50 endurium, end the mission
+		title="Wreck Salvaging 7",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  The only interesting items we found at this site are these exotic radioactive elements.",
+		playerFragment="about it",
+		alien={"You seem to have picked up the stock of supplies for a Minex reactor. Interesting but not terribly useful. That was the last location. You have discharged your contract adequately. You quality for the agreed upon bonus. (Quest Completed)" }
+	}
+
+--[[
+title="Mission #51: Wreck salvaging - returning artifacts329-334 Radioactive Exotic Elements
+--]]
+
+	questions[81600] = {
+		action="jump", goto=997, ftest= 1, -- remove artifacts329-334 Radioactive Exotic Elements, provide 50 endurium, end the mission
+		title="Wreck Salvaging 7",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  The only interesting items we found at this site are these exotic radioactive elements.",
+		playerFragment="about it",
+		alien={"You seem to have picked up the stock of supplies for a Minex reactor. Interesting but not terribly useful. That was the last location. You have discharged your contract adequately. You quality for the agreed upon bonus. (Quest Completed)" }
+	}
+
+--[[
+title="Mission #52: Prototype Testing
+--]]
+
+	questions[82000] = {
+		action="jump", goto=82001,
+		title="Prototype Testing",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about these prototype weapons",
+		alien={"Welcome [SHIPNAME].  I have prototype high speed repeater missiles and lasers turrets for you to test in combat. If you wish to keep them afterwards you may do so. If not, return to us to remount your original weapons or to offload your camera footage when you are done with your testing." }
+	}
+
+	questions[82001] = {
+		action="branch",
+		choices = {
+			{ title="Install experimental lasers", text="I am ready for you to install the prototype laser turrets.", goto=82100 },
+			{ title="Remove experimental lasers", text="Please return my original laser turrets.", goto=82200 },
+			{ title="Install experimental missiles", text="I am ready for you to install the prototype missile launchers.", goto=82300 },
+			{ title="Remove experimental missiles", text="Please return my original missile launchers.", goto=82400 },
+			{ title="End Mission", text="I am done with my testing, sending over camera footage now.", goto=82500 },
+		}
+	}
+	questions[82100] = {
+		action="jump", goto=82001,  ftest= 1,
+		player="[AUTO_REPEAT]",
+		alien={"Sending engineers over to your ship now." }
+	}
+	questions[82200] = {
+		action="jump", goto=82001,  ftest= 1,
+		player="[AUTO_REPEAT]",
+		alien={"Sending engineers over to your ship now." }
+	}
+	questions[82300] = {
+		action="jump", goto=82001,  ftest= 1,
+		player="[AUTO_REPEAT]",
+		alien={"Sending engineers over to your ship now." }
+	}
+	questions[82400] = {
+		action="jump", goto=82001,  ftest= 1,
+		player="[AUTO_REPEAT]",
+		alien={"Sending engineers over to your ship now." }
+	}
+	questions[82500] = {
+		action="jump", goto=997,  ftest= 1,
+		player="[AUTO_REPEAT]",
+		alien={"Receiving camera footage now.  Good work.  We must now depart.  (Quest Completed)" }
+	}
+
+--[[
+title="Mission #53:  Tactical Coordination
+--]]
+
+
+	questions[83000] = {
+		action="jump", goto=1,  ftest= 1, -- artifact337 Thrynn response
+		title="Tactical Coordination",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with the Bar-zhon to discover fleet combinations that would be most effective in countering the Minex onslaught.",
+		playerFragment="if you would commit a few ships to tactical exercises being conducted for this purpose", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Strength and survival requires diversity and adaptation under pressure. This is a difficult lesson but a critical one.  We must first consult with our leaders but I foresee no difficulty in sending representatives to the Bar-zhon rendezvous." }
+	}
+
+
+--[[
+title="Mission #57:  The Shimmering Ball
+--]]
+
+	questions[87000] = {
+		action="jump", goto=87002,
+		title="The Shimmering Ball",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  The Spemin mentioned that you were interested in this Shimmering Ball artifact?",
+		playerFragment="the device", fragmentTable=preQuestion.desire,
+		alien={"Do not attempt to deceive us.  If this cloaking device was operational you would never part with it." }
+	}
+	questions[87002] = {
+		action="jump", goto=87001,
+		player="All right, I admit it's broken",
+		alien={"Know that for millennia we have searched for this prototype. In mass production it could have saved the human empire.  All we knew is that it was stolen by the Gazurtoid who could not reverse engineer it.  Just in case this fraud is a broken version of the genuine article, I offer you 50 Quorsitanium in exchange for it." }
+	}
+	questions[87001] = {
+		action="branch",
+		choices = {
+			{ title="Yes", text="I accept your offer.  Transporting now.",  goto=87100 },
+			{ text="No thanks",  goto=87200 },
+		}
+	}
+	questions[87100] = {
+		action="jump", goto=1, ftest= 1, -- artifact363 = 0. 50 Quorsitanium, end mission
+		player="[AUTO_REPEAT]",
+		alien={"Commencing exchange." }
+	}
+	questions[87200] = {
+		action="jump", goto=1,
+		player="[AUTO_REPEAT]",
+		alien={"Very well. " }
+	}
 
 end
 
@@ -1495,6 +1988,7 @@ title="Universal Missions"
 	}
 	-- attack the player because attitude is too low
 	questions[910] = {
+		action="jump", goto=999,
 		player="What can you tell us about...",
 		alien={"Few enemies have lived to regret their provocations of the Thrynn.  We will give no further warnings.  Flee and do not provoke us further." }
 	}
@@ -1551,7 +2045,6 @@ if (plot_stage == 1) then -- initial plot state
 
 	engineclass= gen_random(4)
 	if (engineclass < 2) then						engineclass= 2						end
-	if (engineclass < ship_engine_class) then		engineclass= ship_engine_class		end
 
 	shieldclass = 3
 	armorclass = 1
@@ -1564,41 +2057,38 @@ elseif (plot_stage == 2) then -- virus plot state
 
 	engineclass= gen_random(4)
 	if (engineclass < 2) then						engineclass= 2						end
-	if (engineclass < ship_engine_class) then		engineclass= ship_engine_class		end
 
 	shieldclass = 3
 	armorclass = 1
 	laserclass = 3
 	missileclass = 0
-	laser_modifier = 60				-- % of damage received, used for racial abilities, 0-100%
+	laser_modifier = 20				-- % of damage received, used for racial abilities, 0-100%
 	missile_modifier = 100			-- % of damage received, used for racial abilities, 0-100%
 
 
 elseif (plot_stage == 3) then -- war plot state
 
-	engineclass= gen_random(4)
+	engineclass= gen_random(5)
 	if (engineclass < 2) then						engineclass= 2						end
-	if (engineclass < ship_engine_class) then		engineclass= ship_engine_class		end
 
 	shieldclass = 3
 	armorclass = 2
 	laserclass = 5
 	missileclass = 0
-	laser_modifier = 40				-- % of damage received, used for racial abilities, 0-100%
+	laser_modifier = 0				-- % of damage received, used for racial abilities, 0-100%
 	missile_modifier = 100			-- % of damage received, used for racial abilities, 0-100%
 
 
 elseif (plot_stage == 4) then -- ancients plot state
 
-	engineclass= gen_random(4)
+	engineclass= gen_random(5)
 	if (engineclass < 2) then						engineclass= 2						end
-	if (engineclass < ship_engine_class) then		engineclass= ship_engine_class		end
 
 	shieldclass = 3
 	armorclass = 3
 	laserclass = 6
 	missileclass = 0
-	laser_modifier = 20				-- % of damage received, used for racial abilities, 0-100%
+	laser_modifier = 0				-- % of damage received, used for racial abilities, 0-100%
 	missile_modifier = 100			-- % of damage received, used for racial abilities, 0-100%
 
 
@@ -1693,6 +2183,45 @@ elseif (plot_stage == 2) then -- virus plot state
 		first_question = 910 -- alien attacks the player if attitude drops too low
 	elseif active_quest == 37 then
 		first_question = 77000
+
+-- Mission #37: catching the smugglers
+	elseif active_quest == 37 then
+		first_question = 77000
+
+-- Mission #38: Medical samples
+	elseif active_quest == 38 then
+		first_question = 78000
+
+-- Mission #43:  Framed!
+	elseif active_quest == 43 then
+		first_question = 83000
+
+-- Mission #44:  Decontamination Transporter initial
+	elseif active_quest == 44 and artifact262 == 0 and artifact263 == 0 then
+		first_question = 84000
+
+-- Mission #44:  Decontamination Transporter Operational code only
+	elseif active_quest == 44 and artifact262 == 1 and artifact263 == 0 then
+		first_question = 84300
+
+-- Mission #44:  Decontamination Transporter Broken code only
+	elseif active_quest == 44 and artifact263 == 1 and artifact262 == 0 then
+		first_question = 84600
+
+-- Mission #44:  Decontamination Transporter finished
+	elseif active_quest == 44 and artifact264 == 1 then
+		first_question = 1
+
+-- Mission #45:  Healthcare Scam - no medical treatment sample
+	elseif active_quest == 45 and artifact265 == 0 and artifact266 == 0 then
+		first_question = 85000
+
+-- Mission #45:  Healthcare Scam - medical treatment sample
+	elseif active_quest == 45 and artifact265 == 1 and artifact266 == 0 then
+		first_question = 85500
+
+
+
 	else
 		first_question = 1
 	end
@@ -1701,6 +2230,49 @@ elseif (plot_stage == 3) then -- war plot state
 
 	if ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
+
+
+-- Mission #48:  Intelligence Gathering
+	elseif active_quest == 48 and artifact275 == 0 and artifact276 == 0 and artifact277 == 0 and artifact278 == 0 and artifact279 == 0 then -- no power core or any other provided artifact besides the silver gadget
+		first_question = 78000
+
+
+-- Mission #49:  Unrest
+	elseif active_quest == 49 and artifact280 == 0 and artifact281 == 0 then -- no flight recorders
+		first_question = 79000
+	elseif active_quest == 49 and (artifact280 == 1 or artifact281 == 1) then -- at least one flight recorder
+		first_question = 79500
+
+-- Mission #51: Wreck Salvaging
+	elseif active_quest == 51 and (artifact329 == 1 or artifact330 == 1 or artifact331 == 1 or artifact332 == 1 or artifact333 == 1 or artifact334 == 1) then
+		first_question = 81600
+	elseif active_quest == 51 and artifact327 == 1 then
+		first_question = 81500
+	elseif active_quest == 51 and artifact324 == 1 then
+		first_question = 81400
+	elseif active_quest == 51 and artifact312 == 1 and artifact313 == 1 then
+		first_question = 81300
+	elseif active_quest == 51 and artifact308 == 1 then
+		first_question = 81200
+	elseif active_quest == 51 and (artifact296 == 1 or artifact297 == 1 or artifact298 == 1 or artifact299 == 1 or artifact300 == 1) then
+		first_question = 81100
+	elseif active_quest == 51 then
+		first_question = 81000
+
+-- Mission #52: Wreck Salvaging
+	elseif active_quest == 52 then
+		first_question = 82000
+
+-- Mission #53:  Tactical coordination
+	elseif active_quest == 53 and artifact335 == 1 then
+		first_question = 83000
+
+-- Mission #57:  The Shimmering Ball
+	elseif active_quest == 57 and artifact363 == 1 then
+		first_question = 87000
+
+
+
 	else
 		first_question = 1
 	end
@@ -1960,12 +2532,124 @@ function commFxn(type, n, ftest)
 
 		elseif (plot_stage == 2) then -- virus plot state
 
+		-- title="Mission #44: Decontamination Transporter
+			if (n == 84150) then
+				artifact261 = 1  -- Genetic Transporter Specifications
+			elseif (n == 84300) then
+				artifact262 = 0  -- remove operating code
+			elseif (n == 84301) then
+				artifact264 = 1  -- provide data cube
+			elseif (n == 84600) then
+				artifact263 = 0  -- remove broken code
+			elseif (n == 85500) then -- quest 45 make it look like transporting medical treatment
+				artifact265 = 0
+				artifact265 = 1
+			end
 
 
 		elseif (plot_stage == 3) then -- war plot state
 
 
+-- title="Mission #48: Intelligence Gathering
+			if (n == 78100) then
+				artifact277 = 1 -- Minex targeting system (broken)
+			elseif (n == 78200) then
+				artifact275 = 1 -- Minex Power Core
+			elseif (n == 78300) then
+				artifact278 = 1 -- Beam Mount (broken)
+			elseif (n == 78400) then
+				artifact279 = 1 -- Minex Missile Turret (broken)
+			elseif (n == 78500) then
+				artifact23 = 1 -- Minex Silver gadget
 
+-- title="Mission #49: Unrest
+			elseif (n == 79000) then
+				artifact281 = 1 -- Thrynn Flight Recording
+			elseif (n == 79500) then
+				artifact281 = 1 -- Thrynn Flight Recording
+
+-- title="Mission #51: Wreck salvaging
+			elseif (n == 81020) then
+				active_quest = active_quest + 1
+			elseif (n == 81100) then
+				artifact296 = 0 -- Melted Composite
+				artifact297 = 0 -- Melted Composite
+				artifact298 = 0 -- Melted Composite
+				artifact299 = 0 -- Melted Composite
+				artifact300 = 0 -- Melted Composite
+			elseif (n == 81200) then
+				artifact308 = 0 -- Geometric Crystals
+			elseif (n == 81300) then
+				artifact312 = 0 -- engine components
+				artifact313 = 0 -- gravity field generator
+			elseif (n == 81400) then
+				artifact324 = 0 -- organic growth
+			elseif (n == 81500) then
+				artifact327 = 0 -- Cone device
+			elseif (n == 81600) then
+				artifact329 = 0 -- Radioactive Exotic Elements
+				artifact330 = 0 -- Radioactive Exotic Elements
+				artifact331 = 0 -- Radioactive Exotic Elements
+				artifact332 = 0 -- Radioactive Exotic Elements
+				artifact333 = 0 -- Radioactive Exotic Elements
+				artifact334 = 0 -- Radioactive Exotic Elements
+				player_Endurium = player_Endurium + 50
+
+				if player_profession == "scientific" then
+					active_quest = active_quest + 7
+				elseif player_profession == "freelance" then
+					active_quest = active_quest + 3
+				else -- military
+					active_quest = active_quest + 1
+				end
+
+-- title="Mission #52: Prototypes
+
+			elseif (n == 82100) then
+				if player_profession == "scientific" then
+					ship_laser_class = 7
+				elseif player_profession == "freelance" then
+					ship_laser_class = 8
+				elseif player_profession == "military" then
+					ship_laser_class = 9
+				end
+
+			elseif (n == 82200) then
+				ship_laser_class = max_laser_class
+
+			elseif (n == 82300) then
+
+				if player_profession == "scientific" then
+					ship_missile_class = 7
+				elseif player_profession == "freelance" then
+					ship_missile_class = 8
+				elseif player_profession == "military" then
+					ship_missile_class = 9
+				end
+
+			elseif (n == 82400) then
+				ship_missile_class = max_missile_class
+
+			elseif (n == 82500) then
+				active_quest = active_quest + 1
+
+-- title="Mission #53: Tactical coordination
+			elseif (n == 83000) then
+				artifact337 = 1 -- Thrynn response
+
+-- title="Mission #57: The Shimmering Ball
+			elseif (n == 87100) then
+				artifact363 = 0
+				player_Quorsitanium = player_Quorsitanium + 50
+				active_quest = active_quest + 1
+
+
+
+
+
+
+
+			end
 		elseif (plot_stage == 4) then -- ancients plot state
 
 

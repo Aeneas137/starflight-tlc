@@ -219,8 +219,8 @@ public:
 
 	int effectiveScreenHeight() 
     { 
-        //return g_game->doShowControls()? NormalScreenHeight : FullScreenHeight; 
-        return FullScreenHeight;
+        return g_game->doShowControls()? NormalScreenHeight : FullScreenHeight; 
+        //return FullScreenHeight;
     }
 
 	void adjustVerticalCoords(int delta);

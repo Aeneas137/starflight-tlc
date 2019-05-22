@@ -83,7 +83,7 @@ private:
 	void createGalaxy();
 	void identifyStar();
 	void calculateEnemyFleetSize();
-
+	int getFleetSizeByRace( bool small_fleet );
 	void load_flux();
 	void place_flux_exits();
 	void check_flux_scanner();

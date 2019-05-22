@@ -63,7 +63,9 @@ private:
 	void LoadGames();
 
 	long frozenTimeStamp;
-
+	bool displayHelp; 
+	// If the player has at least one saved game file, then the tutorial message will 
+	// not display in ModuleCaptainsLounge when the player goes to load a saved game. 
 };
 
 #endif

@@ -1,7 +1,7 @@
 --[[------------------------------------------------------------------------------------------------------------------------------------------------- ]
 	ENCOUNTER SCRIPT FILE: COALITION
 
-	Last Modified:  December 23, 2009
+	Last Modified:  November 30, 2012
 
 	Globals shared with C++ module:
 		ACTION - actions invoked by script (see below)
@@ -816,7 +816,7 @@ elseif (plot_stage == 3) then
 		action="jump", goto=14101, ftest= 2, -- insightful
 		player="[AUTO_REPEAT]",
 		playerFragment="about the Minex warfare",
-		alien={"These Minex buggers are causing a bit of a pinch.  They are chasing down and attacking isolated forces away from well defended worlds.  We're surviving primarily through our afterburners and are fortunate they seem to currently ignore planets.  Find a way to stop them, will ya?" }
+		alien={"These Minex buggers are causing a bit of a pinch.  They are chasing down and attacking isolated forces away from well defended worlds.  We're surviving primarily through our afterburners and are fortunate they seem to currently ignore planets.  We believe that the Minex homeworld to be located somewhere within the Pearl cluster.  Find a way to stop them, will ya?" }
 	}
 	questions[14110] = {
 		action="jump", goto=14101,
@@ -879,7 +879,7 @@ if (plot_stage == 1) then
 		action="jump", goto=12101, ftest= 3, -- aggravating
 		player="[AUTO_REPEAT]",
 		playerFragment="the location of the home world of the Bx", fragmentTable=preQuestion.desire,
-		alien={"The superb ground pounders.  None of their low level dueling abilities helped them in space. However don't be expecting us to assist grave robbers loot their world." }
+		alien={"The superb ground pounders.  Their headquarters at 58N X 96E was nigh impregnable, unfortunately none of their low level dueling abilities helped them in space. However don't be expecting us to assist grave robbers loot their world." }
 	}
 	questions[12130] = {
 		action="jump", goto=12101, ftest= 3, -- aggravating
@@ -920,9 +920,10 @@ elseif (plot_stage == 3) or (plot_stage == 4) then
 	}
 
 	questions[12110] = {
+		action="jump", goto=12101, ftest= 2, -- insightful
 		player="[AUTO_REPEAT]",
 		playerFragment="on the location of the home world of the Sabion", fragmentTable=preQuestion.desire,
-		alien={"Gorias 3 - 5,16" }
+		alien={"Gorias 3 - 5,16.  Their primary research station was located at their temperate northern pole of the planet." }
 	}
 	questions[12120] = {
 		action="jump", goto=12101, ftest= 2, -- insightful
@@ -1183,7 +1184,7 @@ elseif (plot_stage == 3) then
 	questions[64001] = {
 		action="jump", goto=60001,
 		player="[AUTO_REPEAT]",
-		alien={"Insane Minex fleets and unstoppable plagues sort off limit our goals to simple survival at the moment.  But the Minex tech we're salvaging is incredible!  Now if we could only survive long enough to refit our ships..." }
+		alien={"Insane Minex fleets and unstoppable plagues sort of limit our goals to simple survival at the moment.  But the Minex tech we're salvaging is incredible!  Now if we could only survive long enough to refit our ships..." }
 	}
 
 elseif (plot_stage == 4) then
@@ -1291,10 +1292,22 @@ title="Military Mission #30:  We are seeking an afterburner.",
 		alien={"We don't actually have any technologies like that.  Don't bother asking again." }
 	}
 	questions[74200] = {
-		action="jump", goto=74201, ftest= 1,
+		action="jump", goto=74001, ftest= 1,
 		player="[AUTO_REPEAT]",
 		alien={"Your gratitude?  Count it, go broke. Eat it, go hungry. Seek it, go mad!" }
 	}
+	--[[
+				if (player_Endurium < 12) then
+					goto_question = 74205
+				elseif (ATTITUDE <= 35) then
+					goto_question = 74206
+				else
+					goto_question = 74207
+					player_Endurium= player_Endurium -12
+					artifact20= artifact20 +1
+				end
+	]]--
+
 	questions[74205] = {
 		action="jump", goto=1,
 		player="[AUTO_REPEAT]",
@@ -1308,12 +1321,12 @@ title="Military Mission #30:  We are seeking an afterburner.",
 	questions[74207] = {
 		action="jump", goto=74201,
 		player="[AUTO_REPEAT]",
-		alien={"Okay, well maybe I could let you a little something.  You did not obtain this from me, you ran across this and salvaged it, okay?" }
+		alien={"Okay, well maybe I could give you a little something.  You did not obtain this from me, you ran across this and salvaged it, okay?" }
 	}
 	questions[74200] = {
 		action="jump", goto=74201, ftest= 1,
 		player="[AUTO_REPEAT]",
-		alien={"Okay, well maybe I could let you a little something.  You did not obtain this from me, you ran across this and salvaged it, okay?" }
+		alien={"Okay, well maybe I could give you a little something.  You did not obtain this from me, you ran across this and salvaged it, okay?" }
 	}
 
 	questions[74201] = {
@@ -1427,7 +1440,7 @@ title="Freelance Mission #29:  Hunt for the Orb - after obtaining it
 		--active_quest = active_quest + 1,
 		action="jump", goto=1, ftest= 1,
 		player="[AUTO_REPEAT]",
-		alien={"Very nice device this is.  Good doing business with you." }
+		alien={"Very nice device this is.  Good doing business with you.  (Mission Completed)" }
 	}
 	questions[93700] = {
 		--artifact16 = 0,
@@ -1435,7 +1448,7 @@ title="Freelance Mission #29:  Hunt for the Orb - after obtaining it
 		--active_quest = active_quest + 1,
 		action="jump", goto=1, ftest= 1,
 		player="[AUTO_REPEAT]",
-		alien={"I'm sending over my chief engineer to take a look at your weapon systems.  We might just find a way to upgrade your lasers in exchange for this device." }
+		alien={"I'm sending over my chief engineer to take a look at your weapon systems.  We might just find a way to upgrade your lasers in exchange for this device.  (Mission Completed)" }
 	}
 
 --[[
@@ -1517,7 +1530,7 @@ title="Freelance Mission #31:  Obtain a Coalition Afterburner
 		choices = {
 			{ title= "Demand", text="Turn over a sample or you're not going to survive.",  goto=95100 },
 			{ title= "10 endurium", text="10 endurium for your afterburner.",  goto=95200 },
-			{ title= "Secret deal", text="I Understood.  We never meet.  I happened to be ejecting 10 endurium",  goto=95300 },
+			{ title= "Secret deal", text="I Understood. We never met. I happened to be ejecting 10 endurium",  goto=95300 },
 			{ text="Nevermind, let me ask you about something else.", goto=1 }
 		}
 	}
@@ -1580,7 +1593,7 @@ title="Freelance Mission #33:  Erratic Energy Devices
 		--active_quest = active_quest + 1,
 		action="jump", goto=997, ftest= 1,
 		player="[AUTO_REPEAT]",
-		alien={"Deal!  You realize that ..umm.. never mind, I have some urgent business elsewhere." }
+		alien={"Deal!  You realize that ..umm.. never mind, I have some urgent business elsewhere.  (Mission Completed)" }
 	}
 	questions[97101] = {
 		action="jump", goto=997, ftest= 1,
@@ -1598,13 +1611,13 @@ title="Freelance Mission #33:  Erratic Energy Devices
 	questions[97205] = {
 		action="jump", goto=1, ftest= 1,
 		player="Transporting device now.",
-		alien={"I'm sending over my chief engineer to take a look at your shielding systems.  Send him back when he's done, eh?" }
+		alien={"I'm sending over my chief engineer to take a look at your shielding systems.  Send him back when he's done, eh?  (Mission Completed)" }
 	}
 
 	questions[97206] = {
 		action="jump", goto=1, ftest= 1,
 		player="Transporting device now.",
-		alien={"Our chief engineer can't make heads or tails of your mess. Sorry Spud, can't help you out." }
+		alien={"Our chief engineer can't make heads or tails of your mess. Sorry Spud, can't help you out.  (Mission Completed)" }
 	}
 
 
@@ -1619,13 +1632,13 @@ title="Freelance Mission #33:  Erratic Energy Devices
 	questions[97305] = {
 		action="jump", goto=1, ftest= 1,
 		player="Transporting device now.",
-		alien={"I'm sending over my chief engineer to take a look at your weapon systems.  Send her back when she's done, eh?" }
+		alien={"I'm sending over my chief engineer to take a look at your weapon systems.  Send her back when she's done, eh?  (Mission Completed)" }
 	}
 
 	questions[97306] = {
 		action="jump", goto=1, ftest= 1,
 		player="Transporting device now.",
-		alien={"Our chief engineer can't make heads or tails of your mess. Sorry Spud, can't help you out." }
+		alien={"Our chief engineer can't make heads or tails of your mess. Sorry Spud, can't help you out.  (Mission Completed)" }
 	}
 
 --[[
@@ -1701,14 +1714,387 @@ title="Mission #37:  Catching the Smugglers.",
 		alien={"Ha!  Good luck attempting that!  Let me give you a chance to try!" }
 	}
 
+--[[
+title="Mission #38:  Collecting Genetic Samples" -- Sabion, no other data collected
+--]]
+	questions[78000] = {
+		action="jump", goto=78001,
+		title="Genetic Samples",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with a team of medical researchers attempting to find a cure for this plague.",
+		playerFragment="samples of genetic material from members of your race", fragmentTable=preQuestion.desire,
+		alien={"Sure we could provide something for you but what's in it for us?" }
+	}
+
+	questions[78001] = {
+		action="branch",
+		choices = {
+			{ title="The Cure", text="Our promise that you'll receive any benefits from this joint research.", goto=78100 },
+			{ title="Moolah", text="20 units of energy crystals.", goto=78200 },
+			{ text="Nevermind for now",  goto=1 },
+		}
+	}
+	questions[78100] = {
+		action="jump", goto=78001,  ftest= 1,
+		player="[AUTO_REPEAT]",
+		alien={"What would that be worth?  You'd give out any cure for free and if not, we would just obtain it elsewhere." }
+	}
+	questions[78200] = {
+		action="jump", goto=1,  ftest= 1,
+		player="[AUTO_REPEAT]",
+		alien={"Baah!  Bring us the reactor core from the city Talong (128S X 8E) on the planet Iuchar II (215, 44) and then we will deal!" }
+	}
+
+--[[
+title="Mission #38:  Collecting Genetic Samples" -- Fusion reactor in exchange for Sabion genetic data
+--]]
+
+	questions[78250] = {
+		action="jump", goto=78301,  ftest= 1,
+		player="We have the Bar-Zhon reactor.",
+		alien={"Well good for you, why should I care?  Ohh, The Jackal promised you some genetic data in exchange for blacking out a Bar-zhon capital city. Very well.  Here are sequences from 1000 members of the Sabionites." }
+	}
+--[[
+title="Mission #38:  Collecting Genetic Samples" -- Thrynn data in exchange for BX genetic data, no Transmodra data
+--]]
+
+	questions[78750] = {
+		action="jump", goto=78751,  ftest= 1,
+		player="We have the Thrynn data.",
+		alien={"Well good for you, why should I care?  Ohh, The Dredger promised you some genetic data in exchange for tweaking out the lizards of it. Very well.  Here are sequences from a couple dozen BX warriors." }
+	}
+	questions[78751] = {
+		action="jump", goto=1,  ftest= 1,
+		player="What about Transmodra data?",
+		alien={"Sheesh!  My Transmodra officers are quite insistent that we provide this data to you.  No charge." }
+	}
+--[[
+title="Mission #38:  Collecting Genetic Samples" -- Thrynn data in exchange for BX genetic data, Transmodra data already acquired
+--]]
+
+	questions[78850] = {
+		action="jump", goto=1,  ftest= 1,
+		player="We have the Thrynn data.",
+		alien={"Well good for you, why should I care?  Ohh, The Dredger promised you some genetic data in exchange for tweaking out the lizards of it. Very well.  Here are sequences from a couple dozen BX warriors." }
+	}
+
+
+--[[
+title="Mission #38:  Collecting Genetic Samples" -- Sabion collected, need BX
+--]]
+	questions[78300] = {
+		action="jump", goto=78301,
+		title="Genetic Samples",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with a team of medical researchers attempting to find a cure for this plague.",
+		playerFragment="samples of genetic material from members of your race", fragmentTable=preQuestion.desire,
+		alien={"Yeah, we heard you were doing altroistic work for those schizophrenic plant things." }
+	}
+
+	questions[78301] = {
+		action="branch",
+		choices = {
+			{ title="BX Data", text="What do you want in exchange for the BX genetic data?", goto=78310 },
+			{ title="Transmodra Data", text="What do you want in exchange for the Transmodra genetic data?", goto=78320 },
+			{ text="Nevermind for now",  goto=1 },
+		}
+	}
+	questions[78310] = {
+		action="jump", goto=78301,
+		player="[AUTO_REPEAT]",
+		alien={"Bring us some of the Thrynn genetic material. You are collecting from all races, right?" }
+	}
+	questions[78320] = {
+		action="jump", goto=997,  ftest= 1,
+		player="[AUTO_REPEAT]",
+		alien={"Sheesh!  My Transmodra officers are quite insistent that we provide this data to you.  No charge.  We will talk to you later." }
+	}
+
+--[[
+title="Mission #38:  Collecting Genetic Samples" -- Sabion and BX collected, need Transmodra
+--]]
+	questions[78500] = {
+		action="jump", goto=78501,
+		title="Genetic Samples",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with a team of medical researchers attempting to find a cure for this plague.",
+		playerFragment="samples of genetic material from members of your race", fragmentTable=preQuestion.desire,
+		alien={"Sure we could provide something for you but what's in it for us?" }
+	}
+
+	questions[78501] = {
+		action="branch",
+		choices = {
+			{ title="Transmodra Data", text="What do you want in exchange for the Transmodra genetic data?", goto=78320 },
+			{ title="Nevermind", text="Nevermind for now", goto=1 }
+		}
+	}
+
+--[[
+title="Mission #42:  Tracking the Laytonites -- no Bar-zhon data
+--]]
+
+	questions[82000] = {
+		action="jump", goto=999, -- attack the player
+		title="Tracking the Laytonites",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are here as representatives of the Myrrdan government seeking a small fleet of rebel Myrrdan terrorists.",
+		playerFragment="any information that could help us find them", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"I don't know anything about these Laytonite friends of yours, but I do know where one particularly vulnerable, unsupported Myrrdan ship is located." }
+	}
+
+
+
+--[[
+title="Mission #42:  Tracking the Laytonites -- Bar-zhon data
+--]]
+
+	questions[82500] = {
+		action="jump", goto=82501,
+		title="Tracking the Laytonites",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We know that a group of rebel Myrrdan terrorists is within your territory.",
+		playerFragment="about any contact your people have made with them",
+		alien={"I have absolutely no information about any such contact.  Why do you make such a statement?" }
+	}
+
+	questions[82501] = {
+		action="branch",
+		choices = {
+			{ title= "Evidence", text="We have sensor data showing that these terrorists left Bar-zhon territory and entered yours.",  goto=82100 },
+			{ title= "Bribe", text="Let me offer something for this information",  goto=82301 },
+			{ title= "Agreement", text="I Understood.  I'm hoping that we can come to some sort of agreement. Information about this group's whereabouts would be valuable to us.",  goto=82200 },
+			{ text="Nevermind, let me ask you about something else.", goto=1 }
+		}
+	}
+	questions[82100] = {
+		action="jump", goto=82501,
+		player="[AUTO_REPEAT]",
+		alien={"Ha!  The data you transmitted is quite garbled and worthless and inconclusive even if I cared.  Such a group was never seen by us." }
+	}
+	questions[82200] = {
+		action="jump", goto=82501,
+		player="[AUTO_REPEAT]",
+		alien={"So something is valuable to you.  This does not necessarily make it valuable to us. Valuable information is somewhat ... difficult for us to retrieve sometimes." }
+	}
+	questions[82301] = {
+		action="branch",
+		choices = {
+			{ title= "5 endurium", text="5 endurium for any information on their location.",  goto=82310 },
+			{ title= "10 endurium", text="10 endurium for any information on their location.",  goto=82320 },
+			{ title= "25 endurium", text="25 endurium for any information on their location.",  goto=82330 },
+			{ text="<Back>", goto=82501 }
+		}
+	}
+
+	questions[82310] = {
+		action="jump", goto=82301,
+		player="[AUTO_REPEAT]",
+		alien={"Such a paltry sum is not worth our attention." }
+	}
+	questions[82320] = {
+		action="jump", goto=82400, ftest= 1, -- remove 10 Endurium
+		player="[AUTO_REPEAT]",
+		alien={"Indeed one of our sister ships ran across your lost friends, the Laytonites.  They were short on fuel and were overtaxed and underequipped for their journey if you catch my meaning.  They received upgrades to their engines in exchange for truly a massive collection of raw ore." }
+	}
+	questions[82330] = {
+		action="jump", goto=82400, ftest= 1, -- remove 25 Endurium
+		player="[AUTO_REPEAT]",
+		alien={"How generous!  Indeed one of our sister ships ran across your Laytonites.  They were short on fuel and were overtaxed and underequipped for their journey if you catch my meaning.  They received upgrades to their engines in exchange for truly a massive collection of raw ore." }
+	}
+	questions[82340] = {
+		action="jump", goto=999, -- player does not have enough Endurium, attack the player
+		player="[AUTO_REPEAT]",
+		alien={"Don't attempt to fool us, you berk!  Count your bribe before you offer it next time!" }
+	}
+	questions[82400] = {
+		action="jump", goto=997, ftest= 1, --remove artifact254: Bar-zhon Pirate sensor data
+		title="Location?",
+		player="[AUTO_REPEAT]",
+		playerFragment="what about their current location",  fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Don't be impatient!  They attempted to rob us after our transaction was completed, or I would not be even telling you this.  We destroyed a few of their interceptors but they fled and we discreetly traced them to the fifth planet of the Oende system. (134, 30)  There is no profit in revenge and even less profit in fighting our way through insane Tafel hordes.  Have fun tracking them down."}
+	}
+
+
+--[[
+title="Mission #43:  Desperate Measures
+--]]
+
+	questions[83000] = {
+		action="jump", goto=999, -- attack the player
+		title="Desperate Measures",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  It is extremely important that we talk to you about this fabricated Bar-Zhon / Myrrdan incident.",
+		playerFragment="any information that could help us", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Ahoy fellow mates!  You ain't seen the whirlwind yet, but if you'd transport your undamaged equipment over to us, I'll save you the pain of that encounter." }
+	}
+
+--[[
+title="Mission #45:  Alien Healthcare Scam - no sample
+--]]
+
+	questions[85000] = {
+		action="jump", goto=85100,
+		title="Plague Treatment",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are investigating reports of a medical treatment that minimizes or stops the periods of madness caused by the plague.",
+		playerFragment="about it",
+		alien={"Quite a scam ehh?  The so called visionary leading a drugged out group peddling this 'cure' stated that he had visions of some malevolent consciousness trying to manipulate us all by sending out telepathic commands.  Their idea was that this cure scrambled the heads of anyone taking it so they could not receive these commands." }
+	}
+
+	questions[85100] = {
+		action="jump", goto=1,
+		player="Do you know where is this group is?",
+		alien={"Can't say that I do.  They camped out in our territory for months, but left towards Bar-zhon territory only a few weeks ago.  Can't say that they will be missed." }
+	}
+
+--[[
+title="Mission #45:  Alien Healthcare Scam - sample
+--]]
+
+	questions[85500] = {
+		action="jump", goto=1,  ftest= 1, -- transport drugs sample to alien
+		title="Plague Treatment",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are investigating this medical treatment drug that minimizes or stops the periods of madness caused by the plague.  We are transporting over the information needed to synthesize it.",
+		playerFragment="about it",
+		alien={"Can't say that any of my crew want to test it and since animals are not affected, you'll need volunteers. Seek out that that race of doctors, the Eowar.  Ohh yeah, the Elowan. They should be able to analyze this stuff if anyone can." }
+	}
+
+
+
+
+
 end
 
 function QuestDialoguewar()
 
 
+--[[
+title="Mission #48:  Intelligence Collaboration - no power core
+--]]
+
+	questions[78000] = {
+		action="jump", goto=78001,
+		title="Intelligence Collaboration",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME]. We have compiled a datacube of technological, tactical, and strategic observations of the Minex war machine.  In the interests of all of our survival, we are willing to share this information freely.",
+		playerFragment="a collection of similar observations by your people", fragmentTable=preQuestion.desire,
+		alien={"Just in case you haven't guessed, we are not particularly interested in fighting of fleets of superships.  Our ship's size, maneuverability, and acceleration keep us out of fights we don't want to be in.  I have observed their ships fighting the Bar-zhon and can tell you that you do not want to mess with them." }
+	}
+	questions[78001] = {
+		action="jump", goto=78002,
+		player="Can you tell us any specifics about Minex ships?",
+		alien={"They are almost completely immune to missiles, and lasers are partially deflected from their ablative armor.  Many of their ships continue patrolling even after being heavily damaged so you may occasionally take one of them out quickly.  Beyond that they are fast, maneuverable, their missiles are unmatched by any race, and their lasers are only slightly less effective.  Nasty customers." }
+	}
+	questions[78001] = {
+		action="jump", goto=78002,
+		player="Have you ever salvaged a Minex power core?",
+		alien={"Intact?  No.  Those would likely be snapped up right quick but feel free to ask around." }
+	}
+
+--[[
+title="Mission #48:  Intelligence Collaboration - obtained Powercore already
+--]]
+
+	questions[78500] = {
+		action="jump", goto=78501,
+		title="Intelligence Collaboration",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME]. We have compiled a datacube of technological, tactical, and strategic observations of the Minex war machine.  In the interests of all of our survival, we are willing to share this information freely.",
+		playerFragment="a collection of similar observations by your people", fragmentTable=preQuestion.desire,
+		alien={"Just in case you haven't guessed, we are not particularly interested in fighting of fleets of superships.  Our ship's size, maneuverability, and acceleration keep us out of fights we don't want to be in.  I have observed their ships fighting the Bar-zhon and can tell you that you do not want to mess with them." }
+	}
+	questions[78501] = {
+		action="jump", goto=1,
+		player="Can you tell us any specifics about Minex ships?",
+		alien={"They are almost completely immune to missiles, and lasers are partially deflected from their ablative armor.  Many of their ships continue patrolling even after being heavily damaged so you may occasionally take one of them out quickly.  Beyond that they are fast, maneuverable, their missiles are unmatched by any race, and their lasers are only slightly less effective.  Nasty customers." }
+	}
+
+
+--[[
+title="Mission #49:  Unrest - no flight recorders
+--]]
+
+	questions[79000] = {
+		action="jump", goto=79001,
+		title="Unrest",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have heard that your ships have been raiding the Thrynn and Elowan.  We are here to determine the truth behind such reports and to offer our services as mediators to any disputes.",
+		playerFragment="about the situation",
+		alien={"Are you nuts?  We have trouble enough avoiding Minex patrols and protecting and evacuating fragile outposts. We are also very busy collecting salvage and deciphering tech from both Minex and Bar-zhon warships.  Because of the war we are overextended within our own territory.  We can't afford to be antagonistic towards any outside party." }
+	}
+	questions[79001] = {
+		action="jump", goto=79002,
+		title="The Elowan and Thrynn say otherwise.",
+		player="[AUTO_REPEAT]",
+		playerFragment="why we should believe you?  The Elowan and Thrynn are under attack", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"The crazy Minex are attacking all races including us.  Why would we help them by hurting potential allies?  We are already very busy with both the Minex and the Bar-zhon.  The Elowan and Thrynn have declared an end to their feud and are bunkering in tightly fortified positions.  Does that sound vulnerable to you?" }
+	}
+	questions[79002] = {
+		action="jump", goto=1,
+		title="are you sure?",
+		player="[AUTO_REPEAT]",
+		playerFragment="that you have no clue who's responsible", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Of course we have no clue - extended hyperspace travel is very dangerous right now.  It is probably some Minex false visual technology or some other trick." }
+	}
+
+
+--[[
+title="Mission #49:  Unrest - at least one flight recorder
+--]]
+
+	questions[79500] = {
+		action="jump", goto=79501,
+		title="Unrest",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have conclusive evidence from this flight recorder that the coalition is reading the Elowan and Thrynn!",
+		playerFragment="how you can deny this flight recorder evidence", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Very simple. The ships appearing to be Coalition vessels were previously lost to us months ago.  Either the plague or the Minex was thought responsible.  Note the poor flying skills, the insanity of fighting the death without any interest in preserving ships or lives, and the completely ineffective and useless way the afterburners were utilized.  The coalition ships in that video simply charged towards their opponents and stopped right in front of them to exchange fire.  We would never do that." }
+	}
+	questions[79501] = {
+		action="jump", goto=997,
+		player="<more>",
+		alien={"We recognize the geometry of some of the stellar constellations shown in that sensor data.  That is Spemin territory.  We would not be raiding enemy ships, even if they were enemies, within Spemin territory where other races could observe our actions. Seek out the Spemin and they should be able to confirm this or reveal the guilty party." }
+	}
+
+--[[
+title="Mission #53:  Tactical Coordination
+--]]
+
+
+	questions[83000] = {
+		action="jump", goto=1,  ftest= 1, -- artifact340 Coalition response
+		title="Tactical Coordination",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with the Bar-zhon to discover fleet combinations that would be most effective in countering the Minex onslaught.",
+		playerFragment="if you would commit a few ships to tactical exercises being conducted for this purpose", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Are you completely daft?   This Coalition has no empire to defend. We are nothing but a collection of freedom seeking individuals under oppression. Now if the Bar-zhon were willing to enact certain reforms we would fight for our freedom but it is hard to fight for something you do not have!" }
+	}
+
 end
 
 function QuestDialogueancients()
+
+--[[
+title="Mission #61:  Another Ruined Search
+--]]
+
+	questions[81000] = {
+		action="jump", goto=81001, ftest= 1, -- give the player artifact375 Society of Ancient Studies Seal
+		title="Another Ruined Search",
+		player="[AUTO_REPEAT]",
+		introFragment="Greetings. This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have been searching out research sites on the worlds of the 3 Imperialists which were studying the Ancients.",
+		playerFragment="about the Society of Ancient Studies",
+		alien={"Idealists do not survive long in slave labor camps. The last remnants of the society disappeared centuries ago.  They did carry around these trinkets, but nothing else about them survived." }
+	}
+	questions[81001] = {
+		action="jump", goto=1,
+		title="What is this engraving?",
+		player="[AUTO_REPEAT]",
+		playerFragment="what the engraving 'In search of the Crystal Pearl' means", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Hey, your guess is as good as mine   Run it by your eggheads at home if you really care." }
+	}
 
 
 end
@@ -1859,35 +2245,35 @@ function Initialize()
 
 if (plot_stage == 1) then -- initial plot state
 
-	DROPITEM1 = 20;	    DROPRATE1 = 90;		DROPQTY1 = 1 -- Coalition Afterburner
-	DROPITEM2 = 54;		DROPRATE2 = 80;		DROPQTY5 = 3 -- Endurium
-	DROPITEM3 = 31;		DROPRATE3 = 50;	    DROPQTY2 = 4
-	DROPITEM4 = 35;		DROPRATE4 = 25;		DROPQTY3 = 3
-	DROPITEM5 = 38;		DROPRATE5 = 0;		DROPQTY4 = 3
+	DROPITEM1 = 20;	    DROPRATE1 = 80;		DROPQTY1 = 1 -- Coalition Afterburner
+	DROPITEM2 = 54;		DROPRATE2 = 80;		DROPQTY2 = 3 -- Endurium
+	DROPITEM3 = 31;		DROPRATE3 = 50;	    DROPQTY3 = 4
+	DROPITEM4 = 35;		DROPRATE4 = 25;		DROPQTY4 = 3
+	DROPITEM5 = 38;		DROPRATE5 = 0;		DROPQTY5 = 3
 
 elseif (plot_stage == 2) then -- virus plot state
 
-	DROPITEM1 = 224;	DROPRATE1 = 80;		DROPQTY1 = 1 -- Bar-zhon genetic material
-	DROPITEM2 = 236;	DROPRATE2 = 80;		DROPQTY5 = 3 -- Coalition Computer
-	DROPITEM3 = 225;	DROPRATE3 = 50;	    DROPQTY2 = 1 -- Bx genetic material
-	DROPITEM4 = 226;	DROPRATE4 = 50;		DROPQTY3 = 1 -- Sabion genetic material
-	DROPITEM5 = 227;	DROPRATE5 = 0;		DROPQTY4 = 1 -- Transmodra genetic material
+	DROPITEM1 = 236;	DROPRATE1 = 60;		DROPQTY1 = 1 -- Coalition  Computer
+	DROPITEM2 = 54;		DROPRATE2 = 80;		DROPQTY2 = 3 -- Endurium
+	DROPITEM3 = 225;	DROPRATE3 = 50;	    DROPQTY3 = 1 -- Bx genetic material
+	DROPITEM4 = 226;	DROPRATE4 = 50;		DROPQTY4 = 1 -- Sabion genetic material
+	DROPITEM5 = 227;	DROPRATE5 = 0;		DROPQTY5 = 1 -- Transmodra genetic material
 
 elseif (plot_stage == 3) then -- war plot state
 
-	DROPITEM1 = 20;	    DROPRATE1 = 90;		DROPQTY1 = 1 -- Coalition Afterburner
-	DROPITEM2 = 54;		DROPRATE2 = 80;		DROPQTY5 = 3 -- Endurium
-	DROPITEM3 = 31;		DROPRATE3 = 50;	    DROPQTY2 = 4
-	DROPITEM4 = 35;		DROPRATE4 = 25;		DROPQTY3 = 3
-	DROPITEM5 = 38;		DROPRATE5 = 0;		DROPQTY4 = 3
+	DROPITEM1 = 20;	        DROPRATE1 = 90;		DROPQTY1 = 1 -- Coalition Afterburner
+	DROPITEM2 = 54;		DROPRATE2 = 80;		DROPQTY2 = 3 -- Endurium
+	DROPITEM3 = 31;		DROPRATE3 = 50;	    DROPQTY3 = 4
+	DROPITEM4 = 35;		DROPRATE4 = 25;		DROPQTY4 = 3
+	DROPITEM5 = 38;		DROPRATE5 = 0;		DROPQTY5 = 3
 
 elseif (plot_stage == 4) then -- ancients plot state
 
 	DROPITEM1 = 20;	    DROPRATE1 = 90;		DROPQTY1 = 1 -- Coalition Afterburner
-	DROPITEM2 = 54;		DROPRATE2 = 80;		DROPQTY5 = 3 -- Endurium
-	DROPITEM3 = 31;		DROPRATE3 = 50;	    DROPQTY2 = 4
-	DROPITEM4 = 35;		DROPRATE4 = 25;		DROPQTY3 = 3
-	DROPITEM5 = 38;		DROPRATE5 = 0;		DROPQTY4 = 3
+	DROPITEM2 = 54;		DROPRATE2 = 80;		DROPQTY2 = 3 -- Endurium
+	DROPITEM3 = 31;		DROPRATE3 = 50;	    DROPQTY3 = 4
+	DROPITEM4 = 35;		DROPRATE4 = 25;		DROPQTY4 = 3
+	DROPITEM5 = 38;		DROPRATE5 = 0;		DROPQTY5 = 3
 
 end
 
@@ -1938,8 +2324,40 @@ elseif (plot_stage == 2) then -- virus plot state
 
 	if ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
+
 	elseif active_quest == 37 then
 		first_question = 77000
+
+	elseif active_quest == 38 and artifact225 == 0 and artifact226 == 0 and artifact227 == 0 and artifact239 == 0 then
+		first_question = 78000
+	elseif active_quest == 38 and artifact239 == 1 then -- if Bar-zhon reactor core taken
+		first_question = 78250
+	elseif active_quest == 38 and artifact234 > 0 and artifact225 == 0 and artifact27 == 0 then -- Thrynn data provided by the player in exchange for BX data, no Transmodra data
+		first_question = 78750
+	elseif active_quest == 38 and artifact234 > 0 and artifact225 == 0 and artifact27 == 0 then -- Thrynn data provided by the player in exchange for BX data, Transmodra data already obtained
+		first_question = 78850
+	elseif active_quest == 38 and artifact226 > 0 and artifact225 == 0 and artifact234 == 0 then -- Sabion collected, need BX, reactor has not been obtained
+		first_question = 78300
+
+-- Mission #42:  Tracking the Laytonites
+	elseif active_quest == 42 and artifact253 == 0 and artifact254 == 0 then -- Bar-zhon data not obtained
+		first_question = 82000
+
+	elseif active_quest == 42 and artifact253 == 0 and artifact254 == 1 then -- Bar-zhon data obtained
+		first_question = 82500
+
+-- Mission #43:  Framed!
+	elseif active_quest == 43 then
+		first_question = 83000
+
+-- Mission #45:  Healthcare Scam - no medical treatment sample
+	elseif active_quest == 45 and artifact265 == 0 and artifact266 == 0 then
+		first_question = 85000
+
+-- Mission #45:  Healthcare Scam - medical treatment sample
+	elseif active_quest == 45 and artifact265 == 1 and artifact266 == 0 then
+		first_question = 85500
+
 	else
 		first_question = 1
 	end
@@ -1948,6 +2366,25 @@ elseif (plot_stage == 3) then -- war plot state
 
 	if ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
+
+-- Mission #48:  Intelligence Gathering
+	elseif active_quest == 48 and artifact275 == 0 and artifact276 == 0 then -- no power core
+		first_question = 78000
+	elseif active_quest == 48 and (artifact275 == 1 or artifact276 == 1) then -- obtained power core already
+		first_question = 78500
+
+-- Mission #49:  Unrest
+	elseif active_quest == 49 and artifact280 == 0 and artifact281 == 0 then -- no flight recorders
+		first_question = 79000
+	elseif active_quest == 49 and (artifact280 == 1 or artifact281 == 1) then -- at least one flight recorder
+		first_question = 79500
+
+
+-- Mission #53:  Tactical coordination
+	elseif active_quest == 53 and artifact335 == 1 then
+		first_question = 83000
+
+
 	else
 		first_question = 1
 	end
@@ -1956,6 +2393,15 @@ elseif (plot_stage == 4) then -- ancients plot state
 
 	if ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
+
+	-- Mission #61: Another Ruined Search
+	elseif active_quest == 61  and artifact375 == 0 then
+		first_question = 81000
+
+
+
+
+
 	else
 		first_question = 1
 	end
@@ -2126,15 +2572,17 @@ function commFxn(ctype, n, ftest)
 			ATTITUDE = ATTITUDE + 10
 
 		elseif (plot_stage == 1) then -- initial plot state
-
+--[[
+title="Military Mission #30:  We are seeking an afterburner.",
+--]]
 			if (n == 74200) then
 
 				if (player_Endurium < 12) then
-					goto_question = 97305
+					goto_question = 74205
 				elseif (ATTITUDE <= 35) then
-					goto_question = 97306
+					goto_question = 74206
 				else
-					goto_question = 97307
+					goto_question = 74207
 					player_Endurium= player_Endurium -12
 					artifact20= artifact20 +1
 				end
@@ -2182,11 +2630,11 @@ function commFxn(ctype, n, ftest)
 				player_Endurium= player_Endurium -10
 				ATTITUDE = ATTITUDE + 10
 				if (ATTITUDE >= 70) then
-					goto_question = 95304
+					goto_question = 95305
 				else
 					goto_question = 95306
 				end
-			elseif (n == 95304) then -- second exchange for afterburner
+			elseif (n == 95305) then -- second exchange for afterburner
 				artifact20= artifact20 +1
 				ATTITUDE = ATTITUDE + 5
 			elseif (n == 97100) then
@@ -2238,18 +2686,71 @@ function commFxn(ctype, n, ftest)
 					goto_question = 77106
 					player_Endurium= player_Endurium -10
 				end
+
+			elseif (n == 78250) then -- Quest 38: Sabion data in exchange for fusion reactor
+				artifact239 = 0
+				artifact226 = 1
+				ATTITUDE = ATTITUDE + 5
+
+			elseif (n == 78750) then -- Quest 38: BX data in exchange for Thrynn data
+				artifact234 = 0
+				artifact225 = 1
+				ATTITUDE = ATTITUDE + 5
+
+			elseif (n == 78751) then -- Quest 38: Transmodra data free
+				artifact227 = 1
+
+			elseif (n == 78850) then -- Quest 38: BX data in exchange for Thrynn data
+				artifact234 = 0
+				artifact225 = 1
+				ATTITUDE = ATTITUDE + 5
+
+			elseif (n == 78320) then  -- Quest 38: Transmodra data free
+				artifact227 = 1
+
+			elseif (n == 82320) then -- Quest 42: tracking the Laytonites, 10 Endurium
+
+				if (player_Endurium < 10) then
+					goto_question = 82340
+				else
+					player_Endurium= player_Endurium -10
+				end
+
+			elseif (n == 82330) then -- Quest 42: tracking the Laytonites, 25 Endurium
+
+				if (player_Endurium < 25) then
+					goto_question = 82340
+				else
+					player_Endurium= player_Endurium -25
+				end
+
+			elseif (n == 82400) then -- Quest 42: tracking the Laytonites, removing the Bar-zhon Pirate sensor data
+				artifact254 = 0
+
+			elseif (n == 85500) then -- quest 45 make it look like transporting medical treatment
+				artifact265 = 0
+				artifact265 = 1
+
+
 			end
-
-
-
 		elseif (plot_stage == 3) then -- war plot state
 
-
+-- title="Mission #53: Tactical coordination
+			if (n == 83000) then
+				artifact340 = 1 -- Coalition response
+			end
 
 		elseif (plot_stage == 4) then -- ancients plot state
 
 			if (n == 64001) then
 				artifact218 = 1
+			elseif (n == 81000) then
+				artifact375 = 1 -- artifact375: Society of Ancient Studies Seal
+
+
+
+
+
 			end
 
 		end

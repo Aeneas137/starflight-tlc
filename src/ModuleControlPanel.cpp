@@ -394,6 +394,10 @@ void ModuleControlPanel::Update()
 
 void ModuleControlPanel::Draw()
 {
+	if (g_game->gameState->getCurrentModule() == MODULE_ENCOUNTER &&
+		g_game->doShowControls() == false)
+			return;
+	
 	static int lastMode = 0;
 
 	//set CP buttons when mode change takes place

@@ -1,7 +1,7 @@
 --[[------------------------------------------------------------------------------------------------------------------------------------------------- ]
 	ENCOUNTER SCRIPT FILE: MINEX
 
-	Last Modified:  December 23, 2009
+	Last Modified:  October 27, 2011
 
 	Globals shared with C++ module:
 		ACTION - actions invoked by script (see below)
@@ -658,7 +658,7 @@ if (plot_stage == 2) or (plot_stage == 3) then  -- virus plot state
 	questions[52200] = {
 		action="jump", goto=52201,
 		player="[AUTO_REPEAT]",
-		alien={"There exists a location were we may not travel.  Psychic disturbances localized around Lir IV have repelled us for eons.  Possibility of advanced technology at this location is likely.  We retain some instinctual enmity against the purveyors of this contagion.  We must fight, we must contain." }
+		alien={"There exists a location were we may not travel.  Psychic disturbances localized around the M-class star outward of The Wee Dipper have repelled us for eons.  Possibility of advanced technology at this location is likely.  We retain some instinctual enmity against the purveyors of this contagion.  We must fight, we must contain." }
 	}
 	questions[52201] = {
 		action="jump", goto=52202,
@@ -807,11 +807,18 @@ elseif (plot_stage == 4) then -- ancients plot state
 		alien={"No.  Focus on finding the Ancients and/or stopping the contagion.  Your other concerns are irrelevant." }
 	}
 	questions[23000] = {
-		action="jump", goto=20001,
+		action="jump", goto=23001,
 		player="[AUTO_REPEAT]",
 		introFragment="There are many ways we can help each other.   If you are willing to open your database, so are we.",
 		playerFragment="your technology in exchange for ours. Between us we may be able to find a solution to defeat this virus.", fragmentTable=preQuestion.desire,
-		alien={"No.  Your race is unknown to us.  You have no history in this sector.  Your technology is already refined.  Combining technologies will not solve the problem.  We have scouted and controlled this particular region of space for tens of thousands of years.  This technology is far outside both of our sciences, not merely beyond it.  Investigate and search for its source." }
+		alien={"No.  Your race is unknown to us.  You have no history in this sector.  Your technology is already refined.  Combining technologies will not solve the problem.  We have scouted and controlled this particular region of space for tens of thousands of years.  This technology is far outside both of our sciences, not merely beyond it.  Investigate and search for its source.  Start at Lir IV." }
+	}
+	questions[23001] = {
+		action="jump", goto=20001,
+		title="Lir IV",
+		player="[AUTO_REPEAT]",
+		playerFragment="what is located at Lir IV", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"We know this area of space.  The planetary system of that M-class star repels us psychically.  The In'tral'ess may be there. The nomadic wanderers within that territory may know more. Ask them." }
 	}
 	questions[24000] = {
 		action="jump", goto=24001,
@@ -859,7 +866,7 @@ elseif (plot_stage == 4) then -- ancients plot state
 		action="jump", goto=30001,
 		player="[AUTO_REPEAT]",
 		playerFragment="why your people need to restore yourselves", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
-		alien={"The eternal ones or Ancients gifted us or enhanced us with the mental powers to fight the Uyo.  Much knowledge over the ages has been lost.  Either the Uyo genetically damaged us or the eternal ones may have withdrawn their gifts.  Without them, we are shattered and crippled." }
+		alien={"The In'tral'ess or Ancients gifted us or enhanced us with the mental powers to fight the Uyo.  Much knowledge over the ages has been lost.  Either the Uyo genetically damaged us or the eternal ones may have withdrawn their gifts.  Without them, we are shattered and crippled." }
 	}
 	questions[34000] = {
 		action="jump", goto=30001,
@@ -904,7 +911,7 @@ elseif (plot_stage == 4) then -- ancients plot state
 		action="jump", goto=40001,
 		player="[AUTO_REPEAT]",
 		playerFragment="about the ancients",
-		alien={"The ancients or the eternal ones are energy beings.  They have left this space-time continuum."}
+		alien={"The ancients or the eternal ones are energy beings.  They have left this space-time continuum.  We feel that one of their centers was on the outer planet of a yellow star, but remember not where."}
 	}
 
 	questions[40001] = {
@@ -1061,15 +1068,271 @@ title="Mission #37:  Catching the Smugglers.",
 		alien={"Your internal matters are none of our concern." }
 	}
 
-end
+--[[
+title="Mission #38:  Collecting Genetic Samples"
+--]]
+	questions[78000] = {
+		action="jump", goto=999, -- Attack the player
+		title="Genetic Samples",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with a team of medical researchers attempting to find a cure for this plague.",
+		playerFragment="samples of genetic material from members of your race", fragmentTable=preQuestion.desire,
+		alien={"lxlxlxlxlxlxlxlxlx" }
+	}
 
+--[[
+title="Mission #43:  Desperate Measures
+--]]
+
+	questions[83000] = {
+		action="jump", goto=83001,
+		title="Desperate Measures",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  It is extremely important that we talk to you about this fabricated Bar-Zhon - Myrrdan incident.",
+		playerFragment="any information that could help us", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Your internal matters are none of our concern." }
+	}
+	questions[83001] = {
+		action="jump", goto=997, --- Terminate the conversation
+		player="But this matter is between us and the Bar-Zhon.",
+		alien={"Your external matters are none of our concern either." }
+	}
+
+--[[
+title="Mission #45:  Alien Healthcare Scam - no sample
+--]]
+
+	questions[85000] = {
+		action="jump", goto=997,
+		title="Plague Treatment",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are investigating reports of a medical treatment that minimizes or stops the periods of madness caused by the plague.",
+		playerFragment="about it",
+		alien={"Subject irrelevant. Do not bother us." }
+	}
+
+--[[
+title="Mission #45:  Alien Healthcare Scam - sample
+--]]
+
+	questions[85500] = {
+		action="jump", goto=997,  ftest= 1, -- transport drugs sample to alien
+		title="Plague Treatment",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are investigating this medical treatment drug that minimizes or stops the periods of madness caused by the plague.  We are transporting over the information needed to synthesize it.",
+		playerFragment="about it",
+		alien={"Ineffectual." }
+	}
+
+
+
+end
 function QuestDialoguewar()
 
+--[[
+title="Special Encounter with Captain Xenon"
+--]]
+
+	questions[90000] = {
+		action="jump", goto=90002,
+		player="General Information",
+		playerFragment="about..",
+		alien={"All in quarantine.  All are infected and your travel spreads contagion.  Return to your home world.....Clank!"}
+	}
+	questions[90002] = {
+		action="jump", goto=90003,
+		player="<More>",
+		alien={"Danger Captain Xenon, Danger! ... Turn that thing off!  I'm telling ya...a guy just don't get no respect around here.  What if that fool Myrdannian heard that?"}
+	}
+	questions[90003] = {
+		action="jump", goto=90004,
+		title="Hey!",
+		player="Hey!  I heard that!  This is Captain [CAPTAIN].  You are not Minex.  Who are you?",
+		alien={"We've got a live one here.  Give him a prize.   So captain...you still doing that boldly going where nobody has gone before scthick?." }
+	}
+	questions[90004] = {
+		action="jump", goto=90001,
+		title="Who are you?",
+		player="Uhh...Who are you and what do you want?",
+		alien={"Captain Xenon at your service.  That's a pretty big demand from somebody piloting a clinking clattering collection of caliginous junk you call a 'starship'... Why don't you simply hand over the whirling disk if you want to live?" }
+	}
+	questions[90001] = {
+		action="branch",
+		choices = {
+			{ title="Appearance", text="Why do you look like a Minex and your fellow pirates appear to be Minex warships?", goto=91000 },
+			{ title="Prize", text="What prize did I win?", goto=92000 },
+			{ title="Minex Territory", text="How are you avoidiing the Minex?  Don't they see through that hologram trick?", goto=93000 },
+			{ title="Whirling Disk", text="Why do you want this whirling disk artifact?  It does nothing but give my crew headaches when we look at it.", goto=94000 },
+			{ text="<END COMM>", goto=99000 }
+		}
+	}
+	questions[91000] = {
+		action="jump", goto=91001,
+		player="[AUTO_REPEAT]",
+		alien={"Pirates?  You wound me sir.  You cut me to the quick with your unjust accusations. Unconventional entrepreneurs would describe us more fairly. As for our appearance, nothing is safer than traveling around in Minex territory looking like Minex.  You may prefer to look at an image of June Lockhart but this holographic gizmo can only do so much." }
+	}
+	questions[91001] = {
+		action="jump", goto=90001,
+		player="I demand you show your true appearance!",
+		alien={"Make any demands and in 2...no, I mean one minute, your charred and sizzling skeleton will be the main attraction on the bridge of your ship." }
+	}
+	questions[92000] = {
+		action="jump", goto=90001,
+		player="[AUTO_REPEAT]",
+		alien={"You may have already won an all expense paid three-hour tour on the S.S. Minnow!  Simply transport over the whirling disk." }
+	}
+	questions[93000] = {
+		action="jump", goto=90001,
+		player="[AUTO_REPEAT]",
+		alien={"That's for us to worry about.  A person has got to have some secrets" }
+	}
+	questions[94000] = {
+		action="jump", goto=94002,
+		player="[AUTO_REPEAT]",
+		alien={"You snatched that artifact from one of my drops Captain. 'Oh!  We only holorecord artifacts here'  It is a valued heirloom and not from this sector." }
+	}
+	questions[94002] = {
+		action="jump", goto=94001,
+		player="What you mean 'not from this sector?'",
+		alien={"Exactly that.  My men and I have been in cryo for a long time.  We followed the Elowan & Thrynn out here.  That whirling disk is my property." }
+	}
+
+	questions[94001] = {
+		action="branch",
+		choices = {
+			{ title="Borno", text="What can you tell me about this Inspector Borno who is after you?", goto=94100 },
+			{ title="Harrison", text="Your real name is Harrison!", goto=94200 },
+			{ title="Human Colony", text="Would you tell me about the human world you came from?  Was it Earth?", goto=94300 },
+			{ title="Under Arrest", text="Under my authority as a representative of Myrrdan, I am placing you under arrest for piracy.", goto=94400 },
+			{ text="<END COMM>", goto=99000}
+		}
+	}
+	questions[94100] = {
+		action="jump", goto=94101,
+		player="[AUTO_REPEAT]",
+		alien={"Borno?  That inbred Bar-zhon moron with a great PR team?  Hey!  Next time you run into him tell him that the Minex are giving me sanctuary.  Hee hee." }
+	}
+	questions[94101] = {
+		action="jump", goto=94001,
+		player="Why would we do that?",
+		alien={"Someone is as sharp as a hot butter knife today." }
+	}
+	questions[94200] = {
+		action="jump", goto=94001,
+		player="[AUTO_REPEAT]",
+		alien={"How did you know?  ...  Ohh, Some of my men have been sloppy I see.  All right, I'll give you credit for figuring out that my real name.  Not that you actually know anything about Harrison." }
+	}
+	questions[94300] = {
+		action="jump", goto=94301,
+		player="[AUTO_REPEAT]",
+		alien={"Earth is a deep-fried rocky ruin devoid of all life. My men and I are defectors from another Noah colony of stuffed shirts and corporate types." }
+	}
+	questions[94301] = {
+		action="jump", goto=94302,
+		player="Why did you leave?",
+		alien={"The environmental tree-hugging nut cases banned endurium and all space travel!  The rocks are alive!  Do you have any Dilithium crystals you could spare?  Hee Hee." }
+	}
+	questions[94302] = {
+		action="jump", goto=94001,
+		player="Where is this colony?",
+		alien={"Ohh, far outside the sector. It would take you years to get there and require more fuel than your ship can hold. Besides why would you want to in the first place?  The retro savages probably reverted to another dark age and dropped another letter from their planet's name by now." }
+	}
+	questions[94400] = {
+		action="jump", goto=94401,
+		player="[AUTO_REPEAT]",
+		alien={"Don't think that this ship and my boys are incapable of defending ourselves.  You have two choices if you arm your weapons. Die quickly or die for nothing." }
+	}
+	questions[94401] = {
+		action="jump", goto=94001,
+		player="Surrender now!",
+		alien={"I can't hear you...  Let's try this again now.  I am a rather dashing buccaneer with a fleet of heavily, I repeat, heavily armed Minex ships behind him. You are the lonely underequipped starship far outside your territory.  Any hostilities on your part will result in you instantly becoming the most unpopular person on what is left of your ship." }
+	}
+	questions[99000] = {
+		action="jump", goto=99001,
+		player="[AUTO_REPEAT]",
+		alien={"Enough chitchat.  Hand over my whirling disk.  You could be lucky today, or, you could be stupid. Make a choice, pal." }
+	}
+	questions[99001] = {
+		action="branch",
+		choices = {
+			{ title="Yes, here it is", text="Sure thing.  I don't know what we would do it anyway.", goto=99002 },
+			{ title="No", text="Myrrdan ships do not respond well to threats. Remember that next time.", goto= 99100},
+			{ text="<END COMM>", goto=99100 }
+		}
+	}
+	questions[99002] = {
+		action="jump", goto=99003,  ftest= 1, -- remove whirling disk
+		player="[AUTO_REPEAT]",
+		alien={"Thanks Capt.  I do appreciate it. By the way, many of my men are enjoying their retirement with Myrrdan hospitality so let me give you a few tips.  I'd hate for another human world to be overrun.  Beware of the Thrynn.  The Elowan are the innocent ones. They also have a better understanding of history and know far more about the ancients than they let on." }
+	}
+	questions[99003] = {
+		action="jump", goto=997,
+		player="[AUTO_REPEAT]",
+		alien={"Ohh, and the Bx, Sabion, and Transmodra had an endless fascination for advanced technology and that means Minex tech and possibly the technology behind this virus. Talk to the Coalition and find their former home worlds.  Good luck!"  }
+	}
+	questions[99100] = {
+		action="jump", goto=997,  ftest= 1, -- remove whirling disk and 1/3rd of all endurium
+		player="[AUTO_REPEAT]",
+		alien={"Good thing you gave me enough time to analyze your shield frequency. I'll be taking that now and a little extra.  See you around [CAPTAIN], but I suspect you won't."  }
+	}
 
 end
 
 function QuestDialogueancients()
 
+
+
+--[[
+title="Mission #60:  Overrun
+--]]
+
+	questions[80000] = {
+		action="jump", goto=80001,
+		title="Overrun",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  Myrrdan picked up an emergency distress signal from the Starbase at Ceridwen in the Ailil system (188, 88).",
+		playerFragment="about the attack on the Bar-zhon in that system",
+		alien={"You were warned about this already." }
+	}
+	questions[80001] = {
+		action="jump", goto=80002,
+		title="What were we warned of?",
+		player="[AUTO_REPEAT]",
+		playerFragment="what we were warned about", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"Allowing contagion directed aliens freedom of movement only allows those who are infected to gather their strength and attack us all more effectively.  We ceased culling the infected due to your request." }
+	}
+	questions[80002] = {
+		action="jump", goto=1, ftest= 1, -- end the mission
+		player="What was their objective?",
+		playerFragment="what their objective was at Ceridwen", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
+		alien={"The virus now has exceeded the number of sentients it can control. Those superfluous numbers are used for low priority objectives such as this.  It is seeking the isolation of cooperating races through terror tactics.  It knows that much pressure will be placed upon keeping spaceships held in defensive orbits from now on, limiting you.  This is all we have to say upon this subject. (Mission Completed)" }
+	}
+
+--[[
+title="Mission #62:  The Crazed Spemin - initial
+--]]
+
+	questions[82000] = {
+		action="jump", goto=997, ftest= 1, -- give player artifact376 Minex Data Cube
+		title="The Spemin Project",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
+		playerFragment="about these questions you wanted us to ask the Spemin",
+		alien={"Your superiors briefed you on this endeavor.  Do not convey weakness or indecision.  If Tri'na'li'da determines that you are falsely impersonating the Uyo your world could be targeted and wiped out within hours. Ask only questions as prompted by the artificial intelligence.  Return to your people when finished." }
+	}
+
+--[[
+title="Mission #62:  The Crazed Spemin - returning with loaded cube
+--]]
+
+	questions[82500] = {
+		action="jump", goto=997, -- Terminate
+		title="The Spemin Project",
+		player="[AUTO_REPEAT]",
+		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME]. We have the data cube with all of the Spemin responses.",
+		playerFragment="for it",   fragmentTable=preQuestion.desire,
+		alien={"Irregular. Our contract with Myrrdan grants your people access to this data first. We do not honor nor permit breaking of contracts." }
+	}
 
 end
 
@@ -1158,7 +1421,7 @@ if (plot_stage == 1) or (plot_stage == 2) then -- initial and virus plot states
 	-- If the player's ship is fast, the alien ships are always just as fast. This applies to most Minex systems
 	engineclass= gen_random(6)
 	if (engineclass < 3) then						engineclass= 3						end
-	if (engineclass < ship_engine_class) then		engineclass= ship_engine_class		end
+	if (engineclass < ship_engine_class) then		engineclass= ship_engine_class - 1		end
 
 	shieldclass= gen_random(6)
 	if (shieldclass < 1) then						shieldclass= 1						end
@@ -1190,12 +1453,12 @@ elseif (plot_stage == 3) or (plot_stage == 4) then -- war and ancients plot stat
 	health= gen_random(100)
 	if (health < 10) then							health= 10							end
 
-	-- These ships are now slightly more maneuverable
+	-- These ships are now slightly more maneuverable sometimes
 	mass= 7
 
 	engineclass= gen_random(6)
 	if (engineclass < 3) then						engineclass= 3						end
-	if (engineclass < ship_engine_class) then		engineclass= ship_engine_class		end
+	if (engineclass < ship_engine_class) then		engineclass= ship_engine_class - 2		end
 
 	shieldclass= gen_random(6)
 	if (shieldclass < 3) then						shieldclass= 3						end
@@ -1239,7 +1502,7 @@ function Initialize()
 if (plot_stage == 1) then -- initial plot state
 
 	DROPITEM1 = 21;	    DROPRATE1 = 90;		DROPQTY1 = 1 -- Minex Golden Device
-	DROPITEM2 = 22;		DROPRATE2 = 90;	    DROPQTY2 = 1 -- Minex Electronics
+	DROPITEM2 = 22;		DROPRATE2 = 80;	    DROPQTY2 = 1 -- Minex Electronics
 	DROPITEM3 = 23;		DROPRATE3 = 90;		DROPQTY3 = 1 -- Minex Silver Gadget
 	DROPITEM4 = 53;		DROPRATE4 = 40;		DROPQTY4 = 2
 	DROPITEM5 = 54;		DROPRATE5 = 0;		DROPQTY5 = 10 -- Endurium
@@ -1254,7 +1517,7 @@ elseif (plot_stage == 2) then -- virus plot state
 
 elseif (plot_stage == 3) then -- war plot state
 
-	DROPITEM1 = 21;	    DROPRATE1 = 90;		DROPQTY1 = 1 -- Minex Golden Device
+	DROPITEM1 = 275;	DROPRATE1 = 90;		DROPQTY1 = 1 -- Minex Power Core
 	DROPITEM2 = 22;		DROPRATE2 = 90;	    DROPQTY2 = 1 -- Minex Electronics
 	DROPITEM3 = 23;		DROPRATE3 = 90;		DROPQTY3 = 1 -- Minex Silver Gadget
 	DROPITEM4 = 53;		DROPRATE4 = 40;		DROPQTY4 = 2
@@ -1298,16 +1561,39 @@ elseif (plot_stage == 2) then -- virus plot state
 
 	if ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
-	elseif active_quest == 37 then
+
+	elseif active_quest == 37 then -- catching the smugglers
 		first_question = 77000
+
+	elseif active_quest == 38 then -- medical samples
+		first_question = 78000
+
+
+-- Mission #43:  Framed!
+	elseif active_quest == 43 then
+		first_question = 83000
+
+-- Mission #45:  Healthcare Scam - no medical treatment sample
+	elseif active_quest == 45 and artifact265 == 0 and artifact266 == 0 then
+		first_question = 85000
+
+-- Mission #45:  Healthcare Scam - medical treatment sample
+	elseif active_quest == 45 and artifact265 == 1 and artifact266 == 0 then
+		first_question = 85500
 	else
 		first_question = 1
 	end
 
+
 elseif (plot_stage == 3) then -- war plot state
 
-	if ATTITUDE < 10 then
+-- Player picked up artifact394 - the Whirling Disk triggering an encounter with Xenon
+	if artifact394 == 1 then
+		first_question = 90000
+	elseif ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
+	elseif active_quest >= 48 and active_quest <= 53 then
+		first_question = 910 -- Attack the player during the first couple missions of the Minex war stage.
 	else
 		first_question = 1
 	end
@@ -1316,6 +1602,23 @@ elseif (plot_stage == 4) then -- ancients plot state
 
 	if ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
+
+-- Mission #60: Overrun
+	elseif active_quest == 60 then
+		first_question = 80000
+
+-- Mission #62:  The Crazed Spemin -- initial
+	elseif active_quest == 62 and artifact376 == 0 and artifact377 == 0 then
+		first_question = 82000
+
+-- Mission #62:  The Crazed Spemin -- returning with loaded cube
+	elseif active_quest == 62 and artifact376 == 0 and artifact377 == 1 then
+		first_question = 82500
+
+
+
+
+
 	else
 		first_question = 1
 	end
@@ -1361,7 +1664,7 @@ end
 	StandardQuestions()
 
 -- load questions
---[[
+
 if (plot_stage == 1) then	--load the quest-related dialog.
 	QuestDialogueinitial()
 elseif (plot_stage == 2) then
@@ -1371,7 +1674,7 @@ elseif (plot_stage == 3) then
 elseif (plot_stage == 4) then
 	QuestDialogueancients()
 end
---]]
+
 	OtherDialogue()  -- load universal exchanges and special actions
 
 
@@ -1418,19 +1721,21 @@ function commFxn(type, n, ftest)
 		L_Attack()
 		return
 
+	elseif (ATTITUDE < neutralattitude and number_of_actions > 4) then
+		goto_question = 920 -- jump to hostile termination question
+		number_of_actions = 0
 
 	elseif (ATTITUDE < neutralattitude and number_of_actions > 4) then
 		goto_question = 920 -- jump to hostile termination question
 		number_of_actions = 0
 
-	elseif (ATTITUDE < friendlyattitude and number_of_actions > 10) then
+	elseif (ATTITUDE < friendlyattitude and number_of_actions > 12) then
 		goto_question = 930  -- jump to neutral termination question
 		number_of_actions = 0
 
 	elseif (number_of_actions > 20) then
 		goto_question = 940  -- jump to friendly termination question
 		number_of_actions = 0
-
 	end
 
 
@@ -1440,14 +1745,36 @@ function commFxn(type, n, ftest)
 	elseif (plot_stage == 2) then -- virus plot state
 
 
+		if (n == 85500) then -- quest 45 make it look like transporting medical treatment
+				artifact265 = 0
+				artifact265 = 1
+		end
+
 
 	elseif (plot_stage == 3) then -- war plot state
 
-
+		if (n == 99002) then
+			artifact394 = 0 -- remove the whirling disk artifact
+			number_of_actions = 0
+		elseif (n == 99100) then
+			artifact394 = 0 -- remove the whirling disk artifact
+			player_Endurium= player_Endurium * 2 / 3
+			number_of_actions = 0
+		end
 
 	elseif (plot_stage == 4) then -- ancients plot state
 
+		if (n == 80002) then -- quest 60 overrun
+				if player_profession == "military" then
+					active_quest = active_quest + 3
+				elseif player_profession == "freelance" then
+					active_quest = active_quest + 2
+				else -- scientific
+					active_quest = active_quest + 1
+				end
 
-
+		elseif (n == 82000) then -- quest 62 The Crazed Spemin
+				artifact376 = 1 -- Minex Data Cube
+		end
 	end
 end

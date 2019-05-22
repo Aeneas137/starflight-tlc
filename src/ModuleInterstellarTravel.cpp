@@ -183,6 +183,7 @@ void ModuleInterstellarTravel::OnKeyPress(int keyCode)
 			ship->port();
 			g_game->gameState->m_ship.ConsumeFuel(2);
 			break;
+			
 	}
 }
 
@@ -495,10 +496,12 @@ bool ModuleInterstellarTravel::RollEncounter(AlienRaces forceThisRace)
 
 		g_game->gameState->player->setGalacticRegion(forcedRace);
 		g_game->gameState->player->setAlienFleetSize(0);	//reset fleet size for next calculation
+		alienRace = forcedRace;	// added so Forced (F1 thru F9) encounters correctly calculate enemy fleet sizes 
 		calculateEnemyFleetSize();							//calculate alien fleet size
 
 		flag_launchEncounter= true;
 		forcedRace= ALIEN_NONE;		//reset the private flag.
+		alienRace = forcedRace;
 		return true;
 	}
 
@@ -712,20 +715,20 @@ void ModuleInterstellarTravel::calculateEnemyFleetSize()
 		average_class /= 5.0f;
 
 		//is player's ship weak?
-		if (average_class <= 2.0f)
+		if (average_class <= 4.0f)
 		{
 			fleetSize = (int)average_class;
 			if (fleetSize < 1) fleetSize = 1;
 		}
 		//no, use normal fleet size calculations
 		else {
-			//80% of the time fleet is small (1-5)
-			if (rand() % 100 < 80) {
-				fleetSize = rand() % 5 + 1;
+			//70% of the time fleet is small (1-5)
+			if (rand() % 100 < 70) {
+				fleetSize = getFleetSizeByRace(true);
 			}
 			else {
-				//20% of the time fleet is large (5-20)
-				fleetSize = rand() % 15 + 5;
+				//30% of the time fleet is large (5-20)
+				fleetSize = getFleetSizeByRace(false);
 			}
 		}
 		//debugging---very large
@@ -737,7 +740,85 @@ void ModuleInterstellarTravel::calculateEnemyFleetSize()
 
 #pragma endregion
 
+int ModuleInterstellarTravel::getFleetSizeByRace(bool small_fleet)
+{
+	switch(alienRace)
+	{
+	case ALIEN_PIRATE:
+		//TRACE( "ALIEN_PIRATE fleet size calculation...\n" );
+		if( small_fleet )
+			return ( 1 + rand() % 3 );	// 1-3
+		else
+			return ( 5 + rand() % 5 );	// 5-10
+		break;
 
+	case ALIEN_ELOWAN:
+		//TRACE( "ALIEN_ELOWAN fleet size calculation...\n" );
+		if( small_fleet )
+			return ( 1 + rand() % 3 ); // 1-3
+		else
+			return ( 4 + rand() % 4 );	// 4-8
+		break;
+
+	case ALIEN_SPEMIN:
+		//TRACE( "ALIEN_SPEMIN fleet size calculation...\n" );
+		if( small_fleet )
+			return ( 1 + rand() % 2 );	//1-2
+		else
+			return ( 40 + rand() % 10 );	// 40-50
+		break;
+
+	case ALIEN_THRYNN:
+		//TRACE( "ALIEN_THRYNN fleet size calculation...\n" );
+		if( small_fleet )
+			return ( 1 + rand() % 3 );	//1-3
+		else
+			return ( 3 + rand() % 5 );	// 3-8
+		break;
+
+	case ALIEN_BARZHON:
+		//TRACE( "ALIEN_BARZHON fleet size calculation...\n" );
+		if( small_fleet )
+			return ( rand() % 3 );	// 1-3
+		else
+			return ( 5 + rand() % 15 );	// 5-20
+		break;
+
+	case ALIEN_NYSSIAN:
+		//TRACE( "ALIEN_NYSSIAN fleet size calculation...\n" );
+		return 1;
+		break;
+
+	case ALIEN_TAFEL:
+		//TRACE( "ALIEN_TAFEL fleet size calculation...\n" );
+		if( small_fleet )
+			return ( 1 + rand() % 2 );	// 1-2
+		else
+			return ( rand() % 70 );	// 1-70
+		break;
+
+	case ALIEN_MINEX:
+		//TRACE( "ALIEN_MINEX fleet size calculation...\n" );
+		return ( 4 + rand() % 16 );	//4-20
+		break;
+
+	case ALIEN_COALITION:
+		//TRACE( "ALIEN_COALITION fleet size calculation...\n" );
+		if( small_fleet )
+			return ( 1 );	// 1
+		else
+			return ( 3 + rand() % 7 );	// 3-10
+		break;
+
+	default:
+		TRACE("  ERROR: Alien race not known, calculateFleetSizeByRace()");
+		if( small_fleet )
+			return ( 1 + rand() % 2 );	// 1-2
+		else
+			return ( 5 + rand() % 1 );	// 5-6
+		break;
+	}
+}
 
 void ModuleInterstellarTravel::Update()
 {
@@ -874,7 +955,10 @@ void ModuleInterstellarTravel::Update()
 			}
 		}
 		else
-			g_game->printout(text, tac + "...(Sigh)...Disarming weapons.", ORANGE,2000);
+			//g_game->printout(text, tac + "...(Sigh)...Disarming weapons.", ORANGE,2000);
+			
+			//  Since this message appears often when weapons are already disarmed, rewording it slightly
+			g_game->printout(text, tac + "...Verifying weapon optics as depolarized and secured...", ORANGE,2000);
 
 		flag_Weapons = false;
 	}
@@ -1004,7 +1088,8 @@ void ModuleInterstellarTravel::place_flux_tile(bool visible, int tile){
 void ModuleInterstellarTravel::load_flux()
 {
 	if(g_game->dataMgr->flux.empty() == true){
-		srand(g_game->gameState->get_fluxSeed());
+		//srand(g_game->gameState->get_fluxSeed());
+		srand(42); // remove game randomization - sw 
 
 		int i_start = 0,
 			_infinite_loop_prevention = 0,
@@ -1020,7 +1105,7 @@ void ModuleInterstellarTravel::load_flux()
 
 		for(int n=0; n< MAX_FLUX; n++){
 			flux = new Flux();
-			flux->rVISIBLE() = false;
+			flux->rVISIBLE() = true;
 			flux->rID() = n;
 			if(rand()%2){
 				flux->rTILE().Y = (int)(i_origin.y + i_start + rand()%i_radius);
@@ -1081,7 +1166,8 @@ void ModuleInterstellarTravel::load_flux()
 
 
 void ModuleInterstellarTravel::place_flux_exits(){
-	srand(g_game->gameState->get_fluxSeed());
+	//srand(g_game->gameState->get_fluxSeed());
+	srand(42);
 	int scroller_tilesDown = scroller->getTilesDown()/10,
 		scroller_tilesAcross = scroller->getTilesAcross()/10,
 		exit_x = 0,

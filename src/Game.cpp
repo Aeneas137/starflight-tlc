@@ -68,6 +68,7 @@ Game::Game()
 	timePause= true;		//start paused.
 	timeRateDivisor= 2;		//=> 2 seconds == 1 game hour.
 
+	showControls = true;
     m_pause = false;
     m_keepRunning = true;
     m_backbuffer = NULL;
@@ -1289,6 +1290,13 @@ void Game::OnKeyReleased(int keyCode)
     {
 		modeMgr->OnKeyReleased(keyCode);
 	}
+}
+
+void Game::toggleShowControls()
+{
+	showControls = !showControls;
+	Event e(showControls? EVENT_SHOW_CONTROLS : EVENT_HIDE_CONTROLS);
+	modeMgr->BroadcastEvent(&e);
 }
 
 void Game::OnMouseMove(int x, int y)

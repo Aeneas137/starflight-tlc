@@ -164,7 +164,7 @@ void ModuleEncounter::OnKeyPress(int keyCode)
 
 			case KEY_DOWN:		
                 playerShip->applybraking();	
-break;
+				break;
 
 			case KEY_UP:			
                 playerShip->applythrust();	
@@ -182,7 +182,7 @@ break;
                 break;
 
 			case KEY_ALT:
-            case KEY_X:
+			case KEY_X:
 				if (!firingMissile) {
 					firingLaser = true;
 					fireLaser();
@@ -197,7 +197,7 @@ break;
 					fireMissile();
 				}
 				break;
-
+			
 			default:
 				break;
 		}
@@ -213,6 +213,7 @@ void ModuleEncounter::OnKeyReleased(int keyCode)
 	switch (keyCode)
 	{
 		//reset ship anim frame when key released
+		
 		case KEY_LEFT:
 		case KEY_RIGHT:
 		case KEY_DOWN:
@@ -277,6 +278,9 @@ void ModuleEncounter::OnKeyReleased(int keyCode)
 			int questnum = g_game->gameState->getActiveQuest();
 			g_game->gameState->setActiveQuest( questnum - 1 );
 		}
+		case KEY_F:
+			g_game->toggleShowControls();
+			break;
 #endif
 
 	}
@@ -440,6 +444,13 @@ bool ModuleEncounter::Init()
 	eng = "Eng. Off. " + g_game->gameState->getCurrentEng()->getLastName() + "-> ";
 	doc = "Med. Off. " + g_game->gameState->getCurrentDoc()->getLastName() + "-> ";
 
+	//if we start in "fullscreen" mode, all objects vertical coords must be patched
+	if ( !g_game->doShowControls() )
+		adjustVerticalCoords( (SCREEN_HEIGHT-NormalScreenHeight)/2 ); //  (768-512)/2 == 128
+
+	//force start in "show control" mode for the time being
+	if (!g_game->doShowControls()) g_game->toggleShowControls();
+	
 	return true;
 }
 
@@ -456,8 +467,8 @@ void ModuleEncounter::Close()
 	Encounter_Close();
 	Combat_Close();
 
-	//unload the data file
-	unload_datafile(encdata);
+	//unload the data file - causes Unhandled exception at 0x0f35b3aa
+	//unload_datafile(encdata); 
 	encdata = NULL;
 
 	if (scroller != NULL) {	delete scroller; scroller = NULL; }
@@ -500,13 +511,13 @@ bool ModuleEncounter::Encounter_Init()
 	 */
 
 	//get the current plot stage and create an append string
-	string stage = "";
+	/*string stage = "";
 	switch(g_game->gameState->getPlotStage()) {
 		case 1: stage = "initial"; break;
 		case 2: stage = "virus"; break;
 		case 3: stage = "war"; break;
 		case 4: stage = "ancients"; break;
-	}
+	}*/
 
 
 	AlienRaces region = g_game->gameState->getCurrentAlien();
@@ -594,8 +605,10 @@ bool ModuleEncounter::Encounter_Init()
 #ifdef DEBUGMODE
 	Print("Posture: " + g_game->gameState->playerPosture,WHITE,5000);
 #endif
-
+	
     ostringstream filename;
+    ostringstream filename2;
+    ostringstream filename3;
 
 	//load the alien's portrait image
     filename << "data/encounter/" << portraitFile;
@@ -606,16 +619,16 @@ bool ModuleEncounter::Encounter_Init()
 	}
 
 	//load the alien ship's schematic image
-    filename << "data/encounter/" << schematicFile;
-	img_alien_schematic = (BITMAP*)load_bitmap(filename.str().c_str(),NULL);
+    filename2 << "data/encounter/" << schematicFile;
+	img_alien_schematic = (BITMAP*)load_bitmap(filename2.str().c_str(),NULL);
 	if (!img_alien_schematic) {
 		g_game->message("Encounter: Error loading schematic " + schematicFile);
 		return false;
 	}
 
 	//load the alien ship's animated sprite image
-    filename << "data/encounter/" << spriteFile;
-	img_alien_ship = (BITMAP*)load_bitmap(filename.str().c_str(),NULL);
+    filename3 << "data/encounter/" << spriteFile;
+	img_alien_ship = (BITMAP*)load_bitmap(filename3.str().c_str(),NULL);
 	if (!img_alien_ship) {
 		g_game->message("Encounter: Error loading ship sprite " + spriteFile);
 		return false;
@@ -767,7 +780,7 @@ bool ModuleEncounter::Combat_Init()
 
 		//get shield props from script
 		int shield = script->getGlobalNumber("shieldclass");
-		if (shield < 0 || shield > 6) {
+		if (shield < 0 || shield > 8) {
 			TRACE("***Error in Combat_Init: shieldclass is invalid\n");
 			shield = 0;
 		}
@@ -785,7 +798,7 @@ bool ModuleEncounter::Combat_Init()
 
 		//get laser props from script
 		int laser = script->getGlobalNumber("laserclass");
-		if (laser < 0 || laser > 6) {
+		if (laser < 0 || laser > 9) {
 			TRACE("***Error in Combat_Init: laserclass is invalid\n");
 			laser = 0;
 		}
@@ -803,7 +816,7 @@ bool ModuleEncounter::Combat_Init()
 
 		//get missile props from script
 		int missile = script->getGlobalNumber("missileclass");
-		if (missile < 0 || missile > 6) {
+		if (missile < 0 || missile > 9) {
 			TRACE("***Error in Combat_Init: laserclass is invalid\n");
 			missile = 0;
 		}
@@ -1496,7 +1509,10 @@ void ModuleEncounter::OnEvent(Event *event)
 					Print(tac + "Aye, sir; shields up.",ORANGE,2000);
 			}
 			break;
-
+		case EVENT_SHOW_CONTROLS: adjustVerticalCoords(
+			-(SCREEN_HEIGHT-NormalScreenHeight)/2 ); break; // -128
+		case EVENT_HIDE_CONTROLS: adjustVerticalCoords(
+			(SCREEN_HEIGHT-NormalScreenHeight)/2 );  break; // +128
 		//Pause Screen events
 		case 0xDEADBEEF + 2: //save game
 			//g_game->gameState->AutoSave();
@@ -1644,7 +1660,8 @@ void ModuleEncounter::Update()
 	if (flag_DoHyperspace)
 	{
 		Print(nav + "Engaging hyperspace engine...", ORANGE, -1);
-
+		// SW force player to stop
+		playerShip->applybraking();
 		//wait for countdown
 		if (countdown.stopwatch(750))
 		{
@@ -1740,6 +1757,32 @@ void ModuleEncounter::Draw()
 	//draw minimap
 	DrawMinimap();
 
+	if (g_game->doShowControls()){
+		//draw message window gui
+		static int gmx = (int)g_game->getGlobalNumber("GUI_MESSAGE_POS_X");
+		static int gmy = (int)g_game->getGlobalNumber("GUI_MESSAGE_POS_Y");
+		static int gmw = (int)g_game->getGlobalNumber("GUI_MESSAGE_WIDTH");
+		static int gmh = (int)g_game->getGlobalNumber("GUI_MESSAGE_HEIGHT");
+		masked_blit(img_messages, g_game->GetBackBuffer(), 0, 0, gmx, gmy, gmw,  
+gmh);
+
+		//draw message and list boxes
+		(bFlagDialogue)? dialogue->Draw(g_game->GetBackBuffer()) :  
+text->Draw(g_game->GetBackBuffer());
+
+		//draw socket gui
+		static int gsx = (int)g_game->getGlobalNumber("GUI_SOCKET_POS_X");
+		static int gsy = (int)g_game->getGlobalNumber("GUI_SOCKET_POS_Y");
+		masked_blit(img_socket, g_game->GetBackBuffer(), 0, 0, gsx, gsy,  
+img_socket->w, img_socket->h);
+
+		// draw the aux gui
+		static int gax = (int)g_game->getGlobalNumber("GUI_AUX_POS_X");
+		static int gay = (int)g_game->getGlobalNumber("GUI_AUX_POS_Y");
+		masked_blit(img_aux, g_game->GetBackBuffer(), 0, 0, gax, gay,  
+img_aux->w, img_aux->h);
+	}
+
     if (g_game->getGlobalBoolean("DEBUG_OUTPUT") == true)
     {
 	    //DEBUG CODE
@@ -1767,25 +1810,6 @@ void ModuleEncounter::Draw()
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Shield Status: " + Util::ToString(g_game->gameState->getShieldStatus()) );
     }
 
-	//draw message window gui
-	static int gmx = (int)g_game->getGlobalNumber("GUI_MESSAGE_POS_X");
-	static int gmy = (int)g_game->getGlobalNumber("GUI_MESSAGE_POS_Y");
-	static int gmw = (int)g_game->getGlobalNumber("GUI_MESSAGE_WIDTH");
-	static int gmh = (int)g_game->getGlobalNumber("GUI_MESSAGE_HEIGHT");
-	masked_blit(img_messages, g_game->GetBackBuffer(), 0, 0, gmx, gmy, gmw, gmh);
-
-	//draw message and list boxes
-	(bFlagDialogue)? dialogue->Draw(g_game->GetBackBuffer()) : text->Draw(g_game->GetBackBuffer());
-
-	//draw socket gui
-	static int gsx = (int)g_game->getGlobalNumber("GUI_SOCKET_POS_X");
-	static int gsy = (int)g_game->getGlobalNumber("GUI_SOCKET_POS_Y");
-	masked_blit(img_socket, g_game->GetBackBuffer(), 0, 0, gsx, gsy, img_socket->w, img_socket->h);
-
-	// draw the aux gui
-	static int gax = (int)g_game->getGlobalNumber("GUI_AUX_POS_X");
-	static int gay = (int)g_game->getGlobalNumber("GUI_AUX_POS_Y");
-	masked_blit(img_aux, g_game->GetBackBuffer(), 0, 0, gax, gay, img_aux->w, img_aux->h);
 }
 
 void ModuleEncounter::Encounter_Update()
@@ -3504,22 +3528,32 @@ void ModuleEncounter::readGlobalsFromScript()
 
 	int laser = script->getGlobalNumber("ship_laser_class");
 	if (laser > ship.getLaserClass()){
-		if (laser <= ship.getMaxLaserClass()) {
+		//if (laser <= ship.getMaxLaserClass()) { // Enforced in scripts, need for special class 9 weapons Quest #56
 			Print("Lasers upgraded to class " + Util::ToString(laser) + "!", YELLOW, 1000);
 			ship.setLaserClass( laser );
-		}
-		else Print("Lasers already at maximum level!", RED, 1000);
+		//}
+		//else Print("Lasers already at maximum level!", RED, 1000);
 	}
-
+	if (laser < ship.getLaserClass()){
+		//        if (laser <= ship.getMaxLaserClass()) {
+            Print("Lasers downgraded to class " + Util::ToString(laser) + "!", YELLOW, 1000);
+            ship.setLaserClass( laser ); 
+	}
 	int missile = script->getGlobalNumber("ship_missile_class");
 	if (missile > ship.getMissileLauncherClass()){
-		if (missile <= ship.getMaxMissileLauncherClass()) {
+		//if (missile <= ship.getMaxMissileLauncherClass()) {
 			Print("Missile launcher upgraded to class " + Util::ToString(missile) + "!", YELLOW, 1000);
 			ship.setMissileLauncherClass( missile );
-		}
-		else Print("Missile launcher already at maximum level!", RED, 1000);
+		//}
+	//	else Print("Missile launcher already at maximum level!", RED, 1000);
 	}
-
+	if (missile < ship.getMissileLauncherClass()){
+		//if (missile <= ship.getMaxMissileLauncherClass()) {
+			Print("Missile launcher downgraded to class " + Util::ToString(missile) + "!", YELLOW, 1000);
+			ship.setMissileLauncherClass( missile );
+		//}
+	//	else Print("Missile launcher already at maximum level!", RED, 1000);
+	}
 	g_game->gameState->setShip( ship );
 
 

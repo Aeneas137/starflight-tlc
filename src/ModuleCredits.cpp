@@ -36,7 +36,7 @@ string credits[numcredits][2] = {
 {"GAME DESIGN","Jon Harbour"},
 {"","David Calkins"},
 {"",""},
-{"STORY WRITING","Steve Wirsz"},
+{"STORY WRITING","Steven Wirsz"},
 {"","Jon Harbour"},
 {"",""},
 {"INSPIRATION","Rod McConnell"},

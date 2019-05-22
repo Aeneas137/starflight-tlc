@@ -22,7 +22,7 @@
 #include "Script.h"
 #include "GameState.h"
 
-#define MAX_FLUX 15
+#define MAX_FLUX 2000
 typedef std::list<Flux*>::iterator flux_iter;
 
 class Officer;

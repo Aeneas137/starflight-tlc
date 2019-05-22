@@ -101,6 +101,7 @@ ModuleCaptainsLounge::ModuleCaptainsLounge(void)
 {
   	m_requestedCaptainCreation = false;
 	m_requestedCaptainCreationSlotNum = 0;
+	displayHelp = true; 
 }
 
 ModuleCaptainsLounge::~ModuleCaptainsLounge(void){}
@@ -347,7 +348,7 @@ void ModuleCaptainsLounge::Update(){}
 
 void ModuleCaptainsLounge::Draw()
 {
-	static bool displayHelp = true;
+	//static bool displayHelp = true;
 
 	//draw background
 	blit(m_background,g_game->GetBackBuffer(),0,0,0,0,screen->w,screen->h);
@@ -873,6 +874,7 @@ void ModuleCaptainsLounge::LoadGames()
 			m_newCaptBtns[i]->SetEnabled(false);
 			m_delCaptBtns[i]->SetEnabled(true);
 			m_selCaptBtns[i]->SetEnabled(true);
+			displayHelp = false;
 		}
 		else
 		{
