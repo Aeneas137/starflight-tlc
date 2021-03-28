@@ -79,9 +79,9 @@ PROF_MILITARY_SHIELD = 0
 PROF_MILITARY_LASER = 1
 PROF_MILITARY_MISSILE = 0
 PROF_MILITARY_PODS = 1
-PROF_MILITARY_ENGINE_MAX = 4
-PROF_MILITARY_ARMOR_MAX = 4
-PROF_MILITARY_SHIELD_MAX = 4
+PROF_MILITARY_ENGINE_MAX = 4	
+PROF_MILITARY_ARMOR_MAX = 4	
+PROF_MILITARY_SHIELD_MAX = 4	
 PROF_MILITARY_LASER_MAX = 6
 PROF_MILITARY_MISSILE_MAX = 6
 PROF_MILITARY_PODS_MAX = 8 --2 points
@@ -99,30 +99,30 @@ ENGINE2_TOPSPEED = 1.6 -- + .4
 ENGINE3_TOPSPEED = 2.2 -- + .6
 ENGINE4_TOPSPEED = 2.8 -- + .6
 ENGINE5_TOPSPEED = 3.4 -- + .6
-ENGINE6_TOPSPEED = 4.2 -- + .8
+ENGINE6_TOPSPEED = 4.2 -- + .8    
 ENGINE1_TURNRATE = 1.0
 ENGINE2_TURNRATE = 1.4
 ENGINE3_TURNRATE = 1.8
 ENGINE4_TURNRATE = 2.2
 ENGINE5_TURNRATE = 2.6
-ENGINE6_TURNRATE = 3.0
+ENGINE6_TURNRATE = 3.0	
 
 --these should be proportional to weapon damage per second (dps)
 --a shield should hold up for several seconds at least (see class 1 weaps)
 SHIELD1_STRENGTH = 140 --was 70 (3 seconds of missile-1 hits)
-SHIELD2_STRENGTH = 260  --was 100
+SHIELD2_STRENGTH = 260 --was 100
 SHIELD3_STRENGTH = 380 --was 130
 SHIELD4_STRENGTH = 500 --was 150
 SHIELD5_STRENGTH = 620 --was 225
 SHIELD6_STRENGTH = 740 --was 350  (3 seconds of missile-6 hits)
 
 --armor should hold up to several seconds of equivalent class weapon dps (see class 1 weaps)
-ARMOR1_STRENGTH = 120 --was 45  (3 seconds of laser-1 hits)
-ARMOR2_STRENGTH = 240 --was 60
-ARMOR3_STRENGTH = 360 --was 80
-ARMOR4_STRENGTH = 480 --was 100
-ARMOR5_STRENGTH = 600 --was 150
-ARMOR6_STRENGTH = 720 --was 250 (3 seconds of laser-6 hits)
+ARMOR1_STRENGTH = 100 --was 45	then 120 (3 seconds of laser-1 hits)
+ARMOR2_STRENGTH = 100 --was 60	then 240
+ARMOR3_STRENGTH = 100 --was 80	then 360
+ARMOR4_STRENGTH = 100 --was 100	then 480
+ARMOR5_STRENGTH = 100 --was 150	then 600
+ARMOR6_STRENGTH = 100 --was 250 then 720 (3 seconds of laser-6 hits)
 
 --laser fires at same rate always but higher classes do more damage 
 --laser 1 can do 40 pts of dmg per second with direct hits
@@ -137,7 +137,7 @@ LASER2_DAMAGE = 8  --was 24 (80 dps)
 LASER3_DAMAGE = 12 --was 24 (120 dps)
 LASER4_DAMAGE = 16 --was 27 (160 dps)
 LASER5_DAMAGE = 20 --was 30 (200 dps)
-LASER6_DAMAGE = 24 --was 32 (240 dps)
+LASER6_DAMAGE = 48 --was 32 (480 dps)
 
 --missile damage will always be much higher than lasers
 --missile 1 can do 80 pts of dmg per second with direct hits
@@ -169,8 +169,8 @@ LASER_SPEED    = 20
 MISSILE_DURATION = 4000
 MISSILE_SPEED    = 10
 
-ALIEN_MISSILE_RANGE = 2000
-ALIEN_LASER_RANGE   = 400
+ALIEN_MISSILE_RANGE = 2000	--was 2000
+ALIEN_LASER_RANGE   = 400	--was 400
 ALIEN_SAFETY_DISTANCE = 400
 
 --when game starts, this should be next to Myrrdan star system

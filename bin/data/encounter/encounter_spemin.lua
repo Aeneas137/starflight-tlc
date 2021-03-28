@@ -1289,14 +1289,21 @@ title="  Military Mission #33:  Obtaining Spemin Slime"
 		player="[AUTO_REPEAT]",
 		alien={"You recognize our wisdom and authority.  Consider becoming our disciples.  Do you have any other questions [CAPTAIN_FIRST]?   (Mission Completed)" }
 	}
+
+
 --[[
 title="Scientific Mission #35: Exotic planet hunt"
 --]]
 	questions[89000] = {
-		action="jump", goto=1,
+		action="jump", goto=89001,
 		player="Quest for the exotic planet",
-		playerFragment= "what you can decode from this derelict's computer data concerning an exotic planet",
-		alien={"Wow!  Nowhere have we ever located a small planet possessing this much gravity.  Are you sure this is a real planet?  Judging from the spectral refraction the star in the solar system must be very far away from the planet.  The planet must be near the edge of a system, I think." }
+		playerFragment= "what you can decode from this derelict's computer data concerning an exotic planet. Transmitting...",
+		alien={"Wow!  Nowhere have we ever located a small planet possessing this much gravity.  Are you sure this is a real planet?  Judging from the spectral refraction, the star in the solar system must be very far away from the planet. The planet must be near the edge of a system, we think." }
+	}
+	questions[89001] = {
+		action="jump", goto=1,
+		player="Anything else?",
+		alien={"No, that's the best we can do." }
 	}
 
 --[[
@@ -1418,12 +1425,13 @@ title="Mission #41:  Organic Database
 		alien={"Ohh, a typogram!  I have not seen a puzzle box since my age as a blobling.  Modifications to the chromosomal integrity form stable and unstable shapes. The curvature of the shapes has a granularity far higher then stamped binary code and maintains a consistency of pattern even through growth of the lifeform." }
 	}
 	questions[81201] = {
-		action="jump", goto=81202,
+		action="jump", goto=81202,		
 		player="Can you decode it?",
 		alien={"The patterns can easily be seen.  You cannot see the vitality differences?  How limiting must be those two eyes.  It is easily visible to those who can see the health of the lifeform.  Such knowledge must not be intended for limited creatures like yourselves." }
 	}
 	questions[81202] = {
 		action="jump", goto=1, ftest= 1, -- exchange organic database for decoded organic database
+		title="Can you please help us decode it?",   --jjh
 		player="[AUTO_REPEAT]",
 		introFragment="We would be immensely grateful if you could demonstrate your superiority.",
 		playerFragment="about this puzzle which completely baffels us.",
@@ -1901,7 +1909,7 @@ end
 
 
 	--active_quest = 33  	--  debugging use
-	--artifact18 = 1		--  debugging use
+	--artifact18 = 1	--  debugging use
 
 if (plot_stage == 1) then -- initial plot state
 
@@ -1914,11 +1922,14 @@ if (plot_stage == 1) then -- initial plot state
 		first_question = 98000
 	elseif player_profession == "freelance" and active_quest == 35 and artifact27 == 0 and artifact28 == 0 then
 		first_question = 99000
+-- Mission #35:  Exotic Planet! 
+	elseif player_profession == "scientific" and active_quest == 35 then
+		first_question = 89000
 	else
 		first_question = 1
 	end
 
-elseif (plot_stage == 2) then -- virus plot state
+elseif (plot_stage == 2) then -- virus plot state 
 
 	if ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
@@ -1944,7 +1955,7 @@ elseif (plot_stage == 2) then -- virus plot state
 	elseif active_quest == 43 then
 		first_question = 83000
 
--- Mission #45:  Healthcare Scam - no medical treatment sample
+-- Mission #45:  Healthcare Scam - no medical treatment sample	
 	elseif active_quest == 45 and artifact265 == 0 and artifact266 == 0 then
 		first_question = 85000
 
@@ -2085,9 +2096,9 @@ end
 	 the ftest value passed back from the table (must be >= 1 for commFxn to be
 	 invoked at all), and the question/statement number, n. Other variables
 	 pulled in as needed from the script; in Lua everything is global unless
-	 explicitly declared local. 											--]]
+	 explicitly declared local. 		--]]
 function commFxn(type, n, ftest)
-	if (type == 0) then								--greeting
+	if (type == 0) then							--greeting
 		if (POSTURE == "friendly") then
 			ATTITUDE = ATTITUDE + 5
 		elseif (POSTURE == "obsequious") then
@@ -2127,8 +2138,8 @@ function commFxn(type, n, ftest)
 	elseif (ftest < 1) then
 		return
 
-	else											--question
-		if (n == 10000) or (n == 20000) or (n == 30000) or (n == 40000) then  -- General adjustment every time a category is started
+	else										--questions
+		if (n == 10000) or (n == 20000) or (n == 30000) or (n == 40000) then  	-- General adjustment every time a category is started
 			if (POSTURE == "friendly") then
 				ATTITUDE = ATTITUDE + 2
 			elseif (POSTURE == "obsequious") then
@@ -2182,14 +2193,14 @@ function commFxn(type, n, ftest)
 			end
 
 
-		elseif (plot_stage == 3) then -- war plot state
+		elseif (plot_stage == 3) then -- war plot state		
 
 -- title="Mission #49: Unrest
 			if (n == 79500) then
 				artifact280 = 0 -- Elowan Flight Recording
 				artifact281 = 0 -- Thrynn Flight Recording'
-
 				artifact396 = 1 -- Spemin message
+				active_quest= active_quest + 1			--jjh
 
 -- title="Mission #53: Tactical coordination
 			elseif (n == 83000) then

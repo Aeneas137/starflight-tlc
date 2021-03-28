@@ -1742,7 +1742,7 @@ title="Mission #38:  Collecting Genetic Samples" -- Sabion, no other data collec
 	questions[78200] = {
 		action="jump", goto=1,  ftest= 1,
 		player="[AUTO_REPEAT]",
-		alien={"Baah!  Bring us the reactor core from the city Talong (128S X 8E) on the planet Iuchar II (215, 44) and then we will deal!" }
+		alien={"Baah!  Bring us the reactor core from the city Talong (133S X 9E) on the planet Iuchar II (215, 44) and then we will deal!" }
 	}
 
 --[[
@@ -1788,7 +1788,7 @@ title="Mission #38:  Collecting Genetic Samples" -- Sabion collected, need BX
 		player="[AUTO_REPEAT]",
 		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We are working with a team of medical researchers attempting to find a cure for this plague.",
 		playerFragment="samples of genetic material from members of your race", fragmentTable=preQuestion.desire,
-		alien={"Yeah, we heard you were doing altroistic work for those schizophrenic plant things." }
+		alien={"Yeah, we heard you were doing altruistic work for those schizophrenic plant things." }
 	}
 
 	questions[78301] = {
@@ -1980,15 +1980,15 @@ title="Mission #48:  Intelligence Collaboration - no power core
 		player="[AUTO_REPEAT]",
 		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME]. We have compiled a datacube of technological, tactical, and strategic observations of the Minex war machine.  In the interests of all of our survival, we are willing to share this information freely.",
 		playerFragment="a collection of similar observations by your people", fragmentTable=preQuestion.desire,
-		alien={"Just in case you haven't guessed, we are not particularly interested in fighting of fleets of superships.  Our ship's size, maneuverability, and acceleration keep us out of fights we don't want to be in.  I have observed their ships fighting the Bar-zhon and can tell you that you do not want to mess with them." }
+		alien={"Just in case you haven't guessed, we are not particularly interested in fighting off fleets of superships.  Our ship's size, maneuverability, and acceleration keep us out of fights we don't want to be in.  I have observed their ships fighting the Bar-zhon and can tell you that you do not want to mess with them." }
 	}
 	questions[78001] = {
 		action="jump", goto=78002,
 		player="Can you tell us any specifics about Minex ships?",
-		alien={"They are almost completely immune to missiles, and lasers are partially deflected from their ablative armor.  Many of their ships continue patrolling even after being heavily damaged so you may occasionally take one of them out quickly.  Beyond that they are fast, maneuverable, their missiles are unmatched by any race, and their lasers are only slightly less effective.  Nasty customers." }
+		alien={"They are almost completely immune to missiles, and lasers are partially deflected from their ablative armor.  Many of their ships continue patrolling even after being heavily damaged so you may occasionally take one of them out quickly.  Beyond that they are fast, maneuverable, their missiles are unmatched by any race, and their lasers are only slightly less effective. Nasty customers." }
 	}
 	questions[78001] = {
-		action="jump", goto=78002,
+		action="jump", goto=1,				
 		player="Have you ever salvaged a Minex power core?",
 		alien={"Intact?  No.  Those would likely be snapped up right quick but feel free to ask around." }
 	}
@@ -2050,7 +2050,7 @@ title="Mission #49:  Unrest - at least one flight recorder
 		player="[AUTO_REPEAT]",
 		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have conclusive evidence from this flight recorder that the coalition is reading the Elowan and Thrynn!",
 		playerFragment="how you can deny this flight recorder evidence", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
-		alien={"Very simple. The ships appearing to be Coalition vessels were previously lost to us months ago.  Either the plague or the Minex was thought responsible.  Note the poor flying skills, the insanity of fighting the death without any interest in preserving ships or lives, and the completely ineffective and useless way the afterburners were utilized.  The coalition ships in that video simply charged towards their opponents and stopped right in front of them to exchange fire.  We would never do that." }
+		alien={"Very simple. The ships appearing to be Coalition vessels were lost to us months ago.  Either the plague or the Minex are thought responsible.  Note the poor flying skills, the insanity of fighting to the death without any interest in preserving ships or lives, and the completely ineffective way the afterburners were utilized.  The coalition ships in that video simply charged towards their opponents and stopped right in front of them to exchange fire.  We would never do that." }
 	}
 	questions[79501] = {
 		action="jump", goto=997,

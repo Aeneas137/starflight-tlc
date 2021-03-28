@@ -424,7 +424,8 @@ end
 -- Questions used for answers for all dialogue.
 function StandardQuestions()
 
-	--[[player questions / alien responses
+--[[player questions / alien responses
+
 	ACTION SYNTAX:
 	 ftest=1 (Call CommFxn to perform one or more actions when this question is called)
 	 ftest=2 Adjust attitude for an insightful question, values spelled out in CommFxn
@@ -456,7 +457,8 @@ function StandardQuestions()
 	SCIENTIFIC MISSIONS 80000-89999
 	FREELANCE MISSIONS  90000-99999
 
-	UNIVERSAL MISSIONS AND SPECIAL CASES 100-999]]--
+	UNIVERSAL MISSIONS AND SPECIAL CASES 100-999	
+]]--
 
 
 
@@ -572,7 +574,7 @@ elseif (plot_stage == 2) then  -- virus plot state
 		choices = {
 			{ text="Number of infected", goto=61000 },
 			{ text="Madness", goto=62000 },
-			{ text="Progress towards a cure", goto=63000 },
+			{ text="Progress towards a cure", goto=63000 },   --jjh plot stage 2 
 			{ text="Response of other races", goto=64000 },
 			{ text="<Back>", goto=1 }
 		}
@@ -704,7 +706,7 @@ elseif (plot_stage == 3) then  -- war plot state
 		choices = {
 			{ text="The Minex War", goto=61000 },
 			{ text="News about the the viral infection", goto=62000 },
-			{ text="The Coalition being more aggressive", goto=63000 },
+			{ text="The Coalition being more aggressive", goto=63000 },  --jjh stage 3
 			{ text="<Back>", goto=1 }
 		}
 	}
@@ -909,7 +911,8 @@ elseif (plot_stage == 4) then  -- ancients plot state
 		playerFragment="what we should pursue next", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
 		alien={"Seek out the Minex and the Nyssian.  The Minex have been proven to have the most advanced technology and the Nyssian possess very unusual and unique organic technology which may give them insights into biological problems." }
 	}
-	questions[63000] = {
+
+	questions[63000] = {				--jjh Stage 4
 		action="jump", goto=63001,
 		player="[AUTO_REPEAT]",
 		alien={"That notion seems irrelevant to the current situation.  If they refer to the ancients in present tense I assume they know where they are and how to contact them?" }
@@ -1864,7 +1867,7 @@ title="Mission #39:  Defensive Alliance, Part 1, initial contact
 	questions[79001] = {
 		action="branch",
 		choices = {
-			{ title="Yes", text="", goto=79002 },
+			{ title="Yes", text="Yes", goto=79002 },
 			{ text="No",  goto=1 },
 		}
 	}
@@ -2003,7 +2006,7 @@ title="Mission #39:  Defensive Alliance, Part 1, Fleet Adm. initial contact
 	questions[79682] = {
 		action="jump", goto=997,
 		player="We will return shortly",
-		alien={"I will wait with baited breath for your success." }
+		alien={"I will wait with bated breath for your success." }
 	}
 	questions[79690] = {
 		action="jump", goto=997,
@@ -2152,9 +2155,9 @@ title="Mission #43:  Desperate Measures
 		action="jump", goto=997, ftest= 1, -- give the Bar-zhon a holographic scan
 		title="Thrynn Complicit",
 		player="[AUTO_REPEAT]",
-		introFragment="This Elowan have been tracking a faction of Thrynn collaborating with the Coalition for some time.  Evidence of the retrofit of a large number of Thrynn ships alongside Coalition ships can still be found on Bor Tuatheh 2019.  The Thrynn have been attacking our ships for some time without provocation.",
+		introFragment="The Elowan have been tracking a faction of Thrynn collaborating with the Coalition for some time.  Evidence of the retrofit of a large number of Thrynn ships alongside Coalition ships can still be found on Bor Tuatheh 2019.  The Thrynn have been attacking our ships for some time without provocation.",
 		playerFragment="what you make of this evidence",  fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
-		alien={"This will be investigated thoroughly.  I will say this however.  The fleet dispatched to your home world was ambushed and destroyed enroute.  Early investigations show that they were attacked by unknown but non-Myrrdan forces.  Until we trace down the guilty party I assure you that your people are safe from us."}
+		alien={"This will be investigated thoroughly. I will say this however. The fleet dispatched to your home world was ambushed and destroyed enroute. Early investigations show that they were attacked by unknown but non-Myrrdan forces. Until we trace down the guilty party I assure you that your people are safe from us."}
 	}
 --[[
 title="Mission #44:  Decontamination Transporter
@@ -2219,7 +2222,7 @@ title="Mission #44:  Decontamination Transporter - operational code
 	questions[84301] = {
 		action="jump", goto=997,  ftest= 1, --  provide artifact264, a data cube
 		player="Glad to be of service.",
-		alien={"Initial tests show that this operational code does indeed work with lower forms of life. We will be conducting additional trials in the near future and hope to transport sentents in the next few days if no further issues are discovered.  For your assistance, we are providing Myrrdan with a data cube containing the complete specifications of this transporter and all of our research data into this project so far.  Please relay this information to your people." }
+		alien={"Initial tests show that this operational code works with lower forms of life. We will be conducting additional trials in the future and hope to transport sentients in the next few days if no further issues are discovered. For your assistance, we are providing Myrrdan with a data cube containing the complete specifications of this transporter and all of our research data on this project so far. Please relay this information to your people." }
 	}
 
 --[[
@@ -3100,13 +3103,14 @@ end
 	 type (0: greeting,  1: statement,  2: question),
 	 n (question/statement number)
 	 ftest (1: generic actions: 2: insightful attitude adjustment, 3: aggravating
-	 attitude adjustment.  These values areexplicitly specified in the question action
-	 Note: must be >= 1 for commFxn to be	 invoked at all)
+	 attitude adjustment.  These values are explicitly specified in the question action
+	 Note: must be >= 1 for commFxn to be invoked at all)
 
 	 Other variables pulled in as needed from the script.
 
 	This function is called during communications every time an action is made
 	such as making a statement or asking a question. --]]
+
 function commFxn(type, n, ftest)
 
 	--greeting modifications of attitude
@@ -3362,7 +3366,7 @@ function commFxn(type, n, ftest)
 				artifact255 = 0  -- remove red Herring
 				artifact260 = 0  -- remove holographic scanning location
 				if player_profession == "military" then
-					active_quest = active_quest + 3
+					active_quest = active_quest + 2  --was 3 JJH
 				else
 					active_quest = active_quest + 1
 				end

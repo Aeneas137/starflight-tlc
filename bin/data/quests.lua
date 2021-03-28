@@ -52,7 +52,7 @@ function init_training_missions()
 		"Welcome to the Starport, Captain.  Although the Starport is a large facility and it's resources are at your disposal, it can be a bit overwhelming to a new captain. So, to help you get familiar with the Starport's resources, we're going to take a quick tour of the facility and help you to configure your ship to ready it for the maiden voyage.  Let's begin at the Docking Bay, where your ship is berthed. Go take a look, then come back here for further instructions.",
 		"You follow orders well, captain. Now, let's continue.",
 		22, 0, 0,
-		1, 0, 500 )
+		1, 0, 1000 )
 
 -- quest 2
 	addQuest ( "Personalized Banking",
@@ -182,7 +182,7 @@ Science Mission #27:  Scan Airgdech in the Beothach system, receive 10 cubic met
 		2, 54, 10 )
 
 --[[
-Science Mission #28:  Multiple requirements are not implemented, so the game checks to see if the player landed on 111: Caintigern I.  Upon returning, the player receives 25,000 monetary units.
+Science Mission #28:  Multiple requirements are not implemented, so the game checks to see if the player landed on 111: Caintigern I (106,18).  Upon returning, the player receives 25,000 monetary units.
 ]]--
 	addQuest( "Soil Samples",
 		"Land on the following planets: Fiochra II (201,192), Esar Brec II (39,134), Caintigern I (106,18), Cailte I (61,22)",
@@ -192,7 +192,7 @@ Science Mission #28:  Multiple requirements are not implemented, so the game che
 		1, 0, 20000 )
 
 --[[
-Science Mission #29: Pickup the data core on planet Tuatha, Nemed (125,96) at coordinates 47S X 45E. When this is taken to the Bar-zhon, a dialogue sequence is triggered, the player engine class is upgraded if less than max, and the quest is completed.
+Science Mission #29: Pickup the data core on planet Tuatha, Nemed (125,96) at coordinates 40N X 63E. When this is taken to the Bar-zhon, a dialogue sequence is triggered, the player engine class is upgraded if less than max, and the quest is completed.
 ]]--
 	addQuest( "First Contact",
 		"Pickup the data cube on planet Tuatha, Nemed (125,96) at coordinates 40N X 63E and then establish friendly contact with a Bar-zhon vessel and return their data cube.",
@@ -225,7 +225,7 @@ Returning the orb to starport provides the player 15,000 monetary units
 ]]--
 	addQuest( "Hunt for the Orb",
 		"Contact the Thrynn and follow any leads that take you to the location of the Whining Orb.",
-		"The Thrynn relayed to us at discovery of possibly useful information from a pirate stash referring to a valuable piece of technology known as a Whining Orb.  Their hyperwave broadcast did not mention any specifics, so we request that you travel outward and slightly upspin to Thrynn space to ask them directly about it.",
+		"The Thrynn relayed to us the discovery of possibly useful information from a pirate stash referring to a valuable piece of technology known as a Whining Orb.  Their hyperwave broadcast did not mention any specifics, so we request that you travel outward and slightly upspin to Thrynn space to ask them directly about it.",
 		"Umm, this is a piece of junk, but good work.",
 		2, 16, 1 , -- Whining Orb
 		1, 0, 15000 )
@@ -241,7 +241,7 @@ Science Mission #32: Scanning the planet 429: Cermait 6 - 247, 218 reveals nothi
 		1, 0, 8000 )
 
 --[[
-Science Mission #33: Returning artifact #24, artistic baubles provide the player with 12,000 monetary units.
+Science Mission #33: Returning artifact #24, artistic baubles from Arturwen, Anu provides the player with 12,000 monetary units.  Clue here for Mission #35 (acidic planet in WEE DIPPER)
 ]]--
 	addQuest( "Acidic Treasures",
 		"Locate anything of interest on an acidic planet somewhere in the bow constellation (65,110) at planetary coordinates 90N X 70W",
@@ -272,7 +272,7 @@ The quest is completed when the player scans planet Fogwyrd (#350) in the Delbae
 ]]--
 	addQuest( "Planet Hunt",
 		"Talk to the other races to find clues locating an exotic small planet with a massive gravity field.  Perform a sensor scan on the planet and return with the data.",
-		"The Nyssian has given us information recovered from a derelict of an extinct race that refers to a planet somewhere in this region of space with a core of exotic particles.  Scanning this planet may finally help scientists prove the existence or nonexistence of the elusive Higgs Boson particle.  All we know from the Nyssian is that this small planet possesses a very strong gravity field.  The Nyssian also provided us considerable data from the derelict's computer system describing the planet and the system that it resides, but the data is fragmentary and barely decipherable.  It is possible that other races may have better luck deciphering the data and may be able to help us locate it.",
+		"The Nyssian has given us information recovered from a derelict of an extinct race that refers to a planet somewhere in this region of space with a core of exotic particles.  Scanning this planet may finally help scientists prove the existence or nonexistence of the elusive Rydberg Polaron particle.  All we know from the Nyssian is that this small planet possesses a very strong gravity field.  The Nyssian also provided us considerable data from the derelict's computer system describing the planet and the system that it resides, but the data is fragmentary and barely decipherable.  It is possible that other races may have better luck deciphering the data and may be able to help us locate it.",
 		"Wow.  This data is going to keep us busy for a long time!",
 		14, 350, 0 ,
 		1, 0, 75000 )
@@ -313,7 +313,7 @@ Lough Leane 2389 - 122N X 115W
 
 
 --[[
-Military Mission #28: Destroy Pirates until at least one sample of pirate small arms is obtained. Reward is 5000 credits.
+Military Mission #28: Destroy Pirates until at least one sample of pirate small arms is obtained. Reward is 5000 credits.   (90% X 14% = 12.6% chance of dropping)
 ]]--
 
 	addQuest( "Pirate Cleanup",
@@ -325,6 +325,7 @@ Military Mission #28: Destroy Pirates until at least one sample of pirate small 
 
 --[[
 Military Mission #29: Destroy Pirates until at least one sample of pirate cargo is obtained.  Reward is 7500 credits.
+(10% chance of dropping)
 ]]--
 	addQuest( "Pirate Encryption",
 		"Destroy pirate vessels until you successfully retrieve a sample of pirate cargo.",
@@ -334,7 +335,7 @@ Military Mission #29: Destroy Pirates until at least one sample of pirate cargo 
 		 1, 0, 7500 )
 
 --[[
-Military Mission #30: Obtain a coalition afterburner either through diplomacy or by salvaging one through combat.  There is a small chance of dropping a coalition afterburner from a coalition ship when one is destroyed.
+Military Mission #30: Obtain a coalition afterburner either through diplomacy or by salvaging one through combat.  There is a small chance of dropping a coalition afterburner from a coalition ship when one is destroyed.  (10% chance of dropping)
 
 Alternatively in conversation when this mission is active the player has three choices, Moolah (offer 20 units of endurium), Diplomacy and Moolah (offer 12 units of endurium - works if attitude is greater than 35), Threaten (attack).
 
@@ -348,7 +349,7 @@ Taking this item back to the Bar-zhon increases the shield class by 1, or provid
 		 0, 0, 0 )
 
 --[[
-Military Mission #31: The Thrynn will reward the player by increasing their laser class by 1 if the player provides them with a salvaged Elowan Shield Capacitor.  If the player's laser classes already maxed, then the player is given 5 cubic meters of endurium instead.  Elowan should simply attack the player when this quest is active. This item may only be obtained by destroying Elowan ships.
+Military Mission #31: The Thrynn will reward the player by increasing their laser class by 1 if the player provides them with a salvaged Elowan Shield Capacitor.  (10% chance of dropping) If the player's laser classes already maxed, then the player is given 5 cubic meters of endurium instead.  Elowan should simply attack the player when this quest is active. This item may only be obtained by destroying Elowan ships.
 ]]--
 	addQuest( "Battle Front",
 		"Assist in the Thrynn war effort near 45,30, at least until you are able to salvage a Elowan Shield capacitor.  Take the capacitor to the Thrynn.",
@@ -358,7 +359,7 @@ Military Mission #31: The Thrynn will reward the player by increasing their lase
 		 0, 0, 0 )
 
 --[[
-Military Mission #32: Obtain another coalition afterburner this time only possible by salvaging one through combat. Coalition ships attack the player instantly when this quest is active.
+Military Mission #32: Obtain another coalition afterburner this time only possible by salvaging one through combat. Coalition ships attack the player instantly when this quest is active.  (10% chance of dropping)
 ]]--
 	addQuest( "Preemptive Strike",
 		"Destroy enough Coalition ships to salvage another Coalition afterburner.",
@@ -388,7 +389,7 @@ Military Mission #34: Return the sample of erratic energy devices.  Minex automa
 		 1, 0, 30000 )
 
 --[[
-Military Mission #35: Destroy Minex ships until Minex electronics are recovered. Minex automatically attack when this quest is active.  Starport pays 50,000, the Bar-zhon upgrade the ship to the max_missile_class or provide 35 endurium if the artifact is taken to them.  The Thrynn upgrade the ship to the max_laser_class if the artifact is taken to them.
+Military Mission #35: Destroy Minex ships until Minex electronics are recovered. Minex automatically attack when this quest is active.  Starport pays 50,000, the Bar-zhon upgrade the ship to the max_missile_class or provide 35 endurium if the artifact is taken to them.  The Thrynn upgrade the ship to the max_laser_class if the artifact is taken to them.  (90% X 10% = 9% chance of dropping)
 ]]--
 	addQuest( "Minex Retaliation",
 		"Salvage a piece of functioning Minex electronics from their computer core and return to starport.",
@@ -412,7 +413,7 @@ Freelance Mission #26: Originally a multiple-choice interrogation and first cont
 		1, 0, 3500 )
 
 --[[
-Freelance Mission #27: Obtain the ticking cylinder from Fiacha III 219,179, at landing coordinates 63N, 147W. Taking the artifact to the Nyssian will complete the mission.
+Freelance Mission #27: Obtain the ticking cylinder from Fiacha III 219,179, at landing coordinates 152N, 64W. Taking the artifact to the Nyssian will complete the mission.
 ]]--
 	addQuest( "Archaeology Appropriation",
 		"Investigate planet Fiacha III (219,179), at landing coordinates 152N X 64W.",
@@ -472,7 +473,7 @@ Increasing their attitude through conversation first is far cheaper.
 Freelance Mission #32: Parallel to military mission # 31.  If the player chooses to destroy Elowan ships to obtain a shield capacitor, the Thrynn will increase the player's laser class by up to 2 levels if possible.  If the player chooses to destroy Thrynn ships to obtain a Thrynn Battle Machine, the player is given an upgrade to their shields by 1 level if possible.
 ]]--
 	addQuest( "Killer Plants",
-		"Enter the war zone near 45,30 and either salvaged an Elowan Shield capacitor to the Thrynn, or salvage something for the Elowan.",
+		"Enter the war zone near 45,30 and either salvage an Elowan Shield capacitor to the Thrynn, or salvage something for the Elowan.",
 		"Envoys of the Thrynn have reached Myrrdan and they are currently begging the powers that be for aid.  They claim they are under attack by intelligent and hostile carnivorous plants known as the Elowan.  A skirmish is currently occurring on the border of Thrynn space somewhere near 45,30.  According to the Thrynn, Elowan ships possess advanced shielding technology and the Thrynn are willing to give us specifications on their top laser weaponry in exchange for your help. On the other hand, covert scans of the Thrynn ships docked here show many useful technologies as well.  A profitable venture would be to either destroy as many Elowan ships necessary to obtain one of their shield capacitors and then take a sample to the Thrynn, or to destroy enough Thrynn ships to find something to take to the Elowan.  Choose what you want to do, but make sure you line up a buyer first.",
 		"Player should never see this message.  Resolved by the Elowan or Thrynn",
 		0, 0, 0,
@@ -482,7 +483,7 @@ Freelance Mission #32: Parallel to military mission # 31.  If the player chooses
 Freelance Mission #33: When this mission is active, the Minex instantly attack the player.  That being said, retrieving the artifact 'Erratic Energy Devices' is very straightforward. The artifact can be returned to starport for a reward, or alternatively the coalition will reward the player with their choice of either 40 endurium, +1 to shielding (if possible) or +1 to lasers (if possible)
 ]]--
 	addQuest( "Covert Operation",
-		"Retrieve any artifacts found on planet Inchegeela II (59,210) at coordinates 135N X 133W",
+		"Retrieve any artifacts found on planet Inchegeela II (59,210) at coordinates 140N X 136W",
 		"Myrrdan scientists have decoded data sources dating from the Great War between the Bar-zhon and the three imperialists that indicate that an advanced alien research lab was held in a secret location far away from the conflict.  This lab now lies on the planet Inchegeela II (59,210) at coordinates 135N X 133W deep within Minex space.  The Minex are not overtly hostile, but intelligence indicates that their ships are very powerful and they are known to attack vessels in their territory.  Avoid all contact and simply get in and get out.  The Myrrdan council wants deniability, so if you get in trouble out there you will be on your own.  An insurgent group that shall go nameless is also interested in any technology you find, but Myrrdan is more then willing to provide decent compensation as long as you return any technology here.",
 		"This technology is like nothing we've ever seen.",
 		2, 17, 1,
@@ -554,8 +555,8 @@ Quest #36: 1. Conversation Mission: talk to all alien races to find the source o
 ]]--
 	addQuest(
 		"Chaos!",
-		"Find evidence for the source of this plague.",
-		"One of our exploratory vessels brought back what appeared to a mild viral infection that has rapidly spread across all of Myrrdan and threatens to become a serious pandemic.  So far no human has died, but massive numbers across the entire planet have experienced irregular flu-like symptoms and periods of complete unconsciousness.  We have absolutely no idea how this sickness was able to bypass quarantine so easily and quickly.  The only other thing we know is that the virus apparently mutates rapidly and drastically.  Already several thousand strains have been collected.  Your mission is to discover where this virus originated, which race is responsible for its spread, and any technology or artifact that may contribute to a search for a cure.",
+		"Conversation Mission: Find evidence for the source of this plague.",
+		"One of our exploratory vessels brought back what appeared to a mild viral infection that has rapidly spread across all of Myrrdan and threatens to become a serious pandemic.  So far no human has died, but massive numbers across the entire planet have experienced irregular flu-like symptoms and periods of complete unconsciousness.  We have absolutely no idea how this sickness was able to bypass quarantine so easily and quickly.  The only other thing we know is that the virus apparently mutates rapidly and drastically.  Already several thousand strains have been collected.  Your mission is to discover where this virus originated, which race is responsible for its spread, and any technology or artifact that may contribute to a search for a cure.  We believe that most if not all known races are now infected. Important information may be obtained by contacting them.  Intergalactic chatter has led us to believe that the Bar-zhon and Nyssian have useful information about this crisis.  All races infected or not should have new general information about the current events in the sector.",
 		"Incredibly old and unidentifiable rock samples were found in the Tafel debris, and we have identified a nanomachine still active in the samples!",
 		 2, 1, 1, -- Tafel Wreckage
 		 1, 0, 40000 )
@@ -563,28 +564,36 @@ Quest #36: 1. Conversation Mission: talk to all alien races to find the source o
 
 
 --[[
-Quest #37: 2. Track down two Myrrdan smugglers, the Diligent and the Excelsior. Spemin reveal that the Thrynn destroyed the Excelsior, and the Diligent recently traveled to a lava planet in a class a system in Elowan territory. 50 randomly placed ruins on the planet point the player to 73S X 21W, and that ruin points to an abandoned base built by the Diligent's crew, abandoned except for an air plant which appears to be of the Elowan, the Elowan provides the player with the false sensor signature used by the 	Diligent. Returning to starport reveals that they were masquerading as a Myrrdan ship known as the Intrepid and escaped to Myrrdan.
+Quest #37: 2. Track down two Myrrdan smugglers, the Diligent and the Excelsior.
+Bar-zhon refers the player to the Coalition or outward
+
+The Spemin reveal that the Thrynn destroyed the Excelsior, and the Diligent recently traveled to a lava planet in a class A system in Elowan territory.
+(Cailte 61, 22)
+
+The coalition asks for a 10 fuel bribe, and then tells the player nothing
+
+50 randomly placed ruins on the planet point the player to 73S X 21W, and that ruin points to an abandoned base built by the Diligent's crew, abandoned except for an air plant which appears to be of the Elowan, the Elowan provides the player with the false sensor signature used by the Diligent. Returning to starport reveals that they were masquerading as a Myrrdan ship known as the Intrepid and escaped to Myrrdan.
 ]]--
 
 	addQuest(
 		"Containment",
-		"Track down smugglers possibly carrying a more dangerous version of the virus",
-		"We have a serious situation on our hands. Despite the pandemic racing across Myrrdan, reports from many of our exploratory vessels of the massive death tolls other races have been experiencing indicate our problems could have been much, much worse. Myrrdan planetary security has been enforcing a strict blockade of our planet to ensure that the more dangerous strains don't make it through. This has not been publicized widely, but two Myrrdan ships have gone rogue, the Diligent and the Excelsior.  They deserted after they were caught smuggling alien artifacts obtained through questionable means. Statistically they have a high likelihood of encountering the more deadly strains and a strong motivation to bypass the blockade the planet surface. The defensive fleet has orders to deny them passage and to arrest them on sight, yet security is not satisfied with merely a passive approach. Due to your excellent track record you have been chosen to track them down. We have no current leads, but their ECM signatures and proprietary schematics are being sent to your ship. Your science officer should be able to trace a warm tachyon trail or trace even cold evidence of their more presence on a planet's surface.",
+		"Track down smugglers possibly carrying a more dangerous version of the virus.  Start coreward towards the Bar-zhon and Coalition",
+		"We have a serious situation on our hands. Despite the pandemic racing across Myrrdan, reports from many of our exploratory vessels of the massive death tolls other races have been experiencing indicate our problems could have been much worse. Planetary security has been enforcing a blockade of our planet to ensure that the more dangerous strains don't make it through. This has not been publicized widely, but two Myrrdan ships have gone rogue, the Diligent and the Excelsior. They deserted after they were caught smuggling alien artifacts obtained through questionable means. They have a high likelihood of encountering the more deadly strains and a strong motivation to bypass the blockade of the planet surface. The defensive fleet has orders to deny them passage and to arrest them on sight, yet security is not satisfied with a passive approach. Due to your excellent track record you have been chosen to track them down. We have no current leads, but their ECM signatures and proprietary schematics are being sent to your ship. Your science officer should be able to trace a warm tachyon trail or trace even cold evidence of their mere presence on a planet's surface.",
 		"The so-called Intrepid landed two days ago on Myrrdan.  Planetside investigations has been alerted.  We can only hope that they haven't brought any dangerous viral strains with them.",
 		 2, 223, 1,
 		 1, 0, 20000 )
 
 --[[
-Quest #38: 3. Gather genetic and viral samples for a team of Elowan doctors. Each race contacted wants something. The Bar-zhon want the Coalition data. The Coalition want Minex technology salvaged from a Minex vessel. The Minex want nothing and will attack the player if asked. The Elowan provide their data free, but only if their attitude is 85 or above. Below that attitude level, they will still deny that they are being affected by the plague. The Thrynn are completely hostile. The only way to get their data is through salvage.  The Spemin deny the player but can be tricked to giving their data free, the Nyssian want a scan of the hypercube the player found earlier.  Alternatively by destroying ships of each alien race, including the Tafel, viral data can be salvaged. The Coalition demands that a nuclear reactor be stolen from a  Bar-zhon world, and then they only provide Bar-zhon data. The Coalition debris gives Bar-zhon/BX/Transmodra/Sabion data randomly.  The player must retrieve 7 out of the 10 possible "artifacts" of data to complete this mission.  Items #224-234.
+Quest #38: 3. Gather genetic and viral samples for a team of Elowan doctors. Each race contacted wants something. The Bar-zhon want the Coalition data. The Coalition want Minex technology salvaged from a Minex vessel. The Minex want nothing and will attack the player if asked. The Elowan provide their data free, but only if their attitude is 85 or above. Below that attitude level, they will still deny that they are being affected by the plague. The Thrynn are completely hostile. The only way to get their data is through salvage.  The Spemin deny the player but can be tricked to giving their data free, the Nyssian want a scan of the hypercube the player found earlier.  Alternatively by destroying ships of each alien race, including the Tafel, viral data can be salvaged. The Coalition demands that a nuclear reactor be stolen from a  Bar-zhon world, and then they only provide Bar-zhon data. The Coalition debris gives Bar-zhon/BX/Transmodra/Sabion data randomly.  The player must retrieve 5 out of the 10 possible "artifacts" of data to complete this mission.  Items #224-234.
 ]]--
 
 	addQuest(
 		"Samples",
-		"Obtained at least seven genetic samples from other alien races and give them to the Elowan",
-		"We have been contacted by a independent group of Elowan researchers who see us as the lone power still able to make long trips in hyperspace without fear of losing ships to the madness caused by the plague.  They have been studying the virus and its effect on various life forms, but since it only activates within sentients, they have been stymied from a lack of diverse tissue samples.  They have asked us to obtain genetic samples from as many of the other races as possible. With persuasion, these samples may be obtained through diplomacy but the researchers have also pointed out that genetic samples may be obtained through other less pleasant means as well.",
+		"Obtain at least five genetic samples from other alien races and give them to the Elowan",
+		"We have been contacted by a independent group of Elowan researchers who see us as the lone power still able to make long trips in hyperspace without fear of losing ships to the madness caused by the plague.  They have been studying the virus and its effect on various life forms, but since it only activates within sentients, they have been stymied from a lack of diverse tissue samples.  They have asked us to obtain genetic samples from as many of the other races as possible including from the Elowan. With persuasion, these samples may be obtained through diplomacy but the researchers have also pointed out that genetic samples may be obtained through other less pleasant means as well.",
 		"This may not be a cure, but the insights into the nature of the plague are astounding!",
 		 2, 235, 1 , -- Elowan research data
-		 1, 0, 20000 )
+		 1, 0, 44000 )
 
 --[[
 Quest #39: 4. The Coalition is harassing Myrrdan transport and supply ships. Negotiate with the Bar-zhon to break up the Coalition's expansion into Myrrdan territory. Destroy Coalition ships until salvaging Coalition computer and targeting technology (Item #236). Relay request of Bar-zhon to build a fueling outpost around the gas giant planet of Samhain.
@@ -593,21 +602,23 @@ Quest #39: 4. The Coalition is harassing Myrrdan transport and supply ships. Neg
 	addQuest(
 		"Defensive Alliances",
 		"Negotiate with the Bar-zhon to break up the Coalition's expansion into Myrrdan territory.",
-		"Myrrdan has been planting a number of bases in the surrounding systems at a frantic pace recently to occupy displaced pirate territories in the region and also to supply our world with the huge number of mineralogical resources our economy needs to fuel our expansion of shipbuilding infrastructure.  We need to quickly build up a defensive space-based military fleet as rapidly as possible in these uncertain times.  Unfortunately the Coalition has decided to take advantage of our current military weakness and stepped up raids upon Myrrdan transport and supply ships even within our territory.  Our ships have an excellent chance against them on a one-to-one basis but in a major fleet action we cannot stand up to them in terms of pure numbers.  Their ships have also done a good job of avoiding the well-armed explorers such as yourself and our military patrols.  Diplomatic channels with them have been closed since the outbreak of this unnatural infection. Since we simply cannot provide every single transport with a sufficient military escort, our only other recourse is to appeal to the Bar-zhon for aid against them. Your mission is to contact the Bar-zhon and to start the diplomatic process  towards a defensive alliance." ,
+		"Myrrdan has been planting a number of bases in the surrounding systems at a frantic pace to occupy displaced pirate territories in the region and also to supply our world with the huge number of mineralogical resources our economy needs to fuel our expansion of shipbuilding infrastructure.  We need to build up a defensive space-based military fleet as rapidly as possible in these uncertain times.  Unfortunately the Coalition has decided to take advantage of our current weakness and stepped up raids upon our transport and supply ships even within our territory.  Our ships have an excellent chance against them on a one-to-one basis but in a major fleet action we cannot stand up to them in terms of pure numbers.  Their ships have also done a good job of avoiding the well-armed explorers such as yourself and our military patrols.  Diplomatic channels with them have been closed since the outbreak of this virus. Since we cannot provide every transport with a sufficient military escort, our only recourse is to appeal to the Bar-zhon for aid against them. Your mission is to contact the Bar-zhon and to start the diplomatic process towards a defensive alliance." ,
 		"Very good work Captain!  The Bar-zhon proposal will be presented to Planetary Congress immediately.",
 		 2, 237, 1, -- Diplomatic Pouch
 		 1, 0, 20000 )
 
 --[[
 Quest #40: 5. Part two: Relay Myrrdan's acceptance of Bar-zhon terms, Bar-zhon demand a fully cooperative alliance: we must also come to their aid with military, humanitarian, and technological assistance and the Bar-zhon in return promise the same. Bar-zhon military patrols breakup Coalition excursions into Myrrdan space.
+
+Nysing is located at 114S X 23E on the habitable planet in the mace handle - the planet (109S X 23E) on the planet Deoch III (224,121)
 ]]--
 
 	addQuest(
 		"Defensive Alliances, part two",
 		"Return Myrrdan's counterproposal to the Bar-zhon.",
-		"Good news!  In uncharacteristic haste, planetary Congress has reviewed the Bar-zhon proposal and issued a counter proposal for you to take back to them. You are authorized, assuming that the Bar-zhon do not have any objection to the minor changes made, to finalize and accept the defensive pact on behalf of Myrrdan.",
-		"You may have exceeded your authority slightly, Captain, but the results speak for themselves.",
-		 2, 238, 1 , -- Bar-zhon Governmental Communiqué
+		"Good news!  In uncharacteristic haste, planetary Congress has reviewed the Bar-zhon proposal and issued a counter proposal for you to take back to them.  Our only modifications are the terms under which Myrrdan vessels will accept Bar-zhon orders and when we will expect joint command.  You are authorized to finalize and accept the defensive pact on behalf of Myrrdan assuming that the Bar-zhon do not have any objection to the minor changes made.",
+		"You may have exceeded your authority slightly Captain but the results speak for themselves.  Bar-zhon military patrols are working with us to break up Coalition excursions into Myrrdan space.",
+		 2, 238, 1 , -- Bar-zhon Officers 
 		 1, 0, 20000 )
 
 --[[
@@ -616,14 +627,14 @@ Quest #41: 6. Investigate medical technology found in several ruins, three diffe
 
 	addQuest(
 		"Medical Archaeology",
-		"Investigate the ruins on .....",
-		"One of our scout vessels discovered the remains of an alien colony ship in the nearby system of .........  The alien race consisted of sentient plant creatures similar to the Elowan, but they did not survive on the planet's surface long enough to form a lasting civilization.  The scout vessel was unable to decode anything significant from the ruin and has turned the discovery over to us.  Your task is to investigate the ruins on the planet’s surface and identify what you find.",
-		"That organic core yielded a breakthrough of regenerative gel known as grow goo: a hybrid lifeforms that connects and grafts tissue without rejection. Unfortunately it does nothing to impede the plague",
-		 2, 999, 1 , -- Decoded Organic Core
-		 1, 0, 20000 )
+		"Investigate the ruins on Findtha (73N X 40E) in the Enna system (105, 112).",
+		"One of our scout vessels discovered the remains of an alien colony ship in the nearby planet of Findtha (73N X 40E) in the Enna system (105, 112).  The alien race consisted of sentient plant creatures similar to the Elowan, but they did not survive on the planet's surface long enough to form a lasting civilization.  The scout vessel was unable to decode anything significant from the ruin and has turned the discovery over to us.  Your task is to investigate the ruins on the planet's surface and identify what you find.  Run any artifacts you uncover past our alien allies for identification before bringing them back here.",
+		"That organic core yielded a breakthrough of regenerative gel known as grow goo: a hybrid lifeform that connects and grafts tissue without rejection. Unfortunately it does nothing to impede the plague.",
+		 2, 250, 1 , -- Decoded Organic Core
+		 1, 0, 20000  )
 
 --[[
-Quest #42: 7. Tracking mission, heading to Coalition space.  Coalition must be bribed to reveal that the Laytonites traded large amounts of raw ore for engine upgrades, a second bribe reveals that the Coalition discreetly traced them to the fifth planet of the Oende system, 50 randomly placed ruins show bombardment from orbit, deflected bomb craters.  Science officer extrapolates roughly where the bombs were targeted. Wreckage of base and interceptor ships destroyed in atmospheric combat attempting to defend the base from Tafel attack.
+Quest #42: 7. Tracking mission, heading to Coalition space.  Coalition must be bribed to reveal that the Laytonites traded large amounts of raw ore for engine upgrades, a second bribe reveals that the Coalition discreetly traced them to the fifth planet of the Oende system, 50 randomly placed ruins show bombardment from orbit, deflected bomb craters.  Science officer extrapolates roughly where the bombs were targeted. Wreckage of base and interceptor ships destroyed in atmospheric combat attempting to defend the base from Tafel attack.  Bar-zhon provide needed sensor data.
 ]]--
 
 	addQuest(
@@ -631,11 +642,21 @@ Quest #42: 7. Tracking mission, heading to Coalition space.  Coalition must be b
 		"Track down a group of terrorists headed towards Bar-zhon territory using the provided sensor data.",
 		"A group of environmental fanatics have stolen a number of commercial freighter escort fighters.  Calling themselves the New Laytonites, their stated goal is to destroy all technology and dismantle society, justifying their stance on the discovery that the nano-virus does not affect non-technological species. They warn that once Myrrdan has a chance to modernize, the violence and the death toll of the plague will start within our civilization as well. Their ships fortunately consist solely of armed space interceptors, no bombers.  Your job is to track them down and prevent them from establishing a base of operations offplanet that they can use to attack our people.  Intelligence has tracked them headed in the direction of Bar-zhon territory, but they were intelligent enough to start off on a false heading they could be anywhere by now.  Your mission is to bring the sensor profiles of their ships to the nearby alien races and see if you can find any leads.",
 		"Good investigative work. It looks like this threat will not materialize at all.",
-		 2, 999, 1, -- Laytonite Base Wreckage
+		 2, 253, 1, -- Laytonite Base Wreckage
 		 1, 0, 20000 )
 
 --[[
-Quest #43: 8. Myrrdan is framed for a terrorist attack on a Bar-zhon world by independent faction of Thrynn and Coalition forces.  Source of this tip is Bar-zhon miners who reveal that the Bar-zhon are planning to retaliate. Thrynn and Coalition denies any knowledge of the event. Bar-zhon ships during this quest refuse to communicate and attack the player. The Elowan direct the player to a meeting location where Thrynn and Coalition troops were seen gathering.  Thrynn base located but no evidence of any Coalition presence. Red Herring artifact. When Red Herring is taken back to the Elowan, they reveal a second meeting place. The second meeting place shows evidence of a large number of Coalition and Thrynn ships landing, and remains of a fabrication factory to produce Myrrdan style hull plating is found. Player told to take holographic evidence to the Bar-zhon immediately.  Bar-zhon communication must answer three sets of questions correctly or be attacked. If answered correctly the Bar-zhon take the holographic evidence, provide a government communiqué to take back to Myrrdan, and inform the player that the retaliation fleet was already destroyed en-route to Myrrdan by a surprise ambush of Tafel and infected ships working together.
+Quest #43: 8. Myrrdan is framed for a terrorist attack on a Bar-zhon world by independent faction of Thrynn and Coalition forces.  Source of this tip is Bar-zhon miners who reveal that the Bar-zhon are planning to retaliate. Thrynn and Coalition denies any knowledge of the event. Bar-zhon ships during this quest refuse to communicate and attack the player.
+
+The Elowan direct the player to a meeting location, Wledig 2026 (120S X 14E) in the Fodla system (109, 55) where Thrynn and Coalition troops were seen gathering.
+
+Thrynn base located but no evidence of any Coalition presence. Red Herring artifact. When Red Herring is taken back to the Elowan, they reveal a second meeting place.
+
+Bor Tuatheh 2019 (32N X 57E) in the Aircthech system (100, 8) The second meeting place shows evidence of a large number of Coalition and Thrynn ships landing, and remains of a fabrication factory to produce Myrrdan style hull plating is found.
+
+Player told to take holographic evidence to the Bar-zhon immediately.  Bar-zhon communication must answer three sets of questions correctly or be attacked. If answered correctly the Bar-zhon take the holographic evidence, provide a government communiqué to take back to Myrrdan, and inform the player that the retaliation fleet was already destroyed en-route to Myrrdan by a surprise ambush of Tafel and infected ships working together.
+
+Military players skip the next 2 quests 
 ]]--
 
 	addQuest(
@@ -655,35 +676,36 @@ Quest #44: 9. The decontamination transporter. Bar-zhon approach Myrrdan. A join
 		"Contact the Elowan concerning the joint Bar-zhon/Thrynn teleporter project",
 		"After their embarrassment, the Bar-zhon have established a permanent embassy on Myrrdan and have pledged to work with us towards building stronger ties between our peoples. They have asked us for assistance on a joint Bar-zhon/Thrynn venture that needs outside help. This group of researchers have taken a unique approach in the attempt to remove the plague from those who are infected by it. Instead of direct matter to energy to matter reconstruction that conventional teleportation devices use, they have invented a teleportation device that intelligently rebuilds the life form from its unique biological data directly, therefore allowing a complete removal of all contaminants.  The problem with device has been gene activation.  Genetic material alone is insufficient to rebuild a life form and the bioscience needed to solve this problem is beyond the Bar-zhon, Thrynn, or us. The Bar-zhon have discreetly asked us to contact the Elowan on their behalf.  The recently announced Bar-zhon / Thrynn alliance has greatly cooled relations between them and the Elowan.",
 		"Our tests with the transporter demonstrates that not only does it fail to filter all biological viral traces, but it also creates hermaphrodites out of the volunteers.",
-		 2, 999, 1 , -- Decontamination Transporter
+		 2, 264, 1 , -- Decontamination Transporter
 		 1, 0, 20000 )
 
 --[[
-Quest #45: 10. (War planet/G’nunk planet where all lifeforms are dangerous and hostile.  New planet type / dozens of ruins)
+Quest Removed: 10. (War planet/G’nunk planet where all lifeforms are dangerous and hostile.  New planet type / dozens of ruins)  -REMOVED FROM WHAT?  IT WAS STILL HERE!!_()*&)*&%^_)&_^&
 ]]--
 
-	addQuest(
+--[[	addQuest(
 		"The War Planet",
 		"Go to the planet ... then bring back 5 armored humanoid lifeforms",
 		"A non-sentient lifeform has been found on Cermait III that destroys all biological viral code generated by the nano-virus within its body.  Our researchers are currently unable to determine how this creature's immune system is responsible for this effect. Your mission is to find and collect at least 5 additional specimens from this planet that we hope will exhibit the same trait.",
 		"Unfortunately in your absence new biological strains of the virus appeared which is not being destroyed by this lifeform's immune system",
 		 2, 999, 5, -- Armored Humanoid
 		 1, 0, 20000 )
+]]--
 
 --[[
-Quest #46: 11. A group of aliens is selling a treatment for the plague that is designed to greatly reduce the periods of madness caused by the virus.  The Nyssian declare that this group is promoting a complete fraud. They send the player to ......... to investigate a crashed Bar-zhon ship. Artifact: Medical Treatment found. Ship's log describing partial effectiveness: half the crew become possessed and start muttering in a strange alien language and are completely unresponsive to orders or questions. When some of them are restrained, all of the possessed crewmembers mutiny and slaughter the regular crewmembers. Captain sets self-destruct, self-destruct is disabled, intentionally crashes the ship. No survivors. If all go mad at once, at least all return at once.  Telepathic influence suggested.  Medical treatment taken to Bar-zhon, refer to the Elowan.  Elowan describe their tests of their samples they have as partially effective and losing effectiveness as new mutations appear.  The treatment is currently useless for Myrrdan since humans appear to be immune from all serious effects of the virus.  Elowan end the mission.
+Quest #45: 11. A group of aliens is selling a treatment for the plague that is designed to greatly reduce the periods of madness caused by the virus.  The Nyssian declare that this group is promoting a complete fraud. They send the player to ......... to investigate a crashed Bar-zhon ship. Artifact: Medical Treatment found. Ship's log describing partial effectiveness: half the crew become possessed and start muttering in a strange alien language and are completely unresponsive to orders or questions. When some of them are restrained, all of the possessed crewmembers mutiny and slaughter the regular crewmembers. Captain sets self-destruct, self-destruct is disabled, intentionally crashes the ship. No survivors. If all go mad at once, at least all return at once.  Telepathic influence suggested.  Medical treatment taken to Bar-zhon, refer to the Elowan.  Elowan describe their tests of their samples they have as partially effective and losing effectiveness as new mutations appear.  The treatment is currently useless for Myrrdan since humans appear to be immune from all serious effects of the virus.  Elowan end the mission.
 ]]--
 
 	addQuest(
 		"Alien healthcare scam",
 		"Discover if there is any truth to the alien healthcare treatment",
 		"A group of unaffiliated aliens from multiple species has been researching leads to slow down or stop the periods of madness caused by the virus.  Some report that they have made great success while others report that they lobotomize their patients. Your task is to track down this group and find out what you can about their methods. Our best information on this group has come from the Nyssian.",
-		"Player should not see this, mission ended by the Bar-zhon",
-		0, 0, 0,
-		0, 0, 0 )
+		"The treatment is currently useless for Myrrdan since humans appear to be immune from all serious effects of the virus.",
+		2, 265, 1,
+		1, 0, 10000 )
 
 --[[
-Quest #47: 12. Shield cracking. Return to the inaccessible planet at Cermait 6 - 247, 218.  Failure yet again. Communications with the other alien races report failed attempts of using particle beams or bombs against the force field without success over the centuries.
+Quest #46: 12. Shield cracking. Return to the inaccessible planet at Cermait 6 - 247, 218.  Failure yet again. Communications with the other alien races report failed attempts of using particle beams or bombs against the force field without success over the centuries.
 ]]--
 
 	addQuest(
@@ -691,7 +713,7 @@ Quest #47: 12. Shield cracking. Return to the inaccessible planet at Cermait 6 -
 		"Trade 25cm radioactives to the Nyssian for a shield phase synchronizer, try to land at Cermait 6 - 247, 218",
 		"Technological negotiations via hyperwave with a Nyssian traveler have gone unexpectedly well.  In exchange for 25 cubic meters of radioactives, they have promised to give us a new technological artifact that will allow any object to passes through a shield without obstruction. The device is much too large to mount on conventional weaponry and we have been warned that the device is based on technology that is extremely difficult or impossible to reverse engineer.  Before we tear it apart, you are ordered to install the device in your ship and attempt to pass through the shield surrounding the planet Cermait 6 - 247, 218.  Return the device back to Starport immediately afterwards, successful or not.",
 		"This exotic device indeed penetrates every test shield we can generate on Myrrdan.  Cermait 6 will have to remain a mystery a bit longer.",
-		 2, 999, 1 ,  -- Shield phase synchronizer
+		 2, 268, 1 ,  -- Shield phase synchronizer
 		 1, 0, 20000 )
 
 end
@@ -710,7 +732,7 @@ War stage overview:
 ]]--
 
 --[[
-Quest #48: 1. Conversation Mission: talk to all alien races to find the reason for the Minex fleet movements (shimmering pyramid artifact)
+Quest #47: 1. Conversation Mission: talk to all alien races to find the reason for the Minex fleet movements (shimmering pyramid artifact)
 ]]--
 	addQuest(
 		"Threatening Actions",
@@ -722,7 +744,7 @@ Quest #48: 1. Conversation Mission: talk to all alien races to find the reason f
 
 
 --[[
-Quest #49: 2.	Intel gathering on Minex, all races provide some insights, the Bar-zhon will analyze any salvaged Minex power core and provide a data chip for Myrrdan. The Minex will always attack the player without any conversation possible when this quest active. All of the other races have interesting generalities but nothing specific to resolving the mission. If the player does not want to salvage one themselves, the Thrynn will sell a power core for 40 endurium.
+Quest #48: 2.	Intel gathering on Minex, all races provide some insights, the Bar-zhon will analyze any salvaged Minex power core and provide a data chip for Myrrdan. The Minex will always attack the player without any conversation possible when this quest active. All of the other races have interesting generalities but nothing specific to resolving the mission. If the player does not want to salvage one themselves, the Thrynn will sell a power core for 40 endurium.
 ]]--
 
 	addQuest(
@@ -730,35 +752,35 @@ Quest #49: 2.	Intel gathering on Minex, all races provide some insights, the Bar
 		"Contact all of the nearby alien races to discover what has been learned about Minex ship technology",
 		"Combat with the Minex has gone unexpectedly poorly for all of the other races including ourselves.  Our military has compiled a data core containing all of our knowledge of the technological strengths and weaknesses of Minex vessels and also tactical analysis of our few battles with them. The other races are more than likely to be compiling this information as well and information sharing between all of us should prove beneficial if not essential for turning the tide of this war.  Your mission is to exchange our data for any significant technological discoveries that others have made about the Minex. As the Bar-zhon, Thrynn, and Elowan are currently bearing the brunt of the attacks, it is likely that they will have the most information about the enemy.",
 		"Very successful diplomatic work!  We are collating this information and distributing it to all of our allies",
-		 2, 999, 1, -- Bar-zhon Intelligence Data
+		 2, 276, 1, -- Bar-zhon Intelligence Data
 		 1, 0, 20000 )
 
 --[[
-Quest #50: 3.	When the player contacts the coalition, they deny the charge of attacking the Elowan and Thrynn strongly. The Bar-zhon affirm the guilt of the Coalition, accuse them of being Minex collaborators and even give the player a data recording substantiating the attacks. Taking these recordings back to the Coalition, and they point out that the ships in the attacks were previously lost to them and they fought to the death, a very non-coalition behavior and that they failed to take advantage of their afterburners. They finally report that the recordings were made within Spemin territory. The Spemin report when in a schizophrenic state that "project overwash" proved to be ineffective due to Minex. They tell you that they plan to postpone efforts and conserve controlled ships. This revelation ends the mission.
+Quest #49: 3.	When the player contacts the coalition, they deny the charge of attacking the Elowan and Thrynn strongly. The Bar-zhon affirm the guilt of the Coalition, accuse them of being Minex collaborators and even give the player a data recording substantiating the attacks. Taking these recordings back to the Coalition, and they point out that the ships in the attacks were previously lost to them and they fought to the death, a very non-coalition behavior and that they failed to take advantage of their afterburners. They finally report that the recordings were made within Spemin territory. The Spemin report when in a schizophrenic state that "project overwash" proved to be ineffective due to Minex. They tell you that they plan to postpone efforts and conserve controlled ships. This revelation ends the mission.
 ]]--
 
 	addQuest(
 		"Unrest",
 		"Confront the coalition concerning their attacks on the Elowan and the Thrynn",
-		"Both Elowan and Thrynn have reported raiding attacks by the Coalition upon weak points in their territories. This is obviously far outside the Coalition’s normal operating theater.  With our recently overhauled relationship with them, we have been asked to confront them on this issue.",
+		"Both Elowan and Thrynn have reported raiding attacks by the Coalition upon weak points in their territories. This is obviously far outside the Coalition's normal operating theater.  With our recently overhauled relationship with them, we have been asked to confront them on this issue.",
 		"Player should not see this, mission ended by the Spemin",
 		0, 0, 0,
 		0, 0, 0 )
 
 --[[
-Quest #51: 4.	Malfunction with power system threatened life-support and made even interplanetary travel impossible. Two escape pods attempted to make it to the nearby rocky planetoid, other passengers decided to stay with the better-equipped transport ship.  A beacon would be placed on the most prominent landmark on the planet that would direct any rescuers to their location.
+Quest #50: 4.	Malfunction with power system threatened life-support and made even interplanetary travel impossible. Two escape pods attempted to make it to the nearby rocky planetoid, other passengers decided to stay with the better-equipped transport ship.  A beacon would be placed on the most prominent landmark on the planet that would direct any rescuers to their location.
 ]]--
 
 	addQuest(
 		"Emergency Evacuation",
-		"Travel to the lava planet in the system ..... and search for survivors.",
-		"Although the Minex have generally abstained from approaching heavily populated planets, they have not hesitated to attack civilian targets. We have heard reports that a number of space stations and outposts have been wiped out without warning and have issued a complete evacuate order to our few recently constructed stations down to minimum crew levels.  One personnel transport failed to return and a drone has pinpointed their ship on the nearby lava planet.  No communications could be established between the drone and the downed ship, so be prepared for anything.",
+		"Travel to the inner lava planet in the Tabarn system (102,105) and search for survivors.",
+		"Although the Minex have generally abstained from approaching heavily populated planets, they have not hesitated to attack civilian targets. We have heard reports that a number of space stations and outposts have been wiped out without warning and have issued a complete evacuate order to our few recently constructed stations down to minimum crew levels.  One personnel transport failed to return and a drone has pinpointed their ship in the Tabarn system (102,105) on the inner lava planet (44N x 130W).  No communications could be established between the drone and the downed ship, so be prepared for anything.",
 		"Very good work!  No casualties were reported",
-		 2, 999, 2, -- escape pods
+		 2, 282, 1, -- escape pods
 		 1, 0, 20000 )
 
 --[[
-Quest #52: 5.	  A chain of wreck sites, an artifact or two taken to the Thrynn each time. Each time Thrynn disclose the next sit.  Most sites useless, two sites contain artifacts that can be salvaged, inertial compensator technology and laser focusing technology. Lasers upgraded to level MAX+1
+Quest #51: 5.	  A chain of wreck sites, an artifact or two taken to the Thrynn each time. Each time Thrynn disclose the next sit.  Most sites useless, two sites contain artifacts that can be salvaged, inertial compensator technology and laser focusing technology. Lasers upgraded to level MAX+1
 ]]--
 
 	addQuest(
@@ -770,7 +792,7 @@ Quest #52: 5.	  A chain of wreck sites, an artifact or two taken to the Thrynn e
 		0, 0, 0 )
 
 --[[
-Quest #53: 6.	Weapons test class 99. Thrynn give 4 options on the communications menu. Install experimental lasers / install experimental missiles / Remove enhancements / End mission choice
+Quest #52: 6.	Weapons test class 99. Thrynn give 4 options on the communications menu. Install experimental lasers / install experimental missiles / Remove enhancements / End mission choice
 ]]--
 
 	addQuest(
@@ -782,7 +804,7 @@ Quest #53: 6.	Weapons test class 99. Thrynn give 4 options on the communications
 		0, 0, 0 )
 
 --[[
-Quest #54: 7.	The player must go and talk to them to learn what the proposal is. Based on the very successful coordination between Elowan and the Thrynn, they want to try to locate similar synchronicities between other alien warships. The Bar-zhon propose holding war games between the races and find powerful ship combinations in order to find effective fleet combinations to use to challenge the Minex. Must persuade player, if not, mission ends. If successful, player goes to all other races. Myrrdan is judged to have too few ships to make any difference. Both Elowan and the Thrynn agree. The Coalition and the Nyssian strongly decline. Every time the Spemin are asked, they become insane and do not answer. Because of only three participants, the event is cancelled.
+Quest #53: 7.	The player must go and talk to them to learn what the proposal is. Based on the very successful coordination between Elowan and the Thrynn, they want to try to locate similar synchronicities between other alien warships. The Bar-zhon propose holding war games between the races and find powerful ship combinations in order to find effective fleet combinations to use to challenge the Minex. Must persuade player, if not, mission ends. If successful, player goes to all other races. Myrrdan is judged to have too few ships to make any difference. Both Elowan and the Thrynn agree. The Coalition and the Nyssian strongly decline. Every time the Spemin are asked, they become insane and do not answer. Because of only three participants, the event is cancelled.
 ]]--
 
 	addQuest(
@@ -794,7 +816,7 @@ Quest #54: 7.	The player must go and talk to them to learn what the proposal is.
 		0, 0, 0 )
 
 --[[
-Quest #55: 8.	Defend transports Myrrdan transports traveling unexpectedly unescorted from Bar-zhon territory. Coordinates are given to the player. Bar-zhon ships meet the player instead and tell them that raiders have destroyed the transports already. Mission ends.
+Quest #54: 8.	Defend transports Myrrdan transports traveling unexpectedly unescorted from Bar-zhon territory. Coordinates are given to the player. Bar-zhon ships meet the player instead and tell them that raiders have destroyed the transports already. Mission ends.
 ]]--
 
 	addQuest(
@@ -806,7 +828,7 @@ Quest #55: 8.	Defend transports Myrrdan transports traveling unexpectedly unesco
 		 1, 0, 20000 )
 
 --[[
-Quest #56: 9.	Infighting pirate raiders following up devastated areas.     Three sets of coordinates; hints from each site give the player clues to how the virus is starting to directly control the actions and characters of many of the Pirates. Pirate corpse found in fourth outpost referenced by the last two of the three original outposts represents a pirate that was considered "possessed" and locked up. Return to Myrrdan for analysis.
+Quest #55: 9.	Infighting pirate raiders following up devastated areas. Three sets of coordinates; hints from each site give the player clues to how the virus is starting to directly control the actions and characters of many of the Pirates. Pirate corpse found in fourth outpost referenced by the last two of the three original outposts represents a pirate that was considered "possessed" and locked up. Return to Myrrdan for analysis.
 ]]--
 
 	addQuest(
@@ -818,7 +840,7 @@ Quest #56: 9.	Infighting pirate raiders following up devastated areas.     Three
 		 1, 0, 20000 )
 
 --[[
-Quest #57: 10.	 Multiple messages concerning excursions into Minex territory. Take results to the Bar-zhon. 8 artifacts.  All curios with no military significance. One of the artifacts appears to have a organic interface. The Bar-zhon refer to the player to the Nyssian. The Nyssian revealed that the artifact is a Gazurtoid ship fragment. Lasers if less then class MAX+1 are then sent to class MAX+1, correspondingly shields are modified in the same way.
+Quest #56: 10.	 Multiple messages concerning excursions into Minex territory. Take results to the Bar-zhon. 8 artifacts.  All curios with no military significance. One of the artifacts appears to have a organic interface. The Bar-zhon refer to the player to the Nyssian. The Nyssian revealed that the artifact is a Gazurtoid ship fragment. Lasers if less then class MAX+1 are then sent to class MAX+1, correspondingly shields are modified in the same way.
 ]]--
 
 	addQuest(
@@ -830,7 +852,7 @@ Quest #57: 10.	 Multiple messages concerning excursions into Minex territory. Ta
 		0, 0, 0 )
 
 --[[
-Quest #58: 11.	The Spemin have a shimmering ball, but they are unable to reverse engineer or even figure it out.  They want 100 fuel or a Minex salvage piece.  An option exists "nothing from Spemin is of value, forget this mission!” Not functional. Thrynn give 50 Quorsitanium if the item is taken to them. Starport gives the player nothing.
+Quest #57: 11.	The Spemin have a shimmering ball, but they are unable to reverse engineer or even figure it out.  They want 100 fuel or a Minex salvage piece.  An option exists "nothing from Spemin is of value, forget this mission!” Not functional. Thrynn give 50 Quorsitanium if the item is taken to them. Starport gives the player nothing.
 ]]--
 
 	addQuest(
@@ -842,7 +864,7 @@ Quest #58: 11.	The Spemin have a shimmering ball, but they are unable to reverse
 		 1, 0, 0 )
 
 --[[
-Quest #59: 12.	Formalizing the Bar-zhon alliance leads the player to three buildings with long sections of dialogue. Certain factions of the Bar-zhon declare Myrrdan to be nothing more than reformed pirates.  Other factions rehash all of the achievements the player has made up to this point. Player returns with draft paperwork located in third building to complete the mission.
+Quest #58: 12.	Formalizing the Bar-zhon alliance leads the player to three buildings with long sections of dialogue. Certain factions of the Bar-zhon declare Myrrdan to be nothing more than reformed pirates.  Other factions rehash all of the achievements the player has made up to this point. Player returns with draft paperwork located in third building to complete the mission.
 ]]--
 
 	addQuest(
@@ -870,7 +892,7 @@ Ancients stage overview:
 
 
 --[[
-Quest #60: 1.	Conversation Mission: talk to all alien races to find hints about how to contact the ancients (Ancient Database Plates)
+Quest #59: 1.	Conversation Mission: talk to all alien races to find hints about how to contact the ancients (Ancient Database Plates) jjh
 ]]--
 
 	addQuest(
@@ -882,7 +904,7 @@ Quest #60: 1.	Conversation Mission: talk to all alien races to find hints about 
 		 1, 0, 20000 )
 
 --[[
-Quest #61: 2.	The Infected swarm a planet of the Bar-zhon. Investigate ruins showing their ruthless nature. No survivors, and all of the infected ones left the planet. Minex commentary about infected finishes the mission.
+Quest #60: 2.	The Infected swarm a planet of the Bar-zhon. Investigate ruins showing their ruthless nature. No survivors, and all of the infected ones left the planet. Minex commentary about infected finishes the mission.
 ]]--
 
 	addQuest(
@@ -894,7 +916,7 @@ Quest #61: 2.	The Infected swarm a planet of the Bar-zhon. Investigate ruins sho
 		0, 0, 0 )
 
 --[[
-Quest #62: 3.	Search ruined worlds of the Bx/Transmodra/Sabion. The player is given a list of sites.  Commentary about the ancients includes: Ancient settlements show absolute individuality. No defensive system. Uniformity of distance between settlements but randomized vectors. Uniform settlements at any altitude as if planetary weather and temperature was irrelevant. Majority of all settlements found at class m stars. No unstable planets tectonically were ever inhabited. Long lifespan and extreme individualism assumed. Recordkeeping beyond comprehension or telepathic because of a complete lack of any trace of communication or writing or data storage systems. All messages signed by "The Society of Ancient Studies"
+Quest #61: 3.	Search ruined worlds of the Bx/Transmodra/Sabion. The player is given a list of sites.  Commentary about the ancients includes: Ancient settlements show absolute individuality. No defensive system. Uniformity of distance between settlements but randomized vectors. Uniform settlements at any altitude as if planetary weather and temperature was irrelevant. Majority of all settlements found at class m stars. No unstable planets tectonically were ever inhabited. Long lifespan and extreme individualism assumed. Recordkeeping beyond comprehension or telepathic because of a complete lack of any trace of communication or writing or data storage systems. All messages signed by "The Society of Ancient Studies"
 ]]--
 
 	addQuest(
@@ -906,7 +928,7 @@ Quest #62: 3.	Search ruined worlds of the Bx/Transmodra/Sabion. The player is gi
 		 1, 0, 20000 )
 
 --[[
-Quest #63: 4.	 Data cube given to the player by the Minex.  Questions include: Uyo matrix frequency. Last contact and contact location with the Uyo. (Shielded planet coordinates given) Activation preconditions. Termination conditions. Area of operation. Self sentience level.  The data cube tells the player what to ask next each time.  Data cube artifact exchanged for 'Data cube with responses' artifact at the end of the questions.
+Quest #62: 4.	 Data cube given to the player by the Minex.  Questions include: Uyo matrix frequency. Last contact and contact location with the Uyo. (Shielded planet coordinates given) Activation preconditions. Termination conditions. Area of operation. Self sentience level.  The data cube tells the player what to ask next each time.  Data cube artifact exchanged for 'Data cube with responses' artifact at the end of the questions.
 ]]--
 
 	addQuest(
@@ -918,7 +940,7 @@ Quest #63: 4.	 Data cube given to the player by the Minex.  Questions include: U
 		 1, 0, 20000 )
 
 --[[
-Quest #64: 5.	Treasure map of an infamous pirate known to scavenge artifacts. Map provided by the coalition after they tried to trick the player into paying more for it.  Aliens try and fail to pronounce name.  'Mignizitaeri'  Series of riddles and mazes.  Already looted ancient sites. Maze at end.  Prizes: small black egg. Crystal obelisk. Blackrock gem. Amethyst rod with triangular crystal base. Nyssian will tell the story of each artifact.  Thrynn will buy all artifacts except for the black egg. Returning the black egg artifact to starport finishes the mission
+Quest #63: 5.	Treasure map of an infamous pirate known to scavenge artifacts. Map provided by the coalition after they tried to trick the player into paying more for it.  Aliens try and fail to pronounce name.  'Mignizitaeri'  Series of riddles and mazes.  Already looted ancient sites. Maze at end.  Prizes: small black egg. Crystal obelisk. Blackrock gem. Amethyst rod with triangular crystal base. Nyssian will tell the story of each artifact.  Thrynn will buy all artifacts except for the black egg. Returning the black egg artifact to starport finishes the mission
 ]]--
 
 	addQuest(
@@ -930,7 +952,7 @@ Quest #64: 5.	Treasure map of an infamous pirate known to scavenge artifacts. Ma
 		 1, 0, 20000 )
 
 --[[
-Quest #65: 6.  Coalition decides to attack Myrrdan . Elowan strongly supportive and issue a data rod to take to the Coalition. The Nyssian prophecy that we are not in any way related to the Uyo and also issue a data rod. The Bar-zhon offer to raid Coalition territory to try to pressure them into withdrawing the fleet. (useless) The Minex provide data rod contrasting the differing traits of humans and Uyo. The Coalition with all three data rods removes their fleet and sends a truce agreement to Myrrdan
+Quest #64: 6.  Coalition decides to attack Myrrdan . Elowan strongly supportive and issue a data rod to take to the Coalition. The Nyssian prophecy that we are not in any way related to the Uyo and also issue a data rod. The Bar-zhon offer to raid Coalition territory to try to pressure them into withdrawing the fleet. (useless) The Minex provide data rod contrasting the differing traits of humans and Uyo. The Coalition with all three data rods removes their fleet and sends a truce agreement to Myrrdan
 ]]--
 
 	addQuest(
@@ -942,7 +964,7 @@ Quest #65: 6.  Coalition decides to attack Myrrdan . Elowan strongly supportive 
 		 1, 0, 20000 )
 
 --[[
-Quest #66: 7.	Nyssian locate a certain ancient site. Telepathic artifact located there. Written description is that any who approaches the artifact fall into an unconscious state. The artifact itself resembles an opaque perfect mirror.  No apparent use.  Nyssian tell the player to take the artifact to the Minex.  Minex ask the player where they have located one of their children's toys. They confiscate the device and tell the player that it is something they created, not of ancient manufacture. They also tell the player that a thought mirror is too dangerous for humans.
+Quest #65: 7.	Nyssian locate a certain ancient site. Telepathic artifact located there. Written description is that any who approaches the artifact fall into an unconscious state. The artifact itself resembles an opaque perfect mirror.  No apparent use.  Nyssian tell the player to take the artifact to the Minex.  Minex ask the player where they have located one of their children's toys. They confiscate the device and tell the player that it is something they created, not of ancient manufacture. They also tell the player that a thought mirror is too dangerous for humans.
 ]]--
 
 	addQuest(
@@ -954,7 +976,7 @@ Quest #66: 7.	Nyssian locate a certain ancient site. Telepathic artifact located
 		0, 0, 0 )
 
 --[[
-Quest #67: 8.	Searching for the legend of the Alta-hlai .  All races except for the Spemin know nothing.  Possessed message: You seek Leghk khan. Unusable. Provides coordinates. The device resembles an Inert EMP disrupter.  Discharged sometime in the last 500 years. Extremely hard shell. Bar-zhon explosives destroyed its power supply and also damaged a large part of the mechanism.
+Quest #66: 8.	Searching for the legend of the Alta-hlai .  All races except for the Spemin know nothing.  Possessed message: You seek Leghk khan. Unusable. Provides coordinates. The device resembles an Inert EMP disrupter.  Discharged sometime in the last 500 years. Extremely hard shell. Bar-zhon explosives destroyed its power supply and also damaged a large part of the mechanism.
 ]]--
 
 	addQuest(
@@ -966,7 +988,7 @@ Quest #67: 8.	Searching for the legend of the Alta-hlai .  All races except for 
 		 1, 0, 20000 )
 
 --[[
-Quest #68: 9.	Elowan warn of military buildup to raze Myrrdan. The Elowan are too weak to oppose the action on their own.  They have tried to contact the Thrynn on our behalf but have been ignored. The Bar-zhon won't intervene, fail to honor the Myrrdan alliance, but promise to send strong diplomatic condemnation, the Nyssian confirm the fleet location (give the player a data rod) and report that the fleet is no longer at their home world but is hiding well outside of the ecliptic of the system but have no fleet of their own to assist us with.  The Minex refuse to act in judiciary role.  They report that any military assistance of any type always turns aggression upon themselves in the long term. ‘Your assistance has been invaluable but your survival is irrelevant if you can't defend yourselves.’ To resolve this mission, the player must contact the Spemin, pretend to be Uyo, give system and location (Nyssian data rod). They tell you to wait and contact them again later. They report that a large fleet of infected ships have wiped out the taskforce and provide a Spemin data crystal for the player to give to starport.
+Quest #67: 9.	Elowan warn of military buildup to raze Myrrdan. The Elowan are too weak to oppose the action on their own.  They have tried to contact the Thrynn on our behalf but have been ignored. The Bar-zhon won't intervene, fail to honor the Myrrdan alliance, but promise to send strong diplomatic condemnation, the Nyssian confirm the fleet location (give the player a data rod) and report that the fleet is no longer at their home world but is hiding well outside of the ecliptic of the system but have no fleet of their own to assist us with.  The Minex refuse to act in judiciary role.  They report that any military assistance of any type always turns aggression upon themselves in the long term. ‘Your assistance has been invaluable but your survival is irrelevant if you can't defend yourselves.’ To resolve this mission, the player must contact the Spemin, pretend to be Uyo, give system and location (Nyssian data rod). They tell you to wait and contact them again later. They report that a large fleet of infected ships have wiped out the taskforce and provide a Spemin data crystal for the player to give to starport.
 ]]--
 
 	addQuest(
@@ -978,7 +1000,7 @@ Quest #68: 9.	Elowan warn of military buildup to raze Myrrdan. The Elowan are to
 		 1, 0, 20000 )
 
 --[[
-Quest #69: 10.	Minex summons: An unfocused transmission has been picked up in an empty star system located ...  within Elowan space. The Elowan independently tracked the signal to a minstrel who flees after relaying the message. Elowan pass on the following message and tell the player the background history of the minstrels:
+Quest #68: 10.	Minex summons: An unfocused transmission has been picked up in an empty star system located ...  within Elowan space. The Elowan independently tracked the signal to a minstrel who flees after relaying the message. Elowan pass on the following message and tell the player the background history of the minstrels:
 
 Fury born without focus
 Ancient evil without a core
@@ -1001,7 +1023,7 @@ To close the past, the mute must play
 		0, 0, 0 )
 
 --[[
-Quest #70: 11  The Elowan read off the set of 15 coordinates.  No endurium found, but each site relays some history of the war against the Uyo from the point of view of the ancients.  In this series of ruins Earth is given as a major Uyo center and the physical form of the Uyo described. Story of anti-telepathic device destroying the Uyo on a galactic scale and leaving them open to local nonsentient predators on every world except Earth. Useless curio artifact Crystal bar found at last ruin site and returned to Myrrdan to end the quest.
+Quest #69: 11  The Elowan read off the set of 15 coordinates.  No endurium found, but each site relays some history of the war against the Uyo from the point of view of the ancients.  In this series of ruins Earth is given as a major Uyo center and the physical form of the Uyo described. Story of anti-telepathic device destroying the Uyo on a galactic scale and leaving them open to local nonsentient predators on every world except Earth. Useless curio artifact Crystal bar found at last ruin site and returned to Myrrdan to end the quest.
 ]]--
 
 	addQuest(
@@ -1013,7 +1035,7 @@ Quest #70: 11  The Elowan read off the set of 15 coordinates.  No endurium found
 		 1, 0, 20000 )
 
 --[[
-Quest #71: 12.	Data from survey in mission number 11 has been thoroughly analyzed by the Minex. They have located a city of the ancients and the player returns with a Crystal Sphere (endgame)
+Quest #70: 12.	Data from survey in mission number 11 has been thoroughly analyzed by the Minex. They have located a city of the ancients and the player returns with a Crystal Sphere (endgame)
 ]]--
 
 	addQuest(
@@ -1070,13 +1092,25 @@ function getActiveQuest()
 end
 
 function getPlotStage()
-	if active_quest == 36 then plot_stage = 2
-	elseif active_quest == 48 then plot_stage = 3
-	elseif active_quest == 60 then plot_stage = 4
-	elseif active_quest == 72 then plot_stage = 5
-	else plot_stage = 1
+
+	if active_quest < 36 then
+		plot_stage = 1 -- Training/Class Missions
 	end
-end
+
+	if active_quest > 35 then
+		plot_stage = 2 -- Virus Stage Missions
+	end
+
+	if active_quest > 46 then
+		plot_stage = 3 -- War Stage Missions
+	end
+
+	if active_quest > 58 then
+		plot_stage = 4 -- Ancients Stage Missions
+	end
+
+
+end -- getPlotStage()
 
 function getNextQuest()
 	-- Increment active_quest counter and then retrieve the new quest from the quests table

@@ -37,11 +37,11 @@
   <item>
     <ID>3</ID>
     <Type>Artifact</Type>
-    <Name>Shimmering Hologram</Name>
+    <Name>Shimmering Pyramid</Name>
     <Value>0</Value>
     <Size>3.1</Size>
     <Portrait>T_NavComputer.tga</Portrait>
-	<planetid>197</planetid>  <!-- Fir Bolg I 17,93 (54S X 143E) -->
+	<planetid>197</planetid>  <!-- Fir Bolg I 17,93 (54N X 143W) -->
 	<y>-143</y>
 	<x>-54</x>
   </item>
@@ -1658,7 +1658,7 @@
     <Name>Excavation</Name>
 	<Description>This area of ground appears to be artificially disturbed in some way.</Description>
     <Portrait>B_Mine.tga</Portrait>
-	<planetid>197</planetid> <!-- ** unable to study this ruin for some reason **  Fir Bolg I 17,93  -  Shimmering Holograms -->
+	<planetid>197</planetid> <!-- Fir Bolg I 17,93  -  Shimmering Holograms -->
 	<y>-142</y>
 	<x>-53</x>
   </item>
@@ -2237,7 +2237,7 @@
     <ID>243</ID>
     <Type>Ruin</Type>
     <Name>Nysing</Name>
-    <Description>You are guided to the center of the Bar-zhon city and brought into a opulent governmental conference room. The Bar-zhon simply accept and dismiss Myrrdan's conditions on shared Fleet command but call your attention to their modifications of the Admiral's treaty.  They demand a fully cooperative alliance: Myrrdan must also come to their aid with military, humanitarian, and technological assistance and the Bar-zhon in return promise the same.  On behalf of Myrrdan, you accept the treaty with all of the modifications. A contingent of Bar-zhon officers in cryo-stasis await transport on board your vessel to Myrrdan.</Description>
+    <Description>You are guided to the center of the city and brought into a governmental conference room. The Bar-zhon accept and dismiss Myrrdan's conditions on shared Fleet command but call your attention to their modifications of the treaty. They demand a fully cooperative alliance: Myrrdan must also come to their aid with military, humanitarian, and technological assistance and the Bar-zhon in return promise the same. On behalf of Myrrdan, you accept the treaty as written. A contingent of Bar-zhon officers in cryo-stasis await transport on board your vessel to Myrrdan.</Description>
     <Portrait>B_Metropolis.tga</Portrait>
 	<planetid>470</planetid> <!--  114S X 23E on Deoch III (224,121) -->
 	<y>24</y>
@@ -2247,10 +2247,10 @@
     <ID>244</ID>
     <Type>Ruin</Type>
     <Name>Crash Site</Name>
-    <Description>... written on the base of an enormous ornamental statue: "Welcome fellow believer in simultaneous serendipitous stupefaction!  The Thdok-Bryg-Ahhh in its most auspicious manner has decreed our extended stay upon this inhospitable planetoid to test our faith.  Future generations will marvel at the fortuitous providence that guides us to divide our efforts for reconstruction between two sites, 11S X 87W and 91S X 130E  For the next 2 cycles, we must unerringly follow the sacrosanct celestial ceremony such that the various portents and divinations for full elaboration of our purpose here may be revealed in the fullness of time.  Yes. Well. Hmmm. Just so. Just so.</Description>
+    <Description>... written on the base of an enormous ornamental statue: "Welcome fellow believer in simultaneous serendipitous stupefaction!  The Thdok-Bryg-Ahhh in its most auspicious manner has decreed our extended stay upon this inhospitable planetoid to test our faith.  Future generations will marvel at the fortuitous providence that guides us to divide our efforts for reconstruction between two sites, 11S X 87W and 94S X 131E  For the next 2 cycles, we must unerringly follow the sacrosanct celestial ceremony such that the various portents and divinations for full elaboration of our purpose here may be revealed in the fullness of time.  Yes. Well. Hmmm. Just so. Just so.</Description>
     <Portrait>B_ListeningPost.tga</Portrait>
-	<planetid>443</planetid> <!--  Findtha (71N X 27E) in the Enna system (105, 112). -->
-	<y>27</y>
+	<planetid>443</planetid> <!--  Findtha (73N X 40E) in the Enna system (105, 112). -->
+	<y>40</y>
 	<x>-71</x>
   </item>
   <item>
@@ -2260,15 +2260,15 @@
     <Value>0</Value>
     <Size>24.7</Size>
     <Portrait>T_EscapePod.tga</Portrait>
-	<planetid>443</planetid>  <!--  Findtha (71N X 27E) in the Enna system (105, 112). -->
-	<y>28</y>
+	<planetid>443</planetid>  <!--  Findtha (73N X 40E) in the Enna system (105, 112). -->
+	<y>41</y>
 	<x>-72</x>
   </item>
   <item>
     <ID>246</ID>
     <Type>Ruin</Type>
     <Name>Crumbling Ruin</Name>
-    <Description>Within an abandoned and poorly built complex:  "In a moment of divine inspiration we now see that it is inauspicious and in many respects unfavorable for us to attempt to maintain our presence at this location. We will, post haste, join with our esteemed acolytes and honored sycophants at 91S X 130E for the privilege of flawlessly performing the ceremonies of Thdok-Bryg-Ahhh."</Description>
+    <Description>Within an abandoned and poorly built complex:  "In a moment of divine inspiration we now see that it is inauspicious and in many respects unfavorable for us to attempt to maintain our presence at this location. We will, post haste, join with our esteemed acolytes and honored sycophants at 94S X 131E for the privilege of flawlessly performing the ceremonies of Thdok-Bryg-Ahhh."</Description>
     <Portrait>B_Mine.tga</Portrait>
 	<planetid>443</planetid> <!--  Findtha (11S X 87W) in the Enna system (105, 112). -->
 	<y>-87</y>
@@ -2291,7 +2291,7 @@
     <Name>crumbling ruin</Name>
     <Description>Within a decrepit and crumbling building:  "Thdok-Bryg-Ahhh is the essence of truth and therefore contains the answers to all questions. Unfortunately only with the fullness of time has it been revealed that the vast ambient discordance of the universe is focused upon this location with excessive strength, necessiting our immediate relocation to join with our noble companions at 11S X 87W  Well. Hmmm. Yes."</Description>
     <Portrait>B_ShantyTown.tga</Portrait>
-	<planetid>443</planetid> <!--  Findtha (91S X 130E) in the Enna system (105, 112). -->
+	<planetid>443</planetid> <!--  Findtha (94S X 131E) in the Enna system (105, 112). -->
 	<y>130</y>
 	<x>91</x>
   </item>
@@ -2302,7 +2302,7 @@
     <Value>0</Value>
     <Size>2.3</Size>
     <Portrait>T_Skins.tga</Portrait>
-	<planetid>443</planetid> <!--  Findtha (91S X 130E) in the Enna system (105, 112). -->
+	<planetid>443</planetid> <!--  Findtha (94S X 131E) in the Enna system (105, 112). -->
 	<y>129</y>
 	<x>92</x>
   </item>
@@ -2326,7 +2326,7 @@
     <ID>252</ID>
     <Type>Ruin</Type>
     <Name>Melted ruin</Name>
-    <Description>The base is a mass of molten metal frozen in place and solidified into a warped, multicolored amorphous form. In a nearby field the wreckage of a basic spaceport is visible. Scraps of metal, ceramics, and other fist size and smaller scraps litter the countryside. The identifiable scraps match the stolen interceptor fighters. Occasional alien ship fragments have similarities to Tafel design aesetics.</Description>
+    <Description>The base is a mass of molten metal frozen in place and solidified into a warped, multicolored amorphous form. In a nearby field the wreckage of a basic spaceport is visible. Scraps of metal, ceramics, and other fist size and smaller scraps litter the countryside. The identifiable scraps match the stolen interceptor fighters. Occasional alien ship fragments have similarities to Tafel design aesthetics.</Description>
     <Portrait>B_Factory.tga</Portrait>
 	<planetid>98</planetid> <!--  Oende V (152S X 3) in the Oende system 134, 30 -->
 	<y>3</y>
@@ -2608,10 +2608,11 @@
     <Value>0</Value>
     <Size>0</Size>
     <Portrait>T_EscapePod.tga</Portrait>
-	<planetid>445</planetid> <!--  Culum Cuale 35S X 72W in the Tabarn system (102, 105)  -->
-	<y>-71</y>
+	<planetid>445</planetid> <!--  Culum Cuale 35S X 56W in the Tabarn system (102, 105)  -->
+	<y>-56</y>
 	<x>34</x>
   </item>
+
   <item>
     <ID>283</ID>
     <Type>Artifact</Type>
@@ -2619,8 +2620,8 @@
     <Value>0</Value>
     <Size>0</Size>
     <Portrait>T_EscapePod.tga</Portrait>
-	<planetid>445</planetid> <!--  Culum Cuale 64N X 95W in the Tabarn system (102, 105)  -->
-	<y>-96</y>
+	<planetid>445</planetid> <!--  Culum Cuale 64N X 150W in the Tabarn system (102, 105)  -->
+	<y>-40</y>
 	<x>-63</x>
   </item>
 
@@ -2628,13 +2629,12 @@
 	<ID>284</ID>
 	<Type>Ruin</Type>
 	<Name>Shipwreaked Transport</Name>
-	<Description>Several dozen construction personnel eagerly board your ship for evacuation. They report that a malfunction with the power system threatened life support and made interplanetary travel impossible. Using every bit of emergency power, the crew successfully diverted to this lava planet and prevented burn up in the atmosphere, however the transport will never move again. Two escape pods attempted to make it to the nearby rocky planetoid with a breathable atmosphere. They planned to set a beacon somewhere near the north pole or south pole of the planet that would direct any rescuers to their location.</Description>
+	<Description>Several dozen construction personnel eagerly board your ship for evacuation. They report that a malfunction with the power system threatened life support and made interplanetary travel impossible. Using every bit of emergency power, the crew successfully diverted to this lava planet and prevented burn up in the atmosphere, however the transport will never move again. Two escape pods attempted to make it to the other lava planetoid with a breathable atmosphere. They planned to set a beacon somewhere near the north pole or south pole of the planet that would direct any rescuers to their location.</Description>
 	<Portrait>B_Research.tga</Portrait>
 	<planetid>444</planetid> <!-- En mac Ethamain (44N X 130W) in the Tabarn system (102, 105)  -->
 	<y>-130</y>
 	<x>-44</x>
 </item>
-
 <item>
 	<ID>285</ID>
 	<Type>Ruin</Type>
@@ -2649,40 +2649,42 @@
 	<ID>286</ID>
 	<Type>Ruin</Type>
 	<Name>Makeshift Settlement</Name>
-	<Description>Several dozen personnel eagerly board your ship. They report that the pod was damaged during landing resulting in serious injuries but no fatalities. During the descent communications were lost and the beta pod veered off sharply to the south.</Description>
+	<Description>Several dozen personnel eagerly board your ship. They report that the pod was damaged during landing resulting in serious injuries but no fatalities. During the descent communications were lost and the beta pod veered off sharply to the southwest.</Description>
 	<Portrait>B_ShantyTown.tga</Portrait>
 	<planetid>445</planetid> <!--  Culum Cuale 64N X 95W in the Tabarn system (102, 105)  -->
-	<y>-95</y>
+	<y>-39</y>
 	<x>-64</x>
 </item>
 <item>
 	<ID>287</ID>
 	<Type>Ruin</Type>
 	<Name>Navigation Marker</Name>
-	<Description>Marker: ... lost communications ... unstable terrain... targeting a landing zone to make camp a short distance just east of here in a deeper valley observed from orbit...</Description>
+	<Description>Marker: ... lost communications ... unstable terrain... targeting a landing zone to make camp a short distance just east of here on an island observed from orbit...</Description>
 	<Portrait>B_ListeningPost.tga</Portrait>
 	<planetid>445</planetid> <!--  Culum Cuale 40S X 95W in the Tabarn system (102, 105)  -->
 	<y>-95</y>
 	<x>40</x>
 </item>
+
 <item>
 	<ID>288</ID>
 	<Type>Ruin</Type>
-	<Name>B_ShantyTown</Name>
+	<Name>Makeshift Settlement</Name>
 	<Description>The remaining personnel are elated to see you. Supplies were running low but no issues were reported. Several crew members note that the escape pod is perfectly intact and is worth salvaging.</Description>
 	<Portrait>B_ShantyTown.tga</Portrait>
-	<planetid>445</planetid> <!--  Culum Cuale 35S X 72W in the Tabarn system (102, 105)  -->
-	<y>-72</y>
-	<x>35</x>
+<!--	<planetid>445</planetid> <!--  Culum Cuale 35S X 50W in the Tabarn system (102, 105)  -->
+	<y>-55</y>
+	<x>35</x>  jjh don't need 2 of these -->
 </item>
+
 <item>
 	<ID>289</ID>
 	<Type>Ruin</Type>
-	<Name>B_ShantyTown</Name>
+	<Name>Makeshift Settlement</Name>
 	<Description>The remaining personnel are elated to see you. Supplies were running low but no issues were reported. Several crew members note that the escape pod is perfectly intact and is worth salvaging.</Description>
 	<Portrait>B_ShantyTown.tga</Portrait>
 	<planetid>445</planetid> <!--  Culum Cuale 35S X 72W in the Tabarn system (102, 105)  -->
-	<y>-70</y>
+	<y>-55</y>
 	<x>33</x>
 </item>
 <item>
@@ -3310,7 +3312,7 @@
     <Value>0</Value>
     <Size>0</Size>
     <Portrait>T_Liquid.tga</Portrait>
-	<planetid>301</planetid> <!--  (153N X 151E) Transmodra home world (Dian Cecht 4 - 35,139)  -->
+	<planetid>301</planetid> <!--  (157N X 153E) Transmodra home world (Dian Cecht 4 - 35,139)  -->
 	<y>150</y>
 	<x>-152</x>
 </item>
@@ -3340,7 +3342,7 @@
 	<ID>353</ID>
 	<Type>Ruin</Type>
 	<Name>Crumbling Ruin</Name>
-	<Description>Newsreel: The Bar-zhon infringe on our territory with impunity, raid our transports and steal our resources. Their sense of superiority is badly misplaced.  They choose to ignore the process of diplomacy at their own peril...  Database References: 3S X 142W, 72N X 76W, 153N X 151E</Description>
+	<Description>Newsreel: The Bar-zhon infringe on our territory with impunity, raid our transports and steal our resources. Their sense of superiority is badly misplaced.  They choose to ignore the process of diplomacy at their own peril...  Database References: 3S X 142W, 72N X 76W, 157N X 153E</Description>
 	<Portrait>B_Factory.tga</Portrait>
 	<planetid>301</planetid> <!--  (15N X 52E) Transmodra home world (Dian Cecht 4 - 35,139)  -->
 	<y>52</y>
@@ -3360,7 +3362,7 @@
 	<ID>355</ID>
 	<Type>Ruin</Type>
 	<Name>Crumbling Ruin</Name>
-	<Description>Memo: Robotic drones should easily negate the Bar-zhon's edge in metabolism and reaction time.   Our sheer numbers should easily negate the Bar-zhon technical superiority...  Database References: 153N X 151E, Sabion Stockpiles: 79S X 139E</Description>
+	<Description>Memo: Robotic drones should easily negate the Bar-zhon's edge in metabolism and reaction time.   Our sheer numbers should easily negate the Bar-zhon technical superiority...  Database References: 157N X 153E, Sabion Stockpiles: 79S X 139E</Description>
 	<Portrait>B_Factory.tga</Portrait>
 	<planetid>301</planetid> <!--  (72N X 76W) Transmodra home world (Dian Cecht 4 - 35,139)  -->
 	<y>-76</y>
@@ -3372,7 +3374,7 @@
 	<Name>Crumbling Ruin</Name>
 	<Description>Newspaper:  Continued bombing is effectively clearing out the surviving resistance cells. Surface temperatures are now 249 C and rising. Only being this far underground has kept us alive this long. The Bar-zhon are still ignoring transmissions calling for a cease-fire.  Bx evacuation bunkers: 50N X 19W, 43S X 113W, 129N X 85E</Description>
 	<Portrait>B_Factory.tga</Portrait>
-	<planetid>301</planetid> <!--  (153N X 151E) Transmodra home world (Dian Cecht 4 - 35,139)  -->
+	<planetid>301</planetid> <!--  (157N X 153E) Transmodra home world (Dian Cecht 4 - 35,139)  -->
 	<y>151</y>
 	<x>-153</x>
 </item>
@@ -3591,7 +3593,7 @@
 	<ID>379</ID>
 	<Type>Ruin</Type>
 	<Name>Crumbling Ruin</Name>
-	<Description>Sir. After carefully examining these ruins, our staff archaeologist has concluded that nothing can be readily recovered from this site.  All we have found are unusually shaped rock crystals and melted forms of buildings. It appears that fusion bombs dropped on this location have destroyed anything of value.  A single carved rock face has the planetary coordinates 54S X 143E in the Sabion language.  It is signed by (untranslatable) Sabion Homeworld Polar Research Group #217.</Description>
+	<Description>Sir. After carefully examining these ruins, our staff archaeologist has concluded that nothing can be readily recovered from this site.  All we have found are unusually shaped rock crystals and melted forms of buildings. It appears that fusion bombs dropped on this location have destroyed anything of value.  A single carved rock face has the planetary coordinates 54N X 143W in the Sabion language.  It is signed by (untranslatable) Sabion Homeworld Polar Research Group #217.</Description>
 	<Portrait>B_Tomb.tga</Portrait>
 	<planetid>411</planetid> <!--  Dagda III (228, 192) at 67S X 131E  -->
 	<y>131</y>
@@ -3734,7 +3736,7 @@
     <ID>393</ID>
 	<Type>Ruin</Type>
 	<Name>Spaceship Wreckage</Name>
-	<Description>Digital newspaper: "We got him!  After a painstaking 6 month stakeout I, Alonso Borno, detected Xenon’s smuggler craft making its way into Coalition space. After demanding his surrender, Xenon applied full power to engines and unfortunately dodged directly into the path of the warning volley of fire..."</Description>
+	<Description>Digital newspaper: "We got him!  After a painstaking 6 month stakeout I, Alonso Borno, detected Xenon's smuggler craft making its way into Coalition space. After demanding his surrender, Xenon applied full power to engines and unfortunately dodged directly into the path of the warning volley of fire..."</Description>
     <Portrait>B_ShantyTown.tga</Portrait>
     <planetid>465</planetid> <!--  Lusmore I 563< (97N X 114E) (227, 73)  -->
     <y>114</y>
@@ -3769,21 +3771,6 @@
     <Size>0.1</Size>
     <Portrait>T_Plates.tga</Portrait>
   </item>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -5293,5 +5280,6 @@
 	<x> -31 </x>
 </item>
 
+<!-- allow me to experiment -->
 
 </items>

@@ -1046,7 +1046,7 @@
   </star>
   <star>
     <id>90</id>
-    <name>Mathgen</name>
+    <name>Vupra</name>
     <x>6</x>
     <y>120</y>
     <spectralclass>M</spectralclass>
@@ -4766,7 +4766,7 @@
   <planet>
     <id>301</id>
     <hoststar>66</hoststar>
-    <name>Dian Cecht IV 473</name>
+    <name>Dian Cecht IV </name>
     <size>MEDIUM</size>
     <type>ROCKY</type>
     <color>BROWN</color>
@@ -4802,7 +4802,7 @@
   <planet>
     <id>304</id>
     <hoststar>90</hoststar>
-    <name>Mathgen I 415</name>
+    <name>Vupra I 415</name>
     <size>LARGE</size>
     <type>MOLTEN</type>
     <color>RED</color>
@@ -4814,7 +4814,7 @@
   <planet>
     <id>305</id>
     <hoststar>90</hoststar>
-    <name>Mathgen II 296</name>
+    <name>Vupra II 296</name>
     <size>MEDIUM</size>
     <type>ROCKY</type>
     <color>BROWN</color>
@@ -4838,7 +4838,7 @@
   <planet>
     <id>307</id>
     <hoststar>90</hoststar>
-    <name>Mathgen III 562</name>
+    <name>Vupra III 562</name>
     <size>MEDIUM</size>
     <type>OCEANIC</type>
     <color>BLUE</color>
@@ -4850,7 +4850,7 @@
   <planet>
     <id>308</id>
     <hoststar>90</hoststar>
-    <name>Mathgen IV 768</name>
+    <name>Vupra IV 768</name>
     <size>SMALL</size>
     <type>ROCKY</type>
     <color>BROWN</color>
@@ -4862,7 +4862,7 @@
   <planet>
     <id>309</id>
     <hoststar>90</hoststar>
-    <name>Mathgen V 450</name>
+    <name>Vupra V 450</name>
     <size>HUGE</size>
     <type>GAS GIANT</type>
     <color>VIOLET</color>

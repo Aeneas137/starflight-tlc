@@ -1152,7 +1152,7 @@ elseif (plot_stage == 3) then -- war plot state
 	questions[62201] = {
 		action="jump", goto=62001, ftest= 2, -- insightful
 		player="Where is this evidence?",
-		alien={"Death's minions bar our Oracle, but impressions point to as the direction of the Tafel.  They succumbed to this madness almost instantly while other races still struggle and survive.  Nothing else do we know." }
+		alien={"Death's minions bar our Oracle, but impressions point us in the direction of the Tafel.  They succumbed to this madness almost instantly while other races still struggle and survive.  Nothing else do we know." }
 	}
 	questions[62300] = {
 		action="jump", goto=62001, ftest= 2, -- insightful
@@ -1184,7 +1184,7 @@ elseif (plot_stage == 3) then -- war plot state
 		action="jump", goto=63002,
 		player="[AUTO_REPEAT]",
 		playerFragment="about the relationship between the Minex and these withered beings", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
-		alien={"Our people have insights into the activities of all races, with the only exception of yours and the Minex.  The Minex appear conventional, but have an energy and form which we cannot emulate or fully understand.  Their biology is quite unique and follows patterns quite foreign to all others.  It is almost as if their life form was designed, possibly by this " }
+		alien={"Our people have insights into the activities of all races, with the only exception of yours and the Minex.  The Minex appear conventional, but have an energy and form which we cannot emulate or fully understand.  Their biology is quite unique and follows patterns quite foreign to all others.  It is almost as if their life form was possibly, we dare say, designed." }
 	}
 	questions[63300] = {
 		action="jump", goto=63002, ftest= 2, -- insightful
@@ -1769,7 +1769,7 @@ title="Mission #45:  Alien Healthcare Scam - no sample
 	questions[85100] = {
 		action="jump", goto=1,
 		player="Bar-zhon Envoy?",
-		alien={"Yes, a sole cruiser was sent to contact the group and obtain the treatment.  I have recently learned that shortly afterwards their ship crashed upon Lusmore 1 (227, 73) at 99N X 115E.  The hand of the black wind is very long." }
+		alien={"Yes, a sole cruiser was sent to contact the group and obtain the treatment.  I have recently learned that shortly afterwards their ship crashed upon Lusmore I (227, 73) at 99N X 115E.  The hand of the black wind is very long." }
 	}
 
 --[[
@@ -1938,7 +1938,7 @@ title="Mission #48:  Intelligence Collaboration
 		player="[AUTO_REPEAT]",
 		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have compiled a datacube of technological, tactical, and strategic observations of the Minex war machine.  In the interests of all of our survival, we are willing to share this information freely.",
 		playerFragment="a collection of similar observations by your people", fragmentTable=preQuestion.desire,
-		alien={"Fleet combat is not my forte.  I have no tactical information on Minex warships since I have been completely successful at avoiding them.  These things I have long known about the Minex psyche:  They are sensitive to losses.  If you overwhelm them with overwhelming opposition they will instantly change tactics from seeking the largest numbers of ships of yours to destroy to preserving the greatest number of their ships.  They have absolutely no strategic goals." }
+		alien={"Fleet combat is not my forte. I have no tactical information on Minex warships since I have been completely successful at avoiding them. These things I have long known about the Minex psyche: they are sensitive to losses. If you overwhelm them with overwhelming opposition they will instantly change tactics from seeking the largest numbers of ships of yours to destroy to preserving the greatest number of their ships. They have absolutely no strategic goals." }
 	}
 	questions[78001] = {
 		action="jump", goto=60001,
@@ -2210,7 +2210,7 @@ elseif (plot_stage == 2) then -- virus plot state
 		first_question = 86000
 
 -- Mission #46:  Shield phase synchronizer - purchased from device
-	elseif active_quest == 46 and artifact267 == 1 and artifact268 == 0 then
+	elseif active_quest == 46 and artifact267 == 1 and artifact268 == 0 then   --mark
 		first_question = 86500
 
 	else

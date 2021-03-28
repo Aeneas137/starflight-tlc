@@ -1613,7 +1613,7 @@ title="Mission #51: Wreck salvaging initial
 	questions[81060] = {
 		action="jump", goto=81061,
 		player="[AUTO_REPEAT]",
-		alien={"That is restricted, need too know only." }
+		alien={"That is restricted, need to know only." }
 	}
 	questions[81061] = {
 		action="jump", goto=81051,

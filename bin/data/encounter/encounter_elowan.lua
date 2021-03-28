@@ -1533,7 +1533,7 @@ title="Mission #37:  Catching the Smugglers. After obtaining miniature funnel bu
 		player="[AUTO_REPEAT]",
 		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
 		playerFragment="the truth about the criminal smuggler vessel, The Diligent. We found a base of theirs in your space and they possessed this plant of Elowan manufacture!",
-		alien={"Thy accusations we wish we could deny, for the Elowan neither tolerate nor condon lawlessness in any form. The air plant which thou doth possess was bestowed upon the Myrrdan vessel Intrepid. Their vessel did present quite a different sensor signature from the one which thou purports to be the Diligent. We urge much haste in bringing this signature data to thy government. Perhaps its use has been employed to deceive both of our peoples." }
+		alien={"Thy accusations we wish we could deny, for the we neither tolerate nor condon lawlessness in any form. The plant which thou doth possess was bestowed upon the Myrrdan vessel Intrepid. Their vessel did present a different sensor signature from the one which thou purports to be the Diligent. We urge haste in bringing this data to thy government. Perhaps its use has been employed to deceive both of our peoples."}
 	}
 
 --[[
@@ -1678,7 +1678,7 @@ title="Mission #43:  Desperate Measures
 		title="Where?",
 		player="[AUTO_REPEAT]",
 		playerFragment="about their last known meeting location",
-		alien={"We ascertained the location of their latest known redezerous was at Wledig 2026 (120S X 14E) in the Fodla system (109, 55)" }
+		alien={"We ascertained the location of their latest known redezerous was at Wledig 2026 (123S X 14E) in the Fodla system (109, 55)" }
 	}
 
 
@@ -1692,7 +1692,7 @@ title="Mission #43:  Desperate Measures - after red herring
 		player="[AUTO_REPEAT]",
 		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We located this mysterious artifact and little else at the location you gave us.",
 		playerFragment="about it",
-		alien={"We have no inclination to the intention of such a device. Perchance an earlier local may assist in the growth of thy understanding. Another rendezvous local mays't thou find at Bor Tuatheh 2019 (32N X 57E) in the Aircthech system (100, 8)" }
+		alien={"We have no inclination to the intention of such a device. Perchance an earlier local may assist in the growth of thy understanding. Another rendezvous local mays't thou find at Bor Tuatheh 2019 (33N X 57E) in the Aircthech system (100, 8)" }
 	}
 
 
