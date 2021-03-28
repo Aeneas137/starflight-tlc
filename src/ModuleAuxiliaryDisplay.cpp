@@ -66,7 +66,7 @@ using namespace std;
 #define AUX_ICON_FREELANCE_TGA           0        /* BMP  */
 #define AUX_ICON_MILITARY_TGA            1        /* BMP  */
 #define AUX_ICON_SCIENCE_TGA             2        /* BMP  */
-//#define GUI_AUX_BMP                      3        /* BMP  */
+//#define GUI_AUX_BMP                    3        /* BMP  */
 #define HIGH_RES_SHIP_FREELANCE_TGA      4        /* BMP  */
 #define HIGH_RES_SHIP_MILITARY_TGA       5        /* BMP  */
 #define HIGH_RES_SHIP_SCIENCE_TGA        6        /* BMP  */
@@ -278,13 +278,13 @@ void ModuleAuxiliaryDisplay::updateAll()
 		else {
 			os << "NONE";
 		}
-		g_game->Print20(canvas, x+75, y, os.str(), damage_color);
+		g_game->Print20(canvas, x+84, y, os.str(), damage_color);	//x was +75  JJH
 
 		//cargo status
-		os.str(""); x+=75; y+=20;
+		os.str(""); x+=75; y+=20;								
 		g_game->Print20(canvas, x, y, "CARGO:", HEADING_COLOR);
 		os << cargoFillPercent << "%%";
-		g_game->Print20(canvas, x+72, y, os.str(), SKYBLUE);
+		g_game->Print18(canvas, x+78, y, os.str(), SKYBLUE);		//was Print20  x was +72   JJH
 
 		//fuel status
 		os.str(""); y+=20;
@@ -292,7 +292,7 @@ void ModuleAuxiliaryDisplay::updateAll()
         //int fuel = g_game->gameState->m_ship.getFuel() * 100.0;
         int fuel = g_game->gameState->m_ship.getEnduriumOnBoard();
         os << fuel;
-		g_game->Print20(canvas, x+72, y, os.str(), SKYBLUE);
+		g_game->Print18(canvas, x+78, y, os.str(), SKYBLUE);		//was Print20  x was +72   JJH
 
 		//shield status
 		os.str(""); y+=20;
@@ -301,7 +301,7 @@ void ModuleAuxiliaryDisplay::updateAll()
 			os << "RAISED";
 		else
 			os << "LOWERED";
-		g_game->Print20(canvas, x+72, y, os.str(), SKYBLUE);
+		g_game->Print18(canvas, x+72, y, os.str(), SKYBLUE);	//was Print20  JJH
 
 		//weapon status
 		os.str(""); y+=20;
@@ -310,7 +310,7 @@ void ModuleAuxiliaryDisplay::updateAll()
 			os << "ARMED";
 		else
 			os << "UNARMED";
-		g_game->Print20(canvas, x+72, y, os.str(), SKYBLUE);
+		g_game->Print18(canvas, x+72, y, os.str(), SKYBLUE);	//was Print20  JJH
 
 		//ship icon image
 		ship_icon_sprite->setPos(asx+18,asy+45);
@@ -439,7 +439,7 @@ void ModuleAuxiliaryDisplay::PrintSystemStatus(int x,int y,int value)
 	}else if(value < 50){
 		color = YELLOW2;
 		status = "DAMAGED";
-		x2 = x + 163;
+		x2 = x + 163;			
 	}else{
 		color = GREEN2;
 		status = "FUNCTIONAL";
@@ -592,6 +592,9 @@ void ModuleAuxiliaryDisplay::medical_display(Officer* officer_data, int x, int y
 	os.str(""); //clear
 
 	//medical status
+
+	x2 = 150; //test
+
 	os << status;
 	g_game->Print18(canvas, x2, y, os.str(), text_color);
 }

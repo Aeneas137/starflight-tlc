@@ -200,6 +200,7 @@ ModuleCaptainCreation::~ModuleCaptainCreation(void)
 bool ModuleCaptainCreation::Init()
 {
 	//load the datafile
+
 	ccdata = load_datafile("data/captaincreation/captaincreation.dat");
 	if (!ccdata) {
 		g_game->message("CaptainCreation: Error loading datafile");	

@@ -3,6 +3,8 @@
 //	ModuleCrewHire.cpp - This module gives the player the ability to hire, fire, and reassign crew members. 
 //	Author: Justin Sargent
 //	Date: 9/21/07
+//	Mods: Jim Haga - JJH
+//	Date: 3/16/21
 //*/
 
 #include "env.h"
@@ -137,7 +139,7 @@ ModuleCrewHire::ModuleCrewHire(void) :
 	unemployeed(NULL),
 	unemployeedType(NULL)
 {
-	//for (int i=0; i < 8; ++i) m_skillBars[i] = NULL;
+
 	for (int i=0; i < 8; ++i) m_PositionBtns[i] = NULL;
 }
 
@@ -246,9 +248,6 @@ void ModuleCrewHire::OnMouseReleased(int button, int x, int y)
 			m_backBtn->OnMouseReleased(button,x,y);
 			break;
 	}
-
-
-
 
 }
 void ModuleCrewHire::OnMouseWheelUp(int x, int y)					
@@ -397,9 +396,9 @@ void ModuleCrewHire::OnEvent(Event *event)
 		{
 			//Find the selected officer
 			int j=0;
-			for (int i=0; i < (int)tOfficers.size(); i++)//Loop through all the officers
+			for (int i=0; i < (int)tOfficers.size(); i++)			//Loop through all the officers
 			{
-				if (tOfficers[i]->GetOfficerType() == OFFICER_NONE)//Count the officers that aren't assigned a position
+				if (tOfficers[i]->GetOfficerType() == OFFICER_NONE)	//Count the officers that aren't assigned a position
 				{
 					selectedOfficer = NULL;
 					selectedPosition = -1;
@@ -1141,6 +1140,7 @@ void ModuleCrewHire::Draw()
 		case UNEMPLOYEED_SCREEN:
 #pragma region Unemployeed Screen
 			//unemployeed->Draw(g_game->GetBackBuffer());
+
 			unemployeedType->Draw(g_game->GetBackBuffer());
 
 			m_backBtn->Run(g_game->GetBackBuffer());
@@ -1180,40 +1180,52 @@ void ModuleCrewHire::DrawOfficerInfo(Officer *officer)
         "tactical",
         "learning",
         "durability" };
-    
-
 
 	draw_sprite(g_game->GetBackBuffer(), m_miniSkills, SKILLICONS_X, SKILLICONS_Y);
 
+	stats->Draw(g_game->GetBackBuffer());
 
-    //draw skills
+//draw names and skills
     ostringstream os;
-	for (int i=0; i < 6; i++)
-	{
-		float barlength = (officer->attributes[i] / (float)SKILLMAXIUM);
-	/*	BITMAP *temp = create_bitmap((int)(m_skillBars[i]->w * barlength), m_skillBars[i]->h);
-		blit(m_skillBars[i], temp, 0,0,0,0, (int)(m_skillBars[i]->w * barlength), m_skillBars[i]->h);
-		draw_sprite(g_game->GetBackBuffer(), temp, SKILLBAR_X, SKILLBAR_Y + (SKILLSPACING * i));
-		destroy_bitmap(temp);*/
 
-        //print skill bar name
-        os << skillnames[i] << " = " << officer->attributes[i];
-        g_game->Print22(g_game->GetBackBuffer(), SKILLBAR_X + 20, SKILLBAR_Y + (SKILLSPACING * i) + 2, os.str(), BLACK);
+//Print Captain jjh
+	string offtitle = "Officer ";
+	if (officer->GetOfficerType() == OFFICER_CAPTAIN) {
+		offtitle = "Captain "; 
 	}
-	
-    //draw attributes
-	for (int i=6; i < 8; i++)
-	{
-		float barlength = (officer->attributes[i] / (float)ATTRIBUTEMAXIUM);
-	/*	BITMAP *temp = create_bitmap((int)(m_skillBars[i]->w * barlength), m_skillBars[i]->h);
-		blit(m_skillBars[i], temp, 0,0,0,0, (int)(m_skillBars[i]->w * barlength), m_skillBars[i]->h);
-		draw_sprite(g_game->GetBackBuffer(), temp, SKILLBAR_X, SKILLBAR_Y + (SKILLSPACING * i));
-		destroy_bitmap(temp);*/
+	os << offtitle <<officer->getFirstName() << " " << officer->getLastName();
+	g_game->Print22(g_game->GetBackBuffer(), SKILLBAR_X+70, SKILLBAR_Y-30, os.str(), WHITE);
+	os.str(""); 
 
-        //print attribute bar name
-        g_game->Print22(g_game->GetBackBuffer(), SKILLBAR_X + 20, SKILLBAR_Y + (SKILLSPACING * i) + 2, 
-            skillnames[i], BLACK);
+//find officer's highest skill jjh
+	int tempi = 0; 	int tempval = 0;
+	for (int i=0; i < 6; i++) {
+		if (officer->attributes[i] > tempval) { 
+			tempval = officer->attributes[i];
+			tempi = i;
+		}
+	}
 
+//print skill name and skill level JJH (using 2 prints in hopes of highlighting one of the skills & readabiltiy) jjh
+	for (int i=0; i < 6; i++) {
+        os << skillnames[i]; 
+		g_game->Print22(g_game->GetBackBuffer(), SKILLBAR_X + 20, SKILLBAR_Y + (SKILLSPACING * i) + 2, os.str(), STEEL);
+		os.str("");  
+		os << officer->attributes[i];
+		if (tempi != i) {
+			g_game->Print22(g_game->GetBackBuffer(), SKILLBAR_X + 180, SKILLBAR_Y + (SKILLSPACING * i) + 2, os.str(), STEEL); }
+		else {
+			g_game->Print22(g_game->GetBackBuffer(), SKILLBAR_X + 180, SKILLBAR_Y + (SKILLSPACING * i) + 2, os.str(), RED); }
+		os.str(""); 
+	}
+//print attribute name and level JJH (using 2 prints for readabiltiy) jjh
+	for (int i=6; i < 8; i++) {
+		os << skillnames[i];
+		g_game->Print22(g_game->GetBackBuffer(), SKILLBAR_X + 20, SKILLBAR_Y + (SKILLSPACING * i) + 2, os.str(), STEEL);
+		os.str("");
+		os << officer->attributes[i];
+		g_game->Print22(g_game->GetBackBuffer(), SKILLBAR_X + 180, SKILLBAR_Y + (SKILLSPACING * i) + 2, os.str(), STEEL);
+		os.str(""); 
 	}
 }
 

@@ -398,7 +398,14 @@ void ModuleStarmap::Draw()
 		
 		//if player selected a spot, print the coordinates of that spot
 		if (dest_active){
-			
+/*
+	This next stmt is for debuggng only. Set/unset red circle on starmap to move player. JJH
+*/
+
+#ifdef DEBUGMODE
+			g_game->gameState->player->set_galactic_pos(m_destPos.x * 128,m_destPos.y * 128);
+#endif
+
 			textprintf_centre_ex(text, font, 310, text_y, fontColor, -1, "%.0f", m_destPos.x );
 			textprintf_centre_ex(text, font, 380, text_y, fontColor, -1, "%.0f", m_destPos.y );
 			circle(g_game->GetBackBuffer(), (int)(m_destPos.x * ratioX + new_x_offset), 

@@ -133,6 +133,11 @@ void ModuleInterPlanetaryTravel::OnMouseMove(int x, int y)
 	// the aux window for the planet name tooltip to be useful
 
 	//check if mouse is over a planet
+
+//debug
+	
+	std::string dian4 = "";
+
 	for (int i = 0; i < star->GetNumPlanets(); i++)  {
 		int planet = planets[i].tilenum;
 		if (planet > 0) {
@@ -141,7 +146,10 @@ void ModuleInterPlanetaryTravel::OnMouseMove(int x, int y)
 			&& y > (asy + planets[i].tiley * 2.3)-2 - planets[i].radius &&  y < (asy + planets[i].tiley * 2.3) + planets[i].radius){
 				planet_label->SetX( x + 10);
 				planet_label->SetY( y );
-				planet_label->SetText( star->GetPlanetByID(planets[i].planetid)->name );
+				planet_label->SetText( star->GetPlanetByID(planets[i].planetid)->name );	//jjh
+
+				dian4 = star->GetPlanetByID(planets[i].planetid)->name ;
+
 				m_bOver_Planet = true;
 				break;
 			}else{
@@ -502,12 +510,12 @@ void ModuleInterPlanetaryTravel::Update()
 	}
 
 
-	//player orders navigator to exit system back into hyperspace
+	//player orders navigator to exit system back into hyperspace   
 	//use delay mechanism to show message before lauching module
     //this also occurs if player reaches edge of star system
 	if (flag_DoHyperspace)
 	{
-		Ship ship = g_game->gameState->getShip();
+		Ship ship = g_game->gameState->getShip();    
 		//float fuelUsage = 0.025;
 
 		if(g_game->gameState->player->hasHyperspacePermit() == false){
@@ -533,7 +541,7 @@ void ModuleInterPlanetaryTravel::Update()
 			{
                 if (g_game->gameState->getShip().getFuel() >= 0.01f) //1% of fuel required
                 {
-				    g_game->gameState->m_ship.ConsumeFuel(20); //hyperspace engine consumes 20 units
+				    g_game->gameState->m_ship.ConsumeFuel(20); //hyperspace engine consumes 20 units    
 				    g_game->modeMgr->LoadModule(MODULE_HYPERSPACE);
 				    return;
                 }
@@ -639,6 +647,11 @@ void ModuleInterPlanetaryTravel::Draw()
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "speed: " + Util::ToString(ship->getCurrentSpeed()));
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "planetFound: " + Util::ToString(planetFound));
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "navcounter: " + Util::ToString(g_game->gameState->getCurrentNav()->attributes.extra_variable));
+		//JJH - added CrossModuleAngle so that ship's heading stays consistent between entering/leaving systems. 
+		//same mod in ModuleInterstellarTravel and some changes in PlayerShipSprite.  
+		y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "angle: " + Util::ToString(ship->getRotationAngle()));   
+		g_game->CrossModuleAngle = ship->getRotationAngle();	
+
     }
 }
 
@@ -775,7 +788,7 @@ void ModuleInterPlanetaryTravel::updateMiniMap()
 	//draw text
 	if(m_bOver_Planet == true){
 		planet_label->Refresh();
-		planet_label->Draw(g_game->GetBackBuffer());
+		planet_label->Draw(g_game->GetBackBuffer());		
 	}
 
 	//draw player's location on minimap

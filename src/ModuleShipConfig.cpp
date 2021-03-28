@@ -754,7 +754,7 @@ int ModuleShipConfig::getShieldValue()
         case 5: value = SHIELD_CLASS5; break;
         case 6: value = SHIELD_CLASS6; break;
     }
-    float health = ship.getShieldIntegrity() * 0.01f;
+    float health = ship.getShieldIntegrity() * 0.01f;	//jjh
     health *= 0.75f;
     value = (int)((float)value * health);
     return value;
@@ -777,7 +777,7 @@ int ModuleShipConfig::getArmorValue()
     }
     float health = ship.getArmorIntegrity() * 0.01f;
     health *= 0.75f;
-    value = (int)((float)value * health);
+    value = (int)((float)value * health );		//was health   jjh
     return value;
 }
 
@@ -1119,7 +1119,7 @@ void ModuleShipConfig::display() const
 		std::string temp = "Total Repair Cost: " + Util::ToString(repairCost) + " MU";
 		alfont_textout_ex(g_game->GetBackBuffer(), g_game->font32, temp.c_str(), MENU_PATH_X, MENU_PATH_Y, WHITE, -1);
 	}
-	else if (menuPath.back() == Name)
+	else if (menuPath.back() == Name)		
 	{
 		//print "MSS"
 		alfont_textout_ex(g_game->GetBackBuffer(), g_game->font32, "MSS", MENU_PATH_X, MENU_PATH_Y, WHITE, -1);
@@ -1142,7 +1142,7 @@ void ModuleShipConfig::display() const
 
 	//static
 	int i=0;
-	alfont_textout_ex(g_game->GetBackBuffer(), g_game->font32, "Ship Name: MSS",	STATIC_SHIPNAME_X, SHIPNAME_Y, WHITE, -1);
+	alfont_textout_ex(g_game->GetBackBuffer(), g_game->font32, "Ship Name: MSS",	STATIC_SHIPNAME_X-10, SHIPNAME_Y, WHITE, -1);	
 	alfont_textout_ex(g_game->GetBackBuffer(), g_game->font32, "Cargo Pods",		STATIC_READOUT_X, READOUT_Y+(i++)*READOUT_SPACING, WHITE, -1);
 	alfont_textout_ex(g_game->GetBackBuffer(), g_game->font32, "Engine",			STATIC_READOUT_X, READOUT_Y+(i++)*READOUT_SPACING, WHITE, -1);
 	alfont_textout_ex(g_game->GetBackBuffer(), g_game->font32, "Shield",			STATIC_READOUT_X, READOUT_Y+(i++)*READOUT_SPACING, WHITE, -1);
@@ -1154,7 +1154,7 @@ void ModuleShipConfig::display() const
 
 	//dynamic
 	int j=0;
-	alfont_textout_ex(g_game->GetBackBuffer(), g_game->font32, g_game->gameState->m_ship.getName().c_str(), DYNAMIC_SHIPNAME_X+60, SHIPNAME_Y, WHITE, -1);
+	alfont_textout_ex(g_game->GetBackBuffer(), g_game->font32, g_game->gameState->m_ship.getName().c_str(), DYNAMIC_SHIPNAME_X+90, SHIPNAME_Y, WHITE, -1); 
 	alfont_textprintf_right_ex(g_game->GetBackBuffer(), g_game->font32, DYNAMIC_READOUT_X, READOUT_Y+(j++)*READOUT_SPACING, WHITE, -1, "%d", g_game->gameState->m_ship.getCargoPodCount() );
 
     //display class level of engine

@@ -131,6 +131,11 @@ void ModuleInterstellarTravel::Draw()
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "velocity: " + Util::ToString(ship->getVelocityX()) + "," + Util::ToString(ship->getVelocityY()));
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "speed: " + Util::ToString(ship->getCurrentSpeed()));
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "navcounter: " + Util::ToString(g_game->gameState->getCurrentNav()->attributes.extra_variable));
+		//JJH - added CrossModuleAngle so that ship's heading stays consistent between entering/leaving systems.  Checking Encounters next :-)... 
+		//same mod in ModuleInterplanetaryTravel and some changes in PlayerShipSprite.  
+		y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "angle:      " + Util::ToString(ship->getRotationAngle())); 
+		g_game->CrossModuleAngle = ship->getRotationAngle();
+
     }
 }
 
@@ -304,19 +309,16 @@ void ModuleInterstellarTravel::OnEvent(Event *event)
 
 
 		case EVENT_ENGINEER_INJECT: g_game->gameState->getShip().injectEndurium(); break;
-
 		case EVENT_CAPTAIN_LAUNCH:  g_game->printout(text, nav + "Sir, we are not on a planet.",BLUE,2000);       break;
 		case EVENT_CAPTAIN_DESCEND: g_game->printout(text, nav + "Sir, we are not orbiting a planet.",BLUE,2000); break;
-		//case EVENT_CAPTAIN_LOG:     g_game->printout(text, "<Log planet not yet implemented>",YELLOW,2000);       break;
+     // case EVENT_CAPTAIN_LOG:     g_game->printout(text, "<Log planet not yet implemented>",YELLOW,2000);       break;
 
 		case EVENT_SCIENCE_SCAN:     g_game->printout(text, sci + "Sir, we are not near any planets or vessels.",BLUE,2000); break;
 		case EVENT_SCIENCE_ANALYSIS: g_game->printout(text, sci + "Sir, I have not scanned anything.",BLUE,2000);            break;
 
-		case EVENT_NAVIGATOR_ORBIT:      g_game->printout(text, nav + "But sir, we are in hyperspace!",BLUE,2000);           break;
-		case EVENT_NAVIGATOR_DOCK:       g_game->printout(text, nav + "The starport is nowhere in sight, sir!",BLUE,2000);   break;
+		case EVENT_NAVIGATOR_ORBIT:  g_game->printout(text, nav + "But sir, we are in hyperspace!",BLUE,2000);           break;
+		case EVENT_NAVIGATOR_DOCK:   g_game->printout(text, nav + "The starport is nowhere in sight, sir!",BLUE,2000);   break;
 		case EVENT_NAVIGATOR_HYPERSPACE: if (starFound) flag_DoNormalSpace = true;                                           break;
-
-
 		case EVENT_TACTICAL_COMBAT:  g_game->printout(text, tac + "Sir, we are not in range of any other ships.",BLUE,2000); break;
 		case EVENT_TACTICAL_SHIELDS: g_game->printout(text, tac + "Sir, we are not in combat.", BLUE,2000); break;
 		case EVENT_TACTICAL_WEAPONS: g_game->printout(text, tac + "Sir, we are not in combat.", BLUE,2000); break;
@@ -484,8 +486,8 @@ bool ModuleInterstellarTravel::RollEncounter(AlienRaces forceThisRace)
 		os.str("");	os << com << "(muttered) Is that even a sentence?";
 		g_game->printout(text, os.str(),ROYALBLUE,30000);
 
-		os.str("");	os << nav << "(under breath) freak.";
-		g_game->printout(text, os.str(),KHAKI,30000);
+//		os.str("");	os << nav << "(under breath) freak.";
+//		g_game->printout(text, os.str(),KHAKI,30000);
 
 		os.str("");	os << nav << "Captain we seem to be in " << alienRaceText << " space. And they've found us!";
 		g_game->printout(text, os.str(),KHAKI,30000);
@@ -852,7 +854,7 @@ void ModuleInterstellarTravel::Update()
 	else if (fy > GALAXYTILESIZE * 220) fy = GALAXYTILESIZE * 220;
 
 	//store ship position in global data object
-	g_game->gameState->player->set_galactic_pos(fx,fy);//123,203
+	g_game->gameState->player->set_galactic_pos(fx,fy);  //123,203  ***
 
 
 	/*

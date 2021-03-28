@@ -677,7 +677,7 @@ void ModuleControlPanel::OnMousePressed(int button, int x, int y)
 			break;
 		}
 	}
-
+//jjh - maybe here to force navigator when entering hyperspace
 	// set command to pressed
 	if (selectedOfficer != NULL)
 	{

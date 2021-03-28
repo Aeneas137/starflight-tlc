@@ -79,7 +79,7 @@ void Script::setGlobalString(std::string name, std::string value)
 double Script::getGlobalNumber(std::string name)
 {
 	double value = 0.0;
-	lua_getglobal(luaState, name.c_str());
+	lua_getglobal(luaState, name.c_str());			//TAG - debug spot
 	value = lua_tonumber(luaState, -1);
 	lua_pop(luaState, 1);
 	return value;

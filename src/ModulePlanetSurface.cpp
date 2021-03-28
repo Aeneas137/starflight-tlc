@@ -1058,12 +1058,13 @@ bool ModulePlanetSurface::Init()
 		return false;
 	}
 
-	//create the ship object
+	//create the ship object  
 	playerShip = new PlanetSurfacePlayerVessel(LuaVM, "PlayerShip");
 	playerShip->Initialize();
 	activeVessel = playerShip;
 	playerShip->setHealth(g_game->gameState->m_ship.getHullIntegrity());
 	playerShip->setFaceAngle(Util::Random(0, 360));
+//	playerShip->setFaceAngle(225);  //jjh
 
 	//Setup cinematicShip
 	cinematicShip = new PlanetSurfaceObject(LuaVM, "PlayerShip");
@@ -2485,7 +2486,7 @@ int L_AddItemtoCargo(lua_State* luaVM)
 		lua_pop(luaVM, 1);
 	}
 
-	g_game->gameState->m_items.AddItems(id, amount);
+	g_game->gameState->m_items.AddItems(id, amount);		//jjh
 
 	Event e(CARGO_EVENT_UPDATE);
 	g_game->modeMgr->BroadcastEvent(&e);

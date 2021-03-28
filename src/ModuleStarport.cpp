@@ -82,36 +82,37 @@ bool ModuleStarport::testDoors()
 				//Science Profession - wrong doors
 				if (g_game->gameState->getProfession() == PROFESSION_SCIENTIFIC && a == 6 )
 				{
-					g_game->ShowMessageBoxWindow("", "We don't serve your kind here! Go to the science lab where you belong.", 400, 200);
+					g_game->ShowMessageBoxWindow("", "We don't serve your kind here! Go to the science lab where you belong.", 400, 200,WHITE,312,284,false);
 					return false;
 				}
 				if (g_game->gameState->getProfession() == PROFESSION_SCIENTIFIC && a == 7)
 				{
-					g_game->ShowMessageBoxWindow("", "Invalid Military Ranking! Go to the science lab where you belong.", 400, 200);
+					g_game->ShowMessageBoxWindow("", "Invalid Military Rank! Go to the science lab where you belong.", 400, 200,WHITE,312,284,false);
 					return false;
 				}
 
 				//Freelance - wrong doors
 				if (g_game->gameState->getProfession() == PROFESSION_FREELANCE && a == 0 )
 				{
-					g_game->ShowMessageBoxWindow("", "ACCESS DENIED! Wouldn't you feel more at home in the Cantina?", 400, 200);
+					g_game->ShowMessageBoxWindow("", "ACCESS DENIED! Wouldn't you feel more at home in the Cantina?", 400, 200,WHITE,312,284,false);
 					return false;
 				}
 				if (g_game->gameState->getProfession() == PROFESSION_FREELANCE && a == 7)
 				{
-					g_game->ShowMessageBoxWindow("", "Invalid Military Ranking! Go check out the Cantina.", 400, 200);
+					g_game->ShowMessageBoxWindow("", "Invalid Military Rank! Go check out the Cantina.", 400, 200,WHITE,312,284,false);
 					return false;
 				}
 
 				//Military - wrong doors
 				if (g_game->gameState->getProfession() == PROFESSION_MILITARY && a == 0 )
 				{
-					g_game->ShowMessageBoxWindow("", "The military has no jurisdiction here! Go report to your commander or whoever.", 400, 150);
+					g_game->ShowMessageBoxWindow("", "The military has no jurisdiction here! Go report to your commander or whoever.", 400, 200,WHITE,312,284,false);
 					return false;
 				}
 				if (g_game->gameState->getProfession() == PROFESSION_MILITARY && a == 6)
 				{
-					g_game->ShowMessageBoxWindow("", "Hey bub, aren't you late for a briefing in the War Room?", 400, 150);
+					g_game->ShowMessageBoxWindow("", "Hey bub, aren't you late for a briefing in the War Room?", 400, 200,WHITE,312,284,false);
+			
 					return false;
 				}
 			}

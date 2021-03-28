@@ -123,7 +123,7 @@ void ModulePlanetOrbit::OnEvent(Event *event)
 			if (planet->landable == false) {
 				(g_game->gameState->player->currentPlanet == 429)?       //planet #429 is Cermait VI, in Cermait system (247,218)
 					g_game->printout(text, nav + "Sir, a force field is repelling the ship and preventing us from entering the gravity well!", RED, 5000) :	
-					g_game->printout(text, nav + "Sir, we are prohibited from landing on this protected world!", RED, 5000);
+				g_game->printout(text, nav + "Sir, we are prohibited from landing on this protected world!", RED, 5000);
 				return;
 			}
 
@@ -255,14 +255,14 @@ bool ModulePlanetOrbit::CreatePlanetTexture()
     static int TEX_SIZE_ORBIT = 256; 
 	static int TEX_SIZE_SURFACE = 500;
 	std::string orbitFilename="";
-	std:;string surfaceFilename="";
+	std::string surfaceFilename="";
 
 	//use starid and planetid for random seed
 	int randomness = starid * 1000 + planetid;
 
 	//planet textures are stored in data/planetorbit using the starid and planetid as a random seed
 	//once created they are re-used
-	//two testures are required for each planet as a result of replacing the OpenGL with a software renderer
+	//two textures are required for each planet as a result of replacing the OpenGL with a software renderer
 
     ostringstream os;
     os << "data/planetorbit/planet_" << randomness << "_256.bmp";

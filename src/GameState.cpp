@@ -436,13 +436,13 @@ void Officer::FakeSkillCheck(){
 
 std::string Officer::getFirstName()
 {
-	string::size_type loc = name.find(" ",0);
+	string::size_type loc = name.find(" ",0);	//if player entered just 1 name, return a blank - maybe a null? jjh
 	if( loc != string::npos )
 		//found space, return first name
 		return name.substr(0,loc);
 	else
 		//not found, return whole name
-		return name;
+		return "";  //name;
 }
 
 std::string Officer::getLastName()
@@ -1978,7 +1978,7 @@ bool GameState::SaveGame(std::string fileName)
 	if (!ar.Open(fileName,Archive::AM_STORE))
 		return false;
 
-	int GameMagic = GAME_MAGIC;
+	int GameMagic = GAME_MAGIC;     //studying
    ar << GameMagic;
 
    string GameString = GAME_STRING;

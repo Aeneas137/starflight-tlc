@@ -105,6 +105,12 @@ public:
 	PauseMenu *pauseMenu;
 	Sprite *cursor;
 
+//#ifdef DEBUGMODE
+//****************************************JJH
+	float CrossModuleAngle;	//Holds entry angle for systems
+//****************************************JJH
+//#endif
+
 	void ShowMessageBoxWindow(
         std::string initHeading = "",
 		std::string initText = "",

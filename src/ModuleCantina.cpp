@@ -14,10 +14,10 @@
 #include "Game.h"
 #include "DataMgr.h"
 #include "ModeMgr.h"
-#include "QuestMgr.h"
+//#include "QuestMgr.h"
 #include "Label.h"
-using namespace std;
 
+using namespace std;
 
 #define CANTINA_BACKGROUND_BMP           0        /* BMP  */
 #define CANTINA_BTN_BMP                  1        /* BMP  */
@@ -155,7 +155,6 @@ bool ModuleCantina::Init()
 
 	g_game->audioSystem->Load("data/cantina/buttonclick.ogg", "click");
 
-
 	//Create and initialize the ESC button for the module
 	BITMAP *btnNorm, *btnOver, *btnDis;
 	
@@ -245,22 +244,26 @@ void ModuleCantina::Update()
 {
 	static int debriefStatus = 0;
 
-    
     //HACK!!!!!
     //if player acquires Hypercube, then skip to the 25th quest as a shortcut
     //note: this is dangerous since the quest script could change the quest numbering
-
     //if already at quest 25, then skip the hypercube check again...
-    if (g_game->questMgr->getId() != 25)
+
+	// FIXed: If Player obtained a 2nd HyperCube, the old code was throwing Player back to 25/1. Not now.  jjh
+	// 2nd Cube could be used in the genetic samples quest
+	// if (g_game->questMgr->getId() != 25) was always returning -1.
+
+    if (g_game->gameState->getActiveQuest() < 25)		//jjh
     {
         Item newitem;
         int amt;
 	    g_game->gameState->m_items.Get_Item_By_ID( 2 /* Hypercube */, newitem, amt);
-        if (amt > 0) {
-            g_game->questMgr->getQuestByID(25);
-            g_game->gameState->m_items.RemoveItems( 2, 1 );
-            selectedQuestCompleted = true;
-        }
+
+		if (amt > 0) {
+			g_game->questMgr->getQuestByID(25);
+			g_game->gameState->m_items.RemoveItems( 2, 1 );
+			selectedQuestCompleted = true;
+		}
     }
 
 	g_game->questMgr->getActiveQuest();

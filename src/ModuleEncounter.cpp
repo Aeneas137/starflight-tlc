@@ -202,8 +202,8 @@ void ModuleEncounter::OnKeyPress(int keyCode)
 				break;
 		}
 	}
+   g_game->CrossModuleAngle = playerShip->getRotationAngle();	//JJH
 }
-
 
 void ModuleEncounter::OnKeyPressed(int keyCode){}
 void ModuleEncounter::OnKeyReleased(int keyCode)
@@ -254,7 +254,7 @@ void ModuleEncounter::OnKeyReleased(int keyCode)
 #ifdef DEBUGMODE
 		case ALIEN_ATTITUDE_PLUS:
         {
-			int attitude = g_game->gameState->getAlienAttitude();
+			int attitude = g_game->gameState->getAlienAttitude(); 
 		    g_game->gameState->setAlienAttitude(++attitude);
         }
 		break;
@@ -581,7 +581,7 @@ bool ModuleEncounter::Encounter_Init()
 			break;
 	}
 
-	//append stage to alien script file
+//append stage to alien script file
 //	scriptFile += "_" + stage + ".lua";  Disabled loading multiple communication files
 
 	scriptFile = "data/encounter/" + scriptFile + ".lua";
@@ -603,7 +603,7 @@ bool ModuleEncounter::Encounter_Init()
 	readGlobalsFromScript();	//read globals too, in case Initialize changed anything.
 
 #ifdef DEBUGMODE
-	Print("Posture: " + g_game->gameState->playerPosture,WHITE,5000);
+	Print("Posture: " + g_game->gameState->playerPosture,WHITE,5000);      
 #endif
 	
     ostringstream filename;
@@ -1088,7 +1088,7 @@ void ModuleEncounter::commCheckCurrentAction()
  * Responses to greetings, statements, and questions all handled here
  * This is called by Update with a timer slowdown
  */
-void ModuleEncounter::commDoAlienResponse()
+void ModuleEncounter::commDoAlienResponse()			//jjh
 {
 	std::string out;
 	static int randomDelay = 0;
@@ -1107,7 +1107,7 @@ void ModuleEncounter::commDoAlienResponse()
 		//done waiting, now display alien response
 		bFlagChatting = true;
 		text->Write("");
-		out = script->getGlobalString("RESPONSE");
+		out = script->getGlobalString("RESPONSE");				
 		text->Write(com + "Response received.", CLR_MSG);
 
 		//replace keywords in dialog string with data values
@@ -1338,7 +1338,7 @@ void ModuleEncounter::commInitQuestion()
 		dialogue->Clear();
 		dialogue->setLines(7);
 
-		string text= script->getGlobalString("QUESTION_TITLE");
+		string text= script->getGlobalString("QUESTION_TITLE");			//exception occurs in this stmt
 		//use selected question text from branch if repeating text:
 		if ((text == "[REPEAT]") || (text == "[AUTO_REPEAT]")) {
 			int choice= (int) script->getGlobalNumber("CHOICE");
@@ -1794,7 +1794,10 @@ img_aux->w, img_aux->h);
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Dialogue? " + Util::ToString(bFlagDialogue) );
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Response? " + Util::ToString(bFlagDoResponse) );
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Attack? " + Util::ToString(bFlagDoAttack) );
-
+//-------
+		int attitude = g_game->gameState->getAlienAttitude();
+		y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Attitude " + Util::ToString(attitude) );		//jjh - debugging Coalition encounter lua file
+//-------
 	    Ship ship = g_game->gameState->getShip();
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Ship: ");
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, " Armor : " + Util::ToString(ship.getArmorIntegrity()) );
@@ -1805,9 +1808,10 @@ img_aux->w, img_aux->h);
 	    y+=20;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, " Shields: ");
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "  Int. : " + Util::ToString(ship.getShieldIntegrity()) );
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "  Cap. : " + Util::ToString(ship.getShieldCapacity()) );
-
 	    y+=20;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Weapon Status: " + Util::ToString(g_game->gameState->getWeaponStatus()) );
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Shield Status: " + Util::ToString(g_game->gameState->getShieldStatus()) );
+		y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Angle: " + Util::ToString(g_game->CrossModuleAngle) );  //JJH
+
     }
 
 }
@@ -3499,6 +3503,7 @@ void ModuleEncounter::readGlobalsFromScript()
 	//see if script has upgraded any ship systems
 	Ship ship = g_game->gameState->getShip();
 
+
 	int engine = script->getGlobalNumber("ship_engine_class");
 	if (engine > ship.getEngineClass()){
 		if(engine <= ship.getMaxEngineClass()) {
@@ -3584,7 +3589,7 @@ void ModuleEncounter::readGlobalsFromScript()
 		//artifact
 		if (pItem->IsArtifact()){
 			if (newcount > numInHold){
-				Print("We received the " + pItem->name + " from the " + alienName + ".", PURPLE, 1000);
+				Print("We received the " + pItem->name + " from the " + alienName + ".", PURPLE, 1000);		//artifacts to/from aliens jjh 
 				g_game->gameState->m_items.SetItemCount(pItem->id, 1);        //get exactly one
 			} else {
 				Print("We gave the " + pItem->name + " to the " + alienName + ".", PURPLE, 1000);

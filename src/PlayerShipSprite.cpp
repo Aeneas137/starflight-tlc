@@ -48,7 +48,14 @@ PlayerShipSprite::PlayerShipSprite()
 	ship->setCurrFrame(0);
 	ship->setX(SCREEN_WIDTH/2 - ship->getFrameWidth()/2);
 	ship->setY(SCREEN_HEIGHT/2 - 128 - ship->getFrameHeight()/2);
-	ship->setFaceAngle( Util::Random(1,359) );
+
+// keekping the rotation angle consistent - JJH
+	if (g_game->CrossModuleAngle == 0) {
+		ship->setFaceAngle( Util::Random(1,359) );	 
+	}
+	else {
+		ship->setFaceAngle( g_game->CrossModuleAngle );	
+	}
 
 	//ship movement variables
 	maximum_velocity = getMaximumVelocity();
