@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/electron/rcedit/releases
+HostUrl=https://github-releases.githubusercontent.com/14139390/e17a6b80-c567-11e8-867d-744b7d4fd9d9?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210328%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210328T225848Z&X-Amz-Expires=300&X-Amz-Signature=012afd2d8ce699f53af055b985c30fb36f773ed3eeaa4cfe7c5d9bdcc40af27e&X-Amz-SignedHeaders=host&actor_id=5808510&key_id=0&repo_id=14139390&response-content-disposition=attachment%3B%20filename%3Drcedit-x64.exe&response-content-type=application%2Foctet-stream
