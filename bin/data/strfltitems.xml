@@ -5282,29 +5282,4 @@
 	<y> -33 </y>
 	<x> -31 </x>
 </item>
-
-<!-- Test ...................................................................... -->
-<item>
-	<ID>1251</ID>
-	<Type>Ruin</Type>
-	<Name>Beach Cottage</Name>
-	<Description>Nice place to hang out. Sandy beaches around a fresh water lake.  View of snowcapped mountains to the southwest.  Not too many wild animals either. </Description>
-	<Portrait>cottage.tga</Portrait>
-	<planetid>307</planetid> 	<!-- 6S x 3W test -->
-	<y>-3</y>
-	<x>6</x> 
-</item>
-<item>
-	<ID>1252</ID>
-	<Type>Artifact</Type>
-	<Name>Palm Tree</Name>
-  	<Value>0</Value>
-  	<Size>2.3</Size>
-	<Portrait>palm.tga</Portrait>
-	<planetid>307</planetid> 	<!-- 6S x 4W test -->
-	<y>-4</y>
-	<x>6</x> 
-</item>
-
-<!-- Test ...................................................................... -->
 </items>
