@@ -1118,7 +1118,7 @@ bool ModulePlanetSurface::Init()
 		}
         else if (item->itemType == IT_RUIN)
         {
-			//si ruin located on this planet?
+			//is ruin located on this planet?
 			if (item->planetid == g_game->gameState->player->currentPlanet )
 			{
 				//convert longitude +/- value to tilemap coords

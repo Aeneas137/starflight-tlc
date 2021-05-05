@@ -574,7 +574,7 @@ elseif (plot_stage == 2) then  -- virus plot state
 		choices = {
 			{ text="Number of infected", goto=61000 },
 			{ text="Madness", goto=62000 },
-			{ text="Progress towards a cure", goto=63000 },   --jjh plot stage 2 
+			{ text="Progress towards a cure", goto=63000 },   -- plot stage 2 
 			{ text="Response of other races", goto=64000 },
 			{ text="<Back>", goto=1 }
 		}
@@ -706,7 +706,7 @@ elseif (plot_stage == 3) then  -- war plot state
 		choices = {
 			{ text="The Minex War", goto=61000 },
 			{ text="News about the the viral infection", goto=62000 },
-			{ text="The Coalition being more aggressive", goto=63000 },  --jjh stage 3
+			{ text="The Coalition being more aggressive", goto=63000 },  -- stage 3
 			{ text="<Back>", goto=1 }
 		}
 	}
@@ -912,7 +912,7 @@ elseif (plot_stage == 4) then  -- ancients plot state
 		alien={"Seek out the Minex and the Nyssian.  The Minex have been proven to have the most advanced technology and the Nyssian possess very unusual and unique organic technology which may give them insights into biological problems." }
 	}
 
-	questions[63000] = {				--jjh Stage 4
+	questions[63000] = {				-- Stage 4
 		action="jump", goto=63001,
 		player="[AUTO_REPEAT]",
 		alien={"That notion seems irrelevant to the current situation.  If they refer to the ancients in present tense I assume they know where they are and how to contact them?" }
@@ -926,7 +926,7 @@ elseif (plot_stage == 4) then  -- ancients plot state
 		action="jump", goto=60001,
 		player="[AUTO_REPEAT]",
 		playerFragment="where we would have a good chance of finding Ancient ruins and Ancient technology",
-		alien={"The Bar-zhon have vast endurium stores but these were collected hundreds of years ago from the former Sabion territories.  The Sabion home world was Gorias 3 - 5,16.  The Spemin and Minex occupy that region of space today.  Search in that area or seek out the Nyssian if you wish to hear more idle speculation about the Ancients themselves." }
+		alien={"The Bar-zhon have vast endurium stores but these were collected hundreds of years ago from the former Sabion territories.  The Sabion home world was Gorias 3 - 5,16.  The Thrynn and Elowan contest that region of space today.  Search in that area or seek out the Nyssian if you wish to hear more idle speculation about the Ancients themselves." }
 	}
 	questions[61001] = {
 		action="branch",
@@ -2400,16 +2400,22 @@ title="Mission #53:  Tactical Coordination - initial
 	}
 
 --[[
-title="Mission #53:  Tactical Coordination - all responses collected
+title="Mission #53:  Tactical Coordination - all responses collected		-jjh - allow player to read it before it's pushed off the window. added 83501
 --]]
 
 	questions[83500] = {
-		action="jump", goto=997, ftest= 1, -- remove artifacts 335-340 and end the mission
+		action="jump", goto=83501, 
 		title="Tactical Coordination",
 		player="[AUTO_REPEAT]",
 		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have successfully contacted five races and have their responses.",
 		playerFragment="about how you will proceed with this endeavor",
 		alien={"The wargames are canceled.  If only two races see the benefit of such a collaboration, and those two races already have a functioning collaboration, there is little to be gained. (Mission Completed)" }
+	}
+
+	questions[83501] = {
+		action="jump", goto=997, ftest= 1, -- remove artifacts 335-340 and end the mission
+		player="Sorry to hear that.",
+		alien={"As are we." }
 	}
 
 
@@ -2558,7 +2564,7 @@ title="Mission #60:  Overrun
 		title="what happened?",
 		player="[AUTO_REPEAT]",
 		playerFragment="what happened", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
-		alien={"The small picket force defending the system picked up a large fleet of incoming vessels. Since they were using civilian grade drive and no form of stealth, it was assumed that this was a large trading convoy with their escorts. After they entered the system the presence of Tafel ships gave them away.  A large fleet of Tafel, Bar-zhon, Spemin, and Thrynn ships of all types, including maybe one or two Elowan scouts approached the system from every vector and simply overwhelmed the defenders uncaring of any losses." }
+		alien={"The small force defending the system picked up a fleet of incoming vessels. Since they were using civilian grade drives, it was assumed that this was a trading convoy with their escorts. After they entered the system the presence of Tafel ships gave them away.  A fleet of Tafel, Bar-zhon, Spemin, and Thrynn ships, including  one or two Elowan scouts approached the system from every vector and overwhelmed the defenders uncaring of any losses." }
 	}
 	questions[80002] = {
 		action="jump", goto=80003,
@@ -2582,12 +2588,12 @@ title="Mission #60:  Overrun
 
 
 --[[
-title="Mission #61:  Another Ruined Search
+title="Mission #61:  Another Ruins Search
 --]]
 
 	questions[81000] = {
 		action="jump", goto=1,
-		title="Another Ruined Search",
+		title="Another Ruins Search",
 		player="[AUTO_REPEAT]",
 		introFragment="Greetings. This is Captain [CAPTAIN] of the starship [SHIPNAME].  Your government sent us a list of research sites on the worlds of the 3 Imperialists which were studying the ancients.",
 		playerFragment="about the Society of Ancient Studies",
@@ -2961,7 +2967,7 @@ elseif (plot_stage == 3) then -- war plot state
 	elseif active_quest == 53 and artifact335 == 0 then
 		first_question = 83000
 
--- Mission #53:  Tactical coordination - all responses collected
+-- Mission #53:  Tactical coordination - all responses collected		-jjh
 	elseif active_quest == 53 and artifact336 == 1 and artifact337 == 1 and artifact338 == 1 and artifact339 == 1 and artifact340 == 1 then
 		first_question = 83500
 
@@ -3003,8 +3009,9 @@ elseif (plot_stage == 4) then -- ancients plot state
 		first_question = 80000
 
 
-	-- Mission #61: Another Ruined Search
-	elseif active_quest == 61  and artifact375 == 0 then
+	-- Mission #61: Another Ruins Search
+	elseif active_quest == 61 -- and artifact375 == 0 
+		then
 		first_question = 81000
 
 
@@ -3405,15 +3412,14 @@ function commFxn(type, n, ftest)
 				artifact335 = 1 -- Bar-zhon fleet proposal
 				ATTITUDE = ATTITUDE + 10
 
--- title="Mission #53: Tactical coordination - end the mission
-			elseif (n == 83500) then
+-- title="Mission #53: Tactical coordination - end the mission		--jjh was 83500
+			elseif (n == 83501) then
 				artifact335 = 0 --  Bar-zhon fleet proposal
 				artifact336 = 0 --  Elowan response
 				artifact337 = 0 --  Thrynn response
 				artifact338 = 0 --  Spemin response
 				artifact339 = 0 --  Nyssian response
 				artifact340 = 0 --  Coalition response
-
 				ATTITUDE = ATTITUDE + 10
 				active_quest = active_quest + 1
 

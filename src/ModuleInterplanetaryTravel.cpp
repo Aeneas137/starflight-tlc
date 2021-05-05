@@ -637,6 +637,9 @@ void ModuleInterPlanetaryTravel::Draw()
 		string str = "You are now travelling in the star system. To move the ship use the same keys you used in the starport.";
 		g_game->ShowMessageBoxWindow("",  str, 400, 300, YELLOW, 10, 200, false);
 	}
+	//JJH - added CrossModuleAngle so that ship's heading stays consistent between entering/leaving systems. 
+	//same mod in ModuleInterstellarTravel and some changes in PlayerShipSprite.  
+	g_game->CrossModuleAngle = ship->getRotationAngle();	
 
     if (g_game->getGlobalBoolean("DEBUG_OUTPUT") == true)
     {
@@ -647,11 +650,7 @@ void ModuleInterPlanetaryTravel::Draw()
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "speed: " + Util::ToString(ship->getCurrentSpeed()));
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "planetFound: " + Util::ToString(planetFound));
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "navcounter: " + Util::ToString(g_game->gameState->getCurrentNav()->attributes.extra_variable));
-		//JJH - added CrossModuleAngle so that ship's heading stays consistent between entering/leaving systems. 
-		//same mod in ModuleInterstellarTravel and some changes in PlayerShipSprite.  
 		y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "angle: " + Util::ToString(ship->getRotationAngle()));   
-		g_game->CrossModuleAngle = ship->getRotationAngle();	
-
     }
 }
 

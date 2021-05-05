@@ -754,7 +754,7 @@ int ModuleShipConfig::getShieldValue()
         case 5: value = SHIELD_CLASS5; break;
         case 6: value = SHIELD_CLASS6; break;
     }
-    float health = ship.getShieldIntegrity() * 0.01f;	//jjh
+    float health = ship.getShieldIntegrity() * 0.01f;	
     health *= 0.75f;
     value = (int)((float)value * health);
     return value;
@@ -767,7 +767,7 @@ int ModuleShipConfig::getArmorValue()
     int armor = ship.getArmorClass();
     switch(armor)
     {
-        case 0: value = 0; break;
+        case 0: value = 0; break;							
         case 1: value = ARMOR_CLASS1; break;
         case 2: value = ARMOR_CLASS2; break;
         case 3: value = ARMOR_CLASS3; break;
@@ -775,9 +775,12 @@ int ModuleShipConfig::getArmorValue()
         case 5: value = ARMOR_CLASS5; break;
         case 6: value = ARMOR_CLASS6; break;
     }
-    float health = ship.getArmorIntegrity() * 0.01f;
-    health *= 0.75f;
-    value = (int)((float)value * health );		//was health   jjh
+//    float health = ship.getArmorIntegrity() * 0.01f;		//take 1% of whatever armor integrity is at this moment jjh
+//    health *= 0.75f;										//then take 75% of that
+//    value = (int)((float)value * health );				//purchase price times THAT. 
+
+	float health = (ship.getArmorIntegrity() / (armor * 120.0f));
+	value = (int)((float)value * health * 0.75f );
     return value;
 }
 
@@ -815,6 +818,9 @@ int ModuleShipConfig::getLaserRepair()
         case 4: value = LASER_CLASS4; break;
         case 5: value = LASER_CLASS5; break;
         case 6: value = LASER_CLASS6; break;
+//		case 7: value = LASER_CLASS7; break;	//jjh
+//		case 8: value = LASER_CLASS8; break;	//jjh
+//		case 9: value = LASER_CLASS9; break;	//jjh
     }
     float damage = (100 - ship.getLaserIntegrity()) * 0.01f;
     value = (int)((float)value * damage);
@@ -835,6 +841,10 @@ int ModuleShipConfig::getMissileRepair()
         case 4: value = MISSILELAUNCHER_CLASS4; break;
         case 5: value = MISSILELAUNCHER_CLASS5; break;
         case 6: value = MISSILELAUNCHER_CLASS6; break;
+//		case 7: value = MISSILELAUNCHER_CLASS7; break;		//jjh
+//		case 8: value = MISSILELAUNCHER_CLASS8; break;
+//		case 9: value = MISSILELAUNCHER_CLASS9; break;
+
     }
     float damage = (100 - ship.getMissileLauncherIntegrity()) * 0.01f;
     value = (int)((float)value * damage);
@@ -1098,7 +1108,7 @@ void ModuleShipConfig::buyComponent()
 		case Lasers: 
             if (ship.getLaserClass() == 0)
             {
-			    ship.setLaserClass(menuPath[4] - CLASS_ENUM_DIF); 
+			    ship.setLaserClass(menuPath[4] - CLASS_ENUM_DIF);		//jjh
 			    ship.setLaserIntegrity(100.0f);
                 g_game->gameState->augCredits(-cost);
             }

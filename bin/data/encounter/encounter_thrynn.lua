@@ -1495,7 +1495,7 @@ title="Mission #48:  Intelligence Collaboration
 		player="[AUTO_REPEAT]",
 		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have compiled a datacube of technological, tactical, and strategic observations of the Minex war machine.  In the interests of all of our survival, we are willing to share this information freely.",
 		playerFragment="a collection of similar observations by your people", fragmentTable=preQuestion.desire,
-		alien={"Your data is appreciated.  The Minex utilize large maneuverable vessels and aggressively attack isolated targets, strongly avoiding casualties and fleet action.  Either they must be destroyed or we all will be destroyed.  In exchange for your data, I am authorized to give you one sample of any of the following: a Minex targeting system, power core, beam mount, missile turret, or a silver gadget." }
+		alien={"Your data is appreciated. The Minex utilize large maneuverable vessels and aggressively attack isolated targets, strongly avoiding casualties and fleet action. Either they must be destroyed or we all will be destroyed.  In exchange for your data, I am authorized to give you one sample of any of the following: a Minex targeting system, power core, beam mount, missile turret, or a silver gadget." }
 	}
 	questions[78001] = {
 		action="branch",
@@ -1543,7 +1543,7 @@ title="Mission #49:  Unrest - no flight recorders
 		player="[AUTO_REPEAT]",
 		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have heard that Coalition have been raiding the Elowan and yourselves.",
 		playerFragment="about the situation",
-		alien={"The Coalition is not a force to be concerned to be reckoned with. A few of their ships attacked one of our patrols within Spemin territory and were dispatched without difficulty. If you wish to confront them, I will transmitting the flight recorder data to you immediately." }
+		alien={"The Coalition is not a force to be concerned about. A few of their ships attacked one of our patrols within Spemin territory and were dispatched without difficulty. If you wish to confront them, I will transmit the flight recorder data to you immediately." }
 	}
 
 --[[
@@ -1715,7 +1715,7 @@ title="Mission #51: Wreck salvaging - returning artifact327 Cone device
 		title="How valuable is it?",
 		player="[AUTO_REPEAT]",
 		playerFragment="how valuable this artifact is",  fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
-		alien={"Since the Minex use gas lasers with massive power requirements these amplifiers are probably not much use to Myrrdan. The next site is Jurlagh Duane III. (18N X 12W) (16, 70)" }
+		alien={"Since the Minex use gas lasers with massive power requirements these amplifiers are probably not much use to Myrrdan. The next site is Jurlagh III. (18N X 12W) (16, 70)" }
 	}
 
 --[[

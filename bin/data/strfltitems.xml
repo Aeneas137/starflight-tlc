@@ -1668,7 +1668,7 @@
     <Name>Ancient Ruin</Name>
 	<Description>This ancient symmetrical structure defies categorization.  Deep in a cave formation under the city itself a block formation made entirely of etched endurium has been found. Xenoarchaeologists have theorized that this device may be some data storage unit or ancient database organized by thick stacks of bound plates.</Description>
     <Portrait>B_Tomb.tga</Portrait>
-	<planetid>391</planetid> <!--  ** unable to study this ruin for some reason **  Lir IV  Lir IV 175, 181 (37N X 8W) Ancient Database Plates -->
+	<planetid>391</planetid> <!--  Lir IV 175, 181 (37N X 8W) Ancient Database Plates -->
 	<y>-9</y>
 	<x>-36</x>
   </item>
@@ -1709,7 +1709,7 @@
     <Description>This pirate repair facility is primitive and appears abandoned. Extremely basic facilities are in bad repair and full of the debris and trash.</Description>
     <Constant>WHININGORB</Constant>
     <Portrait>B_ShantyTown.tga</Portrait>
-	<planetid>70</planetid> <!-- ** unable to study this ruin for some reason ** -  Whining Orb --> <!-- Alastir, Tat 132,125 -->
+	<planetid>70</planetid>  <!-- Alastir, Tat 132,125 -->
 	<y>-1</y>
 	<x>-154</x>
   </item>
@@ -2592,6 +2592,7 @@
     <Size>0</Size>
     <Portrait>T_EscapePod.tga</Portrait>
   </item>
+
   <item>
     <ID>281</ID>
     <Type>Artifact</Type>
@@ -2629,12 +2630,13 @@
 	<ID>284</ID>
 	<Type>Ruin</Type>
 	<Name>Shipwreaked Transport</Name>
-	<Description>Several dozen construction personnel eagerly board your ship for evacuation. They report that a malfunction with the power system threatened life support and made interplanetary travel impossible. Using every bit of emergency power, the crew successfully diverted to this lava planet and prevented burn up in the atmosphere, however the transport will never move again. Two escape pods attempted to make it to the other lava planetoid with a breathable atmosphere. They planned to set a beacon somewhere near the north pole or south pole of the planet that would direct any rescuers to their location.</Description>
+	<Description>Several dozen construction personnel eagerly board your ship for evacuation. They report that a malfunction with the power system threatened life support and made interplanetary travel impossible. Using every bit of emergency power, the crew successfully diverted to this lava planet and prevented burn up in the atmosphere, however the transport will never move again. Two escape pods attempted to make it to the other lava planet with a breathable atmosphere. They planned to set a beacon somewhere near the north or south pole of the planet that would direct any rescuers to their location.</Description>
 	<Portrait>B_Research.tga</Portrait>
 	<planetid>444</planetid> <!-- En mac Ethamain (44N X 130W) in the Tabarn system (102, 105)  -->
 	<y>-130</y>
 	<x>-44</x>
 </item>
+
 <item>
 	<ID>285</ID>
 	<Type>Ruin</Type>
@@ -2655,6 +2657,7 @@
 	<y>-39</y>
 	<x>-64</x>
 </item>
+
 <item>
 	<ID>287</ID>
 	<Type>Ruin</Type>
@@ -2665,7 +2668,7 @@
 	<y>-95</y>
 	<x>40</x>
 </item>
-
+<!-- .............................................................. -->
 <item>
 	<ID>288</ID>
 	<Type>Ruin</Type>
@@ -2676,7 +2679,7 @@
 	<y>-55</y>
 	<x>35</x>  jjh don't need 2 of these -->
 </item>
-
+<!-- .............................................................. -->
 <item>
 	<ID>289</ID>
 	<Type>Ruin</Type>
@@ -3459,7 +3462,7 @@
 	<ID>365</ID>
 	<Type>Ruin</Type>
 	<Name>Capital City</Name>
-	<Description>You and your crew are lead into a grand hall with the instruction to stand quietly during the ceremony.  Two opposite groups of Bar-zhon enter wearing decorative robes and glittering chains of metal. Individuals from the group on the left stand and make accusations: barbarians, pirates, coalition sympathizers, reckless opportunists.  After nearly an hour the group on the right stands up and starts recounting your accomplishments: Culling Coalition and pirate expansion, Minex intelligence gathering, diplomatic mediation.  The opposing group sits back down and the supporting group on your right turns towards you.  You are directed to leave the hall and travel to the domed building directly north. </Description>
+	<Description>You enter a grand hall and are asked to stand quietly.  Two opposite groups of Bar-zhon enter wearing decorative robes and glittering chains of metal. Individuals from the lefthand group stand and make accusations: barbarians, pirates, coalition sympathizers, reckless opportunists.  After an hour the group on the right stands up and starts recounting your accomplishments: Culling Coalition and pirate expansion, Minex intelligence gathering, diplomatic mediation.  The opposing group sits back down and the supporting group on your right directs you to leave the hall and travel to the domed building directly north. </Description>
 	<Portrait>B_Metropolis.tga</Portrait>
 	<planetid>261</planetid> <!--  (36S X 68E) Bar-zhon world (Midir VI - 201, 105)  -->
 	<y>68</y>
@@ -3481,8 +3484,8 @@
 	<Name>Monument</Name>
 	<Description>New Stone Monument: "On the 48th of 27945 all inhabitants of this colony were cruelly slaughtered when infected ones overwhelmed the valiant and selfless Bar-zhon military.  Let all observe a day of silence for perpetuity."</Description>
 	<Portrait>B_Tomb.tga</Portrait>
-	<planetid> 101 </planetid> <!-- Quest # 60: Ceridwen (0 X 0)  in the Ailil system (188, 88) -->
-	<y>1</y>
+	<planetid> 101 </planetid> <!-- Quest # 60: Ceridwen (0 X 2)  in the Ailil system (188, 88) -->
+	<y>2</y>
 	<x>0</x>
 </item>
 <item>
@@ -3499,7 +3502,7 @@
 	<ID>369</ID>
 	<Type>Ruin</Type>
 	<Name>Large City</Name>
-	<Description>Sign: Commemoration monument 0 X 0</Description>
+	<Description>Sign: Commemoration monument 0 X 2</Description>
 	<Portrait>B_Tomb.tga</Portrait>
 	<planetid> 101 </planetid> <!-- Quest # 60: Ceridwen (2N X 47W) in the Ailil system (188, 88) -->
 	<y> -46 </y>
@@ -5280,6 +5283,28 @@
 	<x> -31 </x>
 </item>
 
-<!-- allow me to experiment -->
+<!-- Test ...................................................................... -->
+<item>
+	<ID>1251</ID>
+	<Type>Ruin</Type>
+	<Name>Beach Cottage</Name>
+	<Description>Nice place to hang out. Sandy beaches around a fresh water lake.  View of snowcapped mountains to the southwest.  Not too many wild animals either. </Description>
+	<Portrait>cottage.tga</Portrait>
+	<planetid>307</planetid> 	<!-- 6S x 3W test -->
+	<y>-3</y>
+	<x>6</x> 
+</item>
+<item>
+	<ID>1252</ID>
+	<Type>Artifact</Type>
+	<Name>Palm Tree</Name>
+  	<Value>0</Value>
+  	<Size>2.3</Size>
+	<Portrait>palm.tga</Portrait>
+	<planetid>307</planetid> 	<!-- 6S x 4W test -->
+	<y>-4</y>
+	<x>6</x> 
+</item>
 
+<!-- Test ...................................................................... -->
 </items>

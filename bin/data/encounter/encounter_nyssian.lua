@@ -1213,14 +1213,15 @@ elseif (plot_stage == 4) then -- ancients plot state
 		}
 	}
 	questions[61000] = {
-		action="jump", goto=61001, ftest= 2, -- insightful
-		player="[AUTO_REPEAT]",
+		action="jump", goto=61001, ftest= 2, -- insightful jjh
+		--player="[AUTO_REPEAT]",
+		player="...and the second?",
 		alien={"I do not know anything about that particular planet, but our most prized lore concerning the Ancients reveals two clues that may be of use to locate information about them.  The first is that the largest and most densely concentrated ancient ruins are always found on the oldest m-class stars." }
 	}
 	questions[61001] = {
 		action="jump", goto=60001,
 		player="[AUTO_REPEAT]",
-		alien={"The other clue is this: Interpolating patterns of ancient ruins show a particular focus and symmetry around the planetary coordinates of 47N X 45E and 37N X 8W.  Significant finds on many ancient worlds are often found at these coordinates.  I am not equipped for planetary expeditions. You will have to investigate yourself." }
+		alien={"The other clue is this: Interpolating patterns of ancient ruins show a particular focus and symmetry around the planetary coordinates of 47N X 74W and 37N X 8W.  Significant finds on many ancient worlds are often found at these coordinates.  I am not equipped for planetary expeditions. You will have to investigate yourself." }
 	}
 	questions[62000] = {
 		action="jump", goto=62001, ftest= 2, -- insightful
@@ -1972,12 +1973,12 @@ title="Mission #56:  Scavenger Hunt - 362 Bar-zhon Analyzed Organic Monstrosity
 		player="[AUTO_REPEAT]",
 		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].",
 		playerFragment="about this Organic Monstrosity we found at an archeological site.",
-		alien={"You did not find this at an archaeological site, this is a ship fragment of an Gazurtoid colony vessel shot down a thousand years ago by the Sabion and kept at a secret underground lab.  For decades this was their secret doomsday project.  If they were successful in deciphering its technology, they could have grown an invulnerable organic ship with complete immunity to all projectile weaponry." }
+		alien={"You did not find this at an archaeological site, this is a ship fragment of an Gazurtoid vessel shot down a thousand years ago by the Sabion and kept at a secret underground lab. For decades this was their secret doomsday project.  If they were successful in deciphering its technology, they could have grown an organic ship with complete immunity to all projectile weaponry." }
 	}
 	questions[86001] = {
 		action="jump", goto=1, ftest= 1,
 		player="<More>",
-		alien={"Fortunately the Gazurtoid are very unorthodox and creative thinkers that few can ever hope to understand.  They suffer a high level of insanity and counterbalance their tendencies with rigid laws and a rigid belief system in order to give their civilization a modicum of stability.  I tell you this knowing that Myrrdan engineers are still going to try to waste their time deciphering the secrets of this artifact.  I wish them luck nevertheless." }
+		alien={"The Gazurtoid are very unorthodox and creative thinkers that few can ever hope to understand. They suffer a high level of insanity and counterbalance that with rigid laws and a rigid belief system in order to give their civilization a modicum of stability.  I tell you this knowing that Myrrdan engineers are still going to try to waste their time deciphering the secrets of this artifact. I wish them luck." }
 	}
 
 

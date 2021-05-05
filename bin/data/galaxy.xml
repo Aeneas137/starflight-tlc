@@ -206,7 +206,7 @@
   </star>
   <star>
     <id>20</id>
-    <name>Jurlagh Duane</name>
+    <name>Jurlagh</name>
     <x>16</x>
     <y>70</y>
     <spectralclass>M</spectralclass>
@@ -4970,7 +4970,7 @@
   <planet>
     <id>318</id>
     <hoststar>49</hoststar>
-    <name>Bec-Felmas I 298</name>
+    <name>Bec-Felmas I</name>
     <size>LARGE</size>
     <type>MOLTEN</type>
     <color>RED</color>
@@ -4982,7 +4982,7 @@
   <planet>
     <id>319</id>
     <hoststar>49</hoststar>
-    <name>Bec-Felmas II 506</name>
+    <name>Bec-Felmas II</name>
     <size>MEDIUM</size>
     <type>ROCKY</type>
     <color>BROWN</color>
@@ -4994,7 +4994,7 @@
   <planet>
     <id>320</id>
     <hoststar>49</hoststar>
-    <name>Bec-Felmas III 799</name>
+    <name>Bec-Felmas III</name>
     <size>MEDIUM</size>
     <type>OCEANIC</type>
     <color>BLUE</color>
@@ -5006,7 +5006,7 @@
   <planet>
     <id>321</id>
     <hoststar>49</hoststar>
-    <name>Bec-Felmas IV 470</name>
+    <name>Bec-Felmas IV</name>
     <size>MEDIUM</size>
     <type>ROCKY</type>
     <color>BROWN</color>
@@ -5018,7 +5018,7 @@
   <planet>
     <id>322</id>
     <hoststar>49</hoststar>
-    <name>Bec-Felmas V 409</name>
+    <name>Bec-Felmas V</name>
     <size>LARGE</size>
     <type>GAS GIANT</type>
     <color>VIOLET</color>
@@ -6699,7 +6699,7 @@
   <planet>
     <id>462</id>
     <hoststar>20</hoststar>
-    <name>Jurlagh Duane I 356</name>
+    <name>Jurlagh I</name>
     <size>MEDIUM</size>
     <type>OCEANIC</type>
     <color>BLUE</color>
@@ -6711,7 +6711,7 @@
   <planet>
     <id>463</id>
     <hoststar>20</hoststar>
-    <name>Jurlagh Duane II 710</name>
+    <name>Jurlagh II</name>
     <size>LARGE</size>
     <type>ROCKY</type>
     <color>BROWN</color>
@@ -6723,7 +6723,7 @@
   <planet>
     <id>464</id>
     <hoststar>20</hoststar>
-    <name>Jurlagh Duane III 453</name>
+    <name>Jurlagh III</name>
     <size>MEDIUM</size>
     <type>FROZEN</type>
     <color>WHITE</color>

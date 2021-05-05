@@ -120,20 +120,41 @@ void TexturedSphere::CreateTextureTable(BITMAP *bmp)
 {
 	int x, y;
     int p;
-
+	int testj, testi = 0;	//jjh
     tex_table = (int *)malloc( (TEX_SIZE*(TEX_SIZE+1)*sizeof(int)) );
 
-    //this maps any sized bitmap onto the texture map
-	for (int i=0; i<TEX_SIZE; i++) 
-    {
-	    for (int j=0; j<TEX_SIZE+1; j++) 
+// jjh-> working on getting the spherical image on the screen to match the surface image in the aux screen.  Initially, the spherical image was upside
+// down.  with the new code added below, it's now right-side up, and no longer a mirror image on longitude.
+
+//here's the original code:  
+//this maps any sized bitmap onto the texture map
+//	for (int i=0; i<TEX_SIZE; i++)		
+//    {
+//	    for (int j=0; j<TEX_SIZE+1; j++)
+//        {
+//            x = i * bmp->w / TEX_SIZE; 
+//            y = j * bmp->h / TEX_SIZE;
+//			  p = getpixel(bmp, x, y);  
+//map 2D coords into 1D array
+//		  tex_table[j*TEX_SIZE+i] = p;
+//        }
+//    }
+
+//Probably a more eleagant way to do this, but this works for now.  old code fills tex_table left-to-right, top-to-bottom.
+//new code still pulls pixel that way, but fills tex_table bottom-to-top and right-to-left.
+
+	for (int i=0; i<TEX_SIZE; i++)			//i controls the column.  i = 0 starts in column 0 
+    {										//j controls the row. j = 0 starts row 0
+		testj = TEX_SIZE;					//testj starts row at 255
+		testi = (TEX_SIZE - 1) - i;			//testi starts column at 255
+	    for (int j=0; j<TEX_SIZE+1; j++)	
         {
-            x = i * bmp->w / TEX_SIZE; 
-            y = j * bmp->h / TEX_SIZE;
+            x = i * bmp->w / TEX_SIZE;		//i and j dictate which pixel is pulled from the texture. 
+            y = j * bmp->h / TEX_SIZE;		//so don't change them to solve the problem.
 	        p = getpixel(bmp, x, y); 
-            
-            //map 2D coords into 1D array
-            tex_table[j*TEX_SIZE+i] = p;
+//map 2D coords into 1D array
+		  tex_table[testj*TEX_SIZE+testi] = p;
+		  testj--;
         }
     }
 }
@@ -159,7 +180,7 @@ void TexturedSphere::InitSphereLookupTables()
 
 	        /* Convert Cartesian Coord. to Spherical Coord. 
 	        Notice it's not x,y,z but x,z,y */
-	        Cartesian2Sphere(x, z, y, &alpha, &beta);
+	        Cartesian2Sphere(x, z, y, &alpha, &beta);					
 
 	        /* lower order of bits occupied by alpha, 
 	        upper order shifted by TEX_SIZE occupied by beta */

@@ -653,7 +653,7 @@ void ModulePlanetOrbit::Update()
 			Item *item = g_game->dataMgr->GetItem(n);
 
 			//is this item an artifact?
-			if (item->itemType == IT_ARTIFACT || item->itemType == IT_RUIN)
+			if (item->itemType == IT_ARTIFACT || item->itemType == IT_RUIN)			//jjh
 			{
 				//artifact located on this planet?
 				if (item->planetid == planetid)
@@ -662,23 +662,24 @@ void ModulePlanetOrbit::Update()
                     ostringstream os;
 					os <<  "I'm detecting an odd energy signature on the surface. ";
                     
-                    // Reporting position of artifacts/ruins disabled because we don't want to give them away too easily!
-                    // But this could be used in a future upgrade by giving the player a planet scanner device.
-                    //int lat = item->x;
-					//ostr.str("");
-					//ostr << "" << abs(lat);
-					//if (lat < 0) ostr << "N";
-					//else if (lat > 0) ostr << "S";
-					//int lng = item->y;
-					//ostr << ", " << abs(lng);
-					//if (lng < 0) ostr << "W";
-					//else if (lng > 0) ostr << "E";
 					
                     if (item->itemType == IT_ARTIFACT)
                        os << "It appears to be an Artifact.";
                     else
                         os << "It appears to be an ancient Ruin.";
 
+					 if (g_game->getGlobalBoolean("DEBUG_OUTPUT") == true) {
+					// Reporting position of artifacts/ruins disabled because we don't want to give them away too easily!
+                    // But this could be used in a future upgrade by giving the player a planet scanner device.  REACTIVATED UNDER DEBUG BY JJH
+						int lat = item->x;
+						os << "  " << abs(lat);
+						if (lat < 0) os << "N";
+						else if (lat > 0) os << "S";
+						int lng = item->y;
+						os << " X " << abs(lng);
+						if (lng < 0) os << "W";
+						else if (lng > 0) os << "E";
+					 }
     				g_game->printout(text, sci + os.str(), YELLOW, 1000);
 
                     //stop searching items

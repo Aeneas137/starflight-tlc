@@ -171,7 +171,7 @@ if (plot_stage == 1) or (plot_stage == 2) then -- virus plot state
 elseif (plot_stage == 3) then -- war plot state
 
 	obsequiousGreetTable= {
-			"I am Spemin, I great you two-eyed slimeless skeletoids.  'Over",
+			"I am Spemin, I greet you two-eyed slimeless skeletoids.  'Over",
 			"Hello [CAPTAIN].  Go ahead ",
 			"Uh huh.  Ok.",
 			"Sure thing",
@@ -263,7 +263,7 @@ if (plot_stage == 1) or (plot_stage == 2) then -- virus plot state
 elseif (plot_stage == 3) then -- war plot state
 
 	friendlyGreetTable= {
-			"I am Spemin, I great you two-eyed slimeless skeletoids.  'Over",
+			"I am Spemin, I greet you two-eyed slimeless skeletoids.  'Over",
 			"Hello [CAPTAIN]. Go ahead ",
 			"Uh huh.  Ok.",
 			"<Silence>",
@@ -348,7 +348,7 @@ if (plot_stage == 1) or (plot_stage == 2) then -- initial and virus plot state
 elseif (plot_stage == 3) then -- war plot state
 
 	hostileGreetTable= {
-			"I am Spemin, I great you two-eyed slimeless skeletoids.  'Over",
+			"I am Spemin, I greet you two-eyed slimeless skeletoids.  'Over",
 			"Hello [CAPTAIN]. Go ahead ",
 			"Uh huh.  Ok.",
 			"<Silence>",
@@ -1595,7 +1595,7 @@ title="Mission #49:  Unrest - at least one flight recorder
 		player="[AUTO_REPEAT]",
 		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have conclusive evidence from this flight recorder that the Coalition is raiding the Elowan and Thrynn within your territory.",
 		playerFragment="what to make of this evidence", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
-		alien={"...Tri'na'li'da override.  'Project Overwash' has proved completely ineffective due to Minex interference.  Goal of creating the cascading state of mutual immolation known as 'war' failed.  All further efforts suspended and postponed, no further fleet actions planned.  Need to conserve controlled ships judged essential for final action.  Tri'na'li'da await direct contact from Uyo... (Mission Completed)" }
+		alien={"...Tri'na'li'da override-'Project Overwash' has proved ineffective due to Minex interference. Goal of creating the cascading state of mutual immolation known as 'war' failed.  All further efforts suspended and postponed, no further fleet actions planned.  Need to conserve controlled ships judged essential for final action.  Tri'na'li'da await direct contact from Uyo... (Mission Completed)" }
 	}
 
 --[[
@@ -1652,7 +1652,7 @@ title="Mission #57:  The Shimmering Ball
 		alien={"We knew that no one could ever possibly have that much fuel.  Feel free to come back later when you have something else to give us in order to express your appreciation." }
 		}
 	questions[87200] = {
-		action="jump", goto=87202, ftest= 1,  -- Check for 275 Powercore or 22 Electronics, if neither of these are bored, go to question 87202
+		action="jump", goto=87202, ftest= 1,  -- Check for 275 Powercore or 22 Electronics, if neither of these are aboard, go to question 87202
 		player="Transporting now",
 		alien={"No silver gadgets please.  The Nyssian already sold us quite a number of those." }
 		}

@@ -60,7 +60,7 @@ function init_training_missions()
 		"Now let's introduce you to the bank. This is where you can quickly see your balance of Monetary Units (MUs). The banker can also give you a loan if you are ever strapped for credits. A word of caution, though: if you fail to repay a loan, your hyperspace license could be suspended.  Go visit the Bank, then return here.",
 		"Great. Continuing onward...",
 		24, 0, 0,
-		1, 0, 800 )
+		1, 0, 1000 )
 
 -- quest 3
 	addQuest( "Capitalism Du Jour",
@@ -68,7 +68,7 @@ function init_training_missions()
 		"Next stop on our tour of the Starport is the Trade Depot. This is where you will sell the ores and lifeforms gathered on planets or acquired from, ahem, alien 'interaction', so to speak.  Most importantly, this is where you will go to buy more fuel for your ship.  Go to the Trade Depot then return here.",
 		"Great! Now, let's continue with your tour.",
 		20, 0, 0,
-		1, 0, 500 )
+		1, 0, 1500 )
 
 -- quest 4
 	addQuest( "Human Resources",
@@ -76,7 +76,7 @@ function init_training_missions()
 		"You're almost ready to take your ship out for your first starflight. Before you can exit the Starport in your new ship, you will need to familiarize yourself with the Starport's crew support facility. Go visit the Personnel department. There you will need to assign your ship's crew.  Hire a crew member for each station that your ship requires, and then highlight each crew member and assign them to a station.",
 		"Did you assign a crew member to each ship station? If not, you'll need to do that before you can leave the Docking Bay. Now let's continue your tour.",
 		18, 0, 0,
-		1, 0, 500 )
+		1, 0, 2000 )
 
 -- quest 5
 	addQuest( "Engine Test",
@@ -84,7 +84,7 @@ function init_training_missions()
 		"Now that you're familiar with the Starport and what is required of a captain, I think it's time for a flight test. As the captain of one of the earliest ships constructed at the Myrrdan Starport Shipyard, we need you to give her a good shakedown cruise prior to her maiden voyage. You should now have enough resources now to purchase a set of engines, a cargo pod, and a unit of Endurium.  Your first mission is a simple engine fire-up test: Take her out of the Starport, run a few orbits around Myrrdan, then return. You can depart from the Starport via the Docking Bay. After completing the orbital maneuver, your navigation officer will be able to dock with the starport again.",
 		"Great, you survived! I mean... er... We have the utmost faith in our ships, of course. Now, let's proceed.",
 		12, 8, 0, --orbit Myrrdan
-		1, 0, 1000 )
+		1, 0, 2000 )
 
 -- quest 6
 	addQuest( "Sensor Test",
@@ -92,7 +92,7 @@ function init_training_missions()
 		"It's time to log some more star hours!  Are you ready for another flight? Another vital ship component is the sensor system. It is your eyes and ears in space.  We need to test the sensors to ensure they are functioning within normal parameters.  Go to the nearby planet Islay and establish orbit, then perform a full planetary scan.  Your science officer will be able to perform this function.  Note that the most fuel-efficient 'thrust' consists of intermittently holding the thrust key, not holding it continuously. Return here when complete.",
 		"The ship's sensors performed above expectations.",
 		14, 2, 0,
-		1, 0, 1000 )
+		1, 0, 2000 )
 
 -- quest 7
 	addQuest( "Critical Mineral Shortage",
@@ -821,10 +821,10 @@ Quest #54: 8.	Defend transports Myrrdan transports traveling unexpectedly unesco
 
 	addQuest(
 		"Transport Defense",
-		"Immediately travel to ......., broadcast your position and wait for Myrrdan transports to find you, and then escort them back to Myrrdan",
-		"A number of transports hauling a combination of trade goods and mineral ore has stubbornly left Bar-zhon space for Myrrdan without any escort after their military transport suffered a central coil overload.  Your task is to immediately travel to ......., broadcast your position and wait for Myrrdan transports to find you, and then escort them back to Myrrdan without delay. Piracy along this route has been rampant as military vessels have been called to face the Minex. You are urged to leave post haste",
+		"Immediately travel to (195,105), broadcast your position and wait for Myrrdan transports to find you, and then escort them back to Myrrdan",
+		"A number of transports hauling a combination of trade goods and mineral ore has stubbornly left Bar-zhon space for Myrrdan without any escort after their military transport suffered a central coil overload.  Your task is to immediately travel to (195,105), broadcast your position and wait for Myrrdan transports to find you, and then escort them back to Myrrdan without delay. Piracy along this route has been rampant as military vessels have been called to face the Minex. You are urged to leave post haste.",
 		"You did all that you could Captain.",
-		 2, 999, 1, -- Bar-zhon Sensor data
+		 2, 341, 1, -- Bar-zhon Sensor data
 		 1, 0, 20000 )
 
 --[[
@@ -833,10 +833,10 @@ Quest #55: 9.	Infighting pirate raiders following up devastated areas. Three set
 
 	addQuest(
 		"Infighting Pirates",
-		"Travel and investigate these locations: ........, .........., and ..........",
-		"The numerous pirate clans that inhabit the area around Myrrdan space have gradually grown more dangerous due to the large market of salvaged military technology created by the widespread territorial conflict with the Minex. This might be more of a problem for Myrrdan except that according to reports they have started infighting among themselves to a greater degree than they were before the war. We need you to investigate a number of razed pirate outposts in the hope that you can discover the cause of this infighting and let us judge how long we can rely upon it to keep Myrrdan unscathed. Your mission is to investigate these locations: ........, .........., and .......... ",
+		"Travel to and investigate these locations: Bicreo (59N x 14E) in the Macha system, Aflafar (97S x 80E) in the Cyffoden system, and Oenias (3N x 10W) in the Orda system.",
+		"The numerous pirate clans that inhabit the area around Myrrdan space have gradually grown more dangerous due to the large market of salvaged military technology created by the widespread territorial conflict with the Minex. This might be more of a problem for Myrrdan except that according to reports they have started infighting among themselves to a greater degree than they were before the war. We need you to investigate a number of razed pirate outposts in the hope that you can discover the cause of this infighting and let us judge how long we can rely upon it to keep Myrrdan unscathed. Your mission is to investigate these locations: Bicreo (59N x 14E) in the Macha system, Aflafar (97S x 80E) in the Cyffoden system, and Oenias (3N x 10W) in the Orda system.",
 		"It looks like the virus is causing these pirates even more trouble then the rest of us.",
-		 2, 999, 1, -- Pirate Corpse
+		 2, 346, 1, -- Pirate Corpse
 		 1, 0, 20000 )
 
 --[[
@@ -845,14 +845,14 @@ Quest #56: 10.	 Multiple messages concerning excursions into Minex territory. Ta
 
 	addQuest(
 		"Scavenger Hunt",
-		"Investigate outposts of the 3 imperialists to discover any intelligence concerning the Minex.  First location: ........",
-		"In recent weeks, the Bar-zhon have become almost outright friendly with Myrrdan and have outsourced an forensic examination of the ruins of the Transmodra and Sabion to us. Any artifacts you locate should be taken to the Bar-zhon for analysis. We have jointly agreed to share any resulting technology that we find.  The first location they want us to investigate is ..........",
-		"Player should not see this, mission ended by the Nyssian.",
-		0, 0, 0,
-		0, 0, 0 )
+		"Contact the Bar-zhon and investigate outposts of the 3 imperialists to discover any intelligence concerning the Minex.",
+		"In recent weeks, the Bar-zhon have become almost outright friendly with Myrrdan and have outsourced an forensic examination of the ruins of the Transmodra and Sabion to us. Any artifacts you locate should be taken to the Bar-zhon for analysis. We have jointly agreed to share any resulting technology that we find.  Contact the Bar-zhon for a mission briefing.",
+		"Well done! The scientists will spend years trying to figure this one out.",
+		2, 362, 1,
+		1, 0, 20000 )
 
 --[[
-Quest #57: 11.	The Spemin have a shimmering ball, but they are unable to reverse engineer or even figure it out.  They want 100 fuel or a Minex salvage piece.  An option exists "nothing from Spemin is of value, forget this mission!” Not functional. Thrynn give 50 Quorsitanium if the item is taken to them. Starport gives the player nothing.
+Quest #57: 11.	The Spemin have a shimmering ball, but they are unable to reverse engineer or even figure it out.  They want 100 fuel or a Minex salvage piece.  An option exists "nothing from Spemin is of value, forget this mission!. Thrynn give 50 Quorsitanium if the item is taken to them. Starport gives the player nothing.
 ]]--
 
 	addQuest(
@@ -860,7 +860,7 @@ Quest #57: 11.	The Spemin have a shimmering ball, but they are unable to reverse
 		"Contact the Spemin and obtain from them their shimmering ball artifact",
 		"The Spemin have reported a major technological find, a prototype cloaking device that operates during combat giving a single ship an enormous tactical advantage.  Your job is to contact the Spemin and find out what they would take in exchange for the device before they decide to offer it to another race.",
 		"This artifact is nonfunctional and most likely a counterfeit. Better luck next time.",
-		 2, 999, 1, -- shimmering ball
+		 2, 363, 1, -- shimmering ball
 		 1, 0, 0 )
 
 --[[
@@ -869,10 +869,10 @@ Quest #58: 12.	Formalizing the Bar-zhon alliance leads the player to three build
 
 	addQuest(
 		"Formalizing the Bar-zhon alliance",
-		"Travel to the Bar-zhon world of ....... to formalize our alliance with them.",
-		"In a time of war, distinguished naval officers often performed the duty of ambassadors for their countries. The Bar-zhon government, firmly entrenched within their naval system, has requested a formal presence of a distinguished Myrrdan ship captain to attend the ceremony that will formally announce our alliance to their people. You have been elected to represent Myrrdan for this event and are directed to travel to the Bar-zhon world of ....... to formalize our alliance with them.  We understand that there is some controversy concerning our alliance, but the Bar-zhon ambassador has strongly downplayed these reports and assured us that the outcome of this ceremonial ritual is mostly assured.",
+		"Travel to the Bar-zhon world of Midir VI (37S x 68E) to formalize our alliance with them.",
+		"In a time of war, distinguished naval officers often performed the duty of ambassadors for their countries. The Bar-zhon government, firmly entrenched within their naval system, has requested a formal presence of a distinguished Myrrdan ship captain to attend the ceremony that will formally announce our alliance to their people. You have been elected to represent Myrrdan for this event and are directed to travel to the Bar-zhon world of Midir VI (37S x 68E) to formalize our alliance with them.  We understand that there is some controversy concerning our alliance, but the Bar-zhon ambassador has strongly downplayed these reports and assured us that the outcome of this ceremonial ritual is mostly assured.",
 		"Flawlessly executed as usual Captain!",
-		 2, 999, 1, -- draft paperwork
+		 2, 364, 1, -- draft paperwork
 		 1, 0, 20000 )
 
 end
@@ -909,22 +909,22 @@ Quest #60: 2.	The Infected swarm a planet of the Bar-zhon. Investigate ruins sho
 
 	addQuest(
 		"Overrun",
-		"Investigate the Bar-zhon planet of ..... and provide whatever rescue or aid possible.",
-		"A very faint unidirectional broadcast SOS has been picked up from the orbital station around the Bar-zhon border world of ........  The transmission ends with the recorded destruction of the station, but the message also describes an invasion of the planet by a large collection of supposedly friendly alien races working in tandem.  The time lag of this hyper wave message to the nearest Bar-zhon outpost is only hours, but the delay before it reached us has been over 8 days, so it is very likely that any active combat operations between the Bar-zhon and the invaders has already been resolved.  Your primary task is to assist the Bar-zhon in any way possible and secondarily to investigate the incident itself. If this is another case of virus-controlled aliens acting together then you are instructed to consult with the Bar-zhon and the Minex.",
+		"Investigate the Bar-zhon planet of Ceridwen in the Ailil system (188, 88) and provide whatever rescue or aid possible.",
+		"A very faint unidirectional broadcast SOS has been picked up from the orbital station around the Bar-zhon border world of Ceridwen in the Ailil system (188, 88).  The transmission ends with the recorded destruction of the station, but the message also describes an invasion of the planet by a large collection of supposedly friendly alien races working in tandem.  The time lag of this hyper wave message to the nearest Bar-zhon outpost is only hours, but the delay before it reached us has been over 8 days, so it is very likely that any active combat operations between the Bar-zhon and the invaders has already been resolved.  Your primary task is to assist the Bar-zhon in any way possible and secondarily to investigate the incident itself. If this is another case of virus-controlled aliens acting together then you are instructed to consult with the Bar-zhon and the Minex.",
 		"Player should not see this, mission ended by the Minex.",
 		0, 0, 0,
 		0, 0, 0 )
 
 --[[
-Quest #61: 3.	Search ruined worlds of the Bx/Transmodra/Sabion. The player is given a list of sites.  Commentary about the ancients includes: Ancient settlements show absolute individuality. No defensive system. Uniformity of distance between settlements but randomized vectors. Uniform settlements at any altitude as if planetary weather and temperature was irrelevant. Majority of all settlements found at class m stars. No unstable planets tectonically were ever inhabited. Long lifespan and extreme individualism assumed. Recordkeeping beyond comprehension or telepathic because of a complete lack of any trace of communication or writing or data storage systems. All messages signed by "The Society of Ancient Studies"
+Quest #61: 3.	Search ruined worlds of the Bx/Transmodra/Sabion. The player is given a list of sites.  Commentary about the ancients includes: Ancient settlements show absolute individuality. No defensive system. Uniformity of distance between settlements but randomized vectors. Uniform settlements at any altitude as if planetary weather and temperature was irrelevant. Majority of all settlements found at class m stars. No unstable planets tectonically were ever inhabited. Long lifespan and extreme individualism assumed. Recordkeeping beyond comprehension or telepathic because of a complete lack of any trace of communication or writing or data storage systems. All messages signed by "The Society of Ancient Studies".  The Coalition provide the Seal. 
 ]]--
 
 	addQuest(
-		"Another Ruined Search",
-		"Investigate a number of archaeological sites on the 3 ruined world starting with .........",
-		"A database of Sabion origin has been handed to us by the Bar-zhon.  No details of any interest were found in the database other than a collection of coordinates of academic research sites dedicated to study the ancients.  As before, the Bar-zhon have uncovered this list from their historic archives but do not have the time or manpower to investigate the ruins themselves and have outsourced the task to us in exchange for a share in any of the discoveries we make.",
+		"Another Ruins Search",
+		"Investigate a number of archaeological sites - on the Sabion home world: 47N X 74W, 83S X 18W, 30N X 38E, and on the Transmodra home world: 74N X 41E and 29S X 7E. ",
+		"A database of Sabion origin has been handed to us by the Bar-zhon.  No details of any interest were found in the database other than a collection of coordinates of academic research sites dedicated to study the ancients.  As before, the Bar-zhon have uncovered this list from their historic archives but do not have the time or manpower to investigate the ruins themselves and have outsourced the task to us in exchange for a share in any of the discoveries we make. The locations are: the Sabion home world: 47N X 74W, 83S X 18W, 30N X 38E, and on the Transmodra home world: 74N X 41E and 29S X 7E",
 		"It is a shame that we cannot consult with this Society of Ancient Studies directly.",
-		 2, 999, 1, -- Society of Ancient Studies Seal
+		 2, 375, 1, -- Society of Ancient Studies Seal
 		 1, 0, 20000 )
 
 --[[
@@ -935,132 +935,58 @@ Quest #62: 4.	 Data cube given to the player by the Minex.  Questions include: U
 		"The Crazed Spemin",
 		"Obtain a data cube from the Minex, question the Spemin from the prompts the data cube requests, and return it to starport.",
 		"The Minex have learned that the Spemin are possessed by the personality of the virus expressing itself as the Tri'na'li'da and they have discovered its mistake in thinking that Myrrdan humans are its masters.  They have devised a series of strategy questions for us to ask, and created a sophisticated sapient simulation stored within a datacube which will direct us in what questions to ask.  When you are done questioning the Spemin you are to return to starport and we will relay the responses directly to the Minex.",
-		"This information is being relayed to the Mine.",
-		 2, 999, 1,  -- Data cube with responses
+		"This information is being relayed to the Minex.",
+		 2, 377, 1,  -- Data cube with responses
 		 1, 0, 20000 )
 
---[[
-Quest #63: 5.	Treasure map of an infamous pirate known to scavenge artifacts. Map provided by the coalition after they tried to trick the player into paying more for it.  Aliens try and fail to pronounce name.  'Mignizitaeri'  Series of riddles and mazes.  Already looted ancient sites. Maze at end.  Prizes: small black egg. Crystal obelisk. Blackrock gem. Amethyst rod with triangular crystal base. Nyssian will tell the story of each artifact.  Thrynn will buy all artifacts except for the black egg. Returning the black egg artifact to starport finishes the mission
-]]--
-
-	addQuest(
-		"The Treasure Map",
-		"Contact the Coalition and obtain the treasure map that we already sent paid for. Search for the treasure.",
-		"During the Bar-zhon's Republic days, an infamous pirate with a completely unpronounceable name established a reputation for himself as a collector of powerful alien artifacts.  In exchange for an unnamed quantity of supplies, the coalition has agreed to turn over a recently discovered treasure map supposedly belonging to this pirate. Starport has already paid for this map in the hopes that it will lead us to additional ancient artifacts.  Your task is to simply collect it and follow its instructions in order to locate and retrieve whatever treasure can be found.",
-		"This one black artifact has been confiscated from your cargo hold.  You are directed not to ever mentioned its existence to anyone.",
-		 2, 999, 1, -- black egg
-		 1, 0, 20000 )
 
 --[[
-Quest #64: 6.  Coalition decides to attack Myrrdan . Elowan strongly supportive and issue a data rod to take to the Coalition. The Nyssian prophecy that we are not in any way related to the Uyo and also issue a data rod. The Bar-zhon offer to raid Coalition territory to try to pressure them into withdrawing the fleet. (useless) The Minex provide data rod contrasting the differing traits of humans and Uyo. The Coalition with all three data rods removes their fleet and sends a truce agreement to Myrrdan
-]]--
+Quest #63: 
 
-	addQuest(
-		"We are not Uyo",
-		"Find a way to stop a faction of the Coalition from attacking Myrrdan!",
-		"The Elowan have brought us information that the Thrynn accusations against Myrrdan stating that we are ‘the Uyo’ have taken root in a faction of the Coalition. Elowan Intelligence shows that they are currently building up a taskforce of ships just outside Myrrdan space gathering strength to attack us.  Contact the Coalition and any other alien races necessary to prove to them that humanity bears no relationship to the genocidal Uyo.",
-		"We all owe you yet again.  Ask us for anything, anything other than discounts on equipment and minerals and it's yours!",
-		 2, 999, 1, -- Coalition Truce Agreement
-		 1, 0, 20000 )
+Crystal_Sphere - Mathgen IV 212,3 (15N X 6E)
+- Outer planet
 
---[[
-Quest #65: 7.	Nyssian locate a certain ancient site. Telepathic artifact located there. Written description is that any who approaches the artifact fall into an unconscious state. The artifact itself resembles an opaque perfect mirror.  No apparent use.  Nyssian tell the player to take the artifact to the Minex.  Minex ask the player where they have located one of their children's toys. They confiscate the device and tell the player that it is something they created, not of ancient manufacture. They also tell the player that a thought mirror is too dangerous for humans.
-]]--
+-Spemin ancients: "Imperative to neutralize In'tral'ess at Bec-Felmas 3 - 16,183 and Mathgen 4 - 212,3.  Phlegmak devices recommended."
 
-	addQuest(
-		"Telepathic Turnabouts",
-		"Contact the Nyssian, search many ancient sites they may have found, and take any artifacts back to the Nyssian for analysis",
-		"The Nyssian Scouts have been dredging through their oldest recordings in search of any hint or clue to the location of any ancient sites or artifacts. They have recently sent out a directional broadcast towards us informing us that they may have found something significant.  Your task is to make contact with one of them and evaluate and investigate their information as you deem appropriate.",
-		"Player should not see this, mission ended by the Minex.",
-		0, 0, 0,
-		0, 0, 0 )
+-Minex ancients: "The In'tral'ess or Ancients gifted us or enhanced us with the mental powers to fight the Uyo.  Much knowledge over the ages has been lost.  Either the Uyo genetically damaged us or the eternal ones may have withdrawn their gifts.  Without them, we are shattered and crippled."
 
---[[
-Quest #66: 8.	Searching for the legend of the Alta-hlai .  All races except for the Spemin know nothing.  Possessed message: You seek Leghk khan. Unusable. Provides coordinates. The device resembles an Inert EMP disrupter.  Discharged sometime in the last 500 years. Extremely hard shell. Bar-zhon explosives destroyed its power supply and also damaged a large part of the mechanism.
-]]--
+-Minex ancients: "The ancients or the eternal ones are energy beings.  They have left this space-time continuum.  We feel that one of their centers was on the outer planet of a yellow star, but remember not where."
 
-	addQuest(
-		"Legend of the Alta-hlai",
-		"Contact all of the races and inquire about Coalition activity on the Sabion homeworld and search out historic clues that might lead to Alta-hlai's ship",
-		"Myrrdan intelligence services have reported that the Coalition is showing higher than usual activity and interest in the Sabion homeworld.  Over a dozen Coalition ships have converged on the world from different locations and have been endlessly scanning the surface for weeks now.  Inquiries to their activities have been met with denials.  We covertly intercepted and decoded communications that have revealed little other than repeated references to Alta-hlai. In the historic record, Alta-hlai was a famous Bar-zhon explorer who charted distant areas of space in the dead zone coreward of Spemin territory on his final expedition.  The Great War flared up just before his return, and he transmitted a report of finding a powerful weapon that disrupted life-force. Unfortunately his ship vanished shortly afterwards and was presumed lost due to the hostilities.  Without revealing our intelligence sources, your assignment is to discretely contact the other alien races concerning Coalition activity and to inquire concerning additional historic information about Alta-hlai.  If Alta-hlai's disruptor is found, it may of course prove to be a devastating weapon but it also theoretically might be used to disrupt the nanomachine's control of the infected.",
-		"Unfortunately Bar-zhon bombs have completely destroyed the disruptor's power supply and also damaged most of the device.  It is not repairable.",
-		 2, 999, 1 ,
-		 1, 0, 20000 )
+-Elowan ancients: "We had ascertained that a city of the ancients existed in our home sector, within a system inside the rim of starforming nebulae, almost exactly 100 parsecs upspin from the war-torn Veloxi homeworld.  Landing coordinates in empire terminology were 15N X 6E.  How thou couldst make use of this knowledge is not known since that realm is nay inaccessible."
 
---[[
-Quest #67: 9.	Elowan warn of military buildup to raze Myrrdan. The Elowan are too weak to oppose the action on their own.  They have tried to contact the Thrynn on our behalf but have been ignored. The Bar-zhon won't intervene, fail to honor the Myrrdan alliance, but promise to send strong diplomatic condemnation, the Nyssian confirm the fleet location (give the player a data rod) and report that the fleet is no longer at their home world but is hiding well outside of the ecliptic of the system but have no fleet of their own to assist us with.  The Minex refuse to act in judiciary role.  They report that any military assistance of any type always turns aggression upon themselves in the long term. ‘Your assistance has been invaluable but your survival is irrelevant if you can't defend yourselves.’ To resolve this mission, the player must contact the Spemin, pretend to be Uyo, give system and location (Nyssian data rod). They tell you to wait and contact them again later. They report that a large fleet of infected ships have wiped out the taskforce and provide a Spemin data crystal for the player to give to starport.
-]]--
-
-	addQuest(
-		"Thrynn strike",
-		"Contact all of our allies and promise anything in exchange for assistance in deflecting the Thrynn fleet.",
-		"With the destruction and abandonment of many of our mining outposts, Myrrdan has not been as successful in building a fleet of ships to match the fleet levels of the other races as we would like.  With the disruption of all of the other races including those hostile to Myrrdan, this has not generally been a problem up until now. Large fleets of pirates and infected have been assailing all races including ourselves, but since we only have a single star systems to defend, our dedicated military and strong system defenses have allowed us to withstand attack after attack. Unfortunately we now have a major event our hands.  The Thrynn have completely withdrawn from the alliance, withdrawn all of their ships from the joint defensive fleet in the sector, and have been massing warships in their home system. The Elowan have secretly informed us that the Thrynn government has started whipping up their population against humans as the Uyo, blaming us for all of their problems, and are preparing to send most of their ships to Myrrdan to raze our homeworld.  Your task is to do anything necessary to prevent this attack. Contact all of our allies and promise anything in exchange for assistance in deflecting the Thrynn action.",
-		"Creative solution, but we are all grateful to be alive.",
-		 2, 999, 1, -- Spemin data crystal
-		 1, 0, 20000 )
-
---[[
-Quest #68: 10.	Minex summons: An unfocused transmission has been picked up in an empty star system located ...  within Elowan space. The Elowan independently tracked the signal to a minstrel who flees after relaying the message. Elowan pass on the following message and tell the player the background history of the minstrels:
-
-Fury born without focus
-Ancient evil without a core
-An alliance born from willful blindness
-Tethers history and ancient lore.
-
-The crystal ones right is not to fight.
-As salvation's winds blindly turn their way.
-Distant reforms may echo true,
-To close the past, the mute must play
-
-]]--
-
-	addQuest(
-		"The Minstrel",
-		"Respond to the Minex summons",
-		"The Minex have relayed to also request to personally talk to you, Captain.  They will not disclose their business to anyone else and have asked you to travel to their territory to discuss an urgent matter.",
-		"Player should not see this, mission ended by the Elowan.",
-		0, 0, 0,
-		0, 0, 0 )
-
---[[
-Quest #69: 11  The Elowan read off the set of 15 coordinates.  No endurium found, but each site relays some history of the war against the Uyo from the point of view of the ancients.  In this series of ruins Earth is given as a major Uyo center and the physical form of the Uyo described. Story of anti-telepathic device destroying the Uyo on a galactic scale and leaving them open to local nonsentient predators on every world except Earth. Useless curio artifact Crystal bar found at last ruin site and returned to Myrrdan to end the quest.
-]]--
-
-	addQuest(
-		"The Longshot",
-		"Contact the Elowan and investigate each set of coordinates that they will provide",
-		"The Elowan have been given Minex astrological survey data describing the location of what they believe are geometrically placed ancient lay lines or a set of communication relays.  Where the Minex have failed to make sense of the data for millennia, the Elowan believe they have detected some order or pattern based on the positions of the ancient ruins discovered in this sector.  A total of 15 possible unvisited ancient site coordinates have been generated all based on an algorithm that the Elowan have developed. Contact them and investigate each set of coordinates that they will provide.",
-		"Unfortunately the Crystal bar appears to be simply a useless curio.",
-		 2, 999, 1, -- The Crystal Bar
-		 1, 0, 20000 )
-
---[[
-Quest #70: 12.	Data from survey in mission number 11 has been thoroughly analyzed by the Minex. They have located a city of the ancients and the player returns with a Crystal Sphere (endgame)
 ]]--
 
 	addQuest(
 		"City of the Ancients",
 		"Locate a City of the Ancients and return with a Crystal Sphere.",
-		"The Crystal Bar has proven to be more than just a curio. The seemingly inert device allows those who are physically touching it to receive telepathic impressions from other ancient devices.  When brought near your earlier discovery, the Ancient Database Plates, researchers temporarily feel the sensation of vague, indistinct memories of events overlaid within their own personal memories. Dozens of researchers using the device have recorded their impressions and correlations between records have allowed us to 'read' the database plates in a matter of fashion. The most pertinent data from the device reveal the location of focal points of ancient society. We also have learned details of an interdimensional ancient device known as a crystal sphere.  The Minex have been able to provide further information and they describe these focal points as vast assemblies of ruins filled with endurium, often containing samples of advanced technology.  If a high-energy device such as a pearl-sized crystal sphere is found, they believe it is capable of boosting their telepathic abilities a level where it would be possible for them to contact the ancients directly.  Your mission is to locate a city of the ancients in the hope that a crystal sphere can be recovered.  We have been under sporadic attack by pirates and mad-ones growing stronger every day under the influence of the Uyo's nanomachines.  Do not delay in your search.",
+		"The Crystal Bar discovered on the Sabion homeworld has proven to be more than just a curio. The inert device allows those who are physically touching it to receive telepathic impressions from other ancient devices.  When brought near the Ancient Database Plates researchers feel the sensation of indistinct memories of events.  Correlations between records have allowed us to 'read' the database plates in a matter of fashion. The pertinent data is the discovery of 'focal points' in ancient society.  We have learned details of an interdimensional ancient device known as a crystal sphere.  The Minex describe these focal points as vast assemblies of ruins filled with endurium, often containing samples of advanced technology.  A high-energy device such as a pearl-sized crystal sphere could boost their telepathic abilities to the level where it would be possible for them to contact the ancients.  Your mission is to locate a city of the ancients in the hope that a crystal sphere may be recovered.  As Ancient artifact sites on one world are often parallel on others, we recommend starting with stories of historic finds such as the ones that the Elowan spoke of.",
 		"",
 		 2, 5, 1, -- crystal sphere
 		 0, 0, 0 )
--- This reward should end the game.
 
+	addQuest(
+		"GAME OVER ",
+		"Description (part 1)",
+		"The hypercube artifact originally from old earth is returned to the center of the ancient city.  The hypercube starts to glow and shoots out of the player's hands and begins to hover over a large crystalline red/blue mass.  Light starts shimmering throughout the crystalline structure and gradually grows brighter and brighter until it is a white searing blaze.  A large fleet of enormous spherical vessels pop out of nowhere and cover the sky.  From the perspective of space they dwarf and surround the player's ship.  A few moments later flashes of light blink around the horizon as endurium crystals disappear one at a time.  A booming voice echoes around the player:  You are the virus. You are the burning fire. You are the UYO. We are ancients. We will be leaving. We gather the seeds.  The mysterious ships start disappearing slowly one at a time.  We thank you. We remove ourselves. We comprehend infection.  You command infection. You focus on shut down. You seek alternative fuel. (CONTINUED)",
+		"",
+		 2, 54, 1,  -- Data cube with responses
+		 0, 0, 0 )
 end
 
 function add_last_quest()
 	-- Add one final quest to the end of the quest table to keep it from crashing
+	
 	size = table.getn(quests)
 	quests[size+1] = {
 		name = "GAME OVER",
-		short = "Error",
-		long = "This quest should never be shown to the player! The last quest should end the game.",
+		short = "Description (part 2)",
+		long = "A great spinning tornado opens in the sky. Seconds later a pyramid shaped stack of greenish yellow rocks appear out of nowhere. Finally a small transparent cap appears in front of the player.  The player picks up the cap and puts it on.  Elsewhere on a Thrynn ship a group of lizardlike Thrynn shake their heads and look around as if they were waking from a daze.  Stars streaking past on the viewscreen slow down and become single points of light. A perspective from outside of the ship show the Thrynn ship engines powering down and the ship starts cartwheeling uncontrollably through space.  The perspective pans up and a large spherical Mysterion ship hovers for a moment and then blinks out...",
 		debrief = "",
 		requirement = { 0, 0, 0 },
 		reward = { 0, 0, 0 }
 	}
 end
+
 
 function addQuest(n,s,l,d, req1, req2, req3, rew1, rew2, rew3)
 	num = table.getn(quests)+1

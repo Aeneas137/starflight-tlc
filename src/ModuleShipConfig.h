@@ -82,6 +82,9 @@ const double _360_TO_256(256.0/360.0);
 #define MISSILELAUNCHER_CLASS4 120000
 #define MISSILELAUNCHER_CLASS5 200000
 #define MISSILELAUNCHER_CLASS6 330000
+//#define MISSILELAUNCHER_CLASS7 330000	//jjh
+//#define MISSILELAUNCHER_CLASS8 330000
+//#define MISSILELAUNCHER_CLASS9 330000
 
 #define LASER_CLASS1 8000
 #define LASER_CLASS2 20000
@@ -89,6 +92,9 @@ const double _360_TO_256(256.0/360.0);
 #define LASER_CLASS4 90000
 #define LASER_CLASS5 150000
 #define LASER_CLASS6 260000
+//#define LASER_CLASS7 260000		//jjh
+//#define LASER_CLASS8 260000
+//#define LASER_CLASS9 260000
 
 const int ITEM_PRICES[5][6] =	
 {
@@ -132,8 +138,8 @@ enum ButtonType
 
 
 //calculate the difference between the enums
-const int CLASS_ENUM_DIF = (Class1 - Class1Type);  //calculates the correct value for the class of item
-const int ITEM_ENUM_DIF = Engines - 0; //calculates the correct index into the ITEM_PRICES[5][6] array
+const int CLASS_ENUM_DIF = (Class1 - Class1Type);	//calculates the correct value for the class of item
+const int ITEM_ENUM_DIF = Engines - 0;				//calculates the correct index into the ITEM_PRICES[5][6] array
 
 class ModuleShipConfig : public Module
 {

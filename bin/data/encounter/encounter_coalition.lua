@@ -2050,7 +2050,7 @@ title="Mission #49:  Unrest - at least one flight recorder
 		player="[AUTO_REPEAT]",
 		introFragment="This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have conclusive evidence from this flight recorder that the coalition is reading the Elowan and Thrynn!",
 		playerFragment="how you can deny this flight recorder evidence", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
-		alien={"Very simple. The ships appearing to be Coalition vessels were lost to us months ago.  Either the plague or the Minex are thought responsible.  Note the poor flying skills, the insanity of fighting to the death without any interest in preserving ships or lives, and the completely ineffective way the afterburners were utilized.  The coalition ships in that video simply charged towards their opponents and stopped right in front of them to exchange fire.  We would never do that." }
+		alien={"Very simple. The ships appearing to be Coalition vessels were lost months ago. Either the plague or the Minex are thought responsible.  Note the poor flying skills, the insanity of fighting to the death without any interest in preserving ships or lives, and the ineffective way the afterburners were utilized. The coalition ships in that video simply charged towards their opponents and stopped right in front of them to exchange fire.  We would never do that." }
 	}
 	questions[79501] = {
 		action="jump", goto=997,
@@ -2077,14 +2077,14 @@ end
 function QuestDialogueancients()
 
 --[[
-title="Mission #61:  Another Ruined Search
+title="Mission #61:  Another Ruins Search
 --]]
 
 	questions[81000] = {
 		action="jump", goto=81001, ftest= 1, -- give the player artifact375 Society of Ancient Studies Seal
-		title="Another Ruined Search",
+		title="Another Ruins Search",
 		player="[AUTO_REPEAT]",
-		introFragment="Greetings. This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have been searching out research sites on the worlds of the 3 Imperialists which were studying the Ancients.",
+		introFragment="Greetings. This is Captain [CAPTAIN] of the starship [SHIPNAME].  We have been searching research sites on the worlds of the 3 Imperialists.",
 		playerFragment="about the Society of Ancient Studies",
 		alien={"Idealists do not survive long in slave labor camps. The last remnants of the society disappeared centuries ago.  They did carry around these trinkets, but nothing else about them survived." }
 	}
@@ -2093,7 +2093,7 @@ title="Mission #61:  Another Ruined Search
 		title="What is this engraving?",
 		player="[AUTO_REPEAT]",
 		playerFragment="what the engraving 'In search of the Crystal Pearl' means", fragmentVeto= {o= {1,2}, f= {1,2,3,4}, h={1,4}},
-		alien={"Hey, your guess is as good as mine   Run it by your eggheads at home if you really care." }
+		alien={"Hey, your guess is as good as mine. Run it by your eggheads at home if you really care." }
 	}
 
 
@@ -2394,7 +2394,7 @@ elseif (plot_stage == 4) then -- ancients plot state
 	if ATTITUDE < 10 then
 		first_question = 910 -- alien attacks the player if attitude drops too low
 
-	-- Mission #61: Another Ruined Search
+	-- Mission #61: Another Ruins Search
 	elseif active_quest == 61  and artifact375 == 0 then
 		first_question = 81000
 

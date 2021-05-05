@@ -1764,14 +1764,14 @@ function commFxn(type, n, ftest)
 
 	elseif (plot_stage == 4) then -- ancients plot state
 
-		if (n == 80002) then -- quest 60 overrun
-				if player_profession == "military" then
-					active_quest = active_quest + 3
-				elseif player_profession == "freelance" then
-					active_quest = active_quest + 2
-				else -- scientific
+		if (n == 80002) then -- quest 60 overrun- EVERYONE PLAYS THROUGH - NO SKIPPING
+			--jjh	if player_profession == "military" then
+			--		active_quest = active_quest + 3
+			--	elseif player_profession == "freelance" then
+			--		active_quest = active_quest + 2
+			--	else -- scientific
 					active_quest = active_quest + 1
-				end
+			--	end
 
 		elseif (n == 82000) then -- quest 62 The Crazed Spemin
 				artifact376 = 1 -- Minex Data Cube

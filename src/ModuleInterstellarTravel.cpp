@@ -4,7 +4,7 @@
 	Author: J.Harbour
 	Date: January, 2007
 */
-
+#pragma 
 // consume fuel code
 const int EVENT_INJECT_FUEL		= 100;
 const int ITEM_ENDURIUM			= 54;
@@ -122,6 +122,10 @@ void ModuleInterstellarTravel::Draw()
 	//blit(img_messages, g_game->GetBackBuffer(), 0, 0, gmx, gmy, gmw, gmh);
 	text->Draw(g_game->GetBackBuffer());
 
+	//JJH - added CrossModuleAngle so that ship's heading stays consistent between entering/leaving systems.  Checking Encounters next :-)... 
+	//same mod in ModuleInterplanetaryTravel and some changes in PlayerShipSprite.  
+	g_game->CrossModuleAngle = ship->getRotationAngle();
+
     if (g_game->getGlobalBoolean("DEBUG_OUTPUT") == true)
     {
 	    //DEBUG CODE -- do not delete
@@ -131,11 +135,7 @@ void ModuleInterstellarTravel::Draw()
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "velocity: " + Util::ToString(ship->getVelocityX()) + "," + Util::ToString(ship->getVelocityY()));
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "speed: " + Util::ToString(ship->getCurrentSpeed()));
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "navcounter: " + Util::ToString(g_game->gameState->getCurrentNav()->attributes.extra_variable));
-		//JJH - added CrossModuleAngle so that ship's heading stays consistent between entering/leaving systems.  Checking Encounters next :-)... 
-		//same mod in ModuleInterplanetaryTravel and some changes in PlayerShipSprite.  
 		y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 850, y, "angle:      " + Util::ToString(ship->getRotationAngle())); 
-		g_game->CrossModuleAngle = ship->getRotationAngle();
-
     }
 }
 

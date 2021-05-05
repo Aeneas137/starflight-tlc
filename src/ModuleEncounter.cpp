@@ -209,7 +209,7 @@ void ModuleEncounter::OnKeyPressed(int keyCode){}
 void ModuleEncounter::OnKeyReleased(int keyCode)
 {
 	//AlienRaces alien;
-
+	bool shieldStatus, weaponStatus;
 	switch (keyCode)
 	{
 		//reset ship anim frame when key released
@@ -232,13 +232,14 @@ void ModuleEncounter::OnKeyReleased(int keyCode)
 			playerShip->cruise();
 			break;
 
-		case KEY_PGUP:
-			//now only possible during combat (design decision)
+		case KEY_PGUP:		
+			shieldStatus = !g_game->gameState->getShieldStatus();	//jjh - added back shields/weapons toggles
+			g_game->gameState->setShieldStatus(shieldStatus);
 			break;
 		case KEY_PGDN:
-			//now only possible during combat (design decision)
+			weaponStatus = !g_game->gameState->getWeaponStatus();
+			g_game->gameState->setWeaponStatus(weaponStatus);
 			break;
-
 		case KEY_ESC:		//escape key opens pause menu
 			//g_game->ShowPauseMenu();
 			//return;
@@ -942,7 +943,7 @@ void ModuleEncounter::setMissileProperties(CombatObject *ship, int missileclass)
 			ship->setMissileDamage( g_game->getGlobalNumber("MISSILE5_DAMAGE") );
 			break;
 		case 6:
-			ship->setMissileFiringRate( g_game->getGlobalNumber("MISSILE6_FIRERATE") );
+			ship->setMissileFiringRate( g_game->getGlobalNumber("MISSILE6_FIRERATE") );  //jjh need to add Thyrnn stuff
 			ship->setMissileDamage( g_game->getGlobalNumber("MISSILE6_DAMAGE") );
 			break;
 		default:
@@ -975,7 +976,7 @@ void ModuleEncounter::setLaserProperties(CombatObject *ship, int laserclass)
 			ship->setLaserDamage( g_game->getGlobalNumber("LASER5_DAMAGE") );
 			break;
 		case 6:
-			ship->setLaserFiringRate( g_game->getGlobalNumber("LASER6_FIRERATE") );
+			ship->setLaserFiringRate( g_game->getGlobalNumber("LASER6_FIRERATE") );	//jjh need to add Thyrnn stuff
 			ship->setLaserDamage( g_game->getGlobalNumber("LASER6_DAMAGE") );
 			break;
 		default:
@@ -1794,10 +1795,8 @@ img_aux->w, img_aux->h);
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Dialogue? " + Util::ToString(bFlagDialogue) );
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Response? " + Util::ToString(bFlagDoResponse) );
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Attack? " + Util::ToString(bFlagDoAttack) );
-//-------
 		int attitude = g_game->gameState->getAlienAttitude();
 		y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Attitude " + Util::ToString(attitude) );		//jjh - debugging Coalition encounter lua file
-//-------
 	    Ship ship = g_game->gameState->getShip();
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, "Ship: ");
 	    y+=10;g_game->PrintDefault(g_game->GetBackBuffer(), 890, y, " Armor : " + Util::ToString(ship.getArmorIntegrity()) );
@@ -2465,11 +2464,11 @@ void ModuleEncounter::DoAlienShipCombat(CombatObject *ship)
 	pgx = playerGlobal.x+SCREEN_WIDTH/2+32;
 	pgy = playerGlobal.y+effectiveScreenHeight()/2+32;
 
-	int missileRange = (int)g_game->getGlobalNumber("ALIEN_MISSILE_RANGE");     // was 900
-	int laserRange   = (int)g_game->getGlobalNumber("ALIEN_LASER_RANGE");       // was 500
-	int safetyDistance = (int)g_game->getGlobalNumber("ALIEN_SAFETY_DISTANCE"); // was 600
+	int missileRange = (int)g_game->getGlobalNumber("ALIEN_MISSILE_RANGE");     
+	int laserRange   = (int)g_game->getGlobalNumber("ALIEN_LASER_RANGE");       
+	int safetyDistance = (int)g_game->getGlobalNumber("ALIEN_SAFETY_DISTANCE"); 
 
-	bool missileIsGreaterRange = missileRange > laserRange;
+	bool missileIsGreaterRange = missileRange > laserRange;						//jjh
 	int longRange = missileIsGreaterRange? missileRange : laserRange;
 	int shortRange = missileIsGreaterRange? laserRange : missileRange;
 
@@ -2506,7 +2505,7 @@ void ModuleEncounter::DoAlienShipCombat(CombatObject *ship)
 			}
 			break;
 */
-		case BEHAVIOR_ATTACK:
+		case BEHAVIOR_ATTACK:														//jjh
 			//attempt to turn toward player
 			targetAngle = Math::AngleToTarget(x,y,pgx,pgy);
 			targetAngle = Math::wrapAngleDegs(90.0 + Math::toDegrees(targetAngle) );
